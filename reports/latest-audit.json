@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-20T15:27:16.982431+00:00",
+  "generated_at": "2026-11-20T19:31:27.327283+00:00",
   "site": "https://framez.sg",
-  "sitemap_urls": 28,
-  "audited": 28,
+  "sitemap_urls": 29,
+  "audited": 29,
   "broken": [],
   "pages_with_issues": 1,
   "issue_counts": {
@@ -12,7 +12,10 @@
     "titles": {},
     "descriptions": {}
   },
-  "changed_urls": [],
+  "changed_urls": [
+    "https://framez.sg/blog",
+    "https://framez.sg/conference-and-mice-event-management"
+  ],
   "pages": [
     {
       "url": "https://framez.sg/",
@@ -290,9 +293,9 @@
     {
       "url": "https://framez.sg/blog",
       "status": 200,
-      "sha256": "d6c431e89f1c15d77b84d435a45fabfb5823d4b400468499286b11b7b51aa319",
-      "content_length": 56376,
-      "sitemap_lastmod": "2026-11-18",
+      "sha256": "824f0b24d14ebbb1ba8d865f98e821ece5672698bf5c1ffc13e3f58ef7c0fa11",
+      "content_length": 57234,
+      "sitemap_lastmod": "2026-11-20",
       "issues": [],
       "title": "Corporate Event Planning Guides & Insights | Framez",
       "title_len": 51,
@@ -301,11 +304,11 @@
       "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
       "h1_count": 1,
       "has_ga4": true,
-      "word_count": 710,
-      "images": 15,
+      "word_count": 734,
+      "images": 16,
       "images_missing_alt": 0,
       "images_duplicate_alt": 0,
-      "internal_links": 52,
+      "internal_links": 53,
       "jsonld_types": [
         "CollectionPage",
         "BreadcrumbList",
@@ -777,6 +780,34 @@
         "BreadcrumbList",
         "Service",
         "ProfessionalService",
+        "FAQPage",
+        "Organization",
+        "WebSite"
+      ]
+    },
+    {
+      "url": "https://framez.sg/conference-and-mice-event-management",
+      "status": 200,
+      "sha256": "0997dd25ef1f1f4a8d892499be2a404051781b870fe6b4ccc21252be7b898a85",
+      "content_length": 46121,
+      "sitemap_lastmod": "2026-11-20",
+      "issues": [],
+      "title": "Conference & MICE Event Management Company | Framez",
+      "title_len": 51,
+      "description_len": 155,
+      "canonical": "https://framez.sg/conference-and-mice-event-management",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "h1_count": 1,
+      "has_ga4": true,
+      "word_count": 869,
+      "images": 5,
+      "images_missing_alt": 0,
+      "images_duplicate_alt": 0,
+      "internal_links": 46,
+      "jsonld_types": [
+        "WebPage",
+        "BreadcrumbList",
+        "Service",
         "FAQPage",
         "Organization",
         "WebSite"

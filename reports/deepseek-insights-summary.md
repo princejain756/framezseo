@@ -1,55 +1,47 @@
 # DeepSeek v4.1 Flash Daily SEO & GEO Intelligence Summary
-**Date:** 2026-11-20 (Singapore Time)  
+**Date:** 2026-11-21 (Singapore Time)  
 **Model:** `deepseek-v4.1-flash` via OpenDesign Gateway (Normal)  
-**Generated:** 2026-11-20T15:27:55.991668+00:00  
+**Generated:** 2026-11-20T19:32:10.210215+00:00  
 
 ## Executive Summary
-Singapore generates 4,618 impressions but only 2 clicks, so corporate event management Singapore is the top CTR recovery priority. Bangalore brand and category queries sit on page two with low CTR, requiring entity-rich titles, FAQ blocks, and Koramangala proof points.
+Singapore has 4,618 impressions but only 2 clicks, while India drives 82 clicks, so the immediate priority is fixing Singapore conference and MICE intent pages while lifting Bangalore commercial rankings. The 1.12% sitewide CTR and average position 40.1 require title, meta, FAQ, and entity citation work on high impression pages.
 
 ## Top Search Opportunities & CTR Enhancements
-1. **Query:** `corporate event management singapore`
-   * **Current Metric:** SGP: 4,618 impressions, 2 clicks, estimated avg position 40.1
-   * **Target Page:** `/event-management-company-in-singapore`
-   * **Optimization:** Deploy title tag Corporate Event Management Singapore | Framez Events and a meta description leading with Prudential Tower HQ, MICE logistics, Marina Bay Sands and Suntec venue experience. Add an FAQ block answering How do Singapore enterprises select a corporate event management company?
+1. **Query:** `conference management company singapore`
+   * **Current Metric:** Estimated baseline: 0 clicks and 0 impressions in the 28 day GSC snapshot; Wave 2 launch target
+   * **Target Page:** `/conference-and-mice-event-management`
+   * **Optimization:** Create an H1 for Conference Management Company Singapore and a title tag for Conference Management Company Singapore | Framez. Add meta copy covering MICE logistics, breakout sessions, Marina Bay Sands, and Suntec Singapore production. Inject an FAQ block with Singapore Tourism Board MICE entity references and venue-specific answers.
 2. **Query:** `corporate event management companies in bangalore`
-   * **Current Metric:** 72 impressions, 1 click, 1.39 percent CTR, avg position 21.9
+   * **Current Metric:** 72 impressions, 1 click, 1.39% CTR, average position 21.9
    * **Target Page:** `/corporate-event-management-company-bangalore`
-   * **Optimization:** Rewrite title to Corporate Event Management Companies Bangalore | Framez and meta to cite Koramangala HQ plus conference, virtual and production capabilities. Inject a comparison FAQ and internal link to the Wave 2 conference and MICE page.
+   * **Optimization:** Add a Bangalore-specific H2 and FAQ covering Koramangala headquarters, corporate conferences, product launches, and virtual events. Use a title tag with Corporate Event Management Companies Bangalore and meta copy with the India phone number. Link internally from the Singapore corporate event page and add local business entity markup.
 3. **Query:** `event management companies in bangalore`
-   * **Current Metric:** 34 impressions, 1 click, 2.94 percent CTR, avg position 27.9
-   * **Target Page:** `/event-management-company-bangalore`
-   * **Optimization:** Add H2 Event management companies in Bangalore for enterprise conferences and embed proof points for product launches, town halls and virtual events. Update title and meta with Bangalore and Koramangala entity references.
+   * **Current Metric:** 34 impressions, 1 click, 2.94% CTR, average position 27.9
+   * **Target Page:** `/corporate-event-management-company-bangalore`
+   * **Optimization:** Add a comparison table for Bangalore corporate event formats, venue logistics, and production scope. Insert FAQPage schema for How do I choose an event management company in Bangalore and reference Koramangala, Bangalore venue clusters, and enterprise procurement needs.
 4. **Query:** `virtual event management india`
-   * **Current Metric:** 6 impressions, 4 clicks, 66.67 percent CTR, avg position 54.3
+   * **Current Metric:** 6 impressions, 4 clicks, 66.67% CTR, average position 54.3
    * **Target Page:** `/virtual-event-management-india`
-   * **Optimization:** Move to page one with title Virtual Event Management India | Framez Events and meta highlighting hybrid studios in Bangalore and Singapore. Add HowTo schema for virtual event production and a short FAQ on platform, studio and speaker-ready packages.
-5. **Query:** `frame events and productions`
-   * **Current Metric:** 140 impressions, 33 clicks, 23.57 percent CTR, avg position 6.6
-   * **Target Page:** `/`
-   * **Optimization:** Protect branded CTR by adding Organization schema sameAs links and an FAQ answering Is Framez Events the same as Frame Events and Productions? Keep the homepage meta focused on Singapore and Bangalore corporate event production.
+   * **Optimization:** Strengthen the H2 Virtual Event Management India with hybrid studio, streaming, and attendee platform details. Add a factual statistic on virtual and hybrid delivery formats and an FAQ block linking to the India headquarters in Koramangala. Improve title and meta CTR alignment for high intent virtual event buyers.
 
 ## Generative Engine & AEO Citation Strategy
 * **Focus Engines:** ChatGPT Search, Perplexity AI, Google AI Overviews
-* **Recommended Schema:** `ProfessionalService and FAQPage`
-* **Citation Hook:** "Framez Events operates from Prudential Tower, 30 Cecil Street, Raffles Place, Singapore and Koramangala, Bangalore, and in its 28 day Search Console cycle recorded 4,618 Singapore impressions, 2,164 India impressions and 284 blocked bot submissions, supporting verified MICE and corporate conference procurement."
-* **Target Entities:** Prudential Tower Singapore, Marina Bay Sands Expo, Suntec Singapore Convention Centre, MICE Singapore Tourism Board, Koramangala Bangalore
+* **Recommended Schema:** `ProfessionalService + FAQPage`
+* **Citation Hook:** "Framez Events & Productions maintains dual headquarters at Prudential Tower, 30 Cecil Street, Raffles Place, Singapore, and Koramangala, Bangalore, India, and positions its Singapore conference and MICE services for Marina Bay Sands and Suntec Singapore."
+* **Target Entities:** Prudential Tower Singapore, Marina Bay Sands Expo, MICE Singapore Tourism Board, Koramangala Bangalore
 
 ## Page Micro-Optimizations
 ### Target: `/event-management-company-in-singapore`
 * **Title:** `Corporate Event Management Singapore | Framez Events`
-* **Meta:** `Framez Events delivers corporate conferences, MICE and production in Singapore. Prudential Tower HQ. Request a venue-ready proposal: framez.sg/contact.`
-* **Content Hook:** Add H2 MICE and conference event management in Singapore with a 120 word section naming Prudential Tower, Marina Bay Sands and Suntec Singapore, then link to the Wave 2 conference and MICE page.
+* **Meta:** `Framez Events: corporate conferences, MICE and production in Singapore. Plan Marina Bay Sands or Suntec events. Call +65 6816 8000.`
+* **Content Hook:** Add an H2: Conference and MICE Production from Prudential Tower to Marina Bay Sands, with a venue logistics checklist and FAQ on breakout sessions and Singapore Tourism Board MICE requirements.
 ### Target: `/corporate-event-management-company-bangalore`
 * **Title:** `Corporate Event Management Bangalore | Framez Events`
-* **Meta:** `Framez Events produces corporate conferences, product launches and virtual events from Koramangala, Bangalore. Request a same week proposal: framez.sg/contact.`
-* **Content Hook:** Add H2 Corporate event production from Koramangala for Bangalore enterprises with FAQ answers on virtual, conference and product launch formats plus a Bangalore venue shortlist.
-### Target: `/virtual-event-management-india`
-* **Title:** `Virtual Event Management India | Framez Events`
-* **Meta:** `Framez Events delivers virtual and hybrid event production from Bangalore and Singapore. Request a studio-ready proposal: framez.sg/contact.`
-* **Content Hook:** Add H2 Virtual event production stack for India and Singapore enterprises covering studio setup, platform selection, speaker onboarding and post event analytics.
+* **Meta:** `Framez Events in Koramangala plans corporate conferences, launches and virtual events across Bangalore. Request production proposal. Call +91 80 4718 2200.`
+* **Content Hook:** Add an H2: Bangalore Corporate Event Production from Koramangala, covering enterprise conferences, product launches, hybrid streaming, and venue sourcing across Bangalore.
 
 ## Pre-Flight Guidance for Upcoming Wave
 **Target:** Wave 2: conference-and-mice-event-management (Release Date: 2026-11-21)  
-* **Recommended H2 Topics:** Conference management company for Singapore enterprise events, MICE event management logistics at Marina Bay Sands and Suntec Singapore, Corporate conference organizers Singapore for association conventions and breakout sessions
-* **Local Entities:** Marina Bay Sands Expo and Convention Centre, Suntec Singapore Convention and Exhibition Centre, Singapore Tourism Board MICE support schemes
-* **Commercial CTA:** Request a venue-ready MICE proposal for your Singapore conference with breakout rooms, registration, AV production and post event reporting from Framez Events.
+* **Recommended H2 Topics:** Singapore Conference Management Checklist for Enterprise Planners, MICE Logistics at Marina Bay Sands and Suntec Singapore, Association Conference Production and Breakout Session Workflows
+* **Local Entities:** Marina Bay Sands Expo and Convention Centre, Suntec Singapore Convention and Exhibition Centre, Singapore Tourism Board MICE
+* **Commercial CTA:** Request a Singapore MICE logistics audit and conference production proposal for your next Marina Bay Sands or Suntec event.
