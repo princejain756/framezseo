@@ -36,7 +36,8 @@ import time
 import urllib.request
 
 BASE_DIR = pathlib.Path(__file__).resolve().parent
-REPORT_DIR = BASE_DIR / "reports"
+JOB_DIR = BASE_DIR.parent if BASE_DIR.name == "scripts" else BASE_DIR
+REPORT_DIR = JOB_DIR / "reports"
 ROOT_ENV_PATH = pathlib.Path("/root/websites/seogeoopt/.env")
 OPENDESIGN_KEY_FILE = pathlib.Path("/root/.commandcode/opendesign-api-key.secret")
 

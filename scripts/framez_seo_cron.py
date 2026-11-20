@@ -30,6 +30,7 @@ import fcntl
 import hashlib
 import html as html_lib
 import json
+import os
 import pathlib
 import re
 import subprocess
@@ -40,10 +41,16 @@ import urllib.parse
 import urllib.request
 import xml.sax.saxutils as saxutils
 
-from content_pages import GA4_ID, STAGED_WAVES, render_page
+SCRIPT_DIR = pathlib.Path(__file__).resolve().parent
+JOB = SCRIPT_DIR.parent if SCRIPT_DIR.name == "scripts" else SCRIPT_DIR
+BASE = JOB.parent.parent if (JOB.parent and JOB.parent.name == "seo-jobs") else pathlib.Path("/root/websites/seogeoopt")
 
-BASE = pathlib.Path("/root/websites/seogeoopt")
-JOB = BASE / "seo-jobs" / "framez"
+for p in (JOB / "scripts", JOB):
+    p_str = str(p)
+    if p.exists() and p_str not in sys.path:
+        sys.path.insert(0, p_str)
+
+from content_pages import GA4_ID, STAGED_WAVES, render_page
 CONFIG_PATH = JOB / "config.json"
 STATE_PATH = JOB / "state.json"
 LOG_DIR = JOB / "logs"
@@ -856,6 +863,7 @@ def write_live_status_md(summary):
         f"* **DeepSeek v4.1 Flash Daily Engine (OpenDesign):** `{summary.get('deepseek', 'N/A')}` (Latency: `{summary.get('deepseek_latency', 'N/A')}s`)",
         f"* **Verified Form Leads (`leads_log.json`):** `{(summary.get('leads') or {}).get('verified_total')}`",
         f"* **Blocked Spam Bots (`leads_spam_log.json`):** `{(summary.get('leads') or {}).get('spam_blocked_total')}`",
+        f"* **GitHub Repository:** https://github.com/princejain756/framezseo",
         f"* **Active Cycle Ledger:** `reports/cycle-{s}-to-{e}-ledger.jsonl`",
         "",
     ]
@@ -863,13 +871,82 @@ def write_live_status_md(summary):
 
 
 def maybe_refresh_cycle_report():
-    gen = JOB / "generate_nov_dec_report.py"
-    if gen.exists():
-        try:
-            subprocess.run([sys.executable, str(gen)], check=True, timeout=60)
-            log("report: refreshed FRAMEZ_NOVEMBER_DECEMBER_2026_SEO_AEO_GEO_REPORT.md")
-        except Exception as e:
-            log(f"report: warning ({e})")
+    for gen in (JOB / "scripts" / "generate_nov_dec_report.py", JOB / "generate_nov_dec_report.py"):
+        if gen.exists():
+            try:
+                subprocess.run([sys.executable, str(gen)], check=True, timeout=60)
+                log("report: refreshed FRAMEZ_NOVEMBER_DECEMBER_2026_SEO_AEO_GEO_REPORT.md")
+                return
+            except Exception as e:
+                log(f"report: warning ({e})")
+                return
+
+
+def git_sync_to_github(summary):
+    """Commits and pushes daily SEO, GEO and ledger updates to GitHub."""
+    git_dir = JOB / ".git"
+    if not git_dir.exists():
+        log("git: no .git repository found in job folder, skipping git sync")
+        return {"status": "skipped", "reason": "no_git_repo"}
+
+    try:
+        st = subprocess.run(
+            ["git", "status", "--porcelain"],
+            cwd=str(JOB),
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            timeout=30,
+        )
+        if not st.stdout.strip():
+            log("git: working tree clean, nothing to commit")
+            return {"status": "clean"}
+
+        subprocess.run(
+            ["git", "add", "reports/", "docs/", "LIVE_STATUS.md", "MEMORY.md", "scripts/"],
+            cwd=str(JOB),
+            check=True,
+            timeout=30,
+        )
+
+        today_str = datetime.date.today().isoformat()
+        act = summary.get("daily_action", {})
+        if isinstance(act, dict):
+            act_note = act.get("target_page") or act.get("status") or "daily micro-action"
+        else:
+            act_note = "daily updates"
+        commit_msg = f"SEO daily automated sync: {today_str} ({act_note})"
+
+        commit_env = os.environ.copy()
+        commit_env["GIT_AUTHOR_NAME"] = "Prince Jain"
+        commit_env["GIT_AUTHOR_EMAIL"] = "princejain756@gmail.com"
+        commit_env["GIT_COMMITTER_NAME"] = "Prince Jain"
+        commit_env["GIT_COMMITTER_EMAIL"] = "princejain756@gmail.com"
+
+        commit = subprocess.run(
+            ["git", "commit", "-m", commit_msg],
+            cwd=str(JOB),
+            env=commit_env,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            timeout=30,
+        )
+        log(f"git commit: {commit.stdout.strip()}")
+
+        push = subprocess.run(
+            ["git", "push", "origin", "main"],
+            cwd=str(JOB),
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            timeout=60,
+        )
+        log(f"git push: {push.stdout.strip() or 'ok'}")
+        return {"status": "pushed", "commit": commit_msg}
+    except Exception as e:
+        log(f"git: warning during sync ({e})")
+        return {"status": "error", "error": str(e)}
 
 
 def run_all():
@@ -935,6 +1012,9 @@ def run_all():
     maybe_freeze_monthly_boundary(summary, gsc, ga4, leads)
     write_live_status_md(summary)
     maybe_refresh_cycle_report()
+    git_res = git_sync_to_github(summary)
+    summary["git_sync"] = git_res
+    save_json(REPORT_DIR / "latest-run.json", summary)
     log("done")
     return summary
 
@@ -1005,6 +1085,10 @@ def main(argv):
         elif cmd == "release_due":
             res = release_due_waves(cfg, state)
             save_json(STATE_PATH, state)
+            print(json.dumps(res, indent=2))
+        elif cmd == "git_sync":
+            last_run = load_json(REPORT_DIR / "latest-run.json", {})
+            res = git_sync_to_github(last_run)
             print(json.dumps(res, indent=2))
         elif cmd == "all":
             print(json.dumps(run_all(), indent=2))

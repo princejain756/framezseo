@@ -25,8 +25,9 @@ import sys
 import time
 
 BASE_DIR = pathlib.Path(__file__).resolve().parent
-BACKUP_DIR = BASE_DIR / "backups" / "daily_actions"
-REPORT_DIR = BASE_DIR / "reports"
+JOB_DIR = BASE_DIR.parent if BASE_DIR.name == "scripts" else BASE_DIR
+BACKUP_DIR = JOB_DIR / "backups" / "daily_actions"
+REPORT_DIR = JOB_DIR / "reports"
 LEDGER_PATH = REPORT_DIR / "cycle-2026-11-15-to-2026-12-15-ledger.jsonl"
 DAILY_ACTION_LOG = REPORT_DIR / "daily-action-log.jsonl"
 

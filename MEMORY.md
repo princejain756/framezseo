@@ -18,6 +18,7 @@ Billing & Reporting Cadence: **15th of each month to 15th of the next month** (r
 ## 2. Infrastructure, Access & Credentials Map
 
 * **Operations Server (SSH):** `ssh root@72.61.173.127` (passwordless SSH key configured on Mac).
+  * **GitHub Repository:** `https://github.com/princejain756/framezseo` (public canonical repo tracking all SEO/GEO engine code, daily action logs, telemetry snapshots, and cycle reports; auto-committed and pushed after every cron run).
   * **Portal & Env Root:** `/root/websites/seogeoopt/` (`https://portal.adelev8.com`, PM2 service `adelev8-growth-os-api` on port `5182`).
   * **Runtime Secrets File:** `/root/websites/seogeoopt/.env` holds `CPANEL_HOST`, `CPANEL_USERNAME`, `CPANEL_API_TOKEN`, `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`. Never commit or print raw tokens into repo files.
   * **Portal OAuth Store:** `/root/websites/seogeoopt/server/data/portal.json` (Framez Brand ID: `brand-5c9dceab-e42e-48da-87e2-7e71216cb5cf`).

@@ -19,10 +19,12 @@ import datetime
 import json
 import pathlib
 
-BASE = pathlib.Path("/root/websites/seogeoopt")
-JOB = BASE / "seo-jobs" / "framez"
+SCRIPT_DIR = pathlib.Path(__file__).resolve().parent
+JOB = SCRIPT_DIR.parent if SCRIPT_DIR.name == "scripts" else SCRIPT_DIR
+BASE = JOB.parent.parent if (JOB.parent and JOB.parent.name == "seo-jobs") else pathlib.Path("/root/websites/seogeoopt")
 REPORT_DIR = JOB / "reports"
 DOC_PATH = BASE / "DocMaker" / "FRAMEZ_NOVEMBER_DECEMBER_2026_SEO_AEO_GEO_REPORT.md"
+LOCAL_DOC = JOB / "docs" / "FRAMEZ_NOVEMBER_DECEMBER_2026_LIVE_REPORT.md"
 
 
 def load_json(p, default):
@@ -345,6 +347,9 @@ def build_report():
     report_text = "\n".join(lines).replace("\u2014", ":").replace("\u2013", "-")
     DOC_PATH.write_text(report_text, encoding="utf-8")
     print(f"Wrote {DOC_PATH} ({len(report_text)} chars)")
+    LOCAL_DOC.parent.mkdir(parents=True, exist_ok=True)
+    LOCAL_DOC.write_text(report_text, encoding="utf-8")
+    print(f"Wrote {LOCAL_DOC} ({len(report_text)} chars)")
 
 
 if __name__ == "__main__":

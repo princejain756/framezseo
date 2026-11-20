@@ -7,6 +7,11 @@ __pycache__/
 .env.*
 *.secret
 *.lock
+.run.lock
 backups/
 staged_wave1/
 .commandcode/
+logs/
+config.json
+state.json
+sitemap.generated.xml
