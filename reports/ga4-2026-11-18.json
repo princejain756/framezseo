@@ -1,0 +1,292 @@
+{
+  "status": "ok",
+  "generated_at": "2026-11-18T19:31:12.763838+00:00",
+  "property_id": "547082278",
+  "totals_28d": {
+    "metricHeaders": [
+      {
+        "name": "activeUsers",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "newUsers",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "sessions",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "screenPageViews",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "keyEvents",
+        "type": "TYPE_FLOAT"
+      }
+    ],
+    "rows": [
+      {
+        "metricValues": [
+          {
+            "value": "372"
+          },
+          {
+            "value": "361"
+          },
+          {
+            "value": "440"
+          },
+          {
+            "value": "539"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      }
+    ],
+    "rowCount": 1,
+    "metadata": {
+      "currencyCode": "INR",
+      "timeZone": "Asia/Calcutta"
+    },
+    "kind": "analyticsData#runReport"
+  },
+  "channels_28d": {
+    "dimensionHeaders": [
+      {
+        "name": "sessionDefaultChannelGroup"
+      }
+    ],
+    "metricHeaders": [
+      {
+        "name": "activeUsers",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "sessions",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "screenPageViews",
+        "type": "TYPE_INTEGER"
+      }
+    ],
+    "rows": [
+      {
+        "dimensionValues": [
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "275"
+          },
+          {
+            "value": "301"
+          },
+          {
+            "value": "328"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "72"
+          },
+          {
+            "value": "111"
+          },
+          {
+            "value": "171"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Organic Social"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "19"
+          },
+          {
+            "value": "20"
+          },
+          {
+            "value": "25"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Referral"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "6"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "10"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Unassigned"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "5"
+          }
+        ]
+      }
+    ],
+    "rowCount": 5,
+    "metadata": {
+      "currencyCode": "INR",
+      "timeZone": "Asia/Calcutta"
+    },
+    "kind": "analyticsData#runReport"
+  },
+  "events_28d": {
+    "dimensionHeaders": [
+      {
+        "name": "eventName"
+      }
+    ],
+    "metricHeaders": [
+      {
+        "name": "eventCount",
+        "type": "TYPE_INTEGER"
+      }
+    ],
+    "rows": [
+      {
+        "dimensionValues": [
+          {
+            "value": "page_view"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "539"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "session_start"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "441"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "first_visit"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "361"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "user_engagement"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "244"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "scroll"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "229"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "click"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "12"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "cta_inquiry_click"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "generate_lead"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          }
+        ]
+      }
+    ],
+    "rowCount": 8,
+    "metadata": {
+      "currencyCode": "INR",
+      "timeZone": "Asia/Calcutta"
+    },
+    "kind": "analyticsData#runReport"
+  }
+}

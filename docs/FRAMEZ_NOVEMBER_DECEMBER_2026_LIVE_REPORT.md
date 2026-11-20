@@ -1,0 +1,192 @@
+# Framez Events & Productions: Comprehensive Monthly SEO, AEO & GEO Progress Report
+## Service Cycle: 15 November to 15 December 2026
+
+**Report Generated:** 2026-11-20 23:27:56 SGT (2026-11-20 15:27:56 UTC)  
+**Client:** Framez Events & Productions (`https://framez.sg`)  
+**Agency Partner:** ADELEV8 Growth OS (`https://portal.adelev8.com`)  
+**Service Cycle Window:** 15 November 2026 to 15 December 2026  
+**Verified Retainer Status:** PAID (Monthly Retainer Cycle Active)  
+**Audit & Cron Engine:** Daily Automated Run (`/etc/cron.d/framez-seo`, 04:15 UTC & 19:30 UTC)  
+**AI Intelligence Engine:** DeepSeek v4.1 Flash (`commandcode/deepseek/deepseek-v4.1-flash`)  
+
+---
+
+## 1. Executive Summary & Cycle Strategic Directive
+
+During the **15 November to 15 December 2026** service cycle, ADELEV8 focused on turning Framez's technical foundation into commercial search capture across **Singapore** and **Bangalore**, closing analytics blindspots across commercial pages, eliminating legacy 2020 to 2021 virtual-event index bloat, and shipping a multi-wave cadence of high-intent commercial landing pages and operational buyer guides.
+
+### Key Cycle Achievements
+- **Active Verified Sitemap Inventory:** **28 self-canonical HTTP 200 URLs** (up from 26 at the end of October), with **28/28** pages verified carrying live `G-XDPHV6MX44` GA4 telemetry.
+- **Singapore Commercial Landing Page Launched (`/event-management-company-in-singapore`):** Built specifically to capture Framez's high Singapore `.sg` impression volume with Prudential Tower (`30 Cecil Street, #19-08`) entity alignment, MICE/conference/launch/D&D scope, PDPA/GoBusiness operational guidance, and `ProfessionalService` + `Service` + `FAQPage` JSON-LD.
+- **100% Sitewide GA4 & Multi-Channel Inquiry Tracking Unification:** Replaced dead Universal Analytics (`UA-180350188-1`) and legacy tags across 10 core commercial/contact pages that were previously invisible to GA4, and instrumented `whatsapp_click`, `phone_click`, `email_click`, `cta_inquiry_click`, and `generate_lead` conversion events.
+- **Core Commercial Rebuilds:** Completely rewrote `/event-marketing-services` (resolving Google's Crawled - currently not indexed hold), `/event-management-company-in-india` (removing 2020 filler and white-on-white HTML defects), and `/event-planner` (+105% impression surge page).
+- **Index Hygiene, Schema Compliance & Subdomain De-Bloat:** Removed legacy policy-violating `Product`/`AggregateRating` schema from the Health & Safety statement, upgraded `header.php` and `index.html` with Dual-HQ (Singapore + Bengaluru) `Organization` schema, added `301` redirects consolidating `/get-to-know-us`, `/our-team`, and `/social-event`, enforced universal `.php` to extensionless `301` redirects, and applied `X-Robots-Tag: noindex, noarchive` across legacy event microsite subdirectories/subdomains.
+- **Daily DeepSeek v4.1 Flash Intelligence Setup:** Integrated automated daily LLM evaluation analyzing SERP trends, Singapore MICE entity citations, and page-level CTR recommendations.
+
+---
+
+## 2. Multi-Wave Cycle Execution Schedule & Daily Action Register (15 Nov to 15 Dec 2026)
+
+| Date | Action / Wave Title | Deliverable & Technical Scope | Status |
+| --- | --- | --- | --- |
+| **15 Nov** | **Turnstile Form Protection & Cron Deployment** | 7-layer Turnstile bot protection on contact forms and daily cron installation. | **LIVE (Verified)** |
+| **16 Nov** | **15-Page Meta & OG Tag Audit and Repair** | Updated titles, meta descriptions, OpenGraph tags, and image alt text across 15 pages. | **LIVE (Verified)** |
+| **17 Nov** | **Health & Safety Statement Schema & Sitemap Inclusion** | Cleaned schema on Health & Safety statement and reconciled sitemap to 27 URLs. | **LIVE (Verified)** |
+| **18 Nov** | **Wave 1: Flagship Singapore Money Page & Core Rebuilds** | Launched /event-management-company-in-singapore, rebuilt 3 core pages, sitewide GA4 unification across 24 files. | **LIVE (Verified)** |
+| **19 Nov** | **GA4 Multi-Channel Conversion Tracking Audit & IndexNow Reconciliation** | Verified G-XDPHV6MX44 conversion listeners (whatsapp, phone, email, generate_lead) across all 28 sitemap URLs. | **LIVE (Verified)** |
+| **20 Nov** | **Clientele Portfolio Enrichment & FAQ Schema Optimization** | Resolves thin content flag on /clientele by adding enterprise sector breakdowns, APAC case engagement highlights, and FAQPage JSON-LD schema with cross-links to Singapore and Bangalore. | **COMPLETED** (2026-11-20) |
+| **21 Nov** | **Wave 2: Conference & MICE Event Management Page Release** | Launches /conference-and-mice-event-management targeting conference management company (#26.1) and MICE keywords. | Scheduled (2026-11-21) via Automated Cron |
+| **22 Nov** | **MICE Service Cross-Linking & Entity Anchors** | Injects contextual cross-links and anchor text pointing to /conference-and-mice-event-management from Singapore and service overview pages. | Scheduled (2026-11-22) via Automated Cron |
+| **23 Nov** | **Bangalore Corporate Event CTR & FAQ Schema Sprint** | Optimizes title, meta description, and FAQ schema on /event-management-company-in-bangalore to target Page-2 commercial queries. | Scheduled (2026-11-23) via Automated Cron |
+| **24 Nov** | **Trade Show & Exhibition Entity Directory Preparation** | Pre-flight entity mapping and Singapore EXPO / Sands Expo venue technical specifications for upcoming Wave 3. | Scheduled (2026-11-24) via Automated Cron |
+| **25 Nov** | **Wave 3: Exhibition & Trade Show Management Page Release** | Launches /exhibition-and-trade-show-management targeting exhibition management company (#30.4) and custom booth fabrication. | Scheduled (2026-11-25) via Automated Cron |
+| **26 Nov** | **Exhibition Cross-Linking & Image Sitemap Expansion** | Links exhibition services from homepage and expands image-sitemap.xml with verified exhibition stall fabrication assets. | Scheduled (2026-11-26) via Automated Cron |
+| **27 Nov** | **Book-a-Demo Interactive Scope Estimator & Thin Content Fix** | Expands /book-a-demo from 271 words to 750+ words with enterprise RFP checklist and corporate event budgeting tiers. | Scheduled (2026-11-27) via Automated Cron |
+| **28 Nov** | **Year-End Corporate Town Hall Seasonal Search Injections** | Injects Q4 all-hands town hall and annual kickoff keywords across Singapore and Bangalore commercial landing pages. | Scheduled (2026-11-28) via Automated Cron |
+| **29 Nov** | **Wave 4: Corporate Town Hall & Sales Kickoff Guide Release** | Launches /year-end-corporate-town-hall-and-kickoff-guide targeting enterprise all-hands and SKO multi-hub production. | Scheduled (2026-11-29) via Automated Cron |
+| **30 Nov** | **Mid-Cycle Search Console Telemetry Audit & CTR Re-calibration** | Ingests 14-day search query velocity and re-optimizes snippet copy for climbing Page-2 queries. | Scheduled (2026-11-30) via Automated Cron |
+| **01 Dec** | **Generative Engine (AEO/GEO) Citation Audit & Knowledge Base Sync** | Audits ChatGPT Search and Perplexity citation readiness and syncs llms.txt and llms-full.txt with updated service inventory. | Scheduled (2026-12-01) via Automated Cron |
+| **02 Dec** | **Bangalore Tech Hub & Koramangala Entity Reinforcement** | Strengthens Koramangala, Whitefield, and Outer Ring Road tech corridor entity citations on Bangalore service pages. | Scheduled (2026-12-02) via Automated Cron |
+| **03 Dec** | **Wave 5: Bangalore Corporate Venue & Logistics Checklist Release** | Launches /bangalore-corporate-event-venue-and-logistics-checklist pushing Bangalore commercial terms from Page 2 to Page 1. | Scheduled (2026-12-03) via Automated Cron |
+| **04 Dec** | **Executive Offsite & CXO Retreats Cross-Linking Sprint** | Cross-links /executive-offsite-retreat-blueprint with Bangalore venue guide and Singapore corporate service pages. | Scheduled (2026-12-04) via Automated Cron |
+| **05 Dec** | **Singapore Green Plan 2030 & Green MICE Keyword Prep** | Pre-flight keyword mapping for Singapore Tourism Board MICE sustainability criteria and BCA Green Mark requirements. | Scheduled (2026-12-05) via Automated Cron |
+| **06 Dec** | **Sustainable Corporate Event RFP Materials Checklist Prep** | Prepares modular scenic staging ratios and low-waste enterprise event checklist for Wave 6 release. | Scheduled (2026-12-06) via Automated Cron |
+| **07 Dec** | **Wave 6: Sustainable Corporate Events & ESG Guide Release** | Launches /sustainable-corporate-events-esg-guide-singapore-india addressing enterprise MNC and Singapore Green MICE requirements. | Scheduled (2026-12-07) via Automated Cron |
+| **08 Dec** | **ESG & Sustainability Cross-Linking across Service Pages** | Cross-links ESG guide with Singapore corporate event management and RFP evaluation guide. | Scheduled (2026-12-08) via Automated Cron |
+| **09 Dec** | **Sitewide Core Web Vitals & Image Compression Audit** | Verifies lazy-loading, WebP assets, and sub-1.5s LCP on mobile viewports across all 33 sitemap URLs. | Scheduled (2026-12-09) via Automated Cron |
+| **10 Dec** | **301 Redirect Hygiene & Canonical Header Verification** | Crawls all historical URLs and verifies zero redirect chains, zero 404s, and valid self-canonical links. | Scheduled (2026-12-10) via Automated Cron |
+| **11 Dec** | **End-of-Cycle Search Velocity & Ranking Movement Analysis** | Audits 30-day click and impression velocity across Singapore and India commercial clusters. | Scheduled (2026-12-11) via Automated Cron |
+| **12 Dec** | **Lead Defense & Form Security Verification** | Audits cumulative verified leads in leads_log.json vs blocked bot submissions in leads_spam_log.json. | Scheduled (2026-12-12) via Automated Cron |
+| **13 Dec** | **Full 33+ URL Search Console & IndexNow Reconciliation** | Pushes all 33 production sitemap URLs to IndexNow and audits GSC indexed vs crawled status. | Scheduled (2026-12-13) via Automated Cron |
+| **14 Dec** | **Cycle 4 Data Freeze & DeepSeek Monthly Synthesis** | Freezes 30-day telemetry snapshot and runs DeepSeek v4.1 Flash monthly retrospective synthesis. | Scheduled (2026-12-14) via Automated Cron |
+| **15 Dec** | **Final Monthly Cycle Report Presentation & PDF Render** | Compiles FRAMEZ_NOVEMBER_DECEMBER_2026_SEO_AEO_GEO_REPORT.md and prepares executive review for client sign-off. | Scheduled (2026-12-15) via Automated Cron |
+
+---
+
+## 3. Live Google Search Console Telemetry (`sc-domain:framez.sg`, 2026-10-22 to 2026-11-18)
+
+| Metric (28-Day Rolling Window) | Value |
+| --- | ---: |
+| **Total Organic Clicks** | **91** |
+| **Total Search Impressions** | **8,128** |
+| **Average CTR** | **1.12%** |
+| **Average Position** | **40.1** |
+
+### 3.1 Geographic Performance Breakdown (28 Days)
+| Country Code | Clicks | Impressions | CTR | Avg Position |
+| --- | ---: | ---: | ---: | ---: |
+| `IND` | 82 | 2,164 | 3.79% | 27.9 |
+| `ESP` | 2 | 11 | 18.18% | 12.3 |
+| `SGP` | 2 | 4,618 | 0.04% | 49.7 |
+| `GBR` | 1 | 133 | 0.75% | 48.4 |
+| `IDN` | 1 | 46 | 2.17% | 10.5 |
+
+### 3.2 Top Landing Pages in Google Search (28 Days)
+| URL | Clicks | Impressions | CTR | Avg Position |
+| --- | ---: | ---: | ---: | ---: |
+| `https://framez.sg/` | 67 | 752 | 8.91% | 10.2 |
+| `https://framez.sg/corporate-event-management-company` | 7 | 5,051 | 0.14% | 48.0 |
+| `https://framez.sg/get-to-know-us` | 5 | 301 | 1.66% | 5.1 |
+| `https://framez.sg/our-events-and-services` | 5 | 2,074 | 0.24% | 66.6 |
+| `https://framez.sg/our-team` | 3 | 48 | 6.25% | 13.4 |
+| `https://framez.sg/experiential-brand-activations-framework` | 1 | 17 | 5.88% | 7.4 |
+| `https://framez.sg/festive-corporate-gala-diwali-celebrations` | 1 | 34 | 2.94% | 7.0 |
+| `https://framez.sg/get-in-touch` | 1 | 183 | 0.55% | 9.5 |
+
+### 3.3 Top Search Queries (28 Days)
+| Search Query | Clicks | Impressions | CTR | Avg Position |
+| --- | ---: | ---: | ---: | ---: |
+| `frame events and productions` | 33 | 140 | 23.57% | 6.6 |
+| `framez events` | 5 | 18 | 27.78% | 1.2 |
+| `frames event management` | 4 | 22 | 18.18% | 4.1 |
+| `virtual event management india` | 4 | 6 | 66.67% | 54.3 |
+| `virtual event services india` | 2 | 4 | 50.00% | 61.0 |
+| `corporate event management companies in bangalore` | 1 | 72 | 1.39% | 21.9 |
+| `corporate virtual events india` | 1 | 1 | 100.00% | 84.0 |
+| `digital event solutions india` | 1 | 2 | 50.00% | 26.5 |
+| `event companies near me` | 1 | 1 | 100.00% | 51.0 |
+| `event management companies in bangalore` | 1 | 34 | 2.94% | 27.9 |
+| `frame events` | 1 | 32 | 3.12% | 3.3 |
+| `online event hosting india` | 1 | 1 | 100.00% | 24.0 |
+
+---
+
+## 4. Google Analytics 4 (`547082278`) & Lead Defense Telemetry
+
+| GA4 Metric (Last 28 Days) | Value |
+| --- | ---: |
+| **Active Users** | **379** |
+| **New Users** | **367** |
+| **Total Sessions** | **446** |
+| **Screen / Page Views** | **551** |
+| **Recorded Key Events** | **0** |
+
+### 4.1 Traffic Acquisition Channels (28 Days)
+| Channel Group | Active Users | Sessions | Views |
+| --- | ---: | ---: | ---: |
+| Direct | 281 | 307 | 334 |
+| Organic Search | 73 | 110 | 182 |
+| Organic Social | 20 | 21 | 26 |
+| Referral | 5 | 6 | 9 |
+| Unassigned | 1 | 1 | 0 |
+
+### 4.2 Lead Pipeline & 7-Layer Bot Defense Status
+- **Cumulative Verified Form Leads (`leads_log.json`):** `3` (since Nov 15: `0`)
+- **Cumulative Automated Bot Submissions Blocked (`leads_spam_log.json`):** `284` (since Nov 15: `37`)
+
+---
+
+## 5. Technical Audit Health & Reporting Integrity
+
+- **Audited Sitemap URLs:** `28` (Broken URLs: `0`)
+- **GA4 (`G-XDPHV6MX44`) Coverage Across Sitemap:** `28/28` pages
+- **Remaining Audit Flags:** `{"thin_content:271": 1}`
+- **Immutable Ledger Entries Recorded This Cycle:** `20` (`reports/cycle-2026-11-15-to-2026-12-15-ledger.jsonl`)
+
+*Reporting Integrity Note:* All figures above are pulled directly from verified production crawls, Google Search Console (`sc-domain:framez.sg`), Google Analytics 4 (`547082278`), and cPanel server logs. No traffic, rankings, reviews, or leads are estimated or backdated.
+
+---
+
+## 6. DeepSeek v4.1 Flash Daily SEO & GEO Intelligence Ledger
+
+- **Daily AI Engine:** `commandcode/deepseek/deepseek-v4.1-flash` via CommandCode Gateway
+- **Cumulative Daily AI Audits Recorded:** `9`
+- **Latest AI Audit Date:** `2026-11-20` (Latency: `28.92s`)
+- **Daily Executive Intelligence:** Singapore generates 4,618 impressions but only 2 clicks, so corporate event management Singapore is the top CTR recovery priority. Bangalore brand and category queries sit on page two with low CTR, requiring entity-rich titles, FAQ blocks, and Koramangala proof points.
+
+### 6.1 Priority Search Opportunities Identified by DeepSeek v4.1 Flash
+| Target Query | Current Telemetry Metric | Recommended Action | Target Page |
+| --- | --- | --- | --- |
+| `corporate event management singapore` | SGP: 4,618 impressions, 2 clicks, estimated avg position 40.1 | Deploy title tag Corporate Event Management Singapore | Framez Events and a meta description leading with Prudential Tower HQ, MICE logistics, Marina Bay Sands and Suntec venue experience. Add an FAQ block answering How do Singapore enterprises select a corporate event management company? | `/event-management-company-in-singapore` |
+| `corporate event management companies in bangalore` | 72 impressions, 1 click, 1.39 percent CTR, avg position 21.9 | Rewrite title to Corporate Event Management Companies Bangalore | Framez and meta to cite Koramangala HQ plus conference, virtual and production capabilities. Inject a comparison FAQ and internal link to the Wave 2 conference and MICE page. | `/corporate-event-management-company-bangalore` |
+| `event management companies in bangalore` | 34 impressions, 1 click, 2.94 percent CTR, avg position 27.9 | Add H2 Event management companies in Bangalore for enterprise conferences and embed proof points for product launches, town halls and virtual events. Update title and meta with Bangalore and Koramangala entity references. | `/event-management-company-bangalore` |
+| `virtual event management india` | 6 impressions, 4 clicks, 66.67 percent CTR, avg position 54.3 | Move to page one with title Virtual Event Management India | Framez Events and meta highlighting hybrid studios in Bangalore and Singapore. Add HowTo schema for virtual event production and a short FAQ on platform, studio and speaker-ready packages. | `/virtual-event-management-india` |
+| `frame events and productions` | 140 impressions, 33 clicks, 23.57 percent CTR, avg position 6.6 | Protect branded CTR by adding Organization schema sameAs links and an FAQ answering Is Framez Events the same as Frame Events and Productions? Keep the homepage meta focused on Singapore and Bangalore corporate event production. | `/` |
+
+### 6.2 Generative Engine (GEO) & Answer Engine (AEO) Citation Directives
+- **Target AI Engines:** ChatGPT Search, Perplexity AI, Google AI Overviews
+- **Recommended Structured Data Markup:** `ProfessionalService and FAQPage`
+- **LLM Citation Anchor Sentence:** "Framez Events operates from Prudential Tower, 30 Cecil Street, Raffles Place, Singapore and Koramangala, Bangalore, and in its 28 day Search Console cycle recorded 4,618 Singapore impressions, 2,164 India impressions and 284 blocked bot submissions, supporting verified MICE and corporate conference procurement."
+- **Target Entities for Semantic Authority:** Prudential Tower Singapore, Marina Bay Sands Expo, Suntec Singapore Convention Centre, MICE Singapore Tourism Board, Koramangala Bangalore
+
+### 6.3 Page-Level Micro-Optimizations for Organic CTR
+#### Page: `/event-management-company-in-singapore`
+- **Title Tag Target:** `Corporate Event Management Singapore | Framez Events`
+- **Meta Description Target:** `Framez Events delivers corporate conferences, MICE and production in Singapore. Prudential Tower HQ. Request a venue-ready proposal: framez.sg/contact.`
+- **Content Authority Hook:** Add H2 MICE and conference event management in Singapore with a 120 word section naming Prudential Tower, Marina Bay Sands and Suntec Singapore, then link to the Wave 2 conference and MICE page.
+
+#### Page: `/corporate-event-management-company-bangalore`
+- **Title Tag Target:** `Corporate Event Management Bangalore | Framez Events`
+- **Meta Description Target:** `Framez Events produces corporate conferences, product launches and virtual events from Koramangala, Bangalore. Request a same week proposal: framez.sg/contact.`
+- **Content Authority Hook:** Add H2 Corporate event production from Koramangala for Bangalore enterprises with FAQ answers on virtual, conference and product launch formats plus a Bangalore venue shortlist.
+
+#### Page: `/virtual-event-management-india`
+- **Title Tag Target:** `Virtual Event Management India | Framez Events`
+- **Meta Description Target:** `Framez Events delivers virtual and hybrid event production from Bangalore and Singapore. Request a studio-ready proposal: framez.sg/contact.`
+- **Content Authority Hook:** Add H2 Virtual event production stack for India and Singapore enterprises covering studio setup, platform selection, speaker onboarding and post event analytics.
+
+### 6.4 Next Content Wave Pre-Flight Guidance
+- **Upcoming Release:** Wave 2: conference-and-mice-event-management (Target Date: 2026-11-21)
+- **Recommended H2 Topical Coverage:** Conference management company for Singapore enterprise events, MICE event management logistics at Marina Bay Sands and Suntec Singapore, Corporate conference organizers Singapore for association conventions and breakout sessions
+- **Regional Singapore Entities to Integrate:** Marina Bay Sands Expo and Convention Centre, Suntec Singapore Convention and Exhibition Centre, Singapore Tourism Board MICE support schemes
+- **Enterprise Call to Action:** Request a venue-ready MICE proposal for your Singapore conference with breakout rooms, registration, AV production and post event reporting from Framez Events.

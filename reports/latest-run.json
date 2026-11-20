@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-11-20T15:27:55.992046+00:00",
+  "waves_deployed_this_run": [],
+  "daily_action": {
+    "event": "daily_micro_action_executed",
+    "date_sgt": "2026-11-20",
+    "action_id": "clientele_thin_content_faq_enrichment",
+    "title": "Clientele Portfolio Enrichment & FAQ Schema Optimization",
+    "kind": "on_page_content_and_schema",
+    "target_file": "clientele.php",
+    "target_url": "https://framez.sg/clientele",
+    "status": "ok",
+    "message": "Already enriched",
+    "timestamp": "2026-11-20T15:26:12.808167+00:00"
+  },
+  "audit": {
+    "urls": 28,
+    "issues": 1,
+    "broken": 0,
+    "changed": 0,
+    "issue_counts": {
+      "thin_content": 1
+    }
+  },
+  "sitemap": {
+    "urls": 28,
+    "added": [],
+    "removed": [],
+    "uploaded": false
+  },
+  "indexnow": {
+    "submitted": 1,
+    "status": 200,
+    "ok": true
+  },
+  "gsc": "ok",
+  "ga4": "ok",
+  "deepseek": "ok",
+  "deepseek_latency": 28.92,
+  "deepseek_summary": "Singapore generates 4,618 impressions but only 2 clicks, so corporate event management Singapore is the top CTR recovery priority. Bangalore brand and category queries sit on page two with low CTR, requiring entity-rich titles, FAQ blocks, and Koramangala proof points.",
+  "leads": {
+    "verified_total": 3,
+    "spam_blocked_total": 284
+  }
+}

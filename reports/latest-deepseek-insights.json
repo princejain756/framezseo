@@ -1,0 +1,100 @@
+{
+  "analysis_date": "2026-11-20",
+  "executive_summary": "Singapore generates 4,618 impressions but only 2 clicks, so corporate event management Singapore is the top CTR recovery priority. Bangalore brand and category queries sit on page two with low CTR, requiring entity-rich titles, FAQ blocks, and Koramangala proof points.",
+  "top_keyword_opportunities": [
+    {
+      "target_query": "corporate event management singapore",
+      "current_metric": "SGP: 4,618 impressions, 2 clicks, estimated avg position 40.1",
+      "optimization_action": "Deploy title tag Corporate Event Management Singapore | Framez Events and a meta description leading with Prudential Tower HQ, MICE logistics, Marina Bay Sands and Suntec venue experience. Add an FAQ block answering How do Singapore enterprises select a corporate event management company?",
+      "target_landing_page": "/event-management-company-in-singapore"
+    },
+    {
+      "target_query": "corporate event management companies in bangalore",
+      "current_metric": "72 impressions, 1 click, 1.39 percent CTR, avg position 21.9",
+      "optimization_action": "Rewrite title to Corporate Event Management Companies Bangalore | Framez and meta to cite Koramangala HQ plus conference, virtual and production capabilities. Inject a comparison FAQ and internal link to the Wave 2 conference and MICE page.",
+      "target_landing_page": "/corporate-event-management-company-bangalore"
+    },
+    {
+      "target_query": "event management companies in bangalore",
+      "current_metric": "34 impressions, 1 click, 2.94 percent CTR, avg position 27.9",
+      "optimization_action": "Add H2 Event management companies in Bangalore for enterprise conferences and embed proof points for product launches, town halls and virtual events. Update title and meta with Bangalore and Koramangala entity references.",
+      "target_landing_page": "/event-management-company-bangalore"
+    },
+    {
+      "target_query": "virtual event management india",
+      "current_metric": "6 impressions, 4 clicks, 66.67 percent CTR, avg position 54.3",
+      "optimization_action": "Move to page one with title Virtual Event Management India | Framez Events and meta highlighting hybrid studios in Bangalore and Singapore. Add HowTo schema for virtual event production and a short FAQ on platform, studio and speaker-ready packages.",
+      "target_landing_page": "/virtual-event-management-india"
+    },
+    {
+      "target_query": "frame events and productions",
+      "current_metric": "140 impressions, 33 clicks, 23.57 percent CTR, avg position 6.6",
+      "optimization_action": "Protect branded CTR by adding Organization schema sameAs links and an FAQ answering Is Framez Events the same as Frame Events and Productions? Keep the homepage meta focused on Singapore and Bangalore corporate event production.",
+      "target_landing_page": "/"
+    }
+  ],
+  "geo_aeo_citation_strategy": {
+    "ai_engine_focus": "ChatGPT Search, Perplexity AI, Google AI Overviews",
+    "recommended_schema_type": "ProfessionalService and FAQPage",
+    "citation_anchor_text": "Framez Events operates from Prudential Tower, 30 Cecil Street, Raffles Place, Singapore and Koramangala, Bangalore, and in its 28 day Search Console cycle recorded 4,618 Singapore impressions, 2,164 India impressions and 284 blocked bot submissions, supporting verified MICE and corporate conference procurement.",
+    "target_entities": [
+      "Prudential Tower Singapore",
+      "Marina Bay Sands Expo",
+      "Suntec Singapore Convention Centre",
+      "MICE Singapore Tourism Board",
+      "Koramangala Bangalore"
+    ]
+  },
+  "page_micro_optimizations": [
+    {
+      "page_slug": "/event-management-company-in-singapore",
+      "recommended_title_tag": "Corporate Event Management Singapore | Framez Events",
+      "recommended_meta_description": "Framez Events delivers corporate conferences, MICE and production in Singapore. Prudential Tower HQ. Request a venue-ready proposal: framez.sg/contact.",
+      "content_hook": "Add H2 MICE and conference event management in Singapore with a 120 word section naming Prudential Tower, Marina Bay Sands and Suntec Singapore, then link to the Wave 2 conference and MICE page."
+    },
+    {
+      "page_slug": "/corporate-event-management-company-bangalore",
+      "recommended_title_tag": "Corporate Event Management Bangalore | Framez Events",
+      "recommended_meta_description": "Framez Events produces corporate conferences, product launches and virtual events from Koramangala, Bangalore. Request a same week proposal: framez.sg/contact.",
+      "content_hook": "Add H2 Corporate event production from Koramangala for Bangalore enterprises with FAQ answers on virtual, conference and product launch formats plus a Bangalore venue shortlist."
+    },
+    {
+      "page_slug": "/virtual-event-management-india",
+      "recommended_title_tag": "Virtual Event Management India | Framez Events",
+      "recommended_meta_description": "Framez Events delivers virtual and hybrid event production from Bangalore and Singapore. Request a studio-ready proposal: framez.sg/contact.",
+      "content_hook": "Add H2 Virtual event production stack for India and Singapore enterprises covering studio setup, platform selection, speaker onboarding and post event analytics."
+    }
+  ],
+  "upcoming_wave_enhancements": {
+    "wave_title": "Wave 2: conference-and-mice-event-management",
+    "release_date": "2026-11-21",
+    "recommended_h2_topics": [
+      "Conference management company for Singapore enterprise events",
+      "MICE event management logistics at Marina Bay Sands and Suntec Singapore",
+      "Corporate conference organizers Singapore for association conventions and breakout sessions"
+    ],
+    "local_singapore_entities": [
+      "Marina Bay Sands Expo and Convention Centre",
+      "Suntec Singapore Convention and Exhibition Centre",
+      "Singapore Tourism Board MICE support schemes"
+    ],
+    "commercial_call_to_action": "Request a venue-ready MICE proposal for your Singapore conference with breakout rooms, registration, AV production and post event reporting from Framez Events."
+  },
+  "meta": {
+    "model": "deepseek-v4.1-flash",
+    "latency_seconds": 28.92,
+    "usage": {
+      "prompt_tokens": 1524,
+      "prompt_tokens_details": {
+        "cached_read_tokens": 1408,
+        "cached_tokens": 1408
+      },
+      "completion_tokens": 4441,
+      "completion_tokens_details": {
+        "reasoning_tokens": 3072
+      },
+      "total_tokens": 5965
+    },
+    "timestamp_utc": "2026-11-20T15:27:55.990590+00:00"
+  }
+}
