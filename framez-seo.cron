@@ -1,0 +1,10 @@
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+MAILTO=""
+
+# Framez.sg Automated SEO · GEO · AEO & Cycle Execution Engine (15 Nov - 15 Dec 2026+)
+# 1) 04:15 UTC (12:15 SGT / 09:45 IST): Deploy any due scheduled cycle wave + sync sitemap + IndexNow + refresh report
+15 4 * * * root /usr/bin/flock -n /var/lock/framez-seo.lock /usr/bin/python3 /root/websites/seogeoopt/seo-jobs/framez/framez_seo_cron.py all >> /root/websites/seogeoopt/seo-jobs/framez/logs/cron.log 2>&1
+
+# 2) 19:30 UTC (03:30 SGT / 01:00 IST): Full nightly audit, sitemap reconciliation, IndexNow, GSC, GA4, leads & report sync
+30 19 * * * root /usr/bin/flock -n /var/lock/framez-seo.lock /usr/bin/python3 /root/websites/seogeoopt/seo-jobs/framez/framez_seo_cron.py all >> /root/websites/seogeoopt/seo-jobs/framez/logs/cron.log 2>&1
