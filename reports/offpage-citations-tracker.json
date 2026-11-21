@@ -1,0 +1,110 @@
+{
+  "generated_at": "2026-11-21T14:07:00Z",
+  "canonical_nap": {
+    "brand_display_name": "Framez Events & Productions",
+    "legal_name_india": "Frame Events and Productions Private Limited",
+    "legal_name_singapore": "Frame Events & Productions Pte. Ltd.",
+    "singapore_address": "30 Cecil Street, #19-08 Prudential Tower, Singapore 049712",
+    "bengaluru_address": "B/2, Ganga, 3rd Floor, 5th Block, KHB Colony, Koramangala, Bengaluru, Karnataka 560095",
+    "phone": "+91 94480 66560",
+    "email": "info@framez.sg",
+    "website": "https://framez.sg",
+    "instagram": "https://www.instagram.com/weareframez/",
+    "linkedin": "https://www.linkedin.com/company/frame-events-productions",
+    "facebook": "https://www.facebook.com/frameeventsandproductions"
+  },
+  "platforms": [
+    {
+      "platform": "Bing Places for Business",
+      "url": "https://www.bing.com/forbusiness/singleEntity?bizid=40ed8b91-4af4-4656-a4dd-015265167c59",
+      "status": "updated_pending_publish",
+      "live_profile_url": "https://www.bing.com/forbusiness/singleEntity?bizid=40ed8b91-4af4-4656-a4dd-015265167c59",
+      "details": "Verified via Google import under 'framez events'; added email info@framez.sg, added categories Marketing agency and Event technology service, updated Instagram from old frame_events_and_productions to https://www.instagram.com/weareframez/, and saved (ETA 7-12 days). Name/address/serviceAreas locked by Google Sync."
+    },
+    {
+      "platform": "Google Business Profile",
+      "url": "https://business.google.com/",
+      "status": "live_needs_manager_invite",
+      "live_profile_url": "https://www.google.com/maps/place/Frame+Events+and+Productions/data=!4m2!3m1!1s0x0:0xffd8711b0ccfb41",
+      "location_id": "1064671895591739893",
+      "details": "Verified live on Google Search (4.7 rating, 16 reviews, Bengaluru). Stored server OAuth returns HTTP 403 and /u/0/ through /u/6/ hold 0 Framez businesses; client owner account needs to invite princejain756@gmail.com as Manager so social handle, services, Week 1 post, and Q&As can be updated."
+    },
+    {
+      "platform": "Clutch.co",
+      "url": "https://clutch.co/claim-profile/1781993",
+      "status": "existing_unclaimed_needs_client_login",
+      "live_profile_url": "https://clutch.co/claim-profile/1781993",
+      "details": "Discovered pre-existing profile ID 1781993 (Frame Events and Productions) linked to framez.sg. Claim form returned 'Something went wrong' under princejain756@gmail.com Google SSO; needs login/claim directly from info@framez.sg or LinkedIn company account plus minimum budget tier and client references."
+    },
+    {
+      "platform": "GoodFirms",
+      "url": "https://myaccount.goodfirms.co/users/register",
+      "status": "blocked_captcha_and_client_email",
+      "live_profile_url": null,
+      "details": "Form requires Cloudflare Turnstile verification plus business email (@framez.sg). Browser autocomplete showed an existing saved account hint for shreyas.ghatte@framez.sg on myaccount.goodfirms.co/users/login; client should check existing login/password reset."
+    },
+    {
+      "platform": "Sortlist",
+      "url": "https://www.sortlist.com/claim/agency/confirm?name=Framez%20Events%20&%20Productions",
+      "status": "blocked_captcha",
+      "live_profile_url": null,
+      "details": "Navigated Step 1 lookup for Framez Events & Productions; Step 2 provider creation is gated by Cloudflare Turnstile and explicit company authority confirmation."
+    },
+    {
+      "platform": "Ensun",
+      "url": "https://app.ensun.io/register/claim",
+      "status": "blocked_captcha",
+      "live_profile_url": null,
+      "details": "Company claim/registration flow is gated by reCAPTCHA."
+    },
+    {
+      "platform": "Trustpilot Business",
+      "url": "https://business.trustpilot.com/",
+      "status": "blocked_captcha_and_domain_email",
+      "live_profile_url": null,
+      "details": "Business claim/signup requires CAPTCHA verification and domain email authentication (info@framez.sg)."
+    },
+    {
+      "platform": "Bark SG",
+      "url": "https://www.bark.com/en/sg/sellers/create/",
+      "status": "blocked_captcha",
+      "live_profile_url": null,
+      "details": "Seller onboarding page loads CAPTCHA challenge before profile creation."
+    },
+    {
+      "platform": "DesignRush",
+      "url": "https://www.designrush.com/submit/agency",
+      "status": "needs_client_account_creation",
+      "live_profile_url": null,
+      "details": "No CAPTCHA observed; corrected submission URL is /submit/agency (old /agency/submit returns 404). Requires registering a managed account with corporate email (info@framez.sg), password, and phone verification."
+    },
+    {
+      "platform": "Justdial (Bengaluru)",
+      "url": "https://www.justdial.com/Bangalore/Framez-Koramangala/080PXX80-XX80-220629214433-C7F6_BZDET",
+      "status": "existing_needs_phone_otp",
+      "live_profile_url": "https://www.justdial.com/Bangalore/Framez-Koramangala/080PXX80-XX80-220629214433-C7F6_BZDET",
+      "details": "Existing live Koramangala listing; claiming and updating NAP/categories requires OTP on +91 94480 66560."
+    },
+    {
+      "platform": "Sulekha",
+      "url": "https://www.sulekha.com/business-owners/",
+      "status": "needs_phone_otp",
+      "live_profile_url": null,
+      "details": "Requires mobile OTP verification (+91 94480 66560) to create/claim Bengaluru Koramangala business listing."
+    },
+    {
+      "platform": "SACEOS & GeBIZ Singapore",
+      "url": "https://www.saceos.org.sg",
+      "status": "requires_client_corporate_id",
+      "live_profile_url": null,
+      "details": "Requires verified Singapore ACRA UEN for Frame Events & Productions Pte. Ltd. and CorpPass administrator login."
+    },
+    {
+      "platform": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Special:NewItem",
+      "status": "deferred_for_notability",
+      "live_profile_url": null,
+      "details": "Deferred until at least 2 to 3 independent secondary sources (Clutch, SACEOS, corporate registry, trade press) are live so the QID passes Wikidata notability without deletion; Instagram P2003 locked to weareframez."
+    }
+  ]
+}

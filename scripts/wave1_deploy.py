@@ -81,7 +81,7 @@ DUAL_HQ_ORG_GRAPH = {
             "telephone": "+91-9448066560",
             "sameAs": [
                 "https://www.linkedin.com/company/frame-events-productions",
-                "https://www.instagram.com/framez.events",
+                "https://www.instagram.com/weareframez/",
                 "https://www.facebook.com/frameeventsandproductions",
             ],
             "address": [

@@ -21,7 +21,7 @@ Every external directory, social bio, association listing, and structured data s
 | **Official Contact Email** | `info@framez.sg` | Never submit `framez.events@gmail.com` on public profiles; domain email proves ownership on Clutch, Trustpilot, DesignRush |
 | **Canonical Website** | `https://framez.sg` | Always HTTPS, non-`www`, no trailing index file |
 | **Verified Certifications** | `ISO 9001:2015` (Quality Management), `ISO 27001:2013` (Information Security) | Link proof PDFs when allowed: `/FRAMEZ ISO 9001 Certificate.pdf` and `/FRAMEZ ISO 27001 Certificate.pdf` |
-| **Verified Social Handles** | LinkedIn: `https://www.linkedin.com/company/frame-events-productions`<br>Facebook: `https://www.facebook.com/frameeventsandproductions`<br>Instagram: `https://www.instagram.com/framez.events` | **Pre-launch action:** Live `framez.sg` footer currently links `@weareframez` while JSON-LD `sameAs` lists `@framez.events`. Confirm the single active Instagram handle and unify before directory submissions |
+| **Verified Social Handles** | LinkedIn: `https://www.linkedin.com/company/frame-events-productions`<br>Facebook: `https://www.facebook.com/frameeventsandproductions`<br>Instagram: `https://www.instagram.com/weareframez/` | Confirmed canonical Instagram handle (`@weareframez`, unified across site footer, `llms.txt`, and JSON-LD `sameAs` on `2026-11-21`) |
 | **Approved Public Client Logos (`/clientele`)** | `Abbott`, `AMC`, `AMD`, `Avtar`, `CRF TCT`, `TVS`, `Dr. Reddy's`, `Eaton`, `FICCI`, `Hitachi Vantara`, `Honeywell`, `HPE`, `HSBC`, `KPMG`, `L&T`, `Lowe's`, `Lupin`, `Natural Remedies`, `NetApp`, `NETGEAR`, `Palo Alto Networks`, `Red Hat`, `Salesforce`, `SATS`, `Schneider Electric`, `Siemens Healthineers`, `Unilever`, `Wipro` | List only approved enterprise names already published on `framez.sg/clientele`. Never publish client contract budgets or client revenue figures |
 
 ### 1.2 Open Client Inputs Required Before Submitting Verification Forms
@@ -111,7 +111,7 @@ Do NOT guess or invent fields required by strict B2B directories. Obtain written
   - **`P856` (official website):** `https://framez.sg`
   - **`P4264` (LinkedIn company ID):** `frame-events-productions`
   - **`P2013` (Facebook ID):** `frameeventsandproductions`
-  - **`P2003` (Instagram username):** `[UNIFIED HANDLE: framez.events or weareframez]`
+  - **`P2003` (Instagram username):** `weareframez`
   - **`P1329` (telephone number):** `+91 94480 66560`
   - **`P968` (email address):** `mailto:info@framez.sg`
   - **Post-Creation Step:** Inject the minted `https://www.wikidata.org/wiki/Q<ID>` URL directly into `framez.sg` JSON-LD `sameAs`.

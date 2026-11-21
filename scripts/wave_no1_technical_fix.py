@@ -133,7 +133,7 @@ CANONICAL_ORG_NODE = {
     "description": "B2B corporate event management, MICE conference production, product launches, and brand activation agency operating from Bengaluru and Singapore.",
     "sameAs": [
         "https://www.linkedin.com/company/frame-events-productions",
-        "https://www.instagram.com/framez.events",
+        "https://www.instagram.com/weareframez/",
         "https://www.facebook.com/frameeventsandproductions",
     ],
     "address": [
@@ -1029,7 +1029,7 @@ def build_llms_full_txt():
         "- **India Headquarters**: B/2, GANGA, 3rd Floor, 5th Block, KHB Colony, Koramangala, Bengaluru, Karnataka 560095, India (GeoCoordinates: 12.9352, 77.6245)",
         "- **Email**: info@framez.sg",
         "- **Phone**: +91-9448066560",
-        "- **Social**: LinkedIn (frame-events-productions), Instagram (framez.events), Facebook (frameeventsandproductions)",
+        "- **Social**: LinkedIn (frame-events-productions), Instagram (weareframez), Facebook (frameeventsandproductions)",
         "",
         "## Complete 29-URL Sitemap Inventory",
         "",
