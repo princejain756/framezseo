@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at": "2026-11-21T04:16:13.008400+00:00",
+  "generated_at": "2026-11-21T19:31:45.167771+00:00",
   "property_id": "547082278",
   "totals_28d": {
     "metricHeaders": [
@@ -29,16 +29,16 @@
       {
         "metricValues": [
           {
-            "value": "382"
+            "value": "385"
           },
           {
-            "value": "368"
+            "value": "371"
           },
           {
-            "value": "446"
+            "value": "450"
           },
           {
-            "value": "550"
+            "value": "553"
           },
           {
             "value": "0"
@@ -82,13 +82,13 @@
         ],
         "metricValues": [
           {
-            "value": "284"
+            "value": "288"
           },
           {
-            "value": "309"
+            "value": "314"
           },
           {
-            "value": "335"
+            "value": "339"
           }
         ]
       },
@@ -100,13 +100,13 @@
         ],
         "metricValues": [
           {
-            "value": "72"
+            "value": "70"
           },
           {
-            "value": "107"
+            "value": "105"
           },
           {
-            "value": "179"
+            "value": "177"
           }
         ]
       },
@@ -118,13 +118,13 @@
         ],
         "metricValues": [
           {
-            "value": "21"
-          },
-          {
             "value": "22"
           },
           {
-            "value": "27"
+            "value": "23"
+          },
+          {
+            "value": "28"
           }
         ]
       },
@@ -154,10 +154,10 @@
         ],
         "metricValues": [
           {
-            "value": "4"
+            "value": "1"
           },
           {
-            "value": "4"
+            "value": "1"
           },
           {
             "value": "0"
@@ -193,7 +193,7 @@
         ],
         "metricValues": [
           {
-            "value": "550"
+            "value": "553"
           }
         ]
       },
@@ -205,7 +205,7 @@
         ],
         "metricValues": [
           {
-            "value": "446"
+            "value": "450"
           }
         ]
       },
@@ -217,7 +217,7 @@
         ],
         "metricValues": [
           {
-            "value": "368"
+            "value": "371"
           }
         ]
       },
@@ -241,7 +241,7 @@
         ],
         "metricValues": [
           {
-            "value": "223"
+            "value": "220"
           }
         ]
       },
@@ -253,7 +253,7 @@
         ],
         "metricValues": [
           {
-            "value": "12"
+            "value": "11"
           }
         ]
       },
@@ -277,7 +277,7 @@
         ],
         "metricValues": [
           {
-            "value": "2"
+            "value": "1"
           }
         ]
       }

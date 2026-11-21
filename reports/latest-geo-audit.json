@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-11-21T13:32:14.857134+00:00",
+  "generated_at": "2026-11-21T19:32:24.839018+00:00",
   "site": "https://framez.sg",
-  "sitemap_urls": 29,
-  "audited_urls": 29,
-  "readiness_score": 76.1,
+  "sitemap_urls": 30,
+  "audited_urls": 30,
+  "readiness_score": 76.3,
   "readiness_breakdown": {
-    "schema_completeness_max25": 24.0,
+    "schema_completeness_max25": 24.1,
     "llms_parity_proof_max20": 20.0,
     "mixed_content_hygiene_max15": 15.0,
-    "script_jquery_hygiene_max15": 12.7,
+    "script_jquery_hygiene_max15": 12.8,
     "image_dims_lazy_max15": 4.4,
     "page1_ctr_hygiene_max10": 0.0
   },
   "schema_summary": {
     "counts": {
-      "Organization": 29,
-      "ProfessionalService": 2,
-      "FAQPage": 22,
-      "Service": 9,
+      "Organization": 30,
+      "ProfessionalService": 3,
+      "FAQPage": 23,
+      "Service": 10,
       "Article": 14,
-      "SpeakableSpecification": 8,
-      "BreadcrumbList": 28
+      "SpeakableSpecification": 9,
+      "BreadcrumbList": 29
     },
-    "checks_passed": 74,
-    "checks_total": 77,
+    "checks_passed": 78,
+    "checks_total": 81,
     "missing_schema_pages": [
       {
         "url": "https://framez.sg/corporate-event-management-company",
@@ -49,9 +49,9 @@
     ]
   },
   "llms_parity": {
-    "sitemap_url_count": 29,
-    "llms_txt_urls": 29,
-    "llms_full_txt_urls": 29,
+    "sitemap_url_count": 30,
+    "llms_txt_urls": 30,
+    "llms_full_txt_urls": 30,
     "missing_in_llms_txt": [],
     "missing_in_llms_full_txt": [],
     "extra_in_llms_txt": [],
@@ -206,9 +206,9 @@
         ]
       }
     ],
-    "images_total": 276,
-    "images_missing_dimensions": 275,
-    "images_missing_lazy": 114,
+    "images_total": 282,
+    "images_missing_dimensions": 280,
+    "images_missing_lazy": 118,
     "pages_missing_image_dimensions": [
       {
         "url": "https://framez.sg/",
@@ -262,8 +262,8 @@
       },
       {
         "url": "https://framez.sg/blog",
-        "missing": 16,
-        "total": 16
+        "missing": 17,
+        "total": 17
       },
       {
         "url": "https://framez.sg/get-in-touch",
@@ -353,6 +353,11 @@
       {
         "url": "https://framez.sg/conference-and-mice-event-management",
         "missing": 5,
+        "total": 5
+      },
+      {
+        "url": "https://framez.sg/dinner-and-dance-event-management-singapore",
+        "missing": 4,
         "total": 5
       }
     ],
@@ -410,7 +415,7 @@
       {
         "url": "https://framez.sg/blog",
         "missing": 4,
-        "total": 16
+        "total": 17
       },
       {
         "url": "https://framez.sg/get-in-touch",
@@ -499,6 +504,11 @@
       },
       {
         "url": "https://framez.sg/conference-and-mice-event-management",
+        "missing": 4,
+        "total": 5
+      },
+      {
+        "url": "https://framez.sg/dinner-and-dance-event-management-singapore",
         "missing": 4,
         "total": 5
       }
@@ -2296,8 +2306,8 @@
       "blocking_scripts": [
         "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       ],
-      "images_total": 16,
-      "images_missing_dimensions": 16,
+      "images_total": 17,
+      "images_missing_dimensions": 17,
       "images_missing_lazy": 4,
       "page1_zero_ctr": null
     },
@@ -2952,6 +2962,38 @@
       "blocking_scripts": [],
       "images_total": 5,
       "images_missing_dimensions": 5,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": null
+    },
+    {
+      "url": "https://framez.sg/dinner-and-dance-event-management-singapore",
+      "status": 200,
+      "role": "service",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Organization",
+        "ProfessionalService",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": true,
+      "has_faq_page": true,
+      "has_service": true,
+      "has_article": false,
+      "has_speakable": true,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [],
+      "duplicate_jquery": false,
+      "blocking_script_count": 0,
+      "blocking_scripts": [],
+      "images_total": 5,
+      "images_missing_dimensions": 4,
       "images_missing_lazy": 4,
       "page1_zero_ctr": null
     }
