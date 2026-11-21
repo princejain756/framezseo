@@ -1,6 +1,6 @@
 # Framez Events & Productions (`framez.sg`) - Master Project & Monthly Reporting Memory
 
-Last verified: 2026-11-18
+Last verified: 2026-11-21
 Billing & Reporting Cadence: **15th of each month to 15th of the next month** (retainer paid monthly; client report presented every cycle close around the 14th/15th).
 
 ## 1. Client Identity & Business Scope
@@ -66,12 +66,26 @@ Billing & Reporting Cadence: **15th of each month to 15th of the next month** (r
    * Added `301` redirects (`/get-to-know-us` -> `/about-us`, `/our-team` -> `/about-us`, `/social-event` -> `/our-events-and-services`), universal `.php` -> extensionless `301`, and `X-Robots-Tag: noindex, noarchive` on legacy microsite directories & cPanel subdomains (`nps2025.framez.sg`, `qr-registration.framez.sg`).
    * Reconnected Google OAuth on `portal.adelev8.com` (`gsc: ok`, `ga4: ok`), re-submitted `sitemap.xml` (`28` URLs) & `image-sitemap.xml` (`7` images) in GSC, pushed `28` URLs to IndexNow (`HTTP 200`), and requested GSC indexing for `/event-management-company-in-singapore` and `/event-marketing-services`.
    * **OpenDesign DeepSeek v4.1 Flash Normal Engine & Daily Automation Active:** Integrated `daily_actions.py` and `deepseek_daily_seo.py` powered by `opendesign/deepseek-v4.1-flash` (strictly normal edition, never eco; Base URL: `https://amr-link.open-design.ai/v1/chat/completions`, Key: `/root/.commandcode/opendesign-api-key.secret`). Executes a verified production deliverable on `framez.sg` every single day of the 30-day billing cycle (15 Nov to 15 Dec 2026): major content waves on wave dates (Nov 21, 25, 29, Dec 3, 7) and verified on-page micro-optimizations on all other dates (e.g. 20 Nov resolved thin content and added `FAQPage` schema on `/clientele.php`). Every change is backed up with SHA-256, verified HTTP 200, pushed to IndexNow, audited by OpenDesign DeepSeek v4.1 Flash, recorded in `reports/daily-action-log.jsonl` and the cycle ledger, and reflected in Section 2 of `FRAMEZ_NOVEMBER_DECEMBER_2026_SEO_AEO_GEO_REPORT.md`. Both `framez_seo_cron.py all` and standalone commands (`python3 framez_seo_cron.py daily_action`, `python3 framez_seo_cron.py deepseek`) are live and verified.
-3. **21 Nov (Wave 2 - Auto-Cron):** `/conference-and-mice-event-management` targeting `conference management company` (`#26.1`) & `conference event planning companies` (`#39.8`).
-4. **25 Nov (Wave 3 - Auto-Cron):** `/exhibition-and-trade-show-management` targeting `exhibition management company` (`#30.4`) & custom trade-show booth fabrication in SG & BLR.
-5. **29 Nov (Wave 4 - Auto-Cron):** `/year-end-corporate-town-hall-and-kickoff-guide` targeting Q4 year-end town halls & Q1 Sales Kickoffs (SKOs).
-6. **03 Dec (Wave 5 - Auto-Cron):** `/bangalore-corporate-event-venue-and-logistics-checklist` pushing Bangalore commercial keywords from Page 2 (`#19.4`) to Page 1.
-7. **07 Dec (Wave 6 - Auto-Cron):** `/sustainable-corporate-events-esg-guide-singapore-india` targeting Singapore Green MICE & MNC ESG RFP criteria.
-8. **14-15 Dec (Cycle 4 Closeout & Presentation):** Present compiled report from `/root/websites/seogeoopt/DocMaker/FRAMEZ_NOVEMBER_DECEMBER_2026_SEO_AEO_GEO_REPORT.md` (and render PDF via Puppeteer in `DocMaker/`), freeze Dec 15 baseline snapshot, and queue Cycle 5 (`15 Dec 2026 - 15 Jan 2027`) waves.
+3. **21 Nov (Wave 2 + #1 Technical, GEO & Engine Overhaul - LIVE):**
+   * **Wave 2 Released (`wave2_2026_11_21`):** Deployed `/conference-and-mice-event-management` (`29` sitemap URLs, `0` broken, IndexNow `HTTP 200`).
+   * **#1 Technical & CTR Overhaul (`scripts/wave_no1_technical_fix.py`, 20 live files SHA-256 verified, backed up to `backups/no1-overhaul-2026-11-21/`):**
+     * Stripped `http://maps.google.com/maps/api/js`, `gmap3.min.js`, `style-switcher.js`, `jquery.countdown.js`, and duplicate `jquery-3.3.1.min.js` across PHP pages (preserving `jquery-3.5.1.min.js`, Turnstile `0x4AAAAAAExBdPWHAqYTWVlc`, forms, and single `G-XDPHV6MX44`).
+     * Cleaned `<meta charset>` inside `header.php`; upgraded `Organization` JSON-LD with canonical `Frame Events and Productions Private Limited`, 4 `alternateName` aliases, dual SG (`1.2816, 103.8505`) + BLR (`12.9352, 77.6245`) `GeoCoordinates`, `knowsAbout`, and ISO 9001:2015 / ISO 27001:2013 `hasCredential`.
+     * Fixed `index.html` (`54`-char title `"Frame Events & Productions (Framez) | Corporate Events"`, removed broken non-reciprocal `hreflang`, upgraded schema and image `decoding="async"`), de-cannibalized `/corporate-event-management-company`, upgraded `/event-management-company-in-bangalore` H1 + Koramangala `GeoCoordinates`, added `#aeo-citation` + 4-venue SG matrix on `/event-management-company-in-singapore`, expanded `/book-a-demo` from `271` to `1,114` words with RFP checklist + `FAQPage` (`0` thin-content issues sitewide), refreshed Page-1 zero-CTR snippets on 4 guides/`/event-planner`, synced `llms.txt` & `llms-full.txt` to `29/29` sitemap URLs, and added `mod_expires.c` static caching in `.htaccess`.
+   * **Engine, Telemetry & Automation Upgrades:**
+     * `framez_seo_cron.py`: Upgraded `gsc_snapshot()` to pull `500` top queries (`462` returned on Nov 21 run), `100` pages, `185` Singapore queries, `200` India queries, and `250` query-page pairs; added `geo_aeo_audit()` (`reports/latest-geo-audit.json`, `76.1/100` readiness score, uncovering `70` Page-1 zero-CTR query alerts and `51` page alerts) and `sync_llms_files()`.
+     * `deepseek_daily_seo.py`: Updated `deepseek-v4.1-flash` (OpenDesign normal) digest to consume `singapore_queries`, `india_queries`, Page-1 zero-CTR alerts, and `latest-geo-audit.json`.
+     * `daily_actions.py` & `content_pages.py`: Implemented all `21` non-wave handlers in `HANDLERS` (zero `pending_handler` dates from Nov 22 to Dec 15), added `SpeakableSpecification` JSON-LD and `1200x675` image dimensions to `render_page()`, and staged 4 extra commercial/GEO waves (`wave2b_2026_11_22` SG Dinner & Dance, `wave3b_2026_11_26` Product Launch, `wave4b_2026_12_01` Annual Day & Awards Night, `wave5b_2026_12_05` NDA-safe Case Studies).
+     * Playbook & Off-Page Authority: Authored `docs/05-no1-seo-geo-aeo-master-playbook.md` and `docs/06-offpage-geo-citations-gbp-pack.md` covering SG/BLR competitor teardowns and submission-ready packs for 13 directories, 8-week GBP cadence, and review outreach (off-page directory signups and client review outreach still depend on client verification inputs and external submissions).
+4. **22 Nov (Wave 2B - Auto-Cron):** `/dinner-and-dance-event-management-singapore` + MICE cross-links on Singapore & services pages.
+5. **25 Nov (Wave 3 - Auto-Cron):** `/exhibition-and-trade-show-management` targeting `exhibition management company` (`#30.4`) & custom trade-show booth fabrication in SG & BLR.
+6. **26 Nov (Wave 3B - Auto-Cron):** `/product-launch-event-management` commercial pillar linking with Page-1 `#6.8` launch architecture guide & exhibition cross-links.
+7. **29 Nov (Wave 4 - Auto-Cron):** `/year-end-corporate-town-hall-and-kickoff-guide` targeting Q4 year-end town halls & Q1 Sales Kickoffs (SKOs).
+8. **01 Dec (Wave 4B - Auto-Cron):** `/corporate-annual-day-and-awards-night-management` targeting `annual day` (`#4.7`) & `awards night management` (`#23.0`).
+9. **03 Dec (Wave 5 - Auto-Cron):** `/bangalore-corporate-event-venue-and-logistics-checklist` pushing Bangalore commercial keywords from Page 2 (`#21.3`) to Page 1.
+10. **05 Dec (Wave 5B - Auto-Cron):** `/corporate-event-case-studies` publishing NDA-safe SG & BLR enterprise delivery dossiers.
+11. **07 Dec (Wave 6 - Auto-Cron):** `/sustainable-corporate-events-esg-guide-singapore-india` targeting Singapore Green MICE & MNC ESG RFP criteria.
+12. **14-15 Dec (Cycle 4 Closeout & Presentation):** Present compiled report from `/root/websites/seogeoopt/DocMaker/FRAMEZ_NOVEMBER_DECEMBER_2026_SEO_AEO_GEO_REPORT.md` (and render PDF via Puppeteer in `DocMaker/`), freeze Dec 15 baseline snapshot, and queue Cycle 5 (`15 Dec 2026 - 15 Jan 2027`) waves.
 
 ## 5. Monthly Report Compilation Checklist (Run Every 14th/15th)
 

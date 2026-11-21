@@ -15,12 +15,17 @@ GA4_ID = "G-XDPHV6MX44"
 DEFAULT_OG_IMAGE = "https://framez.sg/assets/img/cover/Framez%20Events%20And%20Productions%20(1).JPG"
 
 
+def _clean_dashes(text):
+    """Strip em/en dashes cleanly while keeping numeric ranges and punctuation natural."""
+    return text.replace(" \u2014 ", ", ").replace("\u2014", ": ").replace("\u2013", "-")
+
+
 def render_page(spec):
     """Render a complete, validated PHP template from a structured specification."""
     slug = spec["slug"]
     url = f"https://framez.sg/{slug}"
-    title = spec["title"]
-    desc = spec["description"]
+    title = _clean_dashes(spec["title"])
+    desc = _clean_dashes(spec["description"])
     assert len(title) <= 60, f"Title too long ({len(title)}): {title}"
     assert len(desc) <= 160, f"Description too long ({len(desc)}): {desc}"
 
@@ -39,6 +44,10 @@ def render_page(spec):
             "description": desc,
             "isPartOf": {"@id": "https://framez.sg/#website"},
             "about": {"@id": "https://framez.sg/#organization"},
+            "speakable": {
+                "@type": "SpeakableSpecification",
+                "cssSelector": ["h1", ".fzguide-answer"],
+            },
             "inLanguage": "en",
         },
         {
@@ -138,10 +147,12 @@ def render_page(spec):
             elif item["type"] == "h3":
                 blocks.append(f'      <h3>{html.escape(item["text"])}</h3>')
             elif item["type"] == "img":
+                w = int(item.get("width", 1200))
+                h = int(item.get("height", 675))
                 blocks.append(
                     f'      <figure style="margin:24px 0;">'
-                    f'<img loading="lazy" decoding="async" src="{item["src"]}" alt="{html.escape(item["alt"])}" '
-                    f'style="width:100%;border-radius:12px;display:block;" />'
+                    f'<img loading="lazy" decoding="async" width="{w}" height="{h}" src="{item["src"]}" alt="{html.escape(item["alt"])}" '
+                    f'style="width:100%;height:auto;border-radius:12px;display:block;" />'
                     f'</figure>'
                 )
         sections_html.append("\n".join(blocks))
@@ -180,7 +191,7 @@ def render_page(spec):
     esc_title = html.escape(title)
     esc_desc = html.escape(desc)
 
-    return f"""<!DOCTYPE html>
+    rendered = f"""<!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1, shrink-to-fit=no">
@@ -264,6 +275,9 @@ def render_page(spec):
 </body>
 </html>
 """
+    rendered = _clean_dashes(rendered)
+    assert "\u2014" not in rendered and "\u2013" not in rendered, f"Em/en dash detected in {slug}"
+    return rendered
 
 
 # ==============================================================================
@@ -290,7 +304,7 @@ WAVE1_PAGES = [
         "local_office": {
             "@type": "ProfessionalService",
             "@id": "https://framez.sg/event-management-company-in-singapore#singapore-office",
-            "name": "Framez Events & Productions — Singapore",
+            "name": "Framez Events & Productions, Singapore",
             "url": "https://framez.sg/event-management-company-in-singapore",
             "image": "https://framez.sg/assets/img/frameznewlogo.png",
             "email": "info@framez.sg",
@@ -306,7 +320,7 @@ WAVE1_PAGES = [
             "areaServed": {"@type": "Country", "name": "Singapore"},
         },
         "summary_html": (
-            "Framez plans, produces and manages B2B corporate events in Singapore — including regional APAC conferences, "
+            "Framez plans, produces and manages B2B corporate events in Singapore, including regional APAC conferences, "
             "leadership summits, enterprise product launches, Dinner &amp; Dance (D&amp;D) awards nights and experiential "
             "brand activations. Operating from Prudential Tower in Raffles Place alongside our Bengaluru production hub, "
             "we give procurement, marketing and HR teams one accountable partner across creative staging, AV engineering, "
@@ -360,21 +374,21 @@ WAVE1_PAGES = [
             {
                 "id": "singapore-operations",
                 "toc": "Singapore venue districts & operational realities",
-                "heading": "2. Navigating Singapore venue districts and production rules",
+                "heading": "2. Working across Singapore venue districts and production rules",
                 "body": [
-                    "Choosing an event agency in Singapore is rarely about who can make a slide deck — it is about who understands how Singapore convention centres, CBD hotels and lifestyle precincts actually operate on build day. Load-in bays, goods lifts, rigging approvals and noise curfews are enforced to the minute, and overtime venue penalties escalate rapidly if a build schedule slips.",
+                    "Choosing an event agency in Singapore is rarely about who can make a slide deck, it is about who understands how Singapore convention centres, CBD hotels and lifestyle precincts actually operate on build day. Load-in bays, goods lifts, rigging approvals and noise curfews are enforced to the minute, and overtime venue penalties escalate rapidly if a build schedule slips.",
                     {
                         "type": "ul",
                         "items": [
                             "<strong>Marina Bay, Suntec &amp; Raffles City convention corridor:</strong> High-capacity ballrooms and exhibition halls require advance rigging plots, certified electrical sign-offs, marshalling-yard vehicle slot bookings and tight overnight bump-in schedules.",
-                            "<strong>Raffles Place, Tanjong Pagar &amp; Orchard Road hotels:</strong> Ideal for 80–400 delegate leadership forums, investor days and media launches; freight lift dimensions and ceiling heights dictate modular LED wall and scenic sizing.",
+                            "<strong>Raffles Place, Tanjong Pagar &amp; Orchard Road hotels:</strong> Ideal for 80-400 delegate leadership forums, investor days and media launches; freight lift dimensions and ceiling heights dictate modular LED wall and scenic sizing.",
                             "<strong>Changi / Expo corridor &amp; Sentosa retreats:</strong> Large-format trade exhibitions near Changi require heavy-freight coordination, whereas Sentosa offsites and outdoor evening receptions require mandatory wet-weather indoor backup plans and guest coach dispersal.",
                             "<strong>Unique heritage &amp; waterfront venues:</strong> Non-ballroom spaces require standalone power distribution, acoustic treatment, temporary air-conditioning checks and clear step-free accessibility routing.",
                         ],
                     },
                     {
                         "type": "note",
-                        "text": "Framez acts as an independent event planner and production agency representing the client brief — we source, compare and coordinate Singapore venues objectively based on your capacity, technical and budget requirements.",
+                        "text": "Framez acts as an independent event planner and production agency representing the client brief, we source, compare and coordinate Singapore venues objectively based on your capacity, technical and budget requirements.",
                     },
                 ],
             },
@@ -390,7 +404,7 @@ WAVE1_PAGES = [
                         "items": [
                             "<strong>PDPA-conscious registration &amp; badge scanning:</strong> Attendee registration forms collect strictly necessary fields, display clear purpose/consent notices, avoid unencrypted spreadsheet circulation and follow an agreed post-event data retention window.",
                             "<strong>Venue &amp; regulatory pre-checks:</strong> Early verification of venue house rules, Risk Assessment / Method Statement (RAMS) submissions, contractor safety briefings and applicable GoBusiness licence categories for public entertainment or temporary structures.",
-                            "<strong>Transparent line-item budgeting:</strong> Clear separation between agency management fees, technical AV/staging hardware, scenic fabrication, venue F&amp;B minimums and contingency reserves — with written sign-off before any variation order.",
+                            "<strong>Transparent line-item budgeting:</strong> Clear separation between agency management fees, technical AV/staging hardware, scenic fabrication, venue F&amp;B minimums and contingency reserves, with written sign-off before any variation order.",
                             "<strong>Cross-border APAC coordination:</strong> Because Framez operates across both <strong>Singapore (30 Cecil Street, Prudential Tower)</strong> and <strong>Bengaluru</strong>, regional teams running multi-country roadshows or APAC-India summits work with one unified production playbook.",
                         ],
                     },
@@ -408,10 +422,10 @@ WAVE1_PAGES = [
                         "headers": ["Stage", "Timing Benchmark", "Key Outputs Delivered to Your Team"],
                         "rows": [
                             ["<strong>1. Discovery &amp; Scope</strong>", "Week 1", "Objective alignment, target audience profile, format selection, initial budget band and risk flags."],
-                            ["<strong>2. Venue &amp; Concept</strong>", "Weeks 2–3", "Shortlisted venue matrix, 3D stage/floorplan renders, preliminary AV spec and line-item cost estimate."],
-                            ["<strong>3. Pre-Production</strong>", "Weeks 4–8+", "Confirmed supplier contracts, run-of-show cue sheet, speaker/VIP briefing packs, registration flow and RAMS filings."],
+                            ["<strong>2. Venue &amp; Concept</strong>", "Weeks 2-3", "Shortlisted venue matrix, 3D stage/floorplan renders, preliminary AV spec and line-item cost estimate."],
+                            ["<strong>3. Pre-Production</strong>", "Weeks 4-8+", "Confirmed supplier contracts, run-of-show cue sheet, speaker/VIP briefing packs, registration flow and RAMS filings."],
                             ["<strong>4. Build, Rehearsal &amp; Live Show</strong>", "Show Week", "Managed bump-in, audio/lighting/LED calibration, full technical &amp; speaker rehearsals, show-calling and guest desk ops."],
-                            ["<strong>5. Reconciliation &amp; Debrief</strong>", "Post-Event +5–10 Days", "Attendance &amp; engagement summary, final cost reconciliation against approved PO and lessons-learned pack."],
+                            ["<strong>5. Reconciliation &amp; Debrief</strong>", "Post-Event +5-10 Days", "Attendance &amp; engagement summary, final cost reconciliation against approved PO and lessons-learned pack."],
                         ],
                     },
                     'If your procurement team is preparing a formal tender, use our <a href="/b2b-event-agency-rfp-evaluation-guide">B2B Event Agency RFP Evaluation Guide</a> and <a href="/corporate-event-budget-planning-guide">Corporate Event Budget Planning Guide</a>.',
@@ -457,11 +471,11 @@ WAVE1_PAGES = [
             ),
             (
                 "How are corporate event budgets structured?",
-                "Proposals are itemized across venue and catering (if in scope), stage/scenic fabrication, audio-visual and lighting hardware, staffing and show direction, creative assets, contingency and agency management fees — so procurement teams have complete cost visibility before signing off.",
+                "Proposals are itemized across venue and catering (if in scope), stage/scenic fabrication, audio-visual and lighting hardware, staffing and show direction, creative assets, contingency and agency management fees, so procurement teams have complete cost visibility before signing off.",
             ),
         ],
         "cta_heading": "Planning a corporate conference, launch or gala in Singapore?",
-        "cta_body": "Share your target dates, guest count and event format — our Singapore and APAC production desk will respond with a tailored scope and proposal structure.",
+        "cta_body": "Share your target dates, guest count and event format, our Singapore and APAC production desk will respond with a tailored scope and proposal structure.",
         "cta_href": "/get-in-touch",
         "cta_label": "Request a Singapore Proposal",
         "related": [
@@ -491,7 +505,7 @@ WAVE1_PAGES = [
         "summary_html": (
             "Great stage production is wasted if the right buyers never register, never visit the booth or never receive "
             "timely follow-up after the event. Framez's B2B event marketing services connect event production to measurable "
-            "commercial outcomes across Singapore and India — covering registration microsites, account-based invite assets, "
+            "commercial outcomes across Singapore and India, covering registration microsites, account-based invite assets, "
             "interactive booth and activation design, on-site badge/QR capture and clean CRM handoff."
         ),
         "sections": [
@@ -531,7 +545,7 @@ WAVE1_PAGES = [
             },
             {
                 "id": "formats",
-                "toc": "Where event marketing adds the highest leverage",
+                "toc": "Where event marketing delivers the highest return",
                 "heading": "2. Event formats where structured marketing makes the difference",
                 "body": [
                     {
@@ -539,7 +553,7 @@ WAVE1_PAGES = [
                         "items": [
                             "<strong>Proprietary User Conferences &amp; Flagship Summits:</strong> Building early-bird momentum, equipping sales reps with co-branded VIP pass links for target enterprise accounts, and designing shareable keynote moments.",
                             "<strong>Third-Party Trade Shows &amp; Industry Expos:</strong> Standing out on crowded exhibition floors in Singapore or Bangalore through clear 3-second value messaging on fascia boards, live mini-theatre demos and pre-booked executive meeting pods.",
-                            "<strong>Multi-City Roadshows &amp; Executive Roundtables:</strong> Curating intimate 25–60 person CXO roundtables where seat-fill quality matters far more than raw registration volume.",
+                            "<strong>Multi-City Roadshows &amp; Executive Roundtables:</strong> Curating intimate 25-60 person CXO roundtables where seat-fill quality matters far more than raw registration volume.",
                             "<strong>Product Launches &amp; Brand Pop-Ups:</strong> Coordinating countdown teasers, live launch streams, media kits and hands-on trial zones that turn launch-day footfall into opted-in leads.",
                         ],
                     },
@@ -558,8 +572,8 @@ WAVE1_PAGES = [
                         "items": [
                             "<strong>Intent-tagged capture:</strong> Separate a 30-second giveaway scan from a 10-minute product demo or a booked discovery meeting so SDRs prioritize real buyers on Monday morning.",
                             "<strong>Clear consent notices:</strong> Registration and QR check-in screens state clearly how attendee contact details will be used, with ISO 27001-aligned access controls on exported lists.",
-                            "<strong>48-hour post-event data SLA:</strong> Deduplicated, role-tagged attendance and demo records delivered within 24–48 hours of doors closing while buyer recall is still high.",
-                            "<strong>Honest ROI attribution:</strong> Clear separation between event-sourced leads, pipeline-accelerated opportunities and brand-awareness impressions — see our <a href=\"/corporate-event-roi-measurement-guide\">Corporate Event ROI Measurement Guide</a>.",
+                            "<strong>48-hour post-event data SLA:</strong> Deduplicated, role-tagged attendance and demo records delivered within 24-48 hours of doors closing while buyer recall is still high.",
+                            "<strong>Honest ROI attribution:</strong> Clear separation between event-sourced leads, pipeline-accelerated opportunities and brand-awareness impressions, see our <a href=\"/corporate-event-roi-measurement-guide\">Corporate Event ROI Measurement Guide</a>.",
                         ],
                     },
                 ],
@@ -573,8 +587,8 @@ WAVE1_PAGES = [
                         "type": "ul",
                         "checklist": True,
                         "items": [
-                            "Define target attendee roles and account tiers 8–10 weeks before event day",
-                            "Confirm expected registration-to-attendance show-up rate (typically 45–65% for free B2B events, higher for curated VIP roundtables)",
+                            "Define target attendee roles and account tiers 8-10 weeks before event day",
+                            "Confirm expected registration-to-attendance show-up rate (typically 45-65% for free B2B events, higher for curated VIP roundtables)",
                             "Align booth graphics and stage messaging with a single clear commercial takeaway",
                             "Test QR/badge scanning offline fallback in case convention-hall Wi-Fi congests",
                             "Pre-write post-event follow-up sequences by attendee segment before show week begins",
@@ -602,7 +616,7 @@ WAVE1_PAGES = [
             ),
         ],
         "cta_heading": "Want your next conference or expo booth to generate qualified pipeline?",
-        "cta_body": "Share your upcoming event calendar, target audience and commercial goals — Framez will propose an integrated production and event marketing plan.",
+        "cta_body": "Share your upcoming event calendar, target audience and commercial goals, Framez will propose an integrated production and event marketing plan.",
         "cta_href": "/get-in-touch",
         "cta_label": "Plan Your Event Marketing",
         "related": [
@@ -652,7 +666,7 @@ WAVE1_PAGES = [
                         "headers": ["Corridor / Hub", "Primary Corporate Formats", "Key Planning Considerations"],
                         "rows": [
                             [
-                                "<strong>Bengaluru (HQ — Koramangala, Whitefield, ORR, North BLR)</strong>",
+                                "<strong>Bengaluru (HQ, Koramangala, Whitefield, ORR, North BLR)</strong>",
                                 "Global Capability Centre (GCC) summits, tech conferences, annual days, family carnivals",
                                 "Peak-hour traffic buffer planning, outdoor monsoon contingencies, tech-corridor hotel &amp; convention hall lead times.",
                             ],
@@ -691,7 +705,7 @@ WAVE1_PAGES = [
                             "<strong>Conferences, Tech Summits &amp; GCC Town Halls:</strong> Multi-track agenda architecture, wide-screen LED scenic stages, redundant audio/projection systems, live hybrid streaming and speaker green-room management.",
                             "<strong>National Dealer, Channel &amp; Partner Conventions:</strong> High-energy product showcases, demo zones, regional travel/rooming-list coordination and recognition awards.",
                             "<strong>Product Launches &amp; Brand Experiences:</strong> Custom stage reveals, experiential walk-through tunnels, press briefings and multi-city roadshow kits engineered for repeatable assembly.",
-                            "<strong>Employee Annual Days, Family Carnivals &amp; Festive Galas:</strong> End-to-end crowd flow, child-safe carnival zones, security/medical cover, rehearsal choreography and inclusive F&amp;B planning — see our <a href=\"/annual-day-and-awards-night-planning-guide\">Annual Day &amp; Awards Night Guide</a> and <a href=\"/corporate-family-day-carnival-safety-logistics\">Family Day Safety Guide</a>.",
+                            "<strong>Employee Annual Days, Family Carnivals &amp; Festive Galas:</strong> End-to-end crowd flow, child-safe carnival zones, security/medical cover, rehearsal choreography and inclusive F&amp;B planning, see our <a href=\"/annual-day-and-awards-night-planning-guide\">Annual Day &amp; Awards Night Guide</a> and <a href=\"/corporate-family-day-carnival-safety-logistics\">Family Day Safety Guide</a>.",
                         ],
                     },
                 ],
@@ -707,9 +721,9 @@ WAVE1_PAGES = [
                         "checklist": True,
                         "items": [
                             "<strong>ISO 9001:2015 &amp; ISO 27001:2013 certified operations:</strong> Documented quality checklists and information-security controls for confidential product launches, board summits and delegate personal data.",
-                            "<strong>Transparent multi-city cost sheets:</strong> Standardized BoQ (Bill of Quantities) line items across AV, fabrication, artist/licensing, hospitality and agency management fees — no opaque lump-sum markups.",
+                            "<strong>Transparent multi-city cost sheets:</strong> Standardized BoQ (Bill of Quantities) line items across AV, fabrication, artist/licensing, hospitality and agency management fees, no opaque lump-sum markups.",
                             "<strong>Licensing &amp; venue compliance awareness:</strong> Early identification of venue NOC requirements, music/performance licensing responsibilities (such as PPL/IPRS where applicable), structural stability checks and fire-retardant stage materials.",
-                            "<strong>India + Singapore cross-border capability:</strong> Seamless continuity for Indian enterprises expanding into APAC or global MNCs running twin summits in <a href=\"/event-management-company-in-bangalore\">Bangalore</a> and <a href=\"/event-management-company-in-singapore\">Singapore</a>.",
+                            "<strong>India + Singapore cross-border capability:</strong> Unified continuity for Indian enterprises expanding into APAC or global MNCs running twin summits in <a href=\"/event-management-company-in-bangalore\">Bangalore</a> and <a href=\"/event-management-company-in-singapore\">Singapore</a>.",
                         ],
                     },
                 ],
@@ -734,7 +748,7 @@ WAVE1_PAGES = [
             ),
         ],
         "cta_heading": "Planning a conference, roadshow or annual day in India?",
-        "cta_body": "Connect with our Bengaluru headquarters with your dates, city list and guest count — we will build a clear production scope and itemized budget.",
+        "cta_body": "Connect with our Bengaluru headquarters with your dates, city list and guest count, we will build a clear production scope and itemized budget.",
         "cta_href": "/get-in-touch",
         "cta_label": "Request an India Event Proposal",
         "related": [
@@ -779,7 +793,7 @@ WAVE1_PAGES = [
                         "src": "assets/images/framez-10.webp",
                         "alt": "Framez corporate event planners coordinating a live enterprise summit",
                     },
-                    "Hiring separate AV, stage, print and hospitality vendors still leaves your internal team acting as general contractor — reconciling power loads, chasing artwork deadlines at midnight and troubleshooting mic handoffs during the CEO keynote. Appointing Framez as your corporate event planner puts one lead producer in charge of every workstream:",
+                    "Hiring separate AV, stage, print and hospitality vendors still leaves your internal team acting as general contractor, reconciling power loads, chasing artwork deadlines at midnight and troubleshooting mic handoffs during the CEO keynote. Appointing Framez as your corporate event planner puts one lead producer in charge of every workstream:",
                     {
                         "type": "table",
                         "headers": ["Planning Domain", "What Framez Owns", "Risk Removed from Your Internal Team"],
@@ -800,7 +814,7 @@ WAVE1_PAGES = [
                                 "Eliminates aspect-ratio mismatches, dead microphones and washed-out presentation slides.",
                             ],
                             [
-                                "<strong>Delegate Journey &amp; Hospitality</strong>",
+                                "<strong>Delegate Flow &amp; Hospitality</strong>",
                                 "Registration desk throughput, wayfinding signage, dietary labelling, accessibility and transport.",
                                 "Prevents 45-minute check-in queues and unmanaged VIP arrivals.",
                             ],
@@ -860,7 +874,7 @@ WAVE1_PAGES = [
             ),
         ],
         "cta_heading": "Looking for a dependable corporate event planner?",
-        "cta_body": "Tell us your event format, city (Bangalore, pan-India or Singapore), guest count and target dates — our producers will map out a practical plan and budget.",
+        "cta_body": "Tell us your event format, city (Bangalore, pan-India or Singapore), guest count and target dates, our producers will map out a practical plan and budget.",
         "cta_href": "/book-a-demo",
         "cta_label": "Share Your Event Brief",
         "related": [
@@ -874,11 +888,11 @@ WAVE1_PAGES = [
 
 
 # ==============================================================================
-# STAGED MULTI-DAY CYCLE WAVES (Nov 21 -> Dec 07, 2026 — Cron Automated!)
+# STAGED MULTI-DAY CYCLE WAVES (Nov 21 -> Dec 07, 2026, Cron Automated!)
 # ==============================================================================
 
 STAGED_WAVES = [
-    # WAVE 2: 2026-11-21 — Conference & MICE Event Management (Targets #26.1 & #39.8 GSC queries!)
+    # WAVE 2: 2026-11-21, Conference & MICE Event Management (Targets #26.1 & #39.8 GSC queries!)
     {
         "wave_id": "wave2_2026_11_21",
         "deploy_date": "2026-11-21",
@@ -927,22 +941,22 @@ STAGED_WAVES = [
                             "rows": [
                                 [
                                     "<strong>Corporate Conferences &amp; User Summits</strong>",
-                                    "150 – 3,000+ delegates",
+                                    "150 - 3,000+ delegates",
                                     "Plenary scenic &amp; wide-screen LED design, multi-track breakout room AV, live Q&amp;A/polling, speaker slide-desk control and show-calling.",
                                 ],
                                 [
                                     "<strong>Executive &amp; Board Meetings</strong>",
-                                    "15 – 120 leaders",
+                                    "15 - 120 leaders",
                                     "Confidential room setup, broadcast-grade table mics, simultaneous interpretation or hybrid dial-in, and ISO 27001-aligned document/AV handling.",
                                 ],
                                 [
                                     "<strong>Incentive Travel &amp; Partner Offsites</strong>",
-                                    "50 – 500 qualifiers",
+                                    "50 - 500 qualifiers",
                                     "Destination hotel buyouts, airport meet-and-greet manifests, curated cultural experiences and President's Club awards gala production.",
                                 ],
                                 [
                                     "<strong>Sponsor Villages &amp; Companion Expos</strong>",
-                                    "10 – 80+ sponsor booths",
+                                    "10 - 80+ sponsor booths",
                                     "Sponsor prospectus technical kits, modular shell/custom booth builds, power/internet distribution and QR lead-retrieval setup.",
                                 ],
                             ],
@@ -996,7 +1010,7 @@ STAGED_WAVES = [
                 ),
             ],
             "cta_heading": "Scoping an upcoming corporate conference or MICE summit?",
-            "cta_body": "Share your expected delegate count, plenary/breakout format and preferred city — Framez will prepare a structured production plan and itemized budget.",
+            "cta_body": "Share your expected delegate count, plenary/breakout format and preferred city, Framez will prepare a structured production plan and itemized budget.",
             "cta_href": "/get-in-touch",
             "cta_label": "Request a Conference Proposal",
             "related": [
@@ -1008,7 +1022,156 @@ STAGED_WAVES = [
         },
     },
 
-    # WAVE 3: 2026-11-25 — Exhibition & Trade Show Management (Targets #30.4 GSC query!)
+    # WAVE 2B: 2026-11-22: Dinner & Dance Event Management Singapore
+    {
+        "wave_id": "wave2b_2026_11_22",
+        "deploy_date": "2026-11-22",
+        "blog_card": {
+            "img": "assets/images/framez-04.webp",
+            "alt": "Corporate Dinner and Dance event management and ballroom staging in Singapore",
+            "heading": "Dinner & Dance Event Management Singapore",
+            "blurb": "Turnkey corporate Dinner & Dance (D&D) production in Singapore: creative themes, hotel ballroom AV, entertainment curation, lucky draw ops and dietary coordination.",
+        },
+        "spec": {
+            "slug": "dinner-and-dance-event-management-singapore",
+            "kind": "service",
+            "title": "Dinner & Dance Event Management Singapore | Framez",
+            "description": "Corporate Dinner & Dance (D&D) event management in Singapore: theme staging, ballroom AV, live entertainment, lucky draw ops and halal catering coordination.",
+            "h1": "Corporate Dinner & Dance (D&D) Event Management in Singapore",
+            "breadcrumb_label": "Dinner & Dance Singapore",
+            "service_type": "Corporate Dinner and Dance Event Management in Singapore",
+            "meta_subtitle": "30 Cecil Street, #19-08 Prudential Tower, Singapore 049712 · Hotel Ballrooms · Awards & Entertainment",
+            "published": "2026-11-22",
+            "og_image": "https://framez.sg/assets/images/framez-04.webp",
+            "area_served": [
+                {"@type": "Country", "name": "Singapore"},
+                {"@type": "City", "name": "Singapore"},
+            ],
+            "local_office": {
+                "@type": "ProfessionalService",
+                "@id": "https://framez.sg/dinner-and-dance-event-management-singapore#singapore-office",
+                "name": "Framez Events & Productions, Singapore",
+                "url": "https://framez.sg/dinner-and-dance-event-management-singapore",
+                "image": "https://framez.sg/assets/img/frameznewlogo.png",
+                "email": "info@framez.sg",
+                "telephone": "+91-9448066560",
+                "parentOrganization": {"@id": "https://framez.sg/#organization"},
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "30 Cecil Street, #19-08 Prudential Tower",
+                    "addressLocality": "Singapore",
+                    "postalCode": "049712",
+                    "addressCountry": "SG",
+                },
+                "areaServed": {"@type": "Country", "name": "Singapore"},
+            },
+            "summary_html": (
+                "A company Dinner &amp; Dance (D&amp;D) in Singapore brings employees, leadership and regional guests "
+                "together in high-stakes ballroom venues where timing, sound clarity, food pacing and fair lucky-draw "
+                "operations decide how the night feels. From Prudential Tower in Raffles Place, Framez manages turnkey "
+                "Singapore D&amp;D themes, LED stage engineering, bilingual emcees, long-service awards cueing, PDPA-safe "
+                "check-in and halal/allergen banquet coordination."
+            ),
+            "sections": [
+                {
+                    "id": "dnd-scope",
+                    "toc": "Turnkey Singapore D&D workstreams",
+                    "heading": "1. Turnkey Singapore Dinner & Dance workstreams",
+                    "body": [
+                        {
+                            "type": "img",
+                            "src": "assets/images/framez-04.webp",
+                            "alt": "Corporate gala dinner stage lighting and awards celebration produced by Framez in Singapore",
+                        },
+                        "HR and employee engagement committees often inherit a Dinner &amp; Dance brief alongside regular quarterly deadlines. Framez handles every technical and creative workstream under one single-point producer:",
+                        {
+                            "type": "table",
+                            "headers": ["D&D Workstream", "What Framez Manages", "Operational Detail Protected"],
+                            "rows": [
+                                [
+                                    "<strong>Theme Concept &amp; Ballroom Scenic</strong>",
+                                    "Entry tunnel arches, photo-op backdrops, LED stage backdrops, table centerpieces and digital invitations.",
+                                    "Modular structures pre-sized to Singapore hotel goods lifts and afternoon ballroom bump-in windows.",
+                                ],
+                                [
+                                    "<strong>Audio-Visual &amp; Show-Calling</strong>",
+                                    "P2.6 LED wall content cueing, wireless mics, stage wash lighting, DJ/band audio patching and master run-of-show.",
+                                    "Prevents banquet chatter from drowning out speeches and keeps dinner service synced with stage acts.",
+                                ],
+                                [
+                                    "<strong>Awards, Long-Service &amp; Lucky Draw Ops</strong>",
+                                    "Winner slide deck verification, stage trophy marshalling and real-time QR lucky draw randomization.",
+                                    "PDPA-compliant guest list handling and transparent on-screen draw mechanics.",
+                                ],
+                                [
+                                    "<strong>Emcees, Live Bands &amp; Interactive Fringe</strong>",
+                                    "Shortlisted Singapore bilingual emcees, roving performers, 360/instant photo booths and pre-dinner games.",
+                                    "Structured soundchecks before doors open at 18:00 so walk-in guests step straight into a finished room.",
+                                ],
+                            ],
+                        },
+                    ],
+                },
+                {
+                    "id": "singapore-ballroom-ops",
+                    "toc": "Singapore ballroom logistics & dietary planning",
+                    "heading": "2. Singapore hotel ballroom realities, curfews and catering coordination",
+                    "body": [
+                        "Peak Q4 and Q1 D&amp;D dates across Marina Bay, Suntec, Raffles City, Orchard Road and Sentosa leave tight 4-to-5-hour setup windows between lunch functions and 18:30 cocktail arrivals. Our Singapore production crew plans build schedules backward from doors-open:",
+                        {
+                            "type": "ul",
+                            "checklist": True,
+                            "items": [
+                                "<strong>Banquet &amp; kitchen service alignment:</strong> Course plating pauses during CEO remarks and major lucky-draw segments so wait-staff trays do not interrupt key stage moments.",
+                                "<strong>Halal, vegetarian &amp; allergen table mapping:</strong> Separate halal-certified kitchen plating, vegetarian/vegan courses and allergy cards tied cleanly to QR check-in table assignments.",
+                                "<strong>Rigging, fire-exit &amp; AV house rules:</strong> Early submission of floorplans, table counts and electrical load sheets to hotel banquet operations to avoid unexpected house-AV surcharges.",
+                                "<strong>Coach &amp; Sentosa dispersal planning:</strong> Clear shuttle staging at Sentosa or Changi waterfront venues when corporate dinners conclude after 22:30.",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    "id": "pdpa-governance",
+                    "toc": "PDPA data handling & budget transparency",
+                    "heading": "3. PDPA attendee data security and transparent line-item budgets",
+                    "body": [
+                        "Employee D&amp;D check-in apps and lucky-draw portals process staff IDs, email addresses and dietary records. Framez operates under ISO 27001:2013 information security practices and Singapore PDPA data minimization rules, purging exported check-in files on an agreed post-event schedule.",
+                        'Compare full-programme Singapore capabilities on our <a href="/event-management-company-in-singapore">Singapore Corporate Event Management</a> page, or review our <a href="/annual-day-and-awards-night-planning-guide">Annual Day &amp; Awards Night Planning Guide</a> and <a href="/corporate-event-budget-planning-guide">Corporate Event Budget Planning Guide</a>.',
+                    ],
+                },
+            ],
+            "faqs": [
+                (
+                    "How early should we book a Dinner & Dance agency and venue in Singapore?",
+                    "For November, December and January Friday/Saturday ballrooms hosting 250 to 1,200 staff, book 12 to 20 weeks in advance. Prime Marina Bay, Raffles City and Orchard ballrooms fill quickly during year-end and Chinese New Year gala windows.",
+                ),
+                (
+                    "Can Framez manage lucky draws and instant QR registration for 800+ employees?",
+                    "Yes. We set up QR mobile pass check-in desks, live table-number lookup and screen-integrated randomized lucky-draw software tested during afternoon technical rehearsals.",
+                ),
+                (
+                    "Does Framez handle events if our HR committee already secured the hotel ballroom?",
+                    "Yes. Many Singapore corporate clients contract the hotel venue directly and appoint Framez for theme design, stage/LED/AV production, fringe entertainment, emcee booking, lucky draw systems and full show-calling.",
+                ),
+                (
+                    "How do you handle halal and special dietary meals at corporate D&Ds?",
+                    "We capture dietary flags cleanly at RSVP, map dedicated tables or sealed halal-certified course tags with the hotel banquet team, and place clear table markers for servers before doors open.",
+                ),
+            ],
+            "cta_heading": "Planning a company Dinner & Dance in Singapore?",
+            "cta_body": "Share your guest count, target month, theme ideas and venue status: our Prudential Tower team will return a practical scope and itemized D&D proposal.",
+            "cta_href": "/book-a-demo",
+            "cta_label": "Request a Singapore D&D Proposal",
+            "related": [
+                ("Singapore Event Management", "/event-management-company-in-singapore"),
+                ("Singapore Event Planning Checklist", "/singapore-corporate-event-planning-checklist"),
+                ("Annual Day & Awards Night Guide", "/annual-day-and-awards-night-planning-guide"),
+                ("Corporate Event Budget Guide", "/corporate-event-budget-planning-guide"),
+            ],
+        },
+    },
+
+    # WAVE 3: 2026-11-25, Exhibition & Trade Show Management (Targets #30.4 GSC query!)
     {
         "wave_id": "wave3_2026_11_25",
         "deploy_date": "2026-11-25",
@@ -1036,7 +1199,7 @@ STAGED_WAVES = [
             "summary_html": (
                 "Trade-show exhibitors face immovable deadlines: organiser structural drawings, rigging/power cut-off dates, "
                 "strict build-height rules and a narrow 24-to-48-hour bump-in window. Framez designs, fabricates and manages "
-                "custom B2B exhibition booths, multi-brand pavilions and proprietary trade expos across Singapore and India — "
+                "custom B2B exhibition booths, multi-brand pavilions and proprietary trade expos across Singapore and India, "
                 "combining architectural visibility with practical demo stations and structured lead capture."
             ),
             "sections": [
@@ -1062,7 +1225,7 @@ STAGED_WAVES = [
                                 ],
                                 [
                                     "<strong>Multi-Show Modular Roadshow Kits</strong>",
-                                    "Brands exhibiting at 3–8 trade shows per year",
+                                    "Brands exhibiting at 3-8 trade shows per year",
                                     "Reconfigurable aluminium/fabric/LED booth architecture engineered to adapt across 3x3m, 6x3m and 6x6m footprints while cutting repeat build waste.",
                                 ],
                                 [
@@ -1121,7 +1284,7 @@ STAGED_WAVES = [
                 ),
             ],
             "cta_heading": "Have a floor space booked at an upcoming exhibition?",
-            "cta_body": "Send us your booth dimensions (e.g., 6m x 6m, 2-side or island open), show dates, venue and exhibitor manual — we will return a 3D concept and itemized build quote.",
+            "cta_body": "Send us your booth dimensions (e.g., 6m x 6m, 2-side or island open), show dates, venue and exhibitor manual, we will return a 3D concept and itemized build quote.",
             "cta_href": "/get-in-touch",
             "cta_label": "Request a Booth Design & Quote",
             "related": [
@@ -1133,7 +1296,129 @@ STAGED_WAVES = [
         },
     },
 
-    # WAVE 4: 2026-11-29 — Year-End Corporate Town Hall & Sales Kickoff (SKO) Guide
+    # WAVE 3B: 2026-11-26: Product Launch Event Management
+    {
+        "wave_id": "wave3b_2026_11_26",
+        "deploy_date": "2026-11-26",
+        "blog_card": {
+            "img": "assets/images/framez-07.webp",
+            "alt": "B2B product launch event staging, reveal mechanics and demo zone by Framez",
+            "heading": "Enterprise Product Launch Event Management",
+            "blurb": "High-precision B2B product launch production in Singapore and Bangalore: stage reveal engineering, embargoed rehearsals, press briefings and interactive demo pods.",
+        },
+        "spec": {
+            "slug": "product-launch-event-management",
+            "kind": "service",
+            "title": "Product Launch Event Management Company | Framez",
+            "description": "B2B product launch event management in Singapore and Bangalore: stage reveal engineering, press briefings, interactive demo pods and multi-city roadshows.",
+            "h1": "Enterprise Product Launch Event Management Services",
+            "breadcrumb_label": "Product Launch Management",
+            "service_type": "Enterprise Product Launch Event Management and Production",
+            "meta_subtitle": "Keynote Reveals · Demo Zone Fabrication · Press & Analyst Briefings · Singapore & Bangalore",
+            "published": "2026-11-26",
+            "og_image": "https://framez.sg/assets/images/framez-07.webp",
+            "area_served": [
+                {"@type": "Country", "name": "Singapore"},
+                {"@type": "Country", "name": "India"},
+            ],
+            "summary_html": (
+                "A product launch gives your buyers, analysts and press one live window to see your release perform without "
+                "technical glitches. Framez engineers B2B hardware, SaaS and industrial product launches across Singapore and "
+                "Bangalore: synchronized LED reveal staging, failover keynote video racks, hands-on product demo pods, "
+                "embargoed media zones and post-launch CRM lead handoff."
+            ),
+            "sections": [
+                {
+                    "id": "launch-formats",
+                    "toc": "Product launch formats we engineer",
+                    "heading": "1. B2B product launch formats we plan and produce",
+                    "body": [
+                        {
+                            "type": "img",
+                            "src": "assets/images/framez-07.webp",
+                            "alt": "Enterprise product launch keynote stage and lighting sequence managed by Framez",
+                        },
+                        "Different launches require distinct physical layouts and technical redundancy. Framez matches stage architecture and audience flow to the commercial purpose of the release:",
+                        {
+                            "type": "table",
+                            "headers": ["Launch Format", "Primary Audience", "Key Technical & Production Scope"],
+                            "rows": [
+                                [
+                                    "<strong>Flagship Keynote Reveal</strong>",
+                                    "Enterprise customers, investors &amp; industry partners",
+                                    "Custom scenic reveal mechanics (kinetic LED walls, lighting reveals, stage turntables), dual-redundant media servers and live broadcast switching.",
+                                ],
+                                [
+                                    "<strong>Press, Media &amp; Analyst Briefings</strong>",
+                                    "Trade journalists, industry analysts &amp; creators",
+                                    "Acoustic briefing rooms, direct mult-box clean audio feeds for camera crews, embargoed NDA check-in and hands-on photography stations.",
+                                ],
+                                [
+                                    "<strong>Interactive Product Demo Villages</strong>",
+                                    "Technical buyers, CTOs &amp; solutions architects",
+                                    "Custom fabricated trial kiosks, wired dedicated LAN lines for live software/cloud demos, concealed cable routing and staffed demo pods.",
+                                ],
+                                [
+                                    "<strong>Multi-City Launch Roadshows</strong>",
+                                    "Regional enterprise accounts across SG &amp; India",
+                                    "Portable modular scenic and AV kits moving across Singapore, Bengaluru, Mumbai and Delhi NCR with consistent brand execution.",
+                                ],
+                            ],
+                        },
+                    ],
+                },
+                {
+                    "id": "embargo-demo-ops",
+                    "toc": "Embargo control, live demos & rehearsal discipline",
+                    "heading": "2. Protecting live demos, product embargoes and stage timing",
+                    "body": [
+                        "Unrehearsed live product demos and leaked pre-launch stage photos are the two fastest ways to derail launch week. Our ISO 27001:2013 operational controls address both risks early:",
+                        {
+                            "type": "ul",
+                            "checklist": True,
+                            "items": [
+                                "<strong>Embargoed rehearsal lockdown:</strong> Closed-door venue access control, covered product staging during overnight rigging and NDA sign-off for technical build crews.",
+                                "<strong>Dual-machine playback &amp; network isolation:</strong> Dedicated wired internet drops for live SaaS/AI demos separated from guest Wi-Fi, plus pre-recorded safety fallback clips cued on a hot-spare server.",
+                                "<strong>Time-coded reveal rehearsals:</strong> Frame-accurate cueing between presenter lines, music stingers, lighting drops and screen transitions practiced at least twice before doors open.",
+                                "<strong>Intent-tagged lead capture at demo zones:</strong> Badge/QR scans distinguish general briefing attendees from accounts requesting architecture walkthroughs or pilot scoping.",
+                            ],
+                        },
+                        'Review our technical blueprint in the <a href="/corporate-product-launch-event-architecture">Corporate Product Launch Event Architecture Guide</a> and connect post-reveal promotion with <a href="/event-marketing-services">B2B Event Marketing Services</a>.',
+                    ],
+                },
+            ],
+            "faqs": [
+                (
+                    "How do you prevent live software or hardware demos from failing on stage?",
+                    "We isolate demo network traffic onto dedicated hardwired circuits, run live systems through hardware switchers with instant hot-spare failover, and rehearse exact cue triggers on-site prior to opening doors.",
+                ),
+                (
+                    "Can Framez coordinate simultaneous product launches in Singapore and Bangalore?",
+                    "Yes. With teams operating in Singapore (Prudential Tower) and Bengaluru (Koramangala), we execute either simultaneous regional keynotes or sequential multi-city launch roadshows under one master creative specification.",
+                ),
+                (
+                    "How do you maintain confidentiality for unreleased hardware or announcements?",
+                    "Framez operates under ISO 27001:2013 security controls, enforces crew NDAs, secures rehearsal rooms against external sightlines and restricts asset distribution on show networks.",
+                ),
+                (
+                    "How far ahead should we engage Framez for an enterprise product launch?",
+                    "Plan 8 to 14 weeks ahead for custom reveal fabrication, venue locking and press coordination; focused executive briefings or roadshow legs can mobilize in 4 to 6 weeks.",
+                ),
+            ],
+            "cta_heading": "Preparing an upcoming product or platform launch?",
+            "cta_body": "Share your launch window, cities and product demo requirements: our producers will outline stage architecture, demo zone design and itemized costs.",
+            "cta_href": "/book-a-demo",
+            "cta_label": "Scope Your Product Launch",
+            "related": [
+                ("Product Launch Architecture Guide", "/corporate-product-launch-event-architecture"),
+                ("B2B Event Marketing Services", "/event-marketing-services"),
+                ("Exhibition & Trade Show Management", "/exhibition-and-trade-show-management"),
+                ("Singapore Event Management", "/event-management-company-in-singapore"),
+            ],
+        },
+    },
+
+    # WAVE 4: 2026-11-29, Year-End Corporate Town Hall & Sales Kickoff (SKO) Guide
     {
         "wave_id": "wave4_2026_11_29",
         "deploy_date": "2026-11-29",
@@ -1170,8 +1455,8 @@ STAGED_WAVES = [
                             "type": "table",
                             "headers": ["Dimension", "All-Hands / Year-End Town Hall", "Q1 Sales / Commercial Kickoff (SKO)"],
                             "rows": [
-                                ["<strong>Primary Goal</strong>", "Celebrate milestones, clarify company strategy, build shared trust via transparent Q&amp;A.", "Equip revenue, SE, channel and CS teams to position new products and win deals in Q1–Q2."],
-                                ["<strong>Ideal Pacing</strong>", "2–4 hours plenary + moderated AMA + recognition + networking reception.", "1.5–3 days mixing concise executive keynotes with interactive deal clinics, product labs and awards."],
+                                ["<strong>Primary Goal</strong>", "Celebrate milestones, clarify company strategy, build shared trust via transparent Q&amp;A.", "Equip revenue, SE, channel and CS teams to position new products and win deals in Q1-Q2."],
+                                ["<strong>Ideal Pacing</strong>", "2-4 hours plenary + moderated AMA + recognition + networking reception.", "1.5-3 days mixing concise executive keynotes with interactive deal clinics, product labs and awards."],
                                 ["<strong>Critical Failure Mode</strong>", "Unfiltered 80-slide functional updates and inaudible audience microphones.", "Death-by-keynote with zero hands-on objection handling or customer voice."],
                             ],
                         },
@@ -1186,9 +1471,9 @@ STAGED_WAVES = [
                             "type": "ul",
                             "checklist": True,
                             "items": [
-                                "<strong>Cap single-speaker blocks at 18–22 minutes:</strong> Alternate executive keynotes with customer/field stories, live product demos or 20-minute moderated fireside panels.",
+                                "<strong>Cap single-speaker blocks at 18-22 minutes:</strong> Alternate executive keynotes with customer/field stories, live product demos or 20-minute moderated fireside panels.",
                                 "<strong>Collect and curate Q&amp;A both live and digitally:</strong> Combine moderated QR question upvoting (so remote hub employees have equal voice) with roving floor mics managed by stage runners.",
-                                "<strong>Separate financial/strategy updates from awards celebrations:</strong> Give peer and annual awards dedicated evening or closing staging — see our <a href=\"/annual-day-and-awards-night-planning-guide\">Annual Day &amp; Awards Night Planning Guide</a>.",
+                                "<strong>Separate financial/strategy updates from awards celebrations:</strong> Give peer and annual awards dedicated evening or closing staging, see our <a href=\"/annual-day-and-awards-night-planning-guide\">Annual Day &amp; Awards Night Planning Guide</a>.",
                                 "<strong>Lock slide ratios and font sizes 7 days out:</strong> Standardize a single 16:9 master template calibrated to your stage LED pixel pitch so financial charts remain legible from the back row.",
                             ],
                         },
@@ -1203,7 +1488,7 @@ STAGED_WAVES = [
                         {
                             "type": "ul",
                             "items": [
-                                "<strong>Dedicated broadcast audio mix:</strong> Never send raw room PA audio directly to Zoom/Teams/Webex — mix a separate broadcast bus with ambient crowd mics gated during speeches and opened during applause.",
+                                "<strong>Dedicated broadcast audio mix:</strong> Never send raw room PA audio directly to Zoom/Teams/Webex, mix a separate broadcast bus with ambient crowd mics gated during speeches and opened during applause.",
                                 "<strong>Bonded wired internet + cellular failover:</strong> Require a dedicated hardwired Ethernet drop isolated from attendee guest Wi-Fi, backed by bonded 5G failover.",
                                 "<strong>Two-way watch-party cut-ins:</strong> If secondary offices present awards or ask live questions, run a 15-minute bidirectional latency and echo test the day before.",
                             ],
@@ -1230,12 +1515,12 @@ STAGED_WAVES = [
             ],
             "faqs": [
                 (
-                    "Where should we host a 300-person corporate town hall — in our office cafeteria or an external venue?",
-                    "Office cafeterias work well up to 100–150 attendees if ceiling height, acoustics and pillar sightlines allow proper lighting and audio distribution. Above 150–200 attendees, or for multi-day SKOs with breakouts, an external hotel ballroom or auditorium usually delivers cleaner acoustics, faster catering turnaround and higher focus.",
+                    "Where should we host a 300-person corporate town hall, in our office cafeteria or an external venue?",
+                    "Office cafeterias work well up to 100-150 attendees if ceiling height, acoustics and pillar sightlines allow proper lighting and audio distribution. Above 150-200 attendees, or for multi-day SKOs with breakouts, an external hotel ballroom or auditorium usually delivers cleaner acoustics, faster catering turnaround and higher focus.",
                 ),
                 (
                     "How early should we book venues for December town halls or January/February SKOs?",
-                    "November–December year-end venues and January–February Q1 kickoff ballrooms in Singapore and Bangalore experience peak corporate demand; locking space 8 to 12 weeks ahead prevents splitting breakout tracks across separate floors or buildings.",
+                    "November-December year-end venues and January-February Q1 kickoff ballrooms in Singapore and Bangalore experience peak corporate demand; locking space 8 to 12 weeks ahead prevents splitting breakout tracks across separate floors or buildings.",
                 ),
                 (
                     "Can Framez produce both the Bangalore and Singapore legs of a regional town hall?",
@@ -1243,7 +1528,7 @@ STAGED_WAVES = [
                 ),
             ],
             "cta_heading": "Planning a year-end town hall or Q1 Sales Kickoff?",
-            "cta_body": "Share your headcount, hub locations and agenda goals — Framez will scope staging, broadcast AV, breakouts and run-of-show management.",
+            "cta_body": "Share your headcount, hub locations and agenda goals, Framez will scope staging, broadcast AV, breakouts and run-of-show management.",
             "cta_href": "/get-in-touch",
             "cta_label": "Scope Your Town Hall / SKO",
             "related": [
@@ -1255,7 +1540,124 @@ STAGED_WAVES = [
         },
     },
 
-    # WAVE 5: 2026-12-03 — Bangalore Corporate Event Venue & Logistics Checklist (Pushes #19.4 BLR queries to Page 1!)
+    # WAVE 4B: 2026-12-01: Corporate Annual Day & Awards Night Management
+    {
+        "wave_id": "wave4b_2026_12_01",
+        "deploy_date": "2026-12-01",
+        "blog_card": {
+            "img": "assets/images/framez-09.webp",
+            "alt": "Corporate annual day and employee awards gala stage production by Framez",
+            "heading": "Corporate Annual Day & Awards Night Management",
+            "blurb": "Full-service corporate annual day and awards night management across Bangalore and Singapore: recognition staging, high-tempo trophy cueing, talent rehearsals and safety.",
+        },
+        "spec": {
+            "slug": "corporate-annual-day-and-awards-night-management",
+            "kind": "service",
+            "title": "Annual Day & Awards Night Event Management | Framez",
+            "description": "Corporate annual day and awards night management in Singapore and Bangalore: stage design, show-calling, recognition workflows and live crew production.",
+            "h1": "Corporate Annual Day & Awards Night Event Management",
+            "breadcrumb_label": "Annual Day & Awards Night",
+            "service_type": "Corporate Annual Day and Awards Gala Management",
+            "meta_subtitle": "Employee Recognition Galas · Multi-Act Rehearsals · Outdoor & Ballroom Production · BLR & SG",
+            "published": "2026-12-01",
+            "og_image": "https://framez.sg/assets/images/framez-09.webp",
+            "area_served": [
+                {"@type": "Country", "name": "India"},
+                {"@type": "Country", "name": "Singapore"},
+            ],
+            "summary_html": (
+                "Employee annual days and awards nights lose momentum when 40 award categories drag into a two-hour queue "
+                "or employee performances miss audio cues. Framez produces corporate annual days, GCC milestone celebrations "
+                "and formal awards galas in Bangalore and Singapore with fast-paced stage marshalling, pre-checked lower-third "
+                "winner slides, technical talent rehearsals and end-to-end crowd safety."
+            ),
+            "sections": [
+                {
+                    "id": "annual-day-formats",
+                    "toc": "Annual day & awards night production models",
+                    "heading": "1. Designing annual days and awards nights for high energy",
+                    "body": [
+                        {
+                            "type": "img",
+                            "src": "assets/images/framez-09.webp",
+                            "alt": "Enterprise awards night ceremony and LED stage graphics managed by Framez",
+                        },
+                        "Different company cultures call for different celebratory structures, from black-tie ballroom awards galas to full-day outdoor campus festivals:",
+                        {
+                            "type": "table",
+                            "headers": ["Celebration Format", "Typical Headcount", "Core Production & Show-Calling Focus"],
+                            "rows": [
+                                [
+                                    "<strong>Formal Awards Night &amp; Gala Dinner</strong>",
+                                    "150 to 1,500 employees",
+                                    "Red-carpet photo wall, synchronized presenter/winner walk-on music, pre-staged trophy trays, dynamic LED lower-thirds and formal banquet service pacing.",
+                                ],
+                                [
+                                    "<strong>GCC Annual Day &amp; Cultural Showcase</strong>",
+                                    "500 to 5,000+ employees",
+                                    "Structured employee performance auditions/rehearsals, backstage green-room call sheets, concert-grade PA/lighting and high-throughput F&amp;B counters.",
+                                ],
+                                [
+                                    "<strong>Family-Inclusive Annual Carnival</strong>",
+                                    "1,000 to 6,000 guests",
+                                    "Age-zoned carnival games, shaded parent seating, first-aid/ambulance standby, child wristband tracking and indoor/covered wet-weather transition.",
+                                ],
+                            ],
+                        },
+                    ],
+                },
+                {
+                    "id": "awards-pacing",
+                    "toc": "Zero-drag awards cueing & stage marshalling",
+                    "heading": "2. Keeping awards segments crisp and mistake-free",
+                    "body": [
+                        "Every mispronounced winner name or delayed trophy presentation reduces audience engagement. Framez enforces a strict backstage recognition workflow:",
+                        {
+                            "type": "ul",
+                            "checklist": True,
+                            "items": [
+                                "<strong>Pre-seated winner &amp; presenter marshalling:</strong> Stage runners seat upcoming category winners in reserved aisle rows 10 minutes ahead so walk-ons take seconds instead of minutes.",
+                                "<strong>Dual-checked citation &amp; pronunciation sheets:</strong> Phonetic name guides for emcees and spelling sign-off with HR leads 72 hours prior to show day.",
+                                "<strong>Synchronized winner slides &amp; trophy trays:</strong> Stage-left and stage-right trophy assistants follow numbered cue sheets matched one-to-one with the playback operator.",
+                                "<strong>Acoustic curfews &amp; silent DG isolation:</strong> In Bengaluru outdoor/lawn venues, awards and headline performances finish cleanly inside 22:00 acoustic limits backed by synchronized silent DG sets and UPS.",
+                            ],
+                        },
+                        'Explore detailed timing templates in our <a href="/annual-day-and-awards-night-planning-guide">Annual Day &amp; Awards Night Planning Guide</a>, our <a href="/corporate-family-day-carnival-safety-logistics">Family Day Safety Guide</a>, and our <a href="/dinner-and-dance-event-management-singapore">Singapore Dinner &amp; Dance</a> page.',
+                    ],
+                },
+            ],
+            "faqs": [
+                (
+                    "How do you prevent long awards ceremonies from feeling repetitive?",
+                    "We cluster recognition categories into snappy 12-to-15-minute blocks interspersed with live acts or leadership stories, pre-stage winners near aisle seats and synchronize stage-walk stingers with immediate photo capture.",
+                ),
+                (
+                    "Do you manage employee cultural performance rehearsals and backing tracks?",
+                    "Yes. Our show directors coordinate audition schedules, standardize backing audio levels in advance and run timed on-stage technical cues on show morning so employee teams perform with pro-level lighting and sound.",
+                ),
+                (
+                    "Can Framez deliver annual days across both Bangalore and Singapore?",
+                    "Yes. We produce large-scale employee annual days across Koramangala, Whitefield, Outer Ring Road and North Bangalore as well as corporate Dinner & Dance galas in Singapore.",
+                ),
+                (
+                    "What safety and contingency measures are standard for outdoor annual days?",
+                    "We include dedicated silent DG power with UPS on consoles, elevated weatherproof cabling, perimeter security, ambulance standby and waterproof marquee contingencies for outdoor lawns.",
+                ),
+            ],
+            "cta_heading": "Organizing your company annual day or awards night?",
+            "cta_body": "Share your target month, estimated headcount and city: our Bangalore and Singapore production teams will map staging, cue flow and itemized costs.",
+            "cta_href": "/book-a-demo",
+            "cta_label": "Plan Your Annual Day / Awards Night",
+            "related": [
+                ("Annual Day Planning Guide", "/annual-day-and-awards-night-planning-guide"),
+                ("Singapore Dinner & Dance Management", "/dinner-and-dance-event-management-singapore"),
+                ("Family Day Safety & Logistics", "/corporate-family-day-carnival-safety-logistics"),
+                ("Bangalore Event Management", "/event-management-company-in-bangalore"),
+            ],
+        },
+    },
+
+    # WAVE 5: 2026-12-03, Bangalore Corporate Event Venue & Logistics Checklist (Pushes #19.4 BLR queries to Page 1!)
     {
         "wave_id": "wave5_2026_12_03",
         "deploy_date": "2026-12-03",
@@ -1298,9 +1700,9 @@ STAGED_WAVES = [
                                     "Limited heavy-truck parking during daytime hours; confirm overnight bump-in permissions in writing.",
                                 ],
                                 [
-                                    "<strong>Outer Ring Road (Bellandur – Marathahalli) &amp; Whitefield</strong>",
+                                    "<strong>Outer Ring Road (Bellandur - Marathahalli) &amp; Whitefield</strong>",
                                     "GCC town halls, developer conferences, employee awards nights for East/SE tech parks",
-                                    "Avoid 17:30–20:00 weekday cross-city transfers; Metro Purple Line proximity helps Whitefield attendance.",
+                                    "Avoid 17:30-20:00 weekday cross-city transfers; Metro Purple Line proximity helps Whitefield attendance.",
                                 ],
                                 [
                                     "<strong>North Bangalore &amp; Airport Corridor (Hebbal, Yelahanka, Devanahalli)</strong>",
@@ -1325,7 +1727,7 @@ STAGED_WAVES = [
                             "type": "ul",
                             "checklist": True,
                             "items": [
-                                "<strong>Dedicated silent DG sets for stage AV &amp; LED:</strong> Do not run heavy concert lighting and P2.6 LED walls off unverified hotel house sockets — specify twin synchronized silent generators with UPS protection on show-control computers and audio consoles.",
+                                "<strong>Dedicated silent DG sets for stage AV &amp; LED:</strong> Do not run heavy concert lighting and P2.6 LED walls off unverified hotel house sockets, specify twin synchronized silent generators with UPS protection on show-control computers and audio consoles.",
                                 "<strong>Measure clear height under chandeliers:</strong> Brochure ceiling height often differs from clear height under chandeliers or AC ducts; confirm unobstructed LED wall dimensions during the physical recce.",
                                 "<strong>Goods-lift &amp; truck entry timings:</strong> Confirm commercial-vehicle no-entry hours and hotel loading-bay queues so stage carpentry arrives before midnight build slots.",
                                 "<strong>Dedicated wired internet:</strong> Inspect physical LAN termination in the ballroom rather than relying on shared hotel lobby Wi-Fi for live polling or hybrid streams.",
@@ -1342,7 +1744,7 @@ STAGED_WAVES = [
                             "type": "ul",
                             "items": [
                                 "<strong>Music, performance &amp; excise permissions:</strong> Clarify in writing between venue and event agency who obtains applicable music licensing (such as PPL/IPRS where recorded or live commercial music is played), occasional liquor permits and local police/sound notifications where required.",
-                                "<strong>22:00 outdoor acoustic rules:</strong> Open-air lawns and terraces in Bengaluru enforce strict night-time decibel and cut-off rules — design outdoor receptions to transition indoors for late-evening DJ or awards segments.",
+                                "<strong>22:00 outdoor acoustic rules:</strong> Open-air lawns and terraces in Bengaluru enforce strict night-time decibel and cut-off rules, design outdoor receptions to transition indoors for late-evening DJ or awards segments.",
                                 "<strong>Bengaluru rain &amp; wind readiness:</strong> Even outside peak monsoon months, late-afternoon showers occur; require German-hanger waterproof structures, raised wooden flooring and elevated cable ramps for any outdoor production.",
                             ],
                         },
@@ -1365,7 +1767,7 @@ STAGED_WAVES = [
                 ),
                 (
                     "Can Framez conduct technical site recces across multiple shortlisted Bangalore venues before we sign?",
-                    "Yes. Our Koramangala production team conducts physical site inspections — checking sightlines, rigging loads, green rooms, registration foyers and truck access — before you finalize your venue contract.",
+                    "Yes. Our Koramangala production team conducts physical site inspections, checking sightlines, rigging loads, green rooms, registration foyers and truck access, before you finalize your venue contract.",
                 ),
             ],
             "cta_heading": "Planning a corporate conference, launch or annual day in Bangalore?",
@@ -1381,7 +1783,159 @@ STAGED_WAVES = [
         },
     },
 
-    # WAVE 6: 2026-12-07 — Sustainable Corporate Events & ESG MICE Guide (Singapore & India)
+    # WAVE 5B: 2026-12-05: NDA-Safe Corporate Event Production Dossiers & Venue Matrix
+    {
+        "wave_id": "wave5b_2026_12_05",
+        "deploy_date": "2026-12-05",
+        "blog_card": {
+            "img": "assets/images/framez-13.webp",
+            "alt": "NDA-safe corporate event production dossiers and Singapore Bangalore venue matrix",
+            "heading": "Corporate Event Production Dossiers: SG & BLR",
+            "blurb": "NDA-safe operational dossiers and Singapore & Bangalore venue technical matrix: how Framez engineers conferences, launches, awards galas and trade exhibitions.",
+        },
+        "spec": {
+            "slug": "corporate-event-case-studies",
+            "kind": "guide",
+            "title": "Corporate Event Production Dossiers SG & BLR | Framez",
+            "description": "NDA-safe corporate event production dossiers and Singapore & Bangalore venue technical matrix: MICE summits, launches, awards nights and trade booths.",
+            "h1": "Corporate Event Production Dossiers: Singapore & Bangalore",
+            "breadcrumb_label": "Production Dossiers & Venue Matrix",
+            "published": "2026-12-05",
+            "published_human": "5 December 2026",
+            "og_image": "https://framez.sg/assets/images/framez-13.webp",
+            "summary_html": (
+                "Enterprise procurement and marketing teams evaluating an event agency want to see how real production "
+                "challenges are solved on build day rather than vague sizzle reels. Below are Framez's NDA-safe operational "
+                "production dossiers and a technical venue matrix covering major Singapore and Bangalore business districts, "
+                "built strictly without disclosing confidential client identities or financial figures."
+            ),
+            "sections": [
+                {
+                    "id": "nda-dossiers",
+                    "toc": "NDA-safe operational production dossiers",
+                    "heading": "1. NDA-safe operational production dossiers across APAC formats",
+                    "body": [
+                        {
+                            "type": "img",
+                            "src": "assets/images/framez-13.webp",
+                            "alt": "Multi-screen corporate conference plenary production managed by Framez",
+                        },
+                        {
+                            "type": "note",
+                            "text": "Confidentiality notice: In line with ISO 27001:2013 governance and mutual corporate NDAs, client brand names, confidential attendee counts and financial revenue figures are omitted. Each dossier summarizes verified operational architecture and technical safeguards.",
+                        },
+                        {
+                            "type": "table",
+                            "headers": ["Programme Archetype & Hub", "Primary Operational Challenge", "Framez Production Architecture & Controls"],
+                            "rows": [
+                                [
+                                    "<strong>Regional APAC Tech &amp; Partner Conference (Singapore)</strong>",
+                                    "Tight overnight ballroom turnarounds, 4 parallel breakout tracks and multi-country VIP delegate arrivals.",
+                                    "Standardized breakout AV racks, centralized slide-ingestion desk with hot-spare playback, QR badge arrival lanes and marshalling-yard load-in sequencing.",
+                                ],
+                                [
+                                    "<strong>GCC Annual Day &amp; Employee Recognition Night (Bengaluru ORR)</strong>",
+                                    "High-density evening traffic corridor, mixed cultural acts plus formal leadership awards and outdoor weather sensitivity.",
+                                    "Twin synchronized silent DG sets with online UPS, pre-seated award marshalling, indoor/covered weather fallback and strict 22:00 acoustic transition.",
+                                ],
+                                [
+                                    "<strong>Embargoed B2B Platform Launch (Singapore &amp; Mumbai)</strong>",
+                                    "Pre-release confidentiality, complex live cloud software demo dependencies and press mult-box audio distribution.",
+                                    "Closed-door crew NDA controls, isolated hardwired demo LAN + failover video servers, calibrated stage lighting for press cameras and clean broadcast audio split.",
+                                ],
+                                [
+                                    "<strong>Custom Island Trade Show Pavilion (Convention Hall)</strong>",
+                                    "24-hour hall build window, dual enclosed acoustic meeting rooms and high-visibility aisle messaging.",
+                                    "Workshop pre-staged modular aluminium &amp; joinery test-fit, early organiser structural/electrical sign-off and intent-tiered QR lead capture.",
+                                ],
+                            ],
+                        },
+                    ],
+                },
+                {
+                    "id": "venue-matrix",
+                    "toc": "Singapore & Bangalore venue engineering matrix",
+                    "heading": "2. Singapore & Bangalore venue production engineering matrix",
+                    "body": [
+                        "Choosing a venue before running a production inspection often exposes hidden rigging limits, lift bottlenecks or power-isolation costs. Our production leads inspect these technical parameters across core Singapore and Bangalore hubs:",
+                        {
+                            "type": "table",
+                            "headers": ["Venue Tier / District", "Ideal Format Fit", "Critical Production & Load-In Checks"],
+                            "rows": [
+                                [
+                                    "<strong>Marina Bay &amp; Suntec Convention Corridor (SG)</strong>",
+                                    "Regional APAC conferences, MICE summits &amp; large trade exhibitions",
+                                    "Advance marshalling-yard booking, certified rigging weight plots, early-bird electrical orders and PDPA-compliant badge desks.",
+                                ],
+                                [
+                                    "<strong>Singapore EXPO / Changi &amp; Sentosa Resorts (SG)</strong>",
+                                    "Heavy-freight expos (EXPO) and executive retreats / D&amp;D galas (Sentosa)",
+                                    "Forklift/pallet scheduling at Changi halls; wet-weather marquee or indoor foyer backups and coach dispersal logistics on Sentosa.",
+                                ],
+                                [
+                                    "<strong>BIEC &amp; KTPO Whitefield (Bengaluru)</strong>",
+                                    "Industrial trade shows, large-format expos &amp; multi-thousand-staff conventions",
+                                    "Clear-span floor load planning, compressed overnight carpentry windows, fire-aisle certification and dedicated power drops.",
+                                ],
+                                [
+                                    "<strong>Koramangala, CBD &amp; Outer Ring Road Hotels (Bengaluru)</strong>",
+                                    "GCC town halls, CXO summits, product launches &amp; awards galas",
+                                    "Chandelier clear-height verification for LED screens, overnight truck bay slots, dedicated silent DG + UPS backup and dedicated wired internet.",
+                                ],
+                            ],
+                        },
+                    ],
+                },
+                {
+                    "id": "governance-controls",
+                    "toc": "ISO 9001, ISO 27001 & RFP readiness",
+                    "heading": "3. Auditable delivery under ISO 9001:2015 and ISO 27001:2013",
+                    "body": [
+                        {
+                            "type": "ul",
+                            "checklist": True,
+                            "items": [
+                                "<strong>ISO 9001:2015 production checklists:</strong> Standard pre-show technical sign-off, AV cue rehearsals and supplier SLA tracking across every project.",
+                                "<strong>ISO 27001:2013 &amp; PDPA/DPDP data hygiene:</strong> Access-controlled delegate registration lists, encrypted presentation handling and agreed post-event purge windows.",
+                                "<strong>Itemized BoQ transparency:</strong> Line-item separation across venue, AV hardware, staging fabrication, hospitality and agency management fees without hidden markups.",
+                            ],
+                        },
+                        'Review our <a href="/clientele">Enterprise Clientele &amp; Sectors</a> overview, explore <a href="/conference-and-mice-event-management">Conference &amp; MICE Management</a>, or check our <a href="/bangalore-corporate-event-venue-and-logistics-checklist">Bangalore Venue Checklist</a> and <a href="/singapore-corporate-event-planning-checklist">Singapore Planning Checklist</a>.',
+                    ],
+                },
+            ],
+            "faqs": [
+                (
+                    "Why does Framez publish NDA-safe production dossiers instead of named client budgets?",
+                    "Enterprise clients frequently require strict confidentiality around internal town halls, unreleased product roadmaps, attendee records and commercial budgets. Publishing operational architectures protects client NDAs while letting procurement teams verify our engineering rigor.",
+                ),
+                (
+                    "Can Framez conduct a technical venue inspection before we sign a hotel or convention contract?",
+                    "Yes. Our Singapore (Prudential Tower) and Bengaluru (Koramangala) production leads routinely join venue recces to check ceiling heights, goods lifts, rigging points, power capacity and hidden venue charges before contract signature.",
+                ),
+                (
+                    "How do you verify audio-visual and structural safety on show build day?",
+                    "Every project follows documented Risk Assessment and Method Statement (RAMS) filings, pre-staged workshop fabrication checks, dual playback systems and on-site technical rehearsals prior to guest entry.",
+                ),
+                (
+                    "Where can we share an RFP or request sector-relevant work samples under NDA?",
+                    "Submit your brief via our Book a Demo or Get in Touch forms; after executing a mutual NDA where required, our producers walk your team through relevant format samples and sample BoQs.",
+                ),
+            ],
+            "cta_heading": "Evaluating agencies for an upcoming Singapore or Bangalore programme?",
+            "cta_body": "Share your event brief or RFP: we can schedule a confidential technical walkthrough and return an itemized production scope.",
+            "cta_href": "/book-a-demo",
+            "cta_label": "Request an NDA Technical Walkthrough",
+            "related": [
+                ("Enterprise Clientele & Sectors", "/clientele"),
+                ("Singapore Event Management", "/event-management-company-in-singapore"),
+                ("Bangalore Event Management", "/event-management-company-in-bangalore"),
+                ("B2B Event Agency RFP Guide", "/b2b-event-agency-rfp-evaluation-guide"),
+            ],
+        },
+    },
+
+    # WAVE 6: 2026-12-07, Sustainable Corporate Events & ESG MICE Guide (Singapore & India)
     {
         "wave_id": "wave6_2026_12_07",
         "deploy_date": "2026-12-07",
@@ -1403,7 +1957,7 @@ STAGED_WAVES = [
             "og_image": "https://framez.sg/assets/img/our%20work/Framez%20Events%20And%20Productions%20(20).JPG",
             "summary_html": (
                 "Enterprise procurement teams in Singapore and India increasingly include sustainability criteria in event "
-                "RFPs — aligned with Singapore's Green Plan / MICE sustainability guidelines and corporate ESG disclosures. "
+                "RFPs, aligned with Singapore's Green Plan / MICE sustainability guidelines and corporate ESG disclosures. "
                 "Real event sustainability comes from upstream production choices (reusable modular structures, LED over "
                 "single-use PVC flex, accurate F&amp;B headcount buffers and public-transit venue selection), not vague "
                 "carbon-neutrality slogans."
@@ -1478,11 +2032,11 @@ STAGED_WAVES = [
                 ),
                 (
                     "Can Framez supply post-event material and waste summaries for our internal ESG team?",
-                    "Yes. When requested at the briefing stage, we document practical production choices — such as modular vs single-use fabrication ratios, digital vs printed badge counts and catering reconciliation — so your sustainability team has concrete operational records.",
+                    "Yes. When requested at the briefing stage, we document practical production choices, such as modular vs single-use fabrication ratios, digital vs printed badge counts and catering reconciliation, so your sustainability team has concrete operational records.",
                 ),
             ],
             "cta_heading": "Incorporating sustainability criteria into your next corporate event RFP?",
-            "cta_body": "Share your brief with Framez — we design modular, low-waste conferences, exhibitions and launches across Singapore and India.",
+            "cta_body": "Share your brief with Framez, we design modular, low-waste conferences, exhibitions and launches across Singapore and India.",
             "cta_href": "/get-in-touch",
             "cta_label": "Discuss Sustainable Production",
             "related": [

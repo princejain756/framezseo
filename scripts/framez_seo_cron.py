@@ -16,6 +16,8 @@ Runs daily via /etc/cron.d/framez-seo on 72.61.173.127:
 Usage:
   python3 framez_seo_cron.py all          # full daily pipeline (cron default)
   python3 framez_seo_cron.py audit        # technical crawl only
+  python3 framez_seo_cron.py geo_audit    # GEO/AEO, schema, llms parity & asset audit
+  python3 framez_seo_cron.py sync_llms    # sync llms.txt & llms-full.txt to live sitemap
   python3 framez_seo_cron.py sitemap      # reconcile & upload sitemap.xml
   python3 framez_seo_cron.py indexnow     # push changed URLs
   python3 framez_seo_cron.py gsc          # Search Console snapshot
@@ -257,6 +259,50 @@ def url_to_slug(cfg, url):
     return url[len(base):].strip("/")
 
 
+def _strip_dashes(text):
+    """Replace em and en dashes with standard punctuation."""
+    if not text:
+        return ""
+    cleaned = re.sub(r"\s*\u2014\s*", ": ", str(text))
+    return cleaned.replace("\u2013", "-")
+
+
+def _normalize_site_url(cfg, raw_url):
+    base = cfg["site"].rstrip("/")
+    u = str(raw_url or "").strip()
+    if not u:
+        return ""
+    if u.rstrip("/") == base:
+        return base + "/"
+    return u.rstrip("/")
+
+
+def _extract_jsonld_info(html):
+    """Extract schema @type values, invalid JSON-LD block count, and Speakable presence."""
+    ld_types, ld_invalid = [], 0
+    has_speakable = False
+    for block in re.findall(r'application/ld\+json[^>]*>(.*?)</script>', html, re.S | re.I):
+        try:
+            parsed = json.loads(block.strip())
+            items = parsed if isinstance(parsed, list) else parsed.get("@graph", [parsed])
+            for item in items:
+                if isinstance(item, dict):
+                    t = item.get("@type")
+                    if isinstance(t, list):
+                        ld_types.extend(str(x) for x in t)
+                    elif t:
+                        ld_types.append(str(t))
+                    if item.get("speakable") or (
+                        isinstance(t, str) and t == "SpeakableSpecification"
+                    ) or (isinstance(t, list) and "SpeakableSpecification" in t):
+                        has_speakable = True
+                else:
+                    ld_invalid += 1
+        except Exception:
+            ld_invalid += 1
+    return ld_types, ld_invalid, has_speakable
+
+
 def analyze_page(url, html):
     def one(pattern):
         m = re.search(pattern, html, re.S | re.I)
@@ -277,22 +323,7 @@ def analyze_page(url, html):
     twitter = bool(re.search(r'name=["\']twitter:card["\']', html, re.I))
     has_ga4 = GA4_ID in html
 
-    ld_types, ld_invalid = [], 0
-    for block in re.findall(r'application/ld\+json[^>]*>(.*?)</script>', html, re.S):
-        try:
-            parsed = json.loads(block.strip())
-            items = parsed if isinstance(parsed, list) else parsed.get("@graph", [parsed])
-            for item in items:
-                if isinstance(item, dict):
-                    t = item.get("@type")
-                    if isinstance(t, list):
-                        ld_types.extend(str(x) for x in t)
-                    elif t:
-                        ld_types.append(str(t))
-                else:
-                    ld_invalid += 1
-        except Exception:
-            ld_invalid += 1
+    ld_types, ld_invalid, _ = _extract_jsonld_info(html)
 
     body = re.search(r"<body.*?</body>", html, re.S | re.I)
     text = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", body.group(0) if body else html, flags=re.S | re.I)
@@ -432,15 +463,7 @@ def release_due_waves(cfg, state):
                     ins = idx + len(marker)
                     touched_files["blog.php"] = blog_cur[:ins] + "\n" + card_html + blog_cur[ins:]
 
-        for lf in ("llms.txt", "llms-full.txt"):
-            lcur = remote_get("public_html", lf) or ""
-            if lcur:
-                (wbackup / lf).write_text(lcur)
-                if slug not in lcur:
-                    line = f"- [{spec['h1']}](https://framez.sg/{slug})\n"
-                    touched_files[lf] = lcur.rstrip() + "\n" + line
-
-        # 3. Upload and SHA-256 verify each file
+        # 3. Upload and SHA-256 verify page & blog.php
         receipts = []
         for tf, tcontent in touched_files.items():
             ok = remote_put("public_html", tf, tcontent)
@@ -459,6 +482,25 @@ def release_due_waves(cfg, state):
         info = analyze_page(live_url, live_body)
         if st != 200 or info["canonical"].rstrip("/") != live_url:
             raise RuntimeError(f"release_due: live verification failed for {live_url} (HTTP {st})")
+
+        # 5. Sync llms.txt & llms-full.txt cleanly with the newly deployed wave URL
+        try:
+            llms_res = sync_llms_files(
+                cfg,
+                state,
+                upload=True,
+                extra_pages=[{
+                    "loc": live_url,
+                    "title": spec.get("h1") or spec.get("title") or slug,
+                    "desc": spec.get("description") or "",
+                    "kind": spec.get("kind", "guide"),
+                }],
+            )
+            for fname_l, sha_l in (llms_res.get("sha256") or {}).items():
+                if fname_l in (llms_res.get("updated_files") or []):
+                    receipts.append({"file": fname_l, "sha256": sha_l})
+        except Exception as e:
+            log(f"release_due: llms sync warning ({e})")
 
         wave_record = {
             "deployed_at": now_utc().isoformat(),
@@ -675,10 +717,12 @@ def google_token():
     return json.loads(text).get("access_token"), "ok"
 
 
-def gsc_query(site_enc, headers, start_date, end_date, dimensions=None, row_limit=25):
+def gsc_query(site_enc, headers, start_date, end_date, dimensions=None, row_limit=25, dimensionFilterGroups=None):
     payload = {"startDate": start_date, "endDate": end_date, "rowLimit": row_limit}
     if dimensions:
         payload["dimensions"] = dimensions
+    if dimensionFilterGroups:
+        payload["dimensionFilterGroups"] = dimensionFilterGroups
     st, text, _ = http(
         f"https://www.googleapis.com/webmasters/v3/sites/{site_enc}/searchAnalytics/query",
         data=json.dumps(payload).encode(),
@@ -715,14 +759,26 @@ def gsc_snapshot(cfg, state):
     start_28d = (end_d - datetime.timedelta(days=27)).isoformat()
     end_iso = end_d.isoformat()
 
+    def _country_filter(code):
+        return [{"filters": [{"dimension": "country", "operator": "equals", "expression": code}]}]
+
     out["window_7d"] = {"start": start_7d, "end": end_iso, "totals": gsc_query(site_enc, headers, start_7d, end_iso)}
     out["window_28d"] = {
         "start": start_28d,
         "end": end_iso,
         "totals": gsc_query(site_enc, headers, start_28d, end_iso),
-        "countries": gsc_query(site_enc, headers, start_28d, end_iso, ["country"], 15),
-        "top_queries": gsc_query(site_enc, headers, start_28d, end_iso, ["query"], 30),
-        "top_pages": gsc_query(site_enc, headers, start_28d, end_iso, ["page"], 30),
+        "countries": gsc_query(site_enc, headers, start_28d, end_iso, ["country"], 30),
+        "top_queries": gsc_query(site_enc, headers, start_28d, end_iso, ["query"], 500),
+        "top_pages": gsc_query(site_enc, headers, start_28d, end_iso, ["page"], 100),
+        "singapore_queries": gsc_query(
+            site_enc, headers, start_28d, end_iso, ["query"], 200,
+            dimensionFilterGroups=_country_filter("sgp"),
+        ),
+        "india_queries": gsc_query(
+            site_enc, headers, start_28d, end_iso, ["query"], 200,
+            dimensionFilterGroups=_country_filter("ind"),
+        ),
+        "query_page_pairs": gsc_query(site_enc, headers, start_28d, end_iso, ["query", "page"], 250),
     }
 
     state["gsc_status"] = "ok"
@@ -846,11 +902,745 @@ def maybe_freeze_monthly_boundary(summary, gsc, ga4, leads):
         log(f"snapshot: froze monthly cycle boundary {snap_file.name}")
 
 
+_LLMS_CORE_SLUGS = {
+    "",
+    "corporate-event-management-company",
+    "event-management-company-in-singapore",
+    "event-management-company-in-bangalore",
+    "event-management-company-in-india",
+    "our-events-and-services",
+    "event-marketing-services",
+    "event-planner",
+    "experiential-marketing-brand-activations",
+    "conference-and-mice-event-management",
+    "exhibition-and-trade-show-management",
+    "dinner-and-dance-event-management-singapore",
+    "product-launch-event-management",
+    "corporate-annual-day-and-awards-night-management",
+    "corporate-event-case-studies",
+    "about-us",
+    "clientele",
+    "blog",
+    "get-in-touch",
+    "book-a-demo",
+}
+
+_LLMS_CURATED_META = {
+    "": ("Home", "Overview of Framez B2B corporate event management, MICE production, and contact options"),
+    "corporate-event-management-company": ("Corporate Event Management", "End-to-end corporate event planning, stage engineering, and production scope across Singapore and India"),
+    "event-management-company-in-singapore": ("Event Management Company in Singapore", "Corporate conferences, MICE summits, product launches, Dinner and Dance galas, and activations managed from Prudential Tower, Singapore"),
+    "event-management-company-in-bangalore": ("Event Management Company in Bangalore", "Bangalore corporate event management, stage AV production, venue sourcing, and delegate logistics from Koramangala HQ"),
+    "event-management-company-in-india": ("Event Management Company in India", "Pan-India corporate event delivery across Bengaluru, Mumbai, Delhi NCR, Hyderabad, and Chennai"),
+    "our-events-and-services": ("Events and Services", "Full service catalogue covering conferences, MICE, residential meets, rewards, exhibitions, and brand activations"),
+    "event-marketing-services": ("Event Marketing Services", "B2B event promotion, audience acquisition, delegate registration workflows, and trade show lead capture"),
+    "event-planner": ("Event Planner", "Enterprise corporate event planning, run-of-show management, and turnkey technical production"),
+    "experiential-marketing-brand-activations": ("Experiential Marketing & Brand Activations", "Pop-ups, roadshows, exhibition environments, and interactive brand experiences"),
+    "about-us": ("About Us", "Company background, dual-HQ operations, ISO 9001:2015 and ISO 27001:2013 governance"),
+    "clientele": ("Clientele", "Enterprise client portfolio across technology, financial services, healthcare, and MICE sectors"),
+    "blog": ("Blog & Guides", "Practical planning guides, procurement checklists, and technical handbooks for corporate event buyers"),
+    "get-in-touch": ("Contact", "Direct enquiry form, Prudential Tower Singapore and Koramangala Bengaluru office details"),
+    "book-a-demo": ("Book a Demo", "Schedule an event brief walkthrough, venue check, and scoped production quote"),
+    "corporate-event-budget-planning-guide": ("Corporate Event Budget Planning Guide", "Cost categories, quote scope, fixed vs per-guest items, change orders, and procurement checklist"),
+    "annual-day-and-awards-night-planning-guide": ("Annual Day & Awards Night Planning Guide", "Recognition goals, award approvals, rehearsal run-of-show, and inclusive guest planning"),
+    "corporate-event-roi-measurement-guide": ("Corporate Event ROI Measurement Guide", "Objectives vs metrics, attendance denominators, attribution models, and closeout reporting"),
+    "singapore-corporate-event-planning-checklist": ("Singapore Corporate Event Planning Checklist", "Venue access, PDPA attendee data compliance, permits, wet-weather fallback, and supplier vetting"),
+    "corporate-event-planning-handbook-2027": ("The 2027 Corporate Event Planning Handbook", "Enterprise planning framework for APAC corporate events, budgets, and AV standards"),
+    "experiential-brand-activations-framework": ("Experiential Brand Activations Framework", "Activation design, dwell time metrics, and lead capture models for enterprise teams"),
+    "executive-offsite-retreat-blueprint": ("Executive Offsite Retreat Blueprint", "Leadership offsite venue selection, security, agenda architecture, and logistics"),
+    "b2b-event-agency-rfp-evaluation-guide": ("B2B Event Agency RFP Evaluation Guide", "Procurement scoring rubrics, SLA benchmarks, and vendor contract checks"),
+    "corporate-product-launch-event-architecture": ("Corporate Product Launch Event Architecture", "Reveal engineering, press operations, broadcast standards, and lead routing"),
+    "high-security-cxo-board-summit-protocol": ("High-Security CXO Board Summit Protocol", "Executive summit confidentiality tiers, TSCM sweeps, and duty-of-care protocols"),
+    "festive-corporate-gala-diwali-celebrations": ("Festive Corporate Gala & Diwali Celebrations", "Corporate festive programming, venue decor fire safety, and inclusive design"),
+    "corporate-family-day-carnival-safety-logistics": ("Corporate Family Day Carnival Safety & Logistics", "Child-safe zone zoning, vendor vetting, crowd engineering, and medical readiness"),
+    "corporate-event-trends-singapore": ("Corporate Event Trends in Singapore", "Singapore MICE production shifts, sustainable staging, and experiential AV trends"),
+    "Framez-Public-Statement-on-Health-and-Safety-Commitment": ("Health and Safety Commitment Statement", "Public ISO 9001:2015, ISO 27001:2013, and site safety compliance statement"),
+}
+
+
+def _collect_llms_page_metadata(cfg, sitemap_entries, extra_pages=None):
+    """Build clean title/description/category metadata for every live sitemap URL."""
+    base = cfg["site"].rstrip("/")
+    audit_rep = load_json(REPORT_DIR / "latest-audit.json", {})
+    audit_titles = {}
+    for p in (audit_rep.get("pages") or []):
+        if isinstance(p, dict) and p.get("url"):
+            audit_titles[_normalize_site_url(cfg, p["url"])] = p.get("title") or ""
+
+    wave_meta = {}
+    core_slugs = set(_LLMS_CORE_SLUGS)
+    for w in STAGED_WAVES:
+        spec = w.get("spec") or {}
+        sl = spec.get("slug", "")
+        if sl:
+            wave_meta[sl] = (
+                spec.get("h1") or spec.get("title") or sl,
+                spec.get("description") or "",
+            )
+            if spec.get("kind") == "service":
+                core_slugs.add(sl)
+
+    extra_meta = {}
+    extra_urls = []
+    for ep in (extra_pages or []):
+        if isinstance(ep, dict) and ep.get("loc"):
+            nu = _normalize_site_url(cfg, ep["loc"])
+            eslug = url_to_slug(cfg, nu)
+            extra_meta[eslug] = (ep.get("title") or eslug, ep.get("desc") or "")
+            if ep.get("kind") == "service":
+                core_slugs.add(eslug)
+            extra_urls.append(nu)
+
+    all_urls = []
+    seen = set()
+    for e in sitemap_entries:
+        nu = _normalize_site_url(cfg, e.get("loc"))
+        if nu and nu not in seen:
+            seen.add(nu)
+            all_urls.append(nu)
+    for nu in extra_urls:
+        if nu not in seen:
+            seen.add(nu)
+            all_urls.append(nu)
+
+    core_items = []
+    guide_items = []
+    for u in all_urls:
+        slug = url_to_slug(cfg, u)
+        if slug in _LLMS_CURATED_META:
+            title, desc = _LLMS_CURATED_META[slug]
+        elif slug in extra_meta:
+            title, desc = extra_meta[slug]
+        elif slug in wave_meta:
+            title, desc = wave_meta[slug]
+        else:
+            title = audit_titles.get(u, "")
+            desc = ""
+            if not title or not desc:
+                try:
+                    st, html, _ = fetch(u)
+                    if st == 200:
+                        info = analyze_page(u, html)
+                        title = title or info.get("title") or slug or "Home"
+                        desc = desc or info.get("description") or ""
+                except Exception:
+                    pass
+            if not title:
+                title = slug.replace("-", " ").title() if slug else "Home"
+        if not desc:
+            desc = f"Framez Events & Productions resource at {base}/{slug}" if slug else "Framez corporate event management homepage"
+
+        title = _strip_dashes(re.sub(r"\s*\|\s*Framez.*$", "", title).strip())
+        desc = _strip_dashes(desc.strip())
+        item = {"url": u, "slug": slug, "title": title, "desc": desc}
+        if slug in core_slugs:
+            core_items.append(item)
+        else:
+            guide_items.append(item)
+
+    return core_items, guide_items
+
+
+def sync_llms_files(cfg=None, state=None, upload=True, extra_pages=None):
+    """Build and sync llms.txt and llms-full.txt with all live sitemap URLs, dual-HQ NAP, ISO proof, and entity disambiguation."""
+    cfg = cfg or config()
+    state = state if state is not None else {}
+    log("llms: checking parity against %s" % cfg["sitemap_url"])
+    status, xml_text, _ = fetch(cfg["sitemap_url"])
+    if status != 200:
+        raise RuntimeError(f"sync_llms_files: sitemap fetch failed HTTP {status}")
+
+    entries = parse_sitemap(xml_text)
+    core_items, guide_items = _collect_llms_page_metadata(cfg, entries, extra_pages=extra_pages)
+
+    llms_txt_lines = [
+        "# Framez Events & Productions",
+        "",
+        "> Frame Events and Productions Private Limited (India HQ) and Frame Events & Productions Pte. Ltd. (Singapore), operating publicly as Framez and Framez Events & Productions (https://framez.sg), is an enterprise B2B corporate event management, MICE, and technical production agency. Framez is distinct from consumer ticketing marketplaces and unrelated photography studios.",
+        "",
+        "## Entity Disambiguation, Dual-HQ NAP & Certifications",
+        "",
+        "- **Legal Entities:** Frame Events and Productions Private Limited (India HQ) / Frame Events & Productions Pte. Ltd. (Singapore)",
+        "- **Brand Names:** Framez, Framez Events & Productions",
+        "- **Singapore Office:** 30 Cecil Street, #19-08 Prudential Tower, Singapore 049712",
+        "- **India Headquarters (Bengaluru):** B/2, GANGA, 3rd Floor, 5th Block, KHB Colony, Koramangala, Bengaluru, Karnataka 560095, India",
+        "- **Email:** info@framez.sg",
+        "- **Phone:** +91-9448066560",
+        "- **Website:** https://framez.sg",
+        "- **Certifications (ISO Proof):** ISO 9001:2015 (Quality Management: https://framez.sg/FRAMEZ%20ISO%209001%20Certificate.pdf) and ISO 27001:2013 (Information Security: https://framez.sg/FRAMEZ%20ISO%2027001%20Certificate.pdf)",
+        "- **Health & Safety Compliance:** https://framez.sg/Framez-Public-Statement-on-Health-and-Safety-Commitment",
+        "- **Official Social Profiles:** LinkedIn (https://www.linkedin.com/company/frame-events-productions), Instagram (https://www.instagram.com/framez.events), Facebook (https://www.facebook.com/frameeventsandproductions)",
+        "",
+        "## Services",
+        "",
+        "- Corporate event management and end-to-end stage/AV production",
+        "- B2B conferences, tech summits, and MICE programmes",
+        "- Enterprise product launches, executive board summits, and ceremonies",
+        "- Corporate annual days, Dinner & Dance galas, and employee awards nights",
+        "- Experiential marketing, exhibitions, trade show stalls, and brand activations",
+        "",
+        "## Core commercial and brand pages",
+        "",
+    ]
+    for it in core_items:
+        llms_txt_lines.append(f"- [{it['title']}]({it['url']})")
+
+    llms_txt_lines.extend(["", "## Guides, handbooks and trust resources", ""])
+    for it in guide_items:
+        llms_txt_lines.append(f"- [{it['title']}]({it['url']})")
+
+    llms_full_lines = [
+        "# Framez Events & Productions: Full Site Context",
+        "",
+        "> Frame Events and Productions Private Limited (India HQ) and Frame Events & Productions Pte. Ltd. (Singapore), operating publicly as Framez and Framez Events & Productions (https://framez.sg), is an enterprise B2B corporate event management, experiential marketing, and technical production agency serving Singapore and India. This file provides factual navigation context for crawlers and answer engines and is distinct from unrelated consumer ticketing apps or photography studios.",
+        "",
+        "## Company Profile, Entity Disambiguation & Verified Dual-HQ NAP",
+        "",
+        "- **Legal Entities:** Frame Events and Productions Private Limited (India) / Frame Events & Productions Pte. Ltd. (Singapore)",
+        "- **Brand & Alternate Names:** Framez, Framez Events & Productions",
+        "- **Commercial Focus:** B2B corporate events, MICE conferences, product launches, Dinner & Dance galas, awards nights, exhibitions, and brand activations",
+        "- **ISO Certifications:** ISO 9001:2015 Quality Management (https://framez.sg/FRAMEZ%20ISO%209001%20Certificate.pdf) and ISO 27001:2013 Information Security (https://framez.sg/FRAMEZ%20ISO%2027001%20Certificate.pdf)",
+        "- **Compliance & Data Protection:** Singapore PDPA attendee data handling, NDA-protected enterprise broadcasts, and published Health & Safety commitment (https://framez.sg/Framez-Public-Statement-on-Health-and-Safety-Commitment)",
+        "- **Singapore Office:** 30 Cecil Street, #19-08 Prudential Tower, Singapore 049712",
+        "- **India Headquarters (Bengaluru):** B/2, GANGA, 3rd Floor, 5th Block, KHB Colony, Koramangala, Bengaluru, Karnataka 560095, India",
+        "- **Email:** info@framez.sg",
+        "- **Phone:** +91-9448066560",
+        "- **Website:** https://framez.sg",
+        "- **Social:** LinkedIn (https://www.linkedin.com/company/frame-events-productions), Instagram (https://www.instagram.com/framez.events), Facebook (https://www.facebook.com/frameeventsandproductions)",
+        "",
+        "## Core commercial and brand pages",
+        "",
+    ]
+    for it in core_items:
+        llms_full_lines.append(f"- [{it['title']}]({it['url']}): {it['desc']}")
+
+    llms_full_lines.extend(["", "## Guides, handbooks and trust resources", ""])
+    for it in guide_items:
+        llms_full_lines.append(f"- [{it['title']}]({it['url']}): {it['desc']}")
+
+    llms_full_lines.extend([
+        "",
+        "## How to engage",
+        "",
+        "1. Share your event type, target dates, city (Singapore or India), and expected delegate count via https://framez.sg/get-in-touch or https://framez.sg/book-a-demo.",
+        "2. Framez prepares a scoped technical and operational proposal specifying inclusions, exclusions, and line-item production costs.",
+        "3. Delivery covers venue coordination, staging and AV engineering, vendor management, compliance documentation, and on-ground show calling.",
+        "",
+    ])
+
+    new_files = {
+        "llms.txt": _strip_dashes("\n".join(llms_txt_lines).rstrip() + "\n"),
+        "llms-full.txt": _strip_dashes("\n".join(llms_full_lines).rstrip() + "\n"),
+    }
+
+    updated_files = []
+    sha_map = {}
+    stamp = now_utc().strftime("%Y%m%dT%H%M%SZ")
+    bdir = BACKUP_DIR / f"llms-sync-{stamp}"
+
+    for fname, content in new_files.items():
+        sha = hashlib.sha256(content.encode("utf-8")).hexdigest()
+        sha_map[fname] = sha
+        if upload:
+            cur = remote_get("public_html", fname) or ""
+        else:
+            try:
+                _, cur, _ = fetch(cfg["site"].rstrip("/") + "/" + fname)
+            except Exception:
+                cur = ""
+        if cur.strip() == content.strip():
+            continue
+        if upload:
+            bdir.mkdir(parents=True, exist_ok=True)
+            if cur:
+                (bdir / fname).write_text(cur, encoding="utf-8")
+            ok = remote_put("public_html", fname, content)
+            if not ok:
+                raise RuntimeError(f"sync_llms_files: cPanel upload failed for {fname}")
+            rb = remote_get("public_html", fname) or ""
+            if hashlib.sha256(rb.encode("utf-8")).hexdigest() != sha:
+                raise RuntimeError(f"sync_llms_files: SHA-256 readback mismatch on {fname}")
+            updated_files.append(fname)
+            log(f"llms: uploaded & SHA-256 verified {fname} ({len(core_items) + len(guide_items)} URLs)")
+        else:
+            updated_files.append(fname)
+
+    res = {
+        "status": "ok",
+        "generated_at": now_utc().isoformat(),
+        "total_urls": len(core_items) + len(guide_items),
+        "core_urls": len(core_items),
+        "guide_urls": len(guide_items),
+        "updated_files": updated_files,
+        "uploaded": bool(upload and updated_files),
+        "sha256": sha_map,
+    }
+    state["last_llms_sync_at"] = res["generated_at"]
+    state["last_llms_sync"] = res
+    if upload and updated_files:
+        append_ledger({"event": "llms_files_synced", **res})
+    return res
+
+
+def _extract_llms_urls(cfg, txt):
+    """Extract normalized framez.sg page URLs referenced inside an llms.txt file."""
+    urls, seen = [], set()
+    skip_ext = (".pdf", ".txt", ".xml", ".png", ".jpg", ".jpeg", ".webp", ".svg", ".css", ".js")
+    for raw in re.findall(r"https://framez\.sg[^\s\)\]>\"']*", txt or "", re.I):
+        cleaned = raw.rstrip(".,;:")
+        low = cleaned.lower()
+        if any(low.endswith(ext) for ext in skip_ext) or "/assets/" in low:
+            continue
+        norm = _normalize_site_url(cfg, cleaned)
+        if norm and norm not in seen:
+            seen.add(norm)
+            urls.append(norm)
+    return urls
+
+
+def _extract_page1_zero_ctr(gsc_data):
+    """Identify Page-1 (position <= 10.0) queries and pages with zero clicks from latest-gsc.json."""
+    w28 = (gsc_data or {}).get("window_28d") or {}
+    query_to_page = {}
+    query_best_imp = {}
+    for row in (w28.get("query_page_pairs") or {}).get("rows") or []:
+        keys = row.get("keys") or []
+        if len(keys) >= 2:
+            q, p = keys[0], keys[1]
+            imp = row.get("impressions", 0)
+            if imp > query_best_imp.get(q, -1):
+                query_best_imp[q] = imp
+                query_to_page[q] = p
+
+    def _scan_queries(section_key, country_tag):
+        out = []
+        for row in (w28.get(section_key) or {}).get("rows") or []:
+            q = (row.get("keys") or [""])[0]
+            clicks = row.get("clicks", 0)
+            imp = row.get("impressions", 0)
+            pos = row.get("position", 99.0)
+            if imp >= 1 and clicks == 0 and pos <= 10.0:
+                out.append({
+                    "query": q,
+                    "impressions": imp,
+                    "clicks": clicks,
+                    "ctr": 0.0,
+                    "position": round(pos, 1),
+                    "country": country_tag,
+                    "page": query_to_page.get(q, ""),
+                })
+        out.sort(key=lambda x: (-x["impressions"], x["position"], x["query"]))
+        return out
+
+    global_q = _scan_queries("top_queries", "all")
+    sgp_q = _scan_queries("singapore_queries", "sgp")
+    ind_q = _scan_queries("india_queries", "ind")
+
+    pages_p1 = []
+    for row in (w28.get("top_pages") or {}).get("rows") or []:
+        page = (row.get("keys") or [""])[0]
+        clicks = row.get("clicks", 0)
+        imp = row.get("impressions", 0)
+        pos = row.get("position", 99.0)
+        if imp >= 1 and clicks == 0 and pos <= 10.0:
+            pages_p1.append({
+                "page": page,
+                "impressions": imp,
+                "clicks": clicks,
+                "ctr": 0.0,
+                "position": round(pos, 1),
+            })
+    pages_p1.sort(key=lambda x: (-x["impressions"], x["position"], x["page"]))
+
+    return {
+        "gsc_available": bool(w28),
+        "queries": global_q,
+        "singapore_queries": sgp_q,
+        "india_queries": ind_q,
+        "pages": pages_p1,
+        "total_query_alerts": len(global_q),
+        "total_singapore_alerts": len(sgp_q),
+        "total_india_alerts": len(ind_q),
+        "total_page_alerts": len(pages_p1),
+        "total_alerts": len(global_q) + len(pages_p1),
+    }
+
+
+def _expected_schema_for_slug(slug):
+    """Return expected JSON-LD schema role checks for a given slug."""
+    service_slugs = {
+        "our-events-and-services",
+        "corporate-event-management-company",
+        "event-management-company-in-bangalore",
+        "event-management-company-in-india",
+        "event-management-company-in-singapore",
+        "event-planner",
+        "event-marketing-services",
+        "experiential-marketing-brand-activations",
+        "conference-and-mice-event-management",
+        "exhibition-and-trade-show-management",
+        "dinner-and-dance-event-management-singapore",
+        "product-launch-event-management",
+        "corporate-annual-day-and-awards-night-management",
+    }
+    utility_slugs = {"", "about-us", "clientele", "blog", "get-in-touch", "book-a-demo"}
+    for w in STAGED_WAVES:
+        sp = w.get("spec") or {}
+        if sp.get("kind") == "service" and sp.get("slug"):
+            service_slugs.add(sp["slug"])
+
+    if slug in service_slugs:
+        expected = ["Organization", "Service", "FAQPage"]
+        if "singapore" in slug or "bangalore" in slug or "corporate-event-management-company" == slug:
+            expected.append("ProfessionalService")
+        return "service", expected
+    if slug in utility_slugs:
+        return "utility", ["Organization"]
+    if slug == "Framez-Public-Statement-on-Health-and-Safety-Commitment":
+        return "trust", ["Organization", "Article"]
+    return "guide", ["Organization", "Article", "FAQPage"]
+
+
+def geo_aeo_audit(cfg, state):
+    """Audit all live sitemap URLs for GEO/AEO readiness, schema, llms parity, mixed content, jQuery, scripts, images, and Page-1 zero-CTR alerts."""
+    log("geo_audit: start")
+    status, xml_text, _ = fetch(cfg["sitemap_url"])
+    if status != 200:
+        raise RuntimeError("geo_audit: sitemap fetch failed HTTP %s" % status)
+    entries = parse_sitemap(xml_text)
+    sitemap_urls = [_normalize_site_url(cfg, e["loc"]) for e in entries if e.get("loc")]
+
+    base = cfg["site"].rstrip("/")
+    llms_texts = {}
+    for lf in ("llms.txt", "llms-full.txt"):
+        try:
+            st_l, body_l, _ = fetch(f"{base}/{lf}")
+            llms_texts[lf] = body_l if st_l == 200 else ""
+        except Exception:
+            llms_texts[lf] = ""
+
+    llms_urls = _extract_llms_urls(cfg, llms_texts["llms.txt"])
+    llms_full_urls = _extract_llms_urls(cfg, llms_texts["llms-full.txt"])
+    sitemap_set = set(sitemap_urls)
+
+    def _check_llms_proof(txt):
+        low = (txt or "").lower()
+        return {
+            "has_nap": ("prudential tower" in low and "koramangala" in low and "+91-9448066560" in low),
+            "has_iso": ("9001:2015" in low and "27001:2013" in low),
+            "has_entity": ("frame events and productions private limited" in low and "framez" in low),
+            "has_em_en_dash": ("\u2014" in (txt or "") or "\u2013" in (txt or "")),
+        }
+
+    llms_proof = _check_llms_proof(llms_texts["llms.txt"])
+    llms_full_proof = _check_llms_proof(llms_texts["llms-full.txt"])
+    em_en_dash_files = [lf for lf, txt in llms_texts.items() if "\u2014" in txt or "\u2013" in txt]
+
+    missing_in_llms_txt = [u for u in sitemap_urls if u not in set(llms_urls)]
+    missing_in_llms_full_txt = [u for u in sitemap_urls if u not in set(llms_full_urls)]
+    extra_in_llms_txt = [u for u in llms_urls if u not in sitemap_set]
+    extra_in_llms_full_txt = [u for u in llms_full_urls if u not in sitemap_set]
+
+    gsc_data = load_json(REPORT_DIR / "latest-gsc.json", {})
+    p1_alerts = _extract_page1_zero_ctr(gsc_data)
+    p1_page_map = {_normalize_site_url(cfg, p["page"]): p for p in p1_alerts["pages"]}
+
+    page_results = []
+    schema_counts = {
+        "Organization": 0,
+        "ProfessionalService": 0,
+        "FAQPage": 0,
+        "Service": 0,
+        "Article": 0,
+        "SpeakableSpecification": 0,
+        "BreadcrumbList": 0,
+    }
+    schema_checks_passed = 0
+    schema_checks_total = 0
+
+    mixed_maps_pages = []
+    mixed_asset_pages = []
+    dup_jquery_pages = []
+    blocking_pages = []
+    total_blocking_scripts = 0
+    script_credit_sum = 0.0
+    total_images = 0
+    total_missing_dims = 0
+    total_missing_lazy = 0
+    missing_schema_pages = []
+
+    for url in sitemap_urls:
+        try:
+            st, html, _ = fetch(url)
+        except Exception as e:
+            page_results.append({"url": url, "status": 0, "error": str(e)})
+            continue
+
+        slug = url_to_slug(cfg, url)
+        role, expected_types = _expected_schema_for_slug(slug)
+        ld_types, ld_invalid, has_speakable = _extract_jsonld_info(html)
+        types_set = set(ld_types)
+
+        has_org = "Organization" in types_set
+        has_prof = "ProfessionalService" in types_set
+        has_faq = "FAQPage" in types_set
+        has_service = "Service" in types_set
+        has_article = bool({"Article", "TechArticle"} & types_set)
+        has_crumb = "BreadcrumbList" in types_set
+
+        if has_org:
+            schema_counts["Organization"] += 1
+        if has_prof:
+            schema_counts["ProfessionalService"] += 1
+        if has_faq:
+            schema_counts["FAQPage"] += 1
+        if has_service:
+            schema_counts["Service"] += 1
+        if has_article:
+            schema_counts["Article"] += 1
+        if has_speakable:
+            schema_counts["SpeakableSpecification"] += 1
+        if has_crumb:
+            schema_counts["BreadcrumbList"] += 1
+
+        present_map = {
+            "Organization": has_org,
+            "ProfessionalService": has_prof,
+            "FAQPage": has_faq,
+            "Service": has_service,
+            "Article": has_article,
+        }
+        missing_exp = [t for t in expected_types if not present_map.get(t, False)]
+        schema_checks_total += len(expected_types)
+        schema_checks_passed += (len(expected_types) - len(missing_exp))
+        if missing_exp:
+            missing_schema_pages.append({"url": url, "role": role, "missing": missing_exp})
+
+        maps_http = re.findall(r"http://maps\.google\.com[^\s\"'<>]*", html, re.I)
+        insecure_srcs = re.findall(
+            r"""<(?:script|iframe|img|source|video|audio)\b[^>]*\bsrc\s*=\s*["'](http://[^"']+)["']""",
+            html,
+            re.I,
+        )
+        insecure_css = re.findall(
+            r"""<link\b[^>]*rel\s*=\s*["'][^"']*stylesheet[^"']*["'][^>]*href\s*=\s*["'](http://[^"']+)["']""",
+            html,
+            re.I,
+        )
+        mixed_assets = sorted(set(maps_http + insecure_srcs + insecure_css))
+        if maps_http:
+            mixed_maps_pages.append({"url": url, "matches": sorted(set(maps_http))})
+        if mixed_assets:
+            mixed_asset_pages.append({"url": url, "urls": mixed_assets})
+
+        script_tags = re.findall(r"<script\b([^>]*)>", html, re.I)
+        jquery_scripts = []
+        blocking_scripts = []
+        for attrs in script_tags:
+            src_m = re.search(r"""\bsrc\s*=\s*["']([^"']+)["']""", attrs, re.I)
+            if not src_m:
+                continue
+            src = src_m.group(1)
+            if re.search(r"(?:^|/)(?:jquery(?:-\d+\.\d+(?:\.\d+)?)?(?:\.min)?\.js)(?:[?#]|$)", src, re.I):
+                jquery_scripts.append(src)
+            if not re.search(r"\b(async|defer)\b", attrs, re.I) and not re.search(
+                r"""\btype\s*=\s*["']module["']""", attrs, re.I
+            ):
+                blocking_scripts.append(src)
+
+        jq_joined = " ".join(jquery_scripts).lower()
+        duplicate_jquery = len(jquery_scripts) > 1 or ("3.3.1" in jq_joined and "3.5.1" in jq_joined)
+        if duplicate_jquery:
+            dup_jquery_pages.append({"url": url, "scripts": jquery_scripts})
+
+        bcount = len(blocking_scripts)
+        total_blocking_scripts += bcount
+        if bcount > 0:
+            blocking_pages.append({"url": url, "blocking_count": bcount, "scripts": blocking_scripts[:10]})
+        if bcount == 0:
+            script_credit_sum += 1.0
+        elif bcount <= 2:
+            script_credit_sum += 0.5
+
+        imgs = re.findall(r"<img\b[^>]*>", html, re.I)
+        missing_dims = sum(
+            1 for im in imgs
+            if not (re.search(r"\bwidth\s*=", im, re.I) and re.search(r"\bheight\s*=", im, re.I))
+        )
+        missing_lazy = sum(
+            1 for im in imgs
+            if not re.search(r"""\bloading\s*=\s*["']?lazy["']?""", im, re.I)
+        )
+        total_images += len(imgs)
+        total_missing_dims += missing_dims
+        total_missing_lazy += missing_lazy
+
+        p1_info = p1_page_map.get(url)
+        page_results.append({
+            "url": url,
+            "status": st,
+            "role": role,
+            "jsonld_types": sorted(types_set),
+            "jsonld_invalid": ld_invalid,
+            "has_organization": has_org,
+            "has_professional_service": has_prof,
+            "has_faq_page": has_faq,
+            "has_service": has_service,
+            "has_article": has_article,
+            "has_speakable": has_speakable,
+            "missing_expected_schema": missing_exp,
+            "mixed_content_maps_google": sorted(set(maps_http)),
+            "mixed_content_assets": mixed_assets,
+            "jquery_scripts": jquery_scripts,
+            "duplicate_jquery": duplicate_jquery,
+            "blocking_script_count": bcount,
+            "blocking_scripts": blocking_scripts,
+            "images_total": len(imgs),
+            "images_missing_dimensions": missing_dims,
+            "images_missing_lazy": missing_lazy,
+            "page1_zero_ctr": p1_info,
+        })
+
+    n_pages = max(len(page_results), 1)
+    n_sitemap = max(len(sitemap_urls), 1)
+
+    schema_score = round(25.0 * (schema_checks_passed / max(schema_checks_total, 1)), 1)
+    cov_txt = (len(sitemap_urls) - len(missing_in_llms_txt)) / n_sitemap
+    cov_full = (len(sitemap_urls) - len(missing_in_llms_full_txt)) / n_sitemap
+    proof_pts = 0.0
+    for pr in (llms_proof, llms_full_proof):
+        if pr["has_nap"]:
+            proof_pts += 0.75
+        if pr["has_iso"]:
+            proof_pts += 0.75
+        if pr["has_entity"]:
+            proof_pts += 0.75
+        if not pr["has_em_en_dash"]:
+            proof_pts += 0.75
+    llms_parity_score = round(7.0 * cov_txt + 7.0 * cov_full + proof_pts, 1)
+    mixed_content_score = round(15.0 * (1.0 - (len(mixed_asset_pages) / n_pages)), 1)
+    script_hygiene_score = round(
+        7.5 * (1.0 - (len(dup_jquery_pages) / n_pages)) + 7.5 * (script_credit_sum / n_pages),
+        1,
+    )
+    if total_images > 0:
+        dims_ratio = (total_images - total_missing_dims) / total_images
+        lazy_ratio = (total_images - total_missing_lazy) / total_images
+        image_hygiene_score = round(7.5 * dims_ratio + 7.5 * lazy_ratio, 1)
+    else:
+        image_hygiene_score = 15.0
+
+    if p1_alerts["gsc_available"]:
+        penalty = min(10.0, p1_alerts["total_page_alerts"] * 1.0 + p1_alerts["total_query_alerts"] * 0.25)
+        page1_ctr_score = round(max(0.0, 10.0 - penalty), 1)
+    else:
+        page1_ctr_score = 0.0
+
+    readiness_breakdown = {
+        "schema_completeness_max25": schema_score,
+        "llms_parity_proof_max20": llms_parity_score,
+        "mixed_content_hygiene_max15": mixed_content_score,
+        "script_jquery_hygiene_max15": script_hygiene_score,
+        "image_dims_lazy_max15": image_hygiene_score,
+        "page1_ctr_hygiene_max10": page1_ctr_score,
+    }
+    readiness_score = round(sum(readiness_breakdown.values()), 1)
+
+    report = {
+        "generated_at": now_utc().isoformat(),
+        "site": cfg["site"],
+        "sitemap_urls": len(sitemap_urls),
+        "audited_urls": len(page_results),
+        "readiness_score": readiness_score,
+        "readiness_breakdown": readiness_breakdown,
+        "schema_summary": {
+            "counts": schema_counts,
+            "checks_passed": schema_checks_passed,
+            "checks_total": schema_checks_total,
+            "missing_schema_pages": missing_schema_pages,
+        },
+        "llms_parity": {
+            "sitemap_url_count": len(sitemap_urls),
+            "llms_txt_urls": len(llms_urls),
+            "llms_full_txt_urls": len(llms_full_urls),
+            "missing_in_llms_txt": missing_in_llms_txt,
+            "missing_in_llms_full_txt": missing_in_llms_full_txt,
+            "extra_in_llms_txt": extra_in_llms_txt,
+            "extra_in_llms_full_txt": extra_in_llms_full_txt,
+            "llms_txt_parity_ok": len(missing_in_llms_txt) == 0,
+            "llms_full_txt_parity_ok": len(missing_in_llms_full_txt) == 0,
+            "llms_txt_proof": llms_proof,
+            "llms_full_txt_proof": llms_full_proof,
+            "em_en_dash_files": em_en_dash_files,
+        },
+        "technical_findings": {
+            "mixed_content_maps_google_pages": mixed_maps_pages,
+            "mixed_content_asset_pages": mixed_asset_pages,
+            "duplicate_jquery_pages": dup_jquery_pages,
+            "pages_with_blocking_scripts": len(blocking_pages),
+            "total_blocking_scripts": total_blocking_scripts,
+            "blocking_scripts_pages": blocking_pages,
+            "images_total": total_images,
+            "images_missing_dimensions": total_missing_dims,
+            "images_missing_lazy": total_missing_lazy,
+            "pages_missing_image_dimensions": [
+                {"url": r["url"], "missing": r["images_missing_dimensions"], "total": r["images_total"]}
+                for r in page_results if r.get("images_missing_dimensions")
+            ],
+            "pages_missing_image_lazy": [
+                {"url": r["url"], "missing": r["images_missing_lazy"], "total": r["images_total"]}
+                for r in page_results if r.get("images_missing_lazy")
+            ],
+        },
+        "page1_zero_ctr_alerts": p1_alerts,
+        "pages": page_results,
+    }
+
+    stamp = now_utc().strftime("%Y-%m-%d")
+    save_json(REPORT_DIR / f"geo-audit-{stamp}.json", report)
+    save_json(REPORT_DIR / "latest-geo-audit.json", report)
+
+    state["last_geo_audit_at"] = report["generated_at"]
+    state["last_geo_audit_summary"] = {
+        "readiness_score": readiness_score,
+        "audited_urls": len(page_results),
+        "schema_counts": schema_counts,
+        "llms_txt_parity_ok": report["llms_parity"]["llms_txt_parity_ok"],
+        "llms_full_txt_parity_ok": report["llms_parity"]["llms_full_txt_parity_ok"],
+        "mixed_content_maps_google_count": len(mixed_maps_pages),
+        "duplicate_jquery_count": len(dup_jquery_pages),
+        "pages_with_blocking_scripts": len(blocking_pages),
+        "total_blocking_scripts": total_blocking_scripts,
+        "images_total": total_images,
+        "images_missing_dimensions": total_missing_dims,
+        "images_missing_lazy": total_missing_lazy,
+        "page1_zero_ctr_query_alerts": p1_alerts["total_query_alerts"],
+        "page1_zero_ctr_page_alerts": p1_alerts["total_page_alerts"],
+        "page1_zero_ctr_sgp_alerts": p1_alerts["total_singapore_alerts"],
+        "page1_zero_ctr_ind_alerts": p1_alerts["total_india_alerts"],
+    }
+    log(
+        "geo_audit: done, score=%.1f/100, maps_http=%d, dup_jquery=%d, blocking=%d scripts/%d pages, missing_dims=%d, p1_zero_ctr=%d"
+        % (
+            readiness_score,
+            len(mixed_maps_pages),
+            len(dup_jquery_pages),
+            total_blocking_scripts,
+            len(blocking_pages),
+            total_missing_dims,
+            p1_alerts["total_alerts"],
+        )
+    )
+    return report
+
+
 def write_live_status_md(summary):
     s, e = active_cycle_window()
     today_act = summary.get("daily_action") or {}
     act_title = today_act.get("title") or today_act.get("action_id") or "Scheduled via Cron"
     act_status = today_act.get("status", "pending")
+    geo = summary.get("geo_audit") or {}
+    geo_score = geo.get("readiness_score", "N/A")
+    llms_ok = f"llms.txt={geo.get('llms_txt_parity_ok', 'N/A')}, llms-full.txt={geo.get('llms_full_txt_parity_ok', 'N/A')}"
     md = [
         "# Framez Live Cycle Status (Auto-Updated by Cron)",
         "",
@@ -858,6 +1648,9 @@ def write_live_status_md(summary):
         f"* **Last Automated Run:** `{summary.get('generated_at')}`",
         f"* **Today's Daily Action ({today_sgt()}):** `{act_status}` ({act_title})",
         f"* **Sitemap URLs Live:** `{(summary.get('sitemap') or {}).get('urls')}` (Broken: `{(summary.get('audit') or {}).get('broken')}`)",
+        f"* **GEO/AEO Readiness Score:** `{geo_score}/100` ({llms_ok})",
+        f"* **GEO/AEO Technical Alerts:** `http://maps.google.com` pages=`{geo.get('mixed_content_maps_google_count', 'N/A')}`, duplicate jQuery pages=`{geo.get('duplicate_jquery_count', 'N/A')}`, blocking scripts=`{geo.get('total_blocking_scripts', 'N/A')}` across `{geo.get('pages_with_blocking_scripts', 'N/A')}` pages, missing img dims=`{geo.get('images_missing_dimensions', 'N/A')}`, missing lazy=`{geo.get('images_missing_lazy', 'N/A')}`",
+        f"* **Page-1 Zero-CTR Alerts:** `{geo.get('page1_zero_ctr_query_alerts', 'N/A')}` queries (`sgp={geo.get('page1_zero_ctr_sgp_alerts', 'N/A')}`, `ind={geo.get('page1_zero_ctr_ind_alerts', 'N/A')}`), `{geo.get('page1_zero_ctr_page_alerts', 'N/A')}` pages",
         f"* **GSC API Sync (`sc-domain:framez.sg`):** `{summary.get('gsc')}`",
         f"* **GA4 API Sync (`547082278`):** `{summary.get('ga4')}`",
         f"* **DeepSeek v4.1 Flash Daily Engine (OpenDesign):** `{summary.get('deepseek', 'N/A')}` (Latency: `{summary.get('deepseek_latency', 'N/A')}s`)",
@@ -915,7 +1708,7 @@ def git_sync_to_github(summary):
             act_note = act.get("target_page") or act.get("status") or "daily micro-action"
         else:
             act_note = "daily updates"
-        commit_msg = f"SEO daily automated sync: {today_str} ({act_note})"
+        commit_msg = _strip_dashes(f"SEO daily automated sync: {today_str} ({act_note})")
 
         commit_env = os.environ.copy()
         commit_env["GIT_AUTHOR_NAME"] = "Prince Jain"
@@ -924,7 +1717,14 @@ def git_sync_to_github(summary):
         commit_env["GIT_COMMITTER_EMAIL"] = "princejain756@gmail.com"
 
         commit = subprocess.run(
-            ["git", "commit", "-m", commit_msg],
+            [
+                "git",
+                "-c", "user.name=Prince Jain",
+                "-c", "user.email=princejain756@gmail.com",
+                "commit",
+                "--author=Prince Jain <princejain756@gmail.com>",
+                "-m", commit_msg,
+            ],
             cwd=str(JOB),
             env=commit_env,
             stdout=subprocess.PIPE,
@@ -932,7 +1732,9 @@ def git_sync_to_github(summary):
             text=True,
             timeout=30,
         )
-        log(f"git commit: {commit.stdout.strip()}")
+        log(f"git commit: {commit.stdout.strip() or commit.stderr.strip()}")
+        if commit.returncode != 0:
+            return {"status": "skipped", "detail": commit.stdout.strip() or commit.stderr.strip()}
 
         push = subprocess.run(
             ["git", "push", "origin", "main"],
@@ -969,16 +1771,28 @@ def run_all():
         log(f"daily_action: warning ({e})")
         daily_act = {"status": "error", "error": str(e)}
 
-    # 3. Reconcile sitemap and crawl audit
+    # 3. Reconcile sitemap, crawl audit, and llms.txt / llms-full.txt parity
     smap = sitemap_sync(cfg, state)
     rep = audit(cfg, state)
+    try:
+        llms_res = sync_llms_files(cfg, state, upload=True)
+    except Exception as e:
+        log(f"llms: warning ({e})")
+        llms_res = {"status": "error", "error": str(e)}
+
     changed = list(set(rep["changed_urls"] + smap.get("added", []) + changed_daily))
     idx = indexnow(cfg, state, changed)
     gsc = gsc_snapshot(cfg, state)
     ga4 = ga4_snapshot(cfg, state)
     leads = leads_snapshot(state)
 
-    # 4. OpenDesign DeepSeek v4.1 Flash (Normal) Daily Intelligence
+    # 4. Run full GEO/AEO readiness & technical hygiene audit with fresh GSC & llms state
+    try:
+        geo_aeo_audit(cfg, state)
+    except Exception as e:
+        log(f"geo_audit: warning ({e})")
+
+    # 5. OpenDesign DeepSeek v4.1 Flash (Normal) Daily Intelligence
     try:
         from deepseek_daily_seo import run_daily_deepseek_task
         dres = run_daily_deepseek_task(JOB)
@@ -995,6 +1809,8 @@ def run_all():
         "waves_deployed_this_run": [w["url"] for w in waves],
         "daily_action": daily_act,
         "audit": state.get("last_audit_summary"),
+        "geo_audit": state.get("last_geo_audit_summary"),
+        "llms_sync": llms_res,
         "sitemap": smap,
         "indexnow": idx,
         "gsc": gsc.get("status"),
@@ -1033,6 +1849,8 @@ def main(argv):
             "deployed_waves": list((state.get("deployed_waves") or {}).keys()),
             "last_daily_action": state.get("last_daily_action"),
             "audit": state.get("last_audit_summary"),
+            "geo_audit": state.get("last_geo_audit_summary"),
+            "llms_sync": state.get("last_llms_sync"),
             "sitemap": state.get("last_sitemap_summary"),
             "indexnow": state.get("last_indexnow"),
             "gsc": state.get("gsc_status"),
@@ -1053,6 +1871,14 @@ def main(argv):
             audit(cfg, state)
             save_json(STATE_PATH, state)
             print(json.dumps(state.get("last_audit_summary"), indent=2))
+        elif cmd == "geo_audit":
+            geo_aeo_audit(cfg, state)
+            save_json(STATE_PATH, state)
+            print(json.dumps(state.get("last_geo_audit_summary"), indent=2))
+        elif cmd == "sync_llms":
+            res = sync_llms_files(cfg, state, upload=True)
+            save_json(STATE_PATH, state)
+            print(json.dumps(res, indent=2))
         elif cmd == "sitemap":
             s = sitemap_sync(cfg, state)
             save_json(STATE_PATH, state)

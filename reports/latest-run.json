@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T04:16:56.566666+00:00",
+  "generated_at": "2026-11-21T13:37:38.989344+00:00",
   "waves_deployed_this_run": [],
   "daily_action": {
     "status": "wave_release_day",
@@ -15,12 +15,10 @@
   },
   "audit": {
     "urls": 29,
-    "issues": 1,
+    "issues": 0,
     "broken": 0,
-    "changed": 0,
-    "issue_counts": {
-      "thin_content": 1
-    }
+    "changed": 29,
+    "issue_counts": {}
   },
   "sitemap": {
     "urls": 29,
@@ -35,10 +33,40 @@
   "gsc": "ok",
   "ga4": "ok",
   "deepseek": "ok",
-  "deepseek_latency": 38.62,
-  "deepseek_summary": "Singapore generated 4477 impressions but only 2 clicks, while Bangalore corporate event queries show 69 impressions at position 21.3 with 1 click, making CTR and relevance optimization the top priority. Today focus on Singapore MICE conference intent and Bangalore corporate event pages with FAQ schema and entity-rich citation hooks.",
+  "deepseek_latency": 35.99,
+  "deepseek_summary": "Singapore produces 4,688 impressions but only 2 clicks at position 50.1, while India produces 80 clicks from 2,208 impressions at position 27.9. GEO readiness is 76.1 and page1 CTR hygiene scores 0.0, so today prioritize Singapore virtual event query relevance and zero-CTR page1 snippets.",
   "leads": {
     "verified_total": 3,
     "spam_blocked_total": 284
+  },
+  "git_sync": {
+    "status": "pushed",
+    "commit": "SEO daily automated sync: 2026-11-21 (wave_release_day)"
+  },
+  "geo_audit": {
+    "readiness_score": 76.1,
+    "audited_urls": 29,
+    "schema_counts": {
+      "Organization": 29,
+      "ProfessionalService": 2,
+      "FAQPage": 22,
+      "Service": 9,
+      "Article": 14,
+      "SpeakableSpecification": 8,
+      "BreadcrumbList": 28
+    },
+    "llms_txt_parity_ok": true,
+    "llms_full_txt_parity_ok": true,
+    "mixed_content_maps_google_count": 0,
+    "duplicate_jquery_count": 0,
+    "pages_with_blocking_scripts": 18,
+    "total_blocking_scripts": 18,
+    "images_total": 276,
+    "images_missing_dimensions": 275,
+    "images_missing_lazy": 114,
+    "page1_zero_ctr_query_alerts": 70,
+    "page1_zero_ctr_page_alerts": 51,
+    "page1_zero_ctr_sgp_alerts": 19,
+    "page1_zero_ctr_ind_alerts": 27
   }
 }
