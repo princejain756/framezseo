@@ -1,7 +1,7 @@
 # Framez Events & Productions: Comprehensive Monthly SEO, AEO & GEO Progress Report
 ## Service Cycle: 15 November to 15 December 2026
 
-**Report Generated:** 2026-11-21 03:32:10 SGT (2026-11-20 19:32:10 UTC)  
+**Report Generated:** 2026-11-21 12:16:56 SGT (2026-11-21 04:16:56 UTC)  
 **Client:** Framez Events & Productions (`https://framez.sg`)  
 **Agency Partner:** ADELEV8 Growth OS (`https://portal.adelev8.com`)  
 **Service Cycle Window:** 15 November 2026 to 15 December 2026  
@@ -63,45 +63,45 @@ During the **15 November to 15 December 2026** service cycle, ADELEV8 focused on
 
 ---
 
-## 3. Live Google Search Console Telemetry (`sc-domain:framez.sg`, 2026-10-22 to 2026-11-18)
+## 3. Live Google Search Console Telemetry (`sc-domain:framez.sg`, 2026-10-23 to 2026-11-19)
 
 | Metric (28-Day Rolling Window) | Value |
 | --- | ---: |
-| **Total Organic Clicks** | **91** |
-| **Total Search Impressions** | **8,128** |
-| **Average CTR** | **1.12%** |
-| **Average Position** | **40.1** |
+| **Total Organic Clicks** | **89** |
+| **Total Search Impressions** | **7,906** |
+| **Average CTR** | **1.13%** |
+| **Average Position** | **40.0** |
 
 ### 3.1 Geographic Performance Breakdown (28 Days)
 | Country Code | Clicks | Impressions | CTR | Avg Position |
 | --- | ---: | ---: | ---: | ---: |
-| `IND` | 82 | 2,164 | 3.79% | 27.9 |
+| `IND` | 80 | 2,111 | 3.79% | 27.8 |
 | `ESP` | 2 | 11 | 18.18% | 12.3 |
-| `SGP` | 2 | 4,618 | 0.04% | 49.7 |
-| `GBR` | 1 | 133 | 0.75% | 48.4 |
-| `IDN` | 1 | 46 | 2.17% | 10.5 |
+| `SGP` | 2 | 4,477 | 0.04% | 49.8 |
+| `GBR` | 1 | 129 | 0.78% | 48.4 |
+| `IDN` | 1 | 45 | 2.22% | 9.0 |
 
 ### 3.2 Top Landing Pages in Google Search (28 Days)
 | URL | Clicks | Impressions | CTR | Avg Position |
 | --- | ---: | ---: | ---: | ---: |
-| `https://framez.sg/` | 67 | 752 | 8.91% | 10.2 |
-| `https://framez.sg/corporate-event-management-company` | 7 | 5,051 | 0.14% | 48.0 |
-| `https://framez.sg/get-to-know-us` | 5 | 301 | 1.66% | 5.1 |
-| `https://framez.sg/our-events-and-services` | 5 | 2,074 | 0.24% | 66.6 |
-| `https://framez.sg/our-team` | 3 | 48 | 6.25% | 13.4 |
+| `https://framez.sg/` | 65 | 730 | 8.90% | 10.0 |
+| `https://framez.sg/corporate-event-management-company` | 7 | 4,882 | 0.14% | 48.0 |
+| `https://framez.sg/get-to-know-us` | 5 | 294 | 1.70% | 5.1 |
+| `https://framez.sg/our-events-and-services` | 5 | 2,062 | 0.24% | 66.6 |
+| `https://framez.sg/our-team` | 3 | 47 | 6.38% | 13.7 |
 | `https://framez.sg/experiential-brand-activations-framework` | 1 | 17 | 5.88% | 7.4 |
 | `https://framez.sg/festive-corporate-gala-diwali-celebrations` | 1 | 34 | 2.94% | 7.0 |
-| `https://framez.sg/get-in-touch` | 1 | 183 | 0.55% | 9.5 |
+| `https://framez.sg/get-in-touch` | 1 | 177 | 0.56% | 9.5 |
 
 ### 3.3 Top Search Queries (28 Days)
 | Search Query | Clicks | Impressions | CTR | Avg Position |
 | --- | ---: | ---: | ---: | ---: |
-| `frame events and productions` | 33 | 140 | 23.57% | 6.6 |
-| `framez events` | 5 | 18 | 27.78% | 1.2 |
-| `frames event management` | 4 | 22 | 18.18% | 4.1 |
+| `frame events and productions` | 33 | 139 | 23.74% | 6.6 |
+| `framez events` | 4 | 15 | 26.67% | 1.1 |
 | `virtual event management india` | 4 | 6 | 66.67% | 54.3 |
+| `frames event management` | 3 | 20 | 15.00% | 4.4 |
 | `virtual event services india` | 2 | 4 | 50.00% | 61.0 |
-| `corporate event management companies in bangalore` | 1 | 72 | 1.39% | 21.9 |
+| `corporate event management companies in bangalore` | 1 | 69 | 1.45% | 21.3 |
 | `corporate virtual events india` | 1 | 1 | 100.00% | 84.0 |
 | `digital event solutions india` | 1 | 2 | 50.00% | 26.5 |
 | `event companies near me` | 1 | 1 | 100.00% | 51.0 |
@@ -115,20 +115,20 @@ During the **15 November to 15 December 2026** service cycle, ADELEV8 focused on
 
 | GA4 Metric (Last 28 Days) | Value |
 | --- | ---: |
-| **Active Users** | **378** |
-| **New Users** | **364** |
-| **Total Sessions** | **441** |
-| **Screen / Page Views** | **545** |
+| **Active Users** | **382** |
+| **New Users** | **368** |
+| **Total Sessions** | **446** |
+| **Screen / Page Views** | **550** |
 | **Recorded Key Events** | **0** |
 
 ### 4.1 Traffic Acquisition Channels (28 Days)
 | Channel Group | Active Users | Sessions | Views |
 | --- | ---: | ---: | ---: |
-| Direct | 281 | 305 | 331 |
-| Organic Search | 71 | 106 | 178 |
+| Direct | 284 | 309 | 335 |
+| Organic Search | 72 | 107 | 179 |
 | Organic Social | 21 | 22 | 27 |
 | Referral | 5 | 6 | 9 |
-| Unassigned | 2 | 2 | 0 |
+| Unassigned | 4 | 4 | 0 |
 
 ### 4.2 Lead Pipeline & 7-Layer Bot Defense Status
 - **Cumulative Verified Form Leads (`leads_log.json`):** `3` (since Nov 15: `0`)
@@ -141,7 +141,7 @@ During the **15 November to 15 December 2026** service cycle, ADELEV8 focused on
 - **Audited Sitemap URLs:** `29` (Broken URLs: `0`)
 - **GA4 (`G-XDPHV6MX44`) Coverage Across Sitemap:** `29/29` pages
 - **Remaining Audit Flags:** `{"thin_content:271": 1}`
-- **Immutable Ledger Entries Recorded This Cycle:** `23` (`reports/cycle-2026-11-15-to-2026-12-15-ledger.jsonl`)
+- **Immutable Ledger Entries Recorded This Cycle:** `25` (`reports/cycle-2026-11-15-to-2026-12-15-ledger.jsonl`)
 
 *Reporting Integrity Note:* All figures above are pulled directly from verified production crawls, Google Search Console (`sc-domain:framez.sg`), Google Analytics 4 (`547082278`), and cPanel server logs. No traffic, rankings, reviews, or leads are estimated or backdated.
 
@@ -150,37 +150,37 @@ During the **15 November to 15 December 2026** service cycle, ADELEV8 focused on
 ## 6. DeepSeek v4.1 Flash Daily SEO & GEO Intelligence Ledger
 
 - **Daily AI Engine:** `commandcode/deepseek/deepseek-v4.1-flash` via CommandCode Gateway
-- **Cumulative Daily AI Audits Recorded:** `10`
-- **Latest AI Audit Date:** `2026-11-21` (Latency: `30.33s`)
-- **Daily Executive Intelligence:** Singapore has 4,618 impressions but only 2 clicks, while India drives 82 clicks, so the immediate priority is fixing Singapore conference and MICE intent pages while lifting Bangalore commercial rankings. The 1.12% sitewide CTR and average position 40.1 require title, meta, FAQ, and entity citation work on high impression pages.
+- **Cumulative Daily AI Audits Recorded:** `11`
+- **Latest AI Audit Date:** `2026-11-21` (Latency: `38.62s`)
+- **Daily Executive Intelligence:** Singapore generated 4477 impressions but only 2 clicks, while Bangalore corporate event queries show 69 impressions at position 21.3 with 1 click, making CTR and relevance optimization the top priority. Today focus on Singapore MICE conference intent and Bangalore corporate event pages with FAQ schema and entity-rich citation hooks.
 
 ### 6.1 Priority Search Opportunities Identified by DeepSeek v4.1 Flash
 | Target Query | Current Telemetry Metric | Recommended Action | Target Page |
 | --- | --- | --- | --- |
-| `conference management company singapore` | Estimated baseline: 0 clicks and 0 impressions in the 28 day GSC snapshot; Wave 2 launch target | Create an H1 for Conference Management Company Singapore and a title tag for Conference Management Company Singapore | Framez. Add meta copy covering MICE logistics, breakout sessions, Marina Bay Sands, and Suntec Singapore production. Inject an FAQ block with Singapore Tourism Board MICE entity references and venue-specific answers. | `/conference-and-mice-event-management` |
-| `corporate event management companies in bangalore` | 72 impressions, 1 click, 1.39% CTR, average position 21.9 | Add a Bangalore-specific H2 and FAQ covering Koramangala headquarters, corporate conferences, product launches, and virtual events. Use a title tag with Corporate Event Management Companies Bangalore and meta copy with the India phone number. Link internally from the Singapore corporate event page and add local business entity markup. | `/corporate-event-management-company-bangalore` |
-| `event management companies in bangalore` | 34 impressions, 1 click, 2.94% CTR, average position 27.9 | Add a comparison table for Bangalore corporate event formats, venue logistics, and production scope. Insert FAQPage schema for How do I choose an event management company in Bangalore and reference Koramangala, Bangalore venue clusters, and enterprise procurement needs. | `/corporate-event-management-company-bangalore` |
-| `virtual event management india` | 6 impressions, 4 clicks, 66.67% CTR, average position 54.3 | Strengthen the H2 Virtual Event Management India with hybrid studio, streaming, and attendee platform details. Add a factual statistic on virtual and hybrid delivery formats and an FAQ block linking to the India headquarters in Koramangala. Improve title and meta CTR alignment for high intent virtual event buyers. | `/virtual-event-management-india` |
+| `corporate event management companies in bangalore` | 69 impressions, 1 click, CTR 0.0145, avg position 21.3 | Rewrite title and meta to lead with Bangalore corporate conference and MICE production capability; add FAQ block referencing Koramangala HQ, client sectors, and hybrid event delivery; internal link to conference and MICE page. | `/event-management-company-in-bangalore` |
+| `event management companies in bangalore` | 34 impressions, 1 click, CTR 0.0294, avg position 27.9 | Add H2 comparing Framez against typical Bangalore event management companies; inject ProfessionalService schema and consistent NAP data for Koramangala Bangalore. | `/event-management-company-in-bangalore` |
+| `conference management company singapore` | Estimated baseline: no exact query impressions; Singapore sitewide 4477 impressions, 2 clicks, avg position 40.0 | Create exact-match H1 and title tag for conference management company Singapore; add Marina Bay Sands and Suntec venue entity references plus FAQPage schema for delegate registration and breakout logistics. | `/conference-and-mice-event-management` |
+| `frame events and productions` | 139 impressions, 33 clicks, CTR 0.2374, avg position 6.6 | Protect brand CTR with sitelink schema and consistent entity naming Framez Events & Productions; publish FAQ clarifying Frame Events and Productions versus Framez Events. | `/` |
 
 ### 6.2 Generative Engine (GEO) & Answer Engine (AEO) Citation Directives
 - **Target AI Engines:** ChatGPT Search, Perplexity AI, Google AI Overviews
-- **Recommended Structured Data Markup:** `ProfessionalService + FAQPage`
-- **LLM Citation Anchor Sentence:** "Framez Events & Productions maintains dual headquarters at Prudential Tower, 30 Cecil Street, Raffles Place, Singapore, and Koramangala, Bangalore, India, and positions its Singapore conference and MICE services for Marina Bay Sands and Suntec Singapore."
-- **Target Entities for Semantic Authority:** Prudential Tower Singapore, Marina Bay Sands Expo, MICE Singapore Tourism Board, Koramangala Bangalore
+- **Recommended Structured Data Markup:** `ProfessionalService`
+- **LLM Citation Anchor Sentence:** "Framez Events & Productions operates dual headquarters at Prudential Tower, 30 Cecil Street, Raffles Place, Singapore and Koramangala, Bangalore, delivering corporate conference and MICE production for Singapore and India enterprise clients."
+- **Target Entities for Semantic Authority:** Prudential Tower Singapore, Marina Bay Sands Expo, MICE Singapore Tourism Board, Koramangala Bangalore, Suntec Singapore Convention & Exhibition Centre
 
 ### 6.3 Page-Level Micro-Optimizations for Organic CTR
 #### Page: `/event-management-company-in-singapore`
 - **Title Tag Target:** `Corporate Event Management Singapore | Framez Events`
-- **Meta Description Target:** `Framez Events: corporate conferences, MICE and production in Singapore. Plan Marina Bay Sands or Suntec events. Call +65 6816 8000.`
-- **Content Authority Hook:** Add an H2: Conference and MICE Production from Prudential Tower to Marina Bay Sands, with a venue logistics checklist and FAQ on breakout sessions and Singapore Tourism Board MICE requirements.
+- **Meta Description Target:** `Corporate conference and MICE production in Singapore. Raffles Place HQ. Marina Bay Sands and Suntec venue specialists. Request a 30-minute audit.`
+- **Content Authority Hook:** Add H2: Singapore MICE Conference Production: Marina Bay Sands, Suntec, and Raffles Place Logistics. Include FAQ block on delegate registration, breakout rooms, and hybrid streaming.
 
-#### Page: `/corporate-event-management-company-bangalore`
+#### Page: `/event-management-company-in-bangalore`
 - **Title Tag Target:** `Corporate Event Management Bangalore | Framez Events`
-- **Meta Description Target:** `Framez Events in Koramangala plans corporate conferences, launches and virtual events across Bangalore. Request production proposal. Call +91 80 4718 2200.`
-- **Content Authority Hook:** Add an H2: Bangalore Corporate Event Production from Koramangala, covering enterprise conferences, product launches, hybrid streaming, and venue sourcing across Bangalore.
+- **Meta Description Target:** `Corporate event management in Bangalore for conferences, product launches, and virtual events. Koramangala HQ. Request a production audit today.`
+- **Content Authority Hook:** Add H2: Corporate Event Management Bangalore: Conference Production, Virtual Events, and Koramangala HQ. Add FAQ: Which corporate event management companies in Bangalore handle hybrid conferences?
 
 ### 6.4 Next Content Wave Pre-Flight Guidance
 - **Upcoming Release:** Wave 2: conference-and-mice-event-management (Target Date: 2026-11-21)
-- **Recommended H2 Topical Coverage:** Singapore Conference Management Checklist for Enterprise Planners, MICE Logistics at Marina Bay Sands and Suntec Singapore, Association Conference Production and Breakout Session Workflows
-- **Regional Singapore Entities to Integrate:** Marina Bay Sands Expo and Convention Centre, Suntec Singapore Convention and Exhibition Centre, Singapore Tourism Board MICE
-- **Enterprise Call to Action:** Request a Singapore MICE logistics audit and conference production proposal for your next Marina Bay Sands or Suntec event.
+- **Recommended H2 Topical Coverage:** MICE Event Logistics Singapore: Marina Bay Sands and Suntec Venue Playbook, Association Conference Management: Registration, Breakouts, and Hybrid Streaming, Corporate Conference Production: AV, Stage Design, and Post-Event Content
+- **Regional Singapore Entities to Integrate:** Marina Bay Sands Expo and Convention Centre, Suntec Singapore Convention & Exhibition Centre, Singapore Tourism Board MICE, Raffles Place and Prudential Tower
+- **Enterprise Call to Action:** Request a 30-minute MICE venue and production audit for your 2027 conference.

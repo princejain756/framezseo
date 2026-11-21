@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at": "2026-11-20T19:31:28.344342+00:00",
+  "generated_at": "2026-11-21T04:16:10.105913+00:00",
   "property": "sc-domain:framez.sg",
   "sitemaps": [
     {
@@ -33,30 +33,30 @@
     }
   ],
   "window_7d": {
-    "start": "2026-11-12",
-    "end": "2026-11-18",
+    "start": "2026-11-13",
+    "end": "2026-11-19",
     "totals": {
       "rows": [
         {
-          "clicks": 31,
-          "impressions": 2159,
-          "ctr": 0.014358499305233904,
-          "position": 35.80778138026864
+          "clicks": 24,
+          "impressions": 1815,
+          "ctr": 0.013223140495867768,
+          "position": 35.384022038567494
         }
       ],
       "responseAggregationType": "byProperty"
     }
   },
   "window_28d": {
-    "start": "2026-10-22",
-    "end": "2026-11-18",
+    "start": "2026-10-23",
+    "end": "2026-11-19",
     "totals": {
       "rows": [
         {
-          "clicks": 91,
-          "impressions": 8128,
-          "ctr": 0.011195866141732283,
-          "position": 40.08944389763779
+          "clicks": 89,
+          "impressions": 7906,
+          "ctr": 0.01125727295724766,
+          "position": 40.0318745256767
         }
       ],
       "responseAggregationType": "byProperty"
@@ -67,10 +67,10 @@
           "keys": [
             "ind"
           ],
-          "clicks": 82,
-          "impressions": 2164,
-          "ctr": 0.03789279112754159,
-          "position": 27.901571164510166
+          "clicks": 80,
+          "impressions": 2111,
+          "ctr": 0.037896731406916156,
+          "position": 27.826622453813357
         },
         {
           "keys": [
@@ -86,36 +86,36 @@
             "sgp"
           ],
           "clicks": 2,
-          "impressions": 4618,
-          "ctr": 0.00043308791684711995,
-          "position": 49.72737115634474
+          "impressions": 4477,
+          "ctr": 0.00044672771945499217,
+          "position": 49.761670761670764
         },
         {
           "keys": [
             "gbr"
           ],
           "clicks": 1,
-          "impressions": 133,
-          "ctr": 0.007518796992481203,
-          "position": 48.421052631578945
+          "impressions": 129,
+          "ctr": 0.007751937984496124,
+          "position": 48.44186046511628
         },
         {
           "keys": [
             "idn"
           ],
           "clicks": 1,
-          "impressions": 46,
-          "ctr": 0.021739130434782608,
-          "position": 10.5
+          "impressions": 45,
+          "ctr": 0.022222222222222223,
+          "position": 9.044444444444444
         },
         {
           "keys": [
             "kor"
           ],
           "clicks": 1,
-          "impressions": 6,
-          "ctr": 0.16666666666666666,
-          "position": 14.833333333333334
+          "impressions": 5,
+          "ctr": 0.2,
+          "position": 17
         },
         {
           "keys": [
@@ -131,9 +131,9 @@
             "usa"
           ],
           "clicks": 1,
-          "impressions": 406,
-          "ctr": 0.0024630541871921183,
-          "position": 25.810344827586206
+          "impressions": 395,
+          "ctr": 0.002531645569620253,
+          "position": 25.878481012658227
         },
         {
           "keys": [
@@ -149,9 +149,9 @@
             "are"
           ],
           "clicks": 0,
-          "impressions": 44,
+          "impressions": 42,
           "ctr": 0,
-          "position": 14.477272727272727
+          "position": 14.928571428571429
         },
         {
           "keys": [
@@ -176,9 +176,9 @@
             "aus"
           ],
           "clicks": 0,
-          "impressions": 35,
+          "impressions": 34,
           "ctr": 0,
-          "position": 41.25714285714286
+          "position": 41.61764705882353
         },
         {
           "keys": [
@@ -208,27 +208,18 @@
             "frame events and productions"
           ],
           "clicks": 33,
-          "impressions": 140,
-          "ctr": 0.2357142857142857,
-          "position": 6.621428571428571
+          "impressions": 139,
+          "ctr": 0.23741007194244604,
+          "position": 6.64748201438849
         },
         {
           "keys": [
             "framez events"
           ],
-          "clicks": 5,
-          "impressions": 18,
-          "ctr": 0.2777777777777778,
-          "position": 1.1666666666666667
-        },
-        {
-          "keys": [
-            "frames event management"
-          ],
           "clicks": 4,
-          "impressions": 22,
-          "ctr": 0.18181818181818182,
-          "position": 4.090909090909091
+          "impressions": 15,
+          "ctr": 0.26666666666666666,
+          "position": 1.1333333333333333
         },
         {
           "keys": [
@@ -238,6 +229,15 @@
           "impressions": 6,
           "ctr": 0.6666666666666666,
           "position": 54.333333333333336
+        },
+        {
+          "keys": [
+            "frames event management"
+          ],
+          "clicks": 3,
+          "impressions": 20,
+          "ctr": 0.15,
+          "position": 4.4
         },
         {
           "keys": [
@@ -253,9 +253,9 @@
             "corporate event management companies in bangalore"
           ],
           "clicks": 1,
-          "impressions": 72,
-          "ctr": 0.013888888888888888,
-          "position": 21.88888888888889
+          "impressions": 69,
+          "ctr": 0.014492753623188406,
+          "position": 21.28985507246377
         },
         {
           "keys": [
@@ -325,9 +325,9 @@
             "4d event planning process agency"
           ],
           "clicks": 0,
-          "impressions": 13,
+          "impressions": 12,
           "ctr": 0,
-          "position": 11.153846153846153
+          "position": 10.5
         },
         {
           "keys": [
@@ -379,9 +379,9 @@
             "b2b event companies"
           ],
           "clicks": 0,
-          "impressions": 9,
+          "impressions": 8,
           "ctr": 0,
-          "position": 32.888888888888886
+          "position": 32.625
         },
         {
           "keys": [
@@ -482,46 +482,46 @@
           "keys": [
             "https://framez.sg/"
           ],
-          "clicks": 67,
-          "impressions": 752,
-          "ctr": 0.08909574468085106,
-          "position": 10.186170212765957
+          "clicks": 65,
+          "impressions": 730,
+          "ctr": 0.08904109589041095,
+          "position": 9.973972602739726
         },
         {
           "keys": [
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 7,
-          "impressions": 5051,
-          "ctr": 0.0013858641853098396,
-          "position": 47.975648386458126
+          "impressions": 4882,
+          "ctr": 0.0014338385907414993,
+          "position": 47.97890208930766
         },
         {
           "keys": [
             "https://framez.sg/get-to-know-us"
           ],
           "clicks": 5,
-          "impressions": 301,
-          "ctr": 0.016611295681063124,
-          "position": 5.093023255813954
+          "impressions": 294,
+          "ctr": 0.017006802721088437,
+          "position": 5.115646258503402
         },
         {
           "keys": [
             "https://framez.sg/our-events-and-services"
           ],
           "clicks": 5,
-          "impressions": 2074,
-          "ctr": 0.0024108003857280617,
-          "position": 66.63066538090646
+          "impressions": 2062,
+          "ctr": 0.0024248302618816685,
+          "position": 66.64645974781766
         },
         {
           "keys": [
             "https://framez.sg/our-team"
           ],
           "clicks": 3,
-          "impressions": 48,
-          "ctr": 0.0625,
-          "position": 13.416666666666666
+          "impressions": 47,
+          "ctr": 0.06382978723404255,
+          "position": 13.680851063829786
         },
         {
           "keys": [
@@ -546,18 +546,18 @@
             "https://framez.sg/get-in-touch"
           ],
           "clicks": 1,
-          "impressions": 183,
-          "ctr": 0.00546448087431694,
-          "position": 9.530054644808743
+          "impressions": 177,
+          "ctr": 0.005649717514124294,
+          "position": 9.491525423728813
         },
         {
           "keys": [
             "https://nps2025.framez.sg/"
           ],
           "clicks": 1,
-          "impressions": 55,
-          "ctr": 0.01818181818181818,
-          "position": 8.309090909090909
+          "impressions": 51,
+          "ctr": 0.0196078431372549,
+          "position": 8.470588235294118
         },
         {
           "keys": [
@@ -627,18 +627,18 @@
             "https://framez.sg/b2b-event-agency-rfp-evaluation-guide"
           ],
           "clicks": 0,
-          "impressions": 4,
+          "impressions": 3,
           "ctr": 0,
-          "position": 6.25
+          "position": 6.666666666666667
         },
         {
           "keys": [
             "https://framez.sg/blog"
           ],
           "clicks": 0,
-          "impressions": 110,
+          "impressions": 107,
           "ctr": 0,
-          "position": 52.32727272727273
+          "position": 51.97196261682243
         },
         {
           "keys": [
@@ -744,9 +744,9 @@
             "https://framez.sg/event-planner"
           ],
           "clicks": 0,
-          "impressions": 1435,
+          "impressions": 1418,
           "ctr": 0,
-          "position": 36.8
+          "position": 36.93935119887165
         }
       ],
       "responseAggregationType": "byPage"

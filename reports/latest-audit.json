@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T19:31:27.327283+00:00",
+  "generated_at": "2026-11-21T04:16:09.965584+00:00",
   "site": "https://framez.sg",
   "sitemap_urls": 29,
   "audited": 29,
@@ -12,10 +12,7 @@
     "titles": {},
     "descriptions": {}
   },
-  "changed_urls": [
-    "https://framez.sg/blog",
-    "https://framez.sg/conference-and-mice-event-management"
-  ],
+  "changed_urls": [],
   "pages": [
     {
       "url": "https://framez.sg/",

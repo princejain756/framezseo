@@ -1,8 +1,6 @@
 {
-  "generated_at": "2026-11-20T19:32:10.210725+00:00",
-  "waves_deployed_this_run": [
-    "https://framez.sg/conference-and-mice-event-management"
-  ],
+  "generated_at": "2026-11-21T04:16:56.566666+00:00",
+  "waves_deployed_this_run": [],
   "daily_action": {
     "status": "wave_release_day",
     "action": {
@@ -19,29 +17,26 @@
     "urls": 29,
     "issues": 1,
     "broken": 0,
-    "changed": 2,
+    "changed": 0,
     "issue_counts": {
       "thin_content": 1
     }
   },
   "sitemap": {
     "urls": 29,
-    "added": [
-      "https://framez.sg/conference-and-mice-event-management"
-    ],
+    "added": [],
     "removed": [],
-    "uploaded": true
+    "uploaded": false
   },
   "indexnow": {
-    "submitted": 2,
-    "status": 200,
-    "ok": true
+    "submitted": 0,
+    "status": null
   },
   "gsc": "ok",
   "ga4": "ok",
   "deepseek": "ok",
-  "deepseek_latency": 30.33,
-  "deepseek_summary": "Singapore has 4,618 impressions but only 2 clicks, while India drives 82 clicks, so the immediate priority is fixing Singapore conference and MICE intent pages while lifting Bangalore commercial rankings. The 1.12% sitewide CTR and average position 40.1 require title, meta, FAQ, and entity citation work on high impression pages.",
+  "deepseek_latency": 38.62,
+  "deepseek_summary": "Singapore generated 4477 impressions but only 2 clicks, while Bangalore corporate event queries show 69 impressions at position 21.3 with 1 click, making CTR and relevance optimization the top priority. Today focus on Singapore MICE conference intent and Bangalore corporate event pages with FAQ schema and entity-rich citation hooks.",
   "leads": {
     "verified_total": 3,
     "spam_blocked_total": 284
