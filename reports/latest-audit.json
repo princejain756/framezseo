@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T04:16:15.652267+00:00",
+  "generated_at": "2026-11-22T19:31:17.460477+00:00",
   "site": "https://framez.sg",
   "sitemap_urls": 30,
   "audited": 30,
@@ -10,7 +10,9 @@
     "titles": {},
     "descriptions": {}
   },
-  "changed_urls": [],
+  "changed_urls": [
+    "https://framez.sg/event-management-company-in-bangalore"
+  ],
   "pages": [
     {
       "url": "https://framez.sg/",
@@ -122,9 +124,9 @@
     {
       "url": "https://framez.sg/event-management-company-in-bangalore",
       "status": 200,
-      "sha256": "8435a7edb6e7c2d36fa6a9e2af7f51e4c6a5e2baa7d4ea249e5bea734624fe76",
-      "content_length": 55831,
-      "sitemap_lastmod": "2026-11-21",
+      "sha256": "4556fffcef335e2f7f532a1b3f352102e99df29ebbcf951e9c6e4491da9aaa60",
+      "content_length": 57208,
+      "sitemap_lastmod": "2026-11-22",
       "issues": [],
       "title": "Corporate Event Management Company in Bangalore | Framez",
       "title_len": 56,
@@ -133,11 +135,11 @@
       "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
       "h1_count": 1,
       "has_ga4": true,
-      "word_count": 891,
+      "word_count": 980,
       "images": 4,
       "images_missing_alt": 0,
       "images_duplicate_alt": 0,
-      "internal_links": 41,
+      "internal_links": 44,
       "jsonld_types": [
         "WebPage",
         "Service",

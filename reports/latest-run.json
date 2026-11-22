@@ -1,34 +1,29 @@
 {
-  "generated_at": "2026-11-22T04:17:39.946041+00:00",
+  "generated_at": "2026-11-22T19:32:33.804103+00:00",
   "waves_deployed_this_run": [],
   "daily_action": {
     "event": "daily_micro_action_executed",
-    "date_sgt": "2026-11-22",
-    "action_id": "mice_internal_linking_sprint",
-    "title": "MICE Service Cross-Linking & Entity Anchors",
-    "kind": "internal_linking",
-    "target_file": "event-management-company-in-singapore.php",
-    "target_url": "https://framez.sg/event-management-company-in-singapore",
+    "date_sgt": "2026-11-23",
+    "action_id": "bangalore_page2_ctr_optimization",
+    "title": "Bangalore Corporate Event CTR & FAQ Schema Sprint",
+    "kind": "ctr_optimization",
+    "target_file": "event-management-company-in-bangalore.php",
+    "target_url": "https://framez.sg/event-management-company-in-bangalore",
     "status": "ok",
-    "message": "Added MICE cross-links on Singapore and Our Events & Services pages.",
-    "timestamp": "2026-11-22T04:15:05.806724+00:00",
+    "message": "Reinforced Bangalore CTR metadata, Koramangala/Whitefield/ORR proof, and ProfessionalService/FAQPage schema.",
+    "timestamp": "2026-11-22T19:30:06.854689+00:00",
     "target_urls": [
-      "https://framez.sg/event-management-company-in-singapore",
-      "https://framez.sg/our-events-and-services"
+      "https://framez.sg/event-management-company-in-bangalore"
     ],
     "sha256_receipts": [
       {
-        "file": "event-management-company-in-singapore.php",
-        "changed": false,
-        "sha256_before": "2947c11c97a150509b7b5af837051c65e960ad8db2911d6013d14a6c8fd9d0b7",
-        "sha256_after": "2947c11c97a150509b7b5af837051c65e960ad8db2911d6013d14a6c8fd9d0b7",
-        "sha256_verified": true
-      },
-      {
-        "file": "our-events-and-services.php",
-        "changed": false,
-        "sha256_before": "e1d477fb6a745c9d54b73e09cf1987063e79d2b33631088dd513376e91d803bd",
-        "sha256_after": "e1d477fb6a745c9d54b73e09cf1987063e79d2b33631088dd513376e91d803bd",
+        "file": "event-management-company-in-bangalore.php",
+        "changed": true,
+        "bytes_before": 22873,
+        "bytes_after": 24250,
+        "sha256_before": "b7a80289e803e3d5a4b7ec7e9e6887113d36d67ed11d8e17a1696b140897cfa6",
+        "sha256_after": "12d0939125543e50e125fff8d59eda4361ac1497d55a53e5bf130680283598ec",
+        "readback_sha256": "12d0939125543e50e125fff8d59eda4361ac1497d55a53e5bf130680283598ec",
         "sha256_verified": true
       }
     ]
@@ -37,7 +32,7 @@
     "urls": 30,
     "issues": 0,
     "broken": 0,
-    "changed": 0,
+    "changed": 1,
     "issue_counts": {}
   },
   "geo_audit": {
@@ -61,14 +56,14 @@
     "images_total": 282,
     "images_missing_dimensions": 280,
     "images_missing_lazy": 118,
-    "page1_zero_ctr_query_alerts": 70,
-    "page1_zero_ctr_page_alerts": 50,
+    "page1_zero_ctr_query_alerts": 74,
+    "page1_zero_ctr_page_alerts": 49,
     "page1_zero_ctr_sgp_alerts": 19,
-    "page1_zero_ctr_ind_alerts": 27
+    "page1_zero_ctr_ind_alerts": 28
   },
   "llms_sync": {
     "status": "ok",
-    "generated_at": "2026-11-22T04:16:18.376391+00:00",
+    "generated_at": "2026-11-22T19:31:20.072036+00:00",
     "total_urls": 30,
     "core_urls": 16,
     "guide_urls": 14,
@@ -83,7 +78,7 @@
     "urls": 30,
     "added": [],
     "removed": [],
-    "uploaded": false
+    "uploaded": true
   },
   "indexnow": {
     "submitted": 1,
@@ -93,10 +88,10 @@
   "gsc": "ok",
   "ga4": "ok",
   "deepseek": "ok",
-  "deepseek_latency": 35.64,
-  "deepseek_summary": "Singapore carries 4467 impressions but only 2 clicks at 0.0004 CTR and position 49.7, while India carries 2140 impressions and 78 clicks at 0.0364 CTR and position 27.8. GEO readiness is 76.3, with image dimension coverage at 4.4/15 and page-1 CTR hygiene at 0/10, so today focus on zero-CTR page-1 titles and image dimension fixes.",
+  "deepseek_latency": 28.23,
+  "deepseek_summary": "Singapore shows 4,760 impressions and 2 clicks at average position 50.4, while India shows 2,233 impressions and 78 clicks at average position 27.9. GEO readiness is 76.3 with page-1 CTR hygiene at 0.0, so today's priority is fixing zero-click Singapore virtual event queries and page-1 zero-CTR landing pages.",
   "leads": {
     "verified_total": 3,
-    "spam_blocked_total": 287
+    "spam_blocked_total": 293
   }
 }
