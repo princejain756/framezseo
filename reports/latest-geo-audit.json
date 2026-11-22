@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T19:32:24.839018+00:00",
+  "generated_at": "2026-11-22T04:17:04.275811+00:00",
   "site": "https://framez.sg",
   "sitemap_urls": 30,
   "audited_urls": 30,
@@ -528,10 +528,10 @@
       },
       {
         "query": "framez",
-        "impressions": 24,
+        "impressions": 23,
         "clicks": 0,
         "ctr": 0.0,
-        "position": 3.5,
+        "position": 3.6,
         "country": "all",
         "page": ""
       },
@@ -833,15 +833,6 @@
         "page": ""
       },
       {
-        "query": "how does a bold, concept-forward experiential agency compare to a broader digital marketing group in activation scale and efficiency?",
-        "impressions": 2,
-        "clicks": 0,
-        "ctr": 0.0,
-        "position": 9,
-        "country": "all",
-        "page": ""
-      },
-      {
         "query": "event budgeting",
         "impressions": 2,
         "clicks": 0,
@@ -1112,6 +1103,15 @@
         "page": ""
       },
       {
+        "query": "how does a bold, concept-forward experiential agency compare to a broader digital marketing group in activation scale and efficiency?",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 9,
+        "country": "all",
+        "page": ""
+      },
+      {
         "query": "event execution company",
         "impressions": 1,
         "clicks": 0,
@@ -1324,10 +1324,10 @@
     "india_queries": [
       {
         "query": "framez",
-        "impressions": 17,
+        "impressions": 16,
         "clicks": 0,
         "ctr": 0.0,
-        "position": 3.9,
+        "position": 4.1,
         "country": "ind",
         "page": ""
       },
@@ -1587,13 +1587,6 @@
         "clicks": 0,
         "ctr": 0.0,
         "position": 5.7
-      },
-      {
-        "page": "https://framez.sg/framez-greetings.framez.sg/",
-        "impressions": 9,
-        "clicks": 0,
-        "ctr": 0.0,
-        "position": 10
       },
       {
         "page": "https://framez.sg/corporate-family-day-carnival-safety-logistics",
@@ -1928,8 +1921,8 @@
     "total_query_alerts": 70,
     "total_singapore_alerts": 19,
     "total_india_alerts": 27,
-    "total_page_alerts": 51,
-    "total_alerts": 121
+    "total_page_alerts": 50,
+    "total_alerts": 120
   },
   "pages": [
     {

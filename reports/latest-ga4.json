@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at": "2026-11-21T19:31:45.167771+00:00",
+  "generated_at": "2026-11-22T04:16:24.048580+00:00",
   "property_id": "547082278",
   "totals_28d": {
     "metricHeaders": [
@@ -29,16 +29,16 @@
       {
         "metricValues": [
           {
-            "value": "385"
+            "value": "388"
           },
           {
-            "value": "371"
+            "value": "374"
           },
           {
-            "value": "450"
+            "value": "453"
           },
           {
-            "value": "553"
+            "value": "556"
           },
           {
             "value": "0"
@@ -82,13 +82,13 @@
         ],
         "metricValues": [
           {
-            "value": "288"
+            "value": "291"
           },
           {
-            "value": "314"
+            "value": "317"
           },
           {
-            "value": "339"
+            "value": "342"
           }
         ]
       },
@@ -193,7 +193,7 @@
         ],
         "metricValues": [
           {
-            "value": "553"
+            "value": "556"
           }
         ]
       },
@@ -205,7 +205,7 @@
         ],
         "metricValues": [
           {
-            "value": "450"
+            "value": "453"
           }
         ]
       },
@@ -217,7 +217,7 @@
         ],
         "metricValues": [
           {
-            "value": "371"
+            "value": "374"
           }
         ]
       },
@@ -229,7 +229,7 @@
         ],
         "metricValues": [
           {
-            "value": "240"
+            "value": "241"
           }
         ]
       },
@@ -241,7 +241,7 @@
         ],
         "metricValues": [
           {
-            "value": "220"
+            "value": "221"
           }
         ]
       },

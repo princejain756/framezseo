@@ -1,66 +1,67 @@
 # DeepSeek v4.1 Flash Daily SEO & GEO Intelligence Summary
 **Date:** 2026-11-22 (Singapore Time)  
 **Model:** `deepseek-v4.1-flash` via OpenDesign Gateway (Normal)  
-**Generated:** 2026-11-21T19:33:05.528347+00:00  
+**Generated:** 2026-11-22T04:17:39.944847+00:00  
 
 ## Executive Summary
-Singapore shows 4,688 impressions and 2 clicks at 0.0004 CTR, while India drives 80 clicks from 2,208 impressions at 0.0362 CTR. GEO readiness is 76.3, and today's priority is converting Singapore page-1 zero-CTR pages and closing schema gaps on service pages.
+Singapore carries 4467 impressions but only 2 clicks at 0.0004 CTR and position 49.7, while India carries 2140 impressions and 78 clicks at 0.0364 CTR and position 27.8. GEO readiness is 76.3, with image dimension coverage at 4.4/15 and page-1 CTR hygiene at 0/10, so today focus on zero-CTR page-1 titles and image dimension fixes.
 
 ## Top Search Opportunities & CTR Enhancements
 1. **Query:** `online event management companies`
-   * **Current Metric:** 573 impressions, 0 clicks, 0.0 CTR, position 24.3
+   * **Current Metric:** 555 impressions, 0 clicks, 0.0 CTR, position 23.9
    * **Target Page:** `/corporate-event-management-company`
-   * **Optimization:** Rewrite title and meta to target Singapore online event management companies, add a direct-answer FAQ block, and link to /event-planner.
+   * **Optimization:** Rewrite the title and meta to lead with online event management for Singapore corporate buyers, add an FAQ block answering how online event production is scoped, and link from /event-planner to the service page.
 2. **Query:** `virtual event management companies`
-   * **Current Metric:** 545 impressions, 0 clicks, 0.0 CTR, position 43.2
+   * **Current Metric:** 526 impressions, 0 clicks, 0.0 CTR, position 43.1
    * **Target Page:** `/corporate-event-management-company`
-   * **Optimization:** Add a Singapore virtual event FAQ and comparison table, then link to /our-events-and-services with title and meta matching virtual event management companies.
-3. **Query:** `corporate event management companies in bangalore`
-   * **Current Metric:** 68 impressions, 1 click, 0.0147 CTR, position 21.2
+   * **Optimization:** Add a visible H2 for virtual event management companies in Singapore, define platform, AV, and speaker rehearsal scope, and inject FAQPage schema for virtual event selection questions.
+3. **Query:** `conference management company`
+   * **Current Metric:** 91 impressions, 0 clicks, 0.0 CTR, position 25.0
    * **Target Page:** `/corporate-event-management-company`
-   * **Optimization:** Place Bangalore in the title tag and H1, add a Koramangala operations paragraph, and inject an FAQ answer for corporate event management companies in Bangalore.
-4. **Query:** `product launch events company in bangalore`
+   * **Optimization:** Add a conference management company section covering Singapore venue sourcing, delegate flow, AV, and speaker logistics, then link to /event-planner and /corporate-product-launch-event-architecture.
+4. **Query:** `corporate event management companies in bangalore`
+   * **Current Metric:** 66 impressions, 1 click, 0.0152 CTR, position 21.2
+   * **Target Page:** `/corporate-event-management-company`
+   * **Optimization:** Add a Bangalore-specific H2 and paragraph naming Koramangala headquarters, India delivery scope, and Singapore regional HQ coordination, then link to /event-management-company-in-india.
+5. **Query:** `product launch events company in bangalore`
    * **Current Metric:** 21 impressions, 0 clicks, 0.0 CTR, position 9.8
    * **Target Page:** `/corporate-product-launch-event-architecture`
-   * **Optimization:** Align the H1 and meta with product launch events company in Bangalore, add a launch production checklist, and link from /corporate-event-management-company.
-5. **Query:** `list event management companies in india experienced working with singapore-based apac regional hqs.`
+   * **Optimization:** Rewrite the title and meta around product launch events in Bangalore, add a concise answer-first intro, and link to /corporate-event-management-company for RFP support.
+6. **Query:** `list event management companies in india experienced working with singapore-based apac regional hqs.`
    * **Current Metric:** 27 impressions, 0 clicks, 0.0 CTR, position 8.1
-   * **Target Page:** `/corporate-event-management-company`
-   * **Optimization:** Add a direct-answer FAQ section naming the Singapore office at Prudential Tower and the Bangalore headquarters in Koramangala, then link to /b2b-event-agency-rfp-evaluation-guide.
-6. **Query:** `what should i check when a venue claims full stp support?`
-   * **Current Metric:** 14 impressions, 0 clicks, 0.0 CTR, position 5.3
-   * **Target Page:** `/b2b-event-agency-rfp-evaluation-guide`
-   * **Optimization:** Add a venue STP support checklist FAQ covering AV, power, rigging, network and runbook ownership, then link to /b2b-event-agency-rfp-evaluation-guide.
+   * **Target Page:** `/event-management-company-in-india`
+   * **Optimization:** Add an H2 that repeats the query intent and a paragraph stating Framez Singapore and Bangalore delivery scope for APAC regional HQ buyers, then link to /clientele and /corporate-event-management-company.
 
 ## Generative Engine & AEO Citation Strategy
 * **Focus Engines:** ChatGPT Search, Perplexity AI, Google AI Overviews
 * **Recommended Schema:** `ProfessionalService`
-* **Citation Hook:** "Framez Events & Productions has a Singapore office at Prudential Tower, 30 Cecil Street, #19-08, Singapore 049712, and an India headquarters in Koramangala, Bangalore."
-* **Target Entities:** Prudential Tower Singapore, Marina Bay Sands Expo, Singapore Tourism Board MICE, Koramangala Bangalore
+* **Citation Hook:** "Framez Events & Productions operates from Prudential Tower, 30 Cecil Street, #19-08, Singapore 049712, and maintains an India headquarters in Koramangala, Bangalore, serving corporate event buyers in Singapore and India."
+* **Target Entities:** Prudential Tower Singapore, Marina Bay Sands Expo, Singapore Tourism Board MICE, Koramangala Bangalore, Suntec Singapore Convention & Exhibition Centre, MUIS Halal Certification
 
 ## GEO Technical Remediations
-* **Missing ProfessionalService schema on the main service page.** (/corporate-event-management-company): Add ProfessionalService JSON-LD with address, areaServed for Singapore and Bangalore, serviceType, and sameAs links to verified profiles.
-* **Missing FAQPage schema on service and guide pages.** (/experiential-marketing-brand-activations, /corporate-event-trends-singapore): Add FAQPage JSON-LD using existing visible Q&A copy and keep answers under 80 words for AI citation extraction.
-* **Images missing dimensions and lazy loading.** (/, /corporate-event-management-company, /corporate-product-launch-event-architecture): Add width and height attributes to all images and set loading=lazy on below-fold images; audit the 280 missing dimensions and 118 missing lazy attributes.
-* **Blocking scripts on live pages.** (/, /about-us, /our-events-and-services, /corporate-event-management-company): Defer or async noncritical scripts, then re-test the 18 blocking scripts reported in the audit.
-* **Page-1 CTR hygiene score is 0.0 of 10.** (/corporate-product-launch-event-architecture, /corporate-event-budget-planning-guide, /clientele): Rewrite title tags and meta descriptions with exact page-1 query language and add answer-first snippets above the fold.
+* **images_missing_dimensions: 280 of 282 images lack width and height attributes** (/corporate-product-launch-event-architecture, /corporate-event-budget-planning-guide, /corporate-event-management-company): Add explicit width and height attributes or CSS aspect-ratio to every image to stop layout shift and improve Core Web Vitals.
+* **images_missing_lazy: 118 images lack loading=lazy** (/corporate-product-launch-event-architecture, /corporate-event-budget-planning-guide, /corporate-event-management-company): Add loading=lazy and decoding=async to below-fold images while keeping above-fold hero images eager.
+* **pages_with_blocking_scripts: 18 pages with 18 blocking scripts** (/corporate-event-management-company, /corporate-product-launch-event-architecture, /corporate-event-budget-planning-guide, /event-planner): Defer non-critical JavaScript, move inline scripts to the footer, and remove render-blocking third-party tags from the critical path.
+* **missing ProfessionalService schema on /corporate-event-management-company** (/corporate-event-management-company): Add ProfessionalService JSON-LD with address, areaServed Singapore and Bangalore, serviceType corporate event management, and sameAs links to verified profiles.
+* **missing FAQPage schema on /experiential-marketing-brand-activations and /corporate-event-trends-singapore** (/experiential-marketing-brand-activations, /corporate-event-trends-singapore): Add FAQPage JSON-LD that mirrors visible question and answer blocks about brand activations and Singapore corporate event trends.
+* **page1_ctr_hygiene_max10: 0.0 across page-1 zero-CTR URLs** (/corporate-product-launch-event-architecture, /corporate-event-budget-planning-guide): Rewrite titles and meta descriptions to match query intent, add answer-first opening paragraphs, and test snippets against top page-1 queries.
 
 ## Page Micro-Optimizations
-### Target: `/corporate-event-management-company`
-* **Title:** `Corporate Event Management Singapore & Bangalore | Framez`
-* **Meta:** `Framez plans and produces corporate events, conferences and virtual experiences from Singapore and Bangalore. Request a proposal.`
-* **Content Hook:** Add an H2 titled Corporate Event Management for Singapore and Bangalore Buyers with a direct-answer paragraph covering Prudential Tower and Koramangala operations.
 ### Target: `/corporate-product-launch-event-architecture`
-* **Title:** `Product Launch Event Architecture Bangalore | Framez`
-* **Meta:** `Plan product launch events in Bangalore with stage, AV, guest flow and production runbooks. Review Framez launch architecture.`
-* **Content Hook:** Add an H2 titled Product Launch Event Production Checklist for Bangalore B2B Teams and include FAQ answers on venue STP checks, AV ownership and run of show.
-### Target: `/event-management-company-in-bangalore`
-* **Title:** `Event Management Company in Bangalore | Framez`
-* **Meta:** `Framez runs end-to-end corporate events in Bangalore from Koramangala. Review conference, launch and employee event production.`
-* **Content Hook:** Add an H2 titled How Framez Runs End-to-End B2B Events from Koramangala and list planning, production and on-ground execution steps.
+* **Title:** `Product Launch Event Architecture Singapore | Framez`
+* **Meta:** `Design product launch events in Singapore and Bangalore with stage, AV, guest flow, and runbooks. Request a Framez production brief.`
+* **Content Hook:** Add an H2 titled Product Launch Event Architecture for Singapore and Bangalore Buyers with a paragraph covering stage design, AV, rehearsal, and guest flow.
+### Target: `/corporate-event-budget-planning-guide`
+* **Title:** `Corporate Event Budget Planning Guide | Framez`
+* **Meta:** `Build a corporate event budget for Singapore and Bangalore with venue, AV, F&B, and contingency lines. Use the Framez planning guide.`
+* **Content Hook:** Add an H2 titled Singapore and Bangalore Budget Line Items Corporate Buyers Must Separate with a short table for venue, AV, F&B, and contingency.
+### Target: `/corporate-event-management-company`
+* **Title:** `Corporate Event Management Company Singapore | Framez`
+* **Meta:** `Framez plans corporate conferences, launches, and virtual events from Singapore and Bangalore. Review service scope and request an RFP response.`
+* **Content Hook:** Add an H2 titled How Framez Scopes Corporate Events for Singapore and Bangalore Buyers with a paragraph on venue sourcing, AV, speaker logistics, and on-site production.
 
 ## Pre-Flight Guidance for Upcoming Wave
 **Target:** wave2b_2026_11_22: dinner-and-dance-event-management-singapore (Release Date: 2026-11-22)  
-* **Recommended H2 Topics:** Singapore Dinner and Dance Venue and Ballroom AV Checklist, Halal Catering and Dietary Coordination for Corporate D&D, Lucky Draw, Live Entertainment and Run of Show Operations
-* **Local Entities:** Marina Bay Sands Expo, Singapore Tourism Board MICE, Prudential Tower Singapore
-* **Commercial CTA:** Send the D&D date, headcount and venue shortlist to Framez for a ballroom AV, entertainment and lucky draw operations plan.
+* **Recommended H2 Topics:** Singapore Dinner and Dance Theme Staging and Ballroom AV, Lucky Draw Operations and Guest Flow for Corporate D&D, Halal Catering Coordination and Venue Compliance in Singapore
+* **Local Entities:** Marina Bay Sands Expo, Suntec Singapore Convention & Exhibition Centre, Singapore Tourism Board MICE, MUIS Halal Certification
+* **Commercial CTA:** Request a Singapore D&D production brief covering ballroom AV, live entertainment, lucky draw operations, and halal catering coordination.

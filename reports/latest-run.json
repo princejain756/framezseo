@@ -1,8 +1,6 @@
 {
-  "generated_at": "2026-11-21T19:33:05.529591+00:00",
-  "waves_deployed_this_run": [
-    "https://framez.sg/dinner-and-dance-event-management-singapore"
-  ],
+  "generated_at": "2026-11-22T04:17:39.946041+00:00",
+  "waves_deployed_this_run": [],
   "daily_action": {
     "event": "daily_micro_action_executed",
     "date_sgt": "2026-11-22",
@@ -13,7 +11,7 @@
     "target_url": "https://framez.sg/event-management-company-in-singapore",
     "status": "ok",
     "message": "Added MICE cross-links on Singapore and Our Events & Services pages.",
-    "timestamp": "2026-11-21T19:30:27.738047+00:00",
+    "timestamp": "2026-11-22T04:15:05.806724+00:00",
     "target_urls": [
       "https://framez.sg/event-management-company-in-singapore",
       "https://framez.sg/our-events-and-services"
@@ -21,22 +19,16 @@
     "sha256_receipts": [
       {
         "file": "event-management-company-in-singapore.php",
-        "changed": true,
-        "bytes_before": 24600,
-        "bytes_after": 25346,
-        "sha256_before": "cffe01af9d54073f6d6c9e10be057e09e1ce314fffc219e22b00b9719c3b25df",
+        "changed": false,
+        "sha256_before": "2947c11c97a150509b7b5af837051c65e960ad8db2911d6013d14a6c8fd9d0b7",
         "sha256_after": "2947c11c97a150509b7b5af837051c65e960ad8db2911d6013d14a6c8fd9d0b7",
-        "readback_sha256": "2947c11c97a150509b7b5af837051c65e960ad8db2911d6013d14a6c8fd9d0b7",
         "sha256_verified": true
       },
       {
         "file": "our-events-and-services.php",
-        "changed": true,
-        "bytes_before": 34404,
-        "bytes_after": 35462,
-        "sha256_before": "63639be0e7b2eef7804628832f5db2a2bf387d773833cfbc292091491f1fdc6c",
+        "changed": false,
+        "sha256_before": "e1d477fb6a745c9d54b73e09cf1987063e79d2b33631088dd513376e91d803bd",
         "sha256_after": "e1d477fb6a745c9d54b73e09cf1987063e79d2b33631088dd513376e91d803bd",
-        "readback_sha256": "e1d477fb6a745c9d54b73e09cf1987063e79d2b33631088dd513376e91d803bd",
         "sha256_verified": true
       }
     ]
@@ -45,7 +37,7 @@
     "urls": 30,
     "issues": 0,
     "broken": 0,
-    "changed": 30,
+    "changed": 0,
     "issue_counts": {}
   },
   "geo_audit": {
@@ -70,13 +62,13 @@
     "images_missing_dimensions": 280,
     "images_missing_lazy": 118,
     "page1_zero_ctr_query_alerts": 70,
-    "page1_zero_ctr_page_alerts": 51,
+    "page1_zero_ctr_page_alerts": 50,
     "page1_zero_ctr_sgp_alerts": 19,
     "page1_zero_ctr_ind_alerts": 27
   },
   "llms_sync": {
     "status": "ok",
-    "generated_at": "2026-11-21T19:31:39.876153+00:00",
+    "generated_at": "2026-11-22T04:16:18.376391+00:00",
     "total_urls": 30,
     "core_urls": 16,
     "guide_urls": 14,
@@ -89,24 +81,22 @@
   },
   "sitemap": {
     "urls": 30,
-    "added": [
-      "https://framez.sg/dinner-and-dance-event-management-singapore"
-    ],
+    "added": [],
     "removed": [],
-    "uploaded": true
+    "uploaded": false
   },
   "indexnow": {
-    "submitted": 30,
+    "submitted": 1,
     "status": 200,
     "ok": true
   },
   "gsc": "ok",
   "ga4": "ok",
   "deepseek": "ok",
-  "deepseek_latency": 40.66,
-  "deepseek_summary": "Singapore shows 4,688 impressions and 2 clicks at 0.0004 CTR, while India drives 80 clicks from 2,208 impressions at 0.0362 CTR. GEO readiness is 76.3, and today's priority is converting Singapore page-1 zero-CTR pages and closing schema gaps on service pages.",
+  "deepseek_latency": 35.64,
+  "deepseek_summary": "Singapore carries 4467 impressions but only 2 clicks at 0.0004 CTR and position 49.7, while India carries 2140 impressions and 78 clicks at 0.0364 CTR and position 27.8. GEO readiness is 76.3, with image dimension coverage at 4.4/15 and page-1 CTR hygiene at 0/10, so today focus on zero-CTR page-1 titles and image dimension fixes.",
   "leads": {
     "verified_total": 3,
-    "spam_blocked_total": 284
+    "spam_blocked_total": 287
   }
 }
