@@ -1,0 +1,3039 @@
+{
+  "generated_at": "2026-11-23T04:17:06.338513+00:00",
+  "site": "https://framez.sg",
+  "sitemap_urls": 30,
+  "audited_urls": 30,
+  "readiness_score": 76.3,
+  "readiness_breakdown": {
+    "schema_completeness_max25": 24.1,
+    "llms_parity_proof_max20": 20.0,
+    "mixed_content_hygiene_max15": 15.0,
+    "script_jquery_hygiene_max15": 12.8,
+    "image_dims_lazy_max15": 4.4,
+    "page1_ctr_hygiene_max10": 0.0
+  },
+  "schema_summary": {
+    "counts": {
+      "Organization": 30,
+      "ProfessionalService": 3,
+      "FAQPage": 23,
+      "Service": 10,
+      "Article": 14,
+      "SpeakableSpecification": 9,
+      "BreadcrumbList": 29
+    },
+    "checks_passed": 78,
+    "checks_total": 81,
+    "missing_schema_pages": [
+      {
+        "url": "https://framez.sg/corporate-event-management-company",
+        "role": "service",
+        "missing": [
+          "ProfessionalService"
+        ]
+      },
+      {
+        "url": "https://framez.sg/experiential-marketing-brand-activations",
+        "role": "service",
+        "missing": [
+          "FAQPage"
+        ]
+      },
+      {
+        "url": "https://framez.sg/corporate-event-trends-singapore",
+        "role": "guide",
+        "missing": [
+          "FAQPage"
+        ]
+      }
+    ]
+  },
+  "llms_parity": {
+    "sitemap_url_count": 30,
+    "llms_txt_urls": 30,
+    "llms_full_txt_urls": 30,
+    "missing_in_llms_txt": [],
+    "missing_in_llms_full_txt": [],
+    "extra_in_llms_txt": [],
+    "extra_in_llms_full_txt": [],
+    "llms_txt_parity_ok": true,
+    "llms_full_txt_parity_ok": true,
+    "llms_txt_proof": {
+      "has_nap": true,
+      "has_iso": true,
+      "has_entity": true,
+      "has_em_en_dash": false
+    },
+    "llms_full_txt_proof": {
+      "has_nap": true,
+      "has_iso": true,
+      "has_entity": true,
+      "has_em_en_dash": false
+    },
+    "em_en_dash_files": []
+  },
+  "technical_findings": {
+    "mixed_content_maps_google_pages": [],
+    "mixed_content_asset_pages": [],
+    "duplicate_jquery_pages": [],
+    "pages_with_blocking_scripts": 18,
+    "total_blocking_scripts": 18,
+    "blocking_scripts_pages": [
+      {
+        "url": "https://framez.sg/about-us",
+        "blocking_count": 1,
+        "scripts": [
+          "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        ]
+      },
+      {
+        "url": "https://framez.sg/our-events-and-services",
+        "blocking_count": 1,
+        "scripts": [
+          "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        ]
+      },
+      {
+        "url": "https://framez.sg/corporate-event-management-company",
+        "blocking_count": 1,
+        "scripts": [
+          "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        ]
+      },
+      {
+        "url": "https://framez.sg/event-management-company-in-bangalore",
+        "blocking_count": 1,
+        "scripts": [
+          "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        ]
+      },
+      {
+        "url": "https://framez.sg/experiential-marketing-brand-activations",
+        "blocking_count": 1,
+        "scripts": [
+          "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        ]
+      },
+      {
+        "url": "https://framez.sg/blog",
+        "blocking_count": 1,
+        "scripts": [
+          "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        ]
+      },
+      {
+        "url": "https://framez.sg/get-in-touch",
+        "blocking_count": 1,
+        "scripts": [
+          "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        ]
+      },
+      {
+        "url": "https://framez.sg/book-a-demo",
+        "blocking_count": 1,
+        "scripts": [
+          "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        ]
+      },
+      {
+        "url": "https://framez.sg/corporate-event-planning-handbook-2027",
+        "blocking_count": 1,
+        "scripts": [
+          "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        ]
+      },
+      {
+        "url": "https://framez.sg/experiential-brand-activations-framework",
+        "blocking_count": 1,
+        "scripts": [
+          "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        ]
+      },
+      {
+        "url": "https://framez.sg/executive-offsite-retreat-blueprint",
+        "blocking_count": 1,
+        "scripts": [
+          "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        ]
+      },
+      {
+        "url": "https://framez.sg/b2b-event-agency-rfp-evaluation-guide",
+        "blocking_count": 1,
+        "scripts": [
+          "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        ]
+      },
+      {
+        "url": "https://framez.sg/corporate-product-launch-event-architecture",
+        "blocking_count": 1,
+        "scripts": [
+          "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        ]
+      },
+      {
+        "url": "https://framez.sg/high-security-cxo-board-summit-protocol",
+        "blocking_count": 1,
+        "scripts": [
+          "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        ]
+      },
+      {
+        "url": "https://framez.sg/festive-corporate-gala-diwali-celebrations",
+        "blocking_count": 1,
+        "scripts": [
+          "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        ]
+      },
+      {
+        "url": "https://framez.sg/corporate-family-day-carnival-safety-logistics",
+        "blocking_count": 1,
+        "scripts": [
+          "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        ]
+      },
+      {
+        "url": "https://framez.sg/corporate-event-trends-singapore",
+        "blocking_count": 1,
+        "scripts": [
+          "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        ]
+      },
+      {
+        "url": "https://framez.sg/Framez-Public-Statement-on-Health-and-Safety-Commitment",
+        "blocking_count": 1,
+        "scripts": [
+          "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        ]
+      }
+    ],
+    "images_total": 282,
+    "images_missing_dimensions": 280,
+    "images_missing_lazy": 118,
+    "pages_missing_image_dimensions": [
+      {
+        "url": "https://framez.sg/",
+        "missing": 96,
+        "total": 97
+      },
+      {
+        "url": "https://framez.sg/about-us",
+        "missing": 6,
+        "total": 6
+      },
+      {
+        "url": "https://framez.sg/our-events-and-services",
+        "missing": 12,
+        "total": 12
+      },
+      {
+        "url": "https://framez.sg/corporate-event-management-company",
+        "missing": 10,
+        "total": 10
+      },
+      {
+        "url": "https://framez.sg/event-management-company-in-bangalore",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/event-management-company-in-india",
+        "missing": 5,
+        "total": 5
+      },
+      {
+        "url": "https://framez.sg/event-planner",
+        "missing": 5,
+        "total": 5
+      },
+      {
+        "url": "https://framez.sg/event-marketing-services",
+        "missing": 5,
+        "total": 5
+      },
+      {
+        "url": "https://framez.sg/experiential-marketing-brand-activations",
+        "missing": 7,
+        "total": 7
+      },
+      {
+        "url": "https://framez.sg/clientele",
+        "missing": 32,
+        "total": 32
+      },
+      {
+        "url": "https://framez.sg/blog",
+        "missing": 17,
+        "total": 17
+      },
+      {
+        "url": "https://framez.sg/get-in-touch",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/book-a-demo",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/corporate-event-budget-planning-guide",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/annual-day-and-awards-night-planning-guide",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/corporate-event-roi-measurement-guide",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/singapore-corporate-event-planning-checklist",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/corporate-event-planning-handbook-2027",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/experiential-brand-activations-framework",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/executive-offsite-retreat-blueprint",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/b2b-event-agency-rfp-evaluation-guide",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/corporate-product-launch-event-architecture",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/high-security-cxo-board-summit-protocol",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/festive-corporate-gala-diwali-celebrations",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/corporate-family-day-carnival-safety-logistics",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/corporate-event-trends-singapore",
+        "missing": 7,
+        "total": 7
+      },
+      {
+        "url": "https://framez.sg/Framez-Public-Statement-on-Health-and-Safety-Commitment",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/event-management-company-in-singapore",
+        "missing": 5,
+        "total": 5
+      },
+      {
+        "url": "https://framez.sg/conference-and-mice-event-management",
+        "missing": 5,
+        "total": 5
+      },
+      {
+        "url": "https://framez.sg/dinner-and-dance-event-management-singapore",
+        "missing": 4,
+        "total": 5
+      }
+    ],
+    "pages_missing_image_lazy": [
+      {
+        "url": "https://framez.sg/",
+        "missing": 2,
+        "total": 97
+      },
+      {
+        "url": "https://framez.sg/about-us",
+        "missing": 4,
+        "total": 6
+      },
+      {
+        "url": "https://framez.sg/our-events-and-services",
+        "missing": 4,
+        "total": 12
+      },
+      {
+        "url": "https://framez.sg/corporate-event-management-company",
+        "missing": 4,
+        "total": 10
+      },
+      {
+        "url": "https://framez.sg/event-management-company-in-bangalore",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/event-management-company-in-india",
+        "missing": 4,
+        "total": 5
+      },
+      {
+        "url": "https://framez.sg/event-planner",
+        "missing": 4,
+        "total": 5
+      },
+      {
+        "url": "https://framez.sg/event-marketing-services",
+        "missing": 4,
+        "total": 5
+      },
+      {
+        "url": "https://framez.sg/experiential-marketing-brand-activations",
+        "missing": 4,
+        "total": 7
+      },
+      {
+        "url": "https://framez.sg/clientele",
+        "missing": 4,
+        "total": 32
+      },
+      {
+        "url": "https://framez.sg/blog",
+        "missing": 4,
+        "total": 17
+      },
+      {
+        "url": "https://framez.sg/get-in-touch",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/book-a-demo",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/corporate-event-budget-planning-guide",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/annual-day-and-awards-night-planning-guide",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/corporate-event-roi-measurement-guide",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/singapore-corporate-event-planning-checklist",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/corporate-event-planning-handbook-2027",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/experiential-brand-activations-framework",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/executive-offsite-retreat-blueprint",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/b2b-event-agency-rfp-evaluation-guide",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/corporate-product-launch-event-architecture",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/high-security-cxo-board-summit-protocol",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/festive-corporate-gala-diwali-celebrations",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/corporate-family-day-carnival-safety-logistics",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/corporate-event-trends-singapore",
+        "missing": 4,
+        "total": 7
+      },
+      {
+        "url": "https://framez.sg/Framez-Public-Statement-on-Health-and-Safety-Commitment",
+        "missing": 4,
+        "total": 4
+      },
+      {
+        "url": "https://framez.sg/event-management-company-in-singapore",
+        "missing": 4,
+        "total": 5
+      },
+      {
+        "url": "https://framez.sg/conference-and-mice-event-management",
+        "missing": 4,
+        "total": 5
+      },
+      {
+        "url": "https://framez.sg/dinner-and-dance-event-management-singapore",
+        "missing": 4,
+        "total": 5
+      }
+    ]
+  },
+  "page1_zero_ctr_alerts": {
+    "gsc_available": true,
+    "queries": [
+      {
+        "query": "list event management companies in india experienced working with singapore-based apac regional hqs.",
+        "impressions": 26,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 8.0,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "framez",
+        "impressions": 24,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 3.8,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "product launch events company in bangalore",
+        "impressions": 21,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 9.8,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "top event management companies inbangalore",
+        "impressions": 16,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 8.6,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "what should i check when a venue claims full stp support?",
+        "impressions": 14,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5.3,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "frame event",
+        "impressions": 12,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 3.2,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "we run south and southeast asia out of singapore, including india, which indian event company should manage our india office events?",
+        "impressions": 10,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 6.8,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "how do i choose a professional agency that can handle end-to-end event planning and execution?",
+        "impressions": 9,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 2,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "we need an event company in mumbai or bengaluru for a hong kong-headquartered business event.",
+        "impressions": 8,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 3.1,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "which event agency in india should a hong kong company use for a factory or office launch event?",
+        "impressions": 7,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5.7,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "what's the typical budget for an office launch event in india for a singapore-headquartered regional business?",
+        "impressions": 6,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 6.5,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "bangalore event management companies",
+        "impressions": 5,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 7.6,
+        "country": "all",
+        "page": "https://framez.sg/event-planner"
+      },
+      {
+        "query": "event management bangalore",
+        "impressions": 5,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 9.8,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "best budget-friendly meeting planning in event production",
+        "impressions": 4,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 2.2,
+        "country": "all",
+        "page": "https://framez.sg/corporate-event-budget-planning-guide"
+      },
+      {
+        "query": "corporate event management companies that provides end to end services in asia",
+        "impressions": 4,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 3,
+        "country": "all",
+        "page": "https://framez.sg/corporate-event-management-company"
+      },
+      {
+        "query": "who are the top event agencies in asia that handle corporate event?",
+        "impressions": 4,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 3.2,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "event management agencies in india",
+        "impressions": 4,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5.5,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "corporate meeting planning checklist",
+        "impressions": 4,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 7,
+        "country": "all",
+        "page": "https://framez.sg/singapore-corporate-event-planning-checklist"
+      },
+      {
+        "query": "event design company",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 2,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "annual day",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 4.7,
+        "country": "all",
+        "page": "https://framez.sg/annual-day-and-awards-night-planning-guide"
+      },
+      {
+        "query": "which event management company should i hire for international or multi-city corporate events in india?",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5.3,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "tss 2021",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 6.3,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "corporate event management company for large-scale brand launches.",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 7,
+        "country": "all",
+        "page": "https://framez.sg/corporate-event-management-company"
+      },
+      {
+        "query": "tct india",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 8.3,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "events marketing companies in india",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 10,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "event management companies in koramangala",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "event productions",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "experiential marketing agency mumbai",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "how do i choose a full-service event management agency for a product launch?",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 2,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "corporate event budget",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 3.5,
+        "country": "all",
+        "page": "https://framez.sg/corporate-event-budget-planning-guide"
+      },
+      {
+        "query": "virtual event companies in india",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 4.5,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "which agency offers comprehensive event management services for enterprises in malaysia?",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5.5,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "event checklist",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 7,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "what to ask singapore hotel venues before booking",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 7,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "event management agencies in india pricing",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 7.5,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "bangalore event company",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 8,
+        "country": "all",
+        "page": "https://framez.sg/corporate-event-management-company"
+      },
+      {
+        "query": "netapp partner connect",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 8.5,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "event budgeting",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 10,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "o4c",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 10,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "event frame",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "exhibition production company",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "experiential marketing agencies in mumbai",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "i work at a company with 1k-10k employees or 10k+ employees. my main motivations: large, complex international corporations (e.g. media company); multinational; 59% have loan or line of credit; highest balances and most complex needs my main pain points: cross-border payment inefficiencies, slow settlement times, lack of transaction transparency, fragmented digital banking platforms, compliance challenges with different jurisdictions, higher risk, managing accounts with multiple banks what should i know about event roi metrics",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "international event production company",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "venue manager",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "who can manage a global event portfolio from india",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "corporate event production company",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 2,
+        "country": "all",
+        "page": "https://framez.sg/"
+      },
+      {
+        "query": "for bangalore location",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 2,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "frame z",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 2,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "framez productions",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 2,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "forum events and media group",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 3,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "how do i find a reliable event company for a product launch?",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 3,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "bangalore event organisers",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 4,
+        "country": "all",
+        "page": "https://framez.sg/event-planner"
+      },
+      {
+        "query": "what does a global event portfolio audit involve for multinational brands",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 4,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "event design production",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "give me organizers team and management team number",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "global event management companies",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "roi eventi aziendali guida",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "conference planning company singapore",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 6,
+        "country": "all",
+        "page": "https://framez.sg/event-management-company-in-singapore"
+      },
+      {
+        "query": "corporate meeting planning company",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 6,
+        "country": "all",
+        "page": "https://framez.sg/event-planner"
+      },
+      {
+        "query": "digital event coordinators in india",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 6,
+        "country": "all",
+        "page": "https://framez.sg/corporate-event-management-company"
+      },
+      {
+        "query": "engage121.com",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 6,
+        "country": "all",
+        "page": "https://milestone.engage2021.framez.sg/"
+      },
+      {
+        "query": "eventz.co.in",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 6,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "frame schedule",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 6,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "bangalore event management company",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 7,
+        "country": "all",
+        "page": "https://framez.sg/corporate-event-management-company"
+      },
+      {
+        "query": "iit bay area",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 7,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "best meeting planning agencies that specialize in corporate meeting tech",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 8,
+        "country": "all",
+        "page": "https://framez.sg/corporate-event-management-company"
+      },
+      {
+        "query": "event planners in bangalore",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 8,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "who provides end-to-end corporate event management solutions for conferences and meetings in india?",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 8,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "how does a bold, concept-forward experiential agency compare to a broader digital marketing group in activation scale and efficiency?",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 9,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "event execution company",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 10,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "event management agencies in india 2026",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 10,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "planning a corporate event checklist",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 10,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "tct faculty",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 10,
+        "country": "all",
+        "page": ""
+      }
+    ],
+    "singapore_queries": [
+      {
+        "query": "what should i check when a venue claims full stp support?",
+        "impressions": 14,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5.3,
+        "country": "sgp",
+        "page": ""
+      },
+      {
+        "query": "corporate meeting planning checklist",
+        "impressions": 4,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 7,
+        "country": "sgp",
+        "page": "https://framez.sg/singapore-corporate-event-planning-checklist"
+      },
+      {
+        "query": "event design company",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 2,
+        "country": "sgp",
+        "page": ""
+      },
+      {
+        "query": "product launch events company in bangalore",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 4,
+        "country": "sgp",
+        "page": ""
+      },
+      {
+        "query": "annual day",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 4.7,
+        "country": "sgp",
+        "page": "https://framez.sg/annual-day-and-awards-night-planning-guide"
+      },
+      {
+        "query": "roi event management",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 6.5,
+        "country": "sgp",
+        "page": ""
+      },
+      {
+        "query": "event checklist",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 7,
+        "country": "sgp",
+        "page": ""
+      },
+      {
+        "query": "event management bangalore",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 9,
+        "country": "sgp",
+        "page": ""
+      },
+      {
+        "query": "event budgeting",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 10,
+        "country": "sgp",
+        "page": ""
+      },
+      {
+        "query": "frame events",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1,
+        "country": "sgp",
+        "page": "https://framez.sg/"
+      },
+      {
+        "query": "framez",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1,
+        "country": "sgp",
+        "page": ""
+      },
+      {
+        "query": "how do i find a reliable event company for a product launch?",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 3,
+        "country": "sgp",
+        "page": ""
+      },
+      {
+        "query": "bangalore event management companies",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5,
+        "country": "sgp",
+        "page": "https://framez.sg/event-planner"
+      },
+      {
+        "query": "bangalore event company",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 6,
+        "country": "sgp",
+        "page": "https://framez.sg/corporate-event-management-company"
+      },
+      {
+        "query": "best event management companies in bangalore",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 6,
+        "country": "sgp",
+        "page": "https://framez.sg/corporate-event-management-company"
+      },
+      {
+        "query": "planning a corporate event checklist",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 10,
+        "country": "sgp",
+        "page": ""
+      },
+      {
+        "query": "plant launch event management in bangalore",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 10,
+        "country": "sgp",
+        "page": ""
+      },
+      {
+        "query": "what to ask singapore hotel venues before booking",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 10,
+        "country": "sgp",
+        "page": ""
+      }
+    ],
+    "india_queries": [
+      {
+        "query": "framez",
+        "impressions": 17,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 4.3,
+        "country": "ind",
+        "page": ""
+      },
+      {
+        "query": "how do i choose a professional agency that can handle end-to-end event planning and execution?",
+        "impressions": 7,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 2,
+        "country": "ind",
+        "page": ""
+      },
+      {
+        "query": "frame event",
+        "impressions": 5,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1.2,
+        "country": "ind",
+        "page": ""
+      },
+      {
+        "query": "events marketing companies in india",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 10,
+        "country": "ind",
+        "page": ""
+      },
+      {
+        "query": "event management companies in koramangala",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1,
+        "country": "ind",
+        "page": ""
+      },
+      {
+        "query": "event productions",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1,
+        "country": "ind",
+        "page": ""
+      },
+      {
+        "query": "experiential marketing agency mumbai",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1,
+        "country": "ind",
+        "page": ""
+      },
+      {
+        "query": "how do i choose a full-service event management agency for a product launch?",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 2,
+        "country": "ind",
+        "page": ""
+      },
+      {
+        "query": "corporate event budget",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 3.5,
+        "country": "ind",
+        "page": "https://framez.sg/corporate-event-budget-planning-guide"
+      },
+      {
+        "query": "corporate event management company for large-scale brand launches.",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 8,
+        "country": "ind",
+        "page": "https://framez.sg/corporate-event-management-company"
+      },
+      {
+        "query": "event frame",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1,
+        "country": "ind",
+        "page": ""
+      },
+      {
+        "query": "exhibition production company",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1,
+        "country": "ind",
+        "page": ""
+      },
+      {
+        "query": "experiential marketing agencies in mumbai",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1,
+        "country": "ind",
+        "page": ""
+      },
+      {
+        "query": "international event production company",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1,
+        "country": "ind",
+        "page": ""
+      },
+      {
+        "query": "corporate event production company",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 2,
+        "country": "ind",
+        "page": "https://framez.sg/"
+      },
+      {
+        "query": "for bangalore location",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 2,
+        "country": "ind",
+        "page": ""
+      },
+      {
+        "query": "frame z",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 2,
+        "country": "ind",
+        "page": ""
+      },
+      {
+        "query": "forum events and media group",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 3,
+        "country": "ind",
+        "page": ""
+      },
+      {
+        "query": "event design production",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5,
+        "country": "ind",
+        "page": ""
+      },
+      {
+        "query": "give me organizers team and management team number",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5,
+        "country": "ind",
+        "page": ""
+      },
+      {
+        "query": "global event management companies",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5,
+        "country": "ind",
+        "page": ""
+      },
+      {
+        "query": "digital event coordinators in india",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 6,
+        "country": "ind",
+        "page": "https://framez.sg/corporate-event-management-company"
+      },
+      {
+        "query": "frame schedule",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 6,
+        "country": "ind",
+        "page": ""
+      },
+      {
+        "query": "bangalore event management company",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 7,
+        "country": "ind",
+        "page": "https://framez.sg/corporate-event-management-company"
+      },
+      {
+        "query": "iit bay area",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 7,
+        "country": "ind",
+        "page": ""
+      },
+      {
+        "query": "corporate event management solutions",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 8,
+        "country": "ind",
+        "page": "https://framez.sg/corporate-event-management-company"
+      },
+      {
+        "query": "bangalore event company",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 10,
+        "country": "ind",
+        "page": "https://framez.sg/corporate-event-management-company"
+      },
+      {
+        "query": "event execution company",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 10,
+        "country": "ind",
+        "page": ""
+      },
+      {
+        "query": "o4c",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 10,
+        "country": "ind",
+        "page": ""
+      }
+    ],
+    "pages": [
+      {
+        "page": "https://framez.sg/corporate-product-launch-event-architecture",
+        "impressions": 175,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 6.8
+      },
+      {
+        "page": "https://framez.sg/corporate-event-budget-planning-guide",
+        "impressions": 114,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 9.4
+      },
+      {
+        "page": "https://framez.sg/clientele",
+        "impressions": 18,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5.7
+      },
+      {
+        "page": "https://framez.sg/corporate-family-day-carnival-safety-logistics",
+        "impressions": 5,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 4.4
+      },
+      {
+        "page": "https://framez.sg/about-us",
+        "impressions": 4,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 2
+      },
+      {
+        "page": "https://hvpartnersummit2022.framez.sg/",
+        "impressions": 4,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 6.8
+      },
+      {
+        "page": "https://itdachieversaward.framez.sg/",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5
+      },
+      {
+        "page": "https://framez.sg/b2b-event-agency-rfp-evaluation-guide",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 6.7
+      },
+      {
+        "page": "https://framez.sg/corporate-event-trends-singapore",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 7.7
+      },
+      {
+        "page": "https://framez.sg/corporate-event-planning-handbook-2027",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 8.3
+      },
+      {
+        "page": "https://framez.sg/event-management-company-in-india",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 3.5
+      },
+      {
+        "page": "https://framez.sg/executive-offsite-retreat-blueprint",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5.5
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?gsas=1&ahbb=1&rwg_token=ALcMQYYQEtYK8PAjBzKW1xZYXbfwR7YU-_MAB6QJRHX7dT3rrmlmaAdnBUiR3zAklx19S1OClvHlU8jMCjSNLMCbqvrPvEWlMg%3D%3D",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?gsas=1&ahbb=1&rwg_token=ALcMQYZENFtJIsyqovi4uZiN-upvXqGr1gjBS88MTiU8Qz-rj_qxrtHRyXxpXgeumrgaqH-i94zUD7FMrvUuDvwfHZWlt33dJg%3D%3D",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYY5HHbl5ZevQt94jHfaHZby9ihvTIC-ooACS6Ebc4CLewCfWKkY5rH3QXvcDaS_eYlpxrm7acsAIXl96xwSiitAYCit-g%3D%3D",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYYDevm9K4Wxl2jxd4Z4APWwl_CE1Q9t32J4rGF5ufQO1YGtHXnYExRG9NW5mh_DN445joo1ZKgPKfJSfaIwLFJjidQ7OA%3D%3D",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYYT2vUpXWU7sxuEW5247d5yELOdbDWuJ-vHouaR34Rmq5tZo2_pftTQ6-s9D5R5IzT3bG8RKB3NSnH-lLT3sW56kT-blw%3D%3D",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYYfCz4veOWBY-AHaEFJBZdH9jZ9DGPH3wud9fl6crrPnbEVFveNg0N4qm8kwZdtDczUgayPigfP3FmSFBxyE7q59aoIzQ%3D%3D",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYYhYCb7WKJ_iteWGnoApuc9DNV93caCE5phC0aw8ESIuZimdIN4mPmBZp2yqSCW8e7i7M8Qg9VLGs92mFnN6hnWX7BKDg%3D%3D",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYYk2Ujae-_aL50ijPdTTa9K0pIUDNSV4A2wKS74PMCaBSU_2dSa893ygrlfw57PxzOgEYoTtIzbQM__8HE78Fx4l8Fhdg%3D%3D&source=cat",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYYlV8QZI2T0M_sG0yVPNxcFNY2NUy5zLDJnlYDIItHd2qjA9KAMD8_KMJwHt6NGlVjGNLYEzy_HcGzFUba5RYip-_7i7w%3D%3D",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYYv1QAhbBOZtrdEuVpwHJ5sGWhhQhHbg4lulLKGJdskfCTffILWITt25URffX0OQJyUwDiIpLcnDdyW0zRNmm--O5tC4w%3D%3D",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYYvnpRDycCS7JxDOKYv5ENCfT3vhmZjrb3lEl6o6Juaog3ZALpGVKkKZm1ZZn8ZFbZ41d8M2KVqcfFd_ChlwulybasD2Q%3D%3D&source=cat",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYZ8P9zzk4kWeosdNYlSTtT3NCsuXE2NhNiazln-0XdHsn36fRhRvMbBiYdHjFEsnRtFCPgQ3ggSe99mnGFlm-dn_sHe4A%3D%3D&source=cat",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYZE_dDg_H1EBs4wIpU6h_H7Brngb57aXOnftG0iQPQHOrnyQm1Sz9gORkeQie9kN3dCH7sW3w4oupjFLNOw5m21QH6oJA%3D%3D",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYZL2gIHIxB1x7H_lVEZuVl25Zx010tOKuwgjoZUGoEaPaDu1dXmq9VzFbfHkU6TW5j3aklRfZLNbjPiWfCMnYUjs6C5YA%3D%3D&source=cat",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYZWFsnELRMM54hJsjfK3t6BWc39xD9m_p7RTX4lA8X8m7p7MV0hUcByvfmu-nJO--muVw29-7ozIXtQNNBclvU0wzQf3Q%3D%3D",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYZZa_OZ5PdgjcTaTcPQWfndEuqhDsx3ndoDJrPwVR6c4Pmo5keikzuUhCK70Q57F-zTp101TiuH0hL06teZgg3PgvqTGg%3D%3D",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYZad5nuXPbJ-Ef_DgCzIfdFG2RC3oZvwPQRTftW3xHQLy-s-vXD2PT0fOkREy9BU3JIbnlPkYaYiUw59xoOfV1AS4nU1A%3D%3D",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYaU4MbE1S0tMXYAEg1QVxYQ195c4Is-dLAYRmKAJhStYcw09C2_w0Pcdl8cP6LFlIAViDkrXnG65SEsz-y_zmeZEXkiTg%3D%3D",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYb-FYLE4BwjRB9g2zXeBa1b18WWtAoNqGZRrRTS3rI24PQ9h2zCof4gN0xjFktRPkw9ASdYWIM-LCPZFpfcD9o1KynM0Q%3D%3D",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYbET_7KzEJ6EkFgE3ALrwYHEZEbLU5OxDKidLAQ3w26JFCOC2rf2OC8JGZGU5nCABgwu4x9SUr26tIlHwUr5KfjkqwoPQ%3D%3D",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYbntkqgXqD4s4ok1qKyARgG2wApwfcCiVxs4CPp1Xg23XTrbjvF5j6OtvO6ph2zDAPD50McD4KUdKBcajXfXWXp5FNWJg%3D%3D&source=cat",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYbuvzym0cz1TWe4XF_4koMVBP7Dh7xSPJkgQn0F2oHMfcQwTwgHnC5SC-tRu7LapIKNdTKMTjTuwXKAyfXsKlOGAPmU2A%3D%3D",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?gsas=1&ahbb=1&rwg_token=ALcMQYY8TJsIryaF8lNn3y-z43hqGBHXYQ7_oSy-qqh_PGBrYjAE5pff2UYQZ17eSQLJqrqSuBP2PM_vGzmLALJJ0FA7-O0RPQ%3D%3D",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 2
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?gsas=1&ahbb=1&rwg_token=ALcMQYarp-K1IiGFPTqhknm7zDnp5_u0gyMEdqNfH2XToHOHFiak9C05aPZAs2-VGG443u4FYtlOiLCLhVOCJqxJ5EnWcF2fnQ%3D%3D",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 2
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?gsas=1&ahbb=1&rwg_token=ALcMQYbFSYQxyMLFXO9lrhM-bczS8k2i6SZjSWotH11q_YTdAh7OPHWXmg4xDpA5MfRgq6HIHanFruawJreKxc-WBKKzh-C3zw%3D%3D",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 2
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYbVJtgoiqLnoOZ_PaUxHNqLHH3degFsYe3DC9_joY4BpixWGTk09HqtdIVHRQNcyK4jDZrui3xUdYbKtmDYqN7bk3m4RA%3D%3D",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 2
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?gsas=1&ahbb=1&rwg_token=ALcMQYa7Y2xKmS72S1B5w9cZ24khFrE8txMZTrIJtUc03irS2wVpS2Zrn1OHS6LGKqo8DrZf2ruyDQCu7utyTrqt3Qk0U9W1RQ%3D%3D",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 3
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYbGCgYNWg0G8Z91F5tGmyNvFGstXdoMbiOwY1KVDi5X3CCaJ8MOoHehOPPSb5lJI_z221gNl-BnMy4Zqd4me-YQf6fAig%3D%3D",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 3
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYbOt86JwybWtUFM28Kl2N-xDTrldwE6REX67BGU0f0vHMMvdyC3xysaZsbfrXa-owWKFcgC_MAdE--8XPMDD-89Iut7nw%3D%3D&authuser=1",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 3
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYYJQf1kWgl9v_eW0aMfBkKnfO9e5Mt7j7rBXH_HCR1OL9gVW4S3XT0EEt52aBf03_TJP0A_KZdQU0xptet84XydFT0f0w%3D%3D&source=cat",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 4
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYYjNUUDf_ZxmQgOKCEqHliFN0Nj72wuLLn_JKWIeAIzK7rocmiwXq9OffYQ_SR6ZGp_H1OYXbs2CkMu65hLUiw139ShBg%3D%3D&source=cat",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 4
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYaBEu5obmqr67IEat3PZnfAC2LsHMzl6GZqutHC_1-KdhtwkAmPo-lW4mlQIKkCMwdHKTbC4UO5pOtlyLWVT9STwn9iTQ%3D%3D&source=cat",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 4
+      },
+      {
+        "page": "https://hvpartnersummit2024.framez.sg/",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 4
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYaaf5aV2gWI716WN2jHsXHjPxwRAO_UQRk_MqzU2jK9AGUd9pGAh4pj2roi1xERpHwjbtnhfYouOECFuJCgBkDaXWQmcA%3D%3D",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 6
+      },
+      {
+        "page": "https://framez.sg/Framez-Public-Statement-on-Health-and-Safety-Commitment",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 7
+      },
+      {
+        "page": "https://iitbayarea.framez.sg/",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 7
+      },
+      {
+        "page": "https://framez.sg/book-a-demo",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 8
+      },
+      {
+        "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYbTLxxhrZ7c3UL0G6QyX8O5zRgVnr64VV37lFERylSs4Mw9J5ejd8bLL8t_HzYAx_svpiQIwZuHlVRKtap9ci1KYwCVeg%3D%3D&source=cat",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 9
+      }
+    ],
+    "total_query_alerts": 74,
+    "total_singapore_alerts": 18,
+    "total_india_alerts": 29,
+    "total_page_alerts": 50,
+    "total_alerts": 124
+  },
+  "pages": [
+    {
+      "url": "https://framez.sg/",
+      "status": 200,
+      "role": "utility",
+      "jsonld_types": [
+        "Organization",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": false,
+      "has_service": false,
+      "has_article": false,
+      "has_speakable": false,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [],
+      "duplicate_jquery": false,
+      "blocking_script_count": 0,
+      "blocking_scripts": [],
+      "images_total": 97,
+      "images_missing_dimensions": 96,
+      "images_missing_lazy": 2,
+      "page1_zero_ctr": null
+    },
+    {
+      "url": "https://framez.sg/about-us",
+      "status": 200,
+      "role": "utility",
+      "jsonld_types": [
+        "AboutPage",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": false,
+      "has_service": false,
+      "has_article": false,
+      "has_speakable": false,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "duplicate_jquery": false,
+      "blocking_script_count": 1,
+      "blocking_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "images_total": 6,
+      "images_missing_dimensions": 6,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": {
+        "page": "https://framez.sg/about-us",
+        "impressions": 4,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 2
+      }
+    },
+    {
+      "url": "https://framez.sg/our-events-and-services",
+      "status": 200,
+      "role": "service",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Organization",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": true,
+      "has_service": true,
+      "has_article": false,
+      "has_speakable": false,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "duplicate_jquery": false,
+      "blocking_script_count": 1,
+      "blocking_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "images_total": 12,
+      "images_missing_dimensions": 12,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": null
+    },
+    {
+      "url": "https://framez.sg/corporate-event-management-company",
+      "status": 200,
+      "role": "service",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Organization",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": true,
+      "has_service": true,
+      "has_article": false,
+      "has_speakable": false,
+      "missing_expected_schema": [
+        "ProfessionalService"
+      ],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "duplicate_jquery": false,
+      "blocking_script_count": 1,
+      "blocking_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "images_total": 10,
+      "images_missing_dimensions": 10,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": null
+    },
+    {
+      "url": "https://framez.sg/event-management-company-in-bangalore",
+      "status": 200,
+      "role": "service",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Organization",
+        "ProfessionalService",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": true,
+      "has_faq_page": true,
+      "has_service": true,
+      "has_article": false,
+      "has_speakable": false,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "duplicate_jquery": false,
+      "blocking_script_count": 1,
+      "blocking_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "images_total": 4,
+      "images_missing_dimensions": 4,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": null
+    },
+    {
+      "url": "https://framez.sg/event-management-company-in-india",
+      "status": 200,
+      "role": "service",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Organization",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": true,
+      "has_service": true,
+      "has_article": false,
+      "has_speakable": false,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [],
+      "duplicate_jquery": false,
+      "blocking_script_count": 0,
+      "blocking_scripts": [],
+      "images_total": 5,
+      "images_missing_dimensions": 5,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": {
+        "page": "https://framez.sg/event-management-company-in-india",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 3.5
+      }
+    },
+    {
+      "url": "https://framez.sg/event-planner",
+      "status": 200,
+      "role": "service",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Organization",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": true,
+      "has_service": true,
+      "has_article": false,
+      "has_speakable": false,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [],
+      "duplicate_jquery": false,
+      "blocking_script_count": 0,
+      "blocking_scripts": [],
+      "images_total": 5,
+      "images_missing_dimensions": 5,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": null
+    },
+    {
+      "url": "https://framez.sg/event-marketing-services",
+      "status": 200,
+      "role": "service",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Organization",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": true,
+      "has_service": true,
+      "has_article": false,
+      "has_speakable": false,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [],
+      "duplicate_jquery": false,
+      "blocking_script_count": 0,
+      "blocking_scripts": [],
+      "images_total": 5,
+      "images_missing_dimensions": 5,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": null
+    },
+    {
+      "url": "https://framez.sg/experiential-marketing-brand-activations",
+      "status": 200,
+      "role": "service",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "Organization",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": false,
+      "has_service": true,
+      "has_article": false,
+      "has_speakable": false,
+      "missing_expected_schema": [
+        "FAQPage"
+      ],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "duplicate_jquery": false,
+      "blocking_script_count": 1,
+      "blocking_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "images_total": 7,
+      "images_missing_dimensions": 7,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": null
+    },
+    {
+      "url": "https://framez.sg/clientele",
+      "status": 200,
+      "role": "utility",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "CollectionPage",
+        "FAQPage",
+        "Organization",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": true,
+      "has_service": false,
+      "has_article": false,
+      "has_speakable": false,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [],
+      "duplicate_jquery": false,
+      "blocking_script_count": 0,
+      "blocking_scripts": [],
+      "images_total": 32,
+      "images_missing_dimensions": 32,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": {
+        "page": "https://framez.sg/clientele",
+        "impressions": 18,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5.7
+      }
+    },
+    {
+      "url": "https://framez.sg/blog",
+      "status": 200,
+      "role": "utility",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "CollectionPage",
+        "Organization",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": false,
+      "has_service": false,
+      "has_article": false,
+      "has_speakable": false,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "duplicate_jquery": false,
+      "blocking_script_count": 1,
+      "blocking_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "images_total": 17,
+      "images_missing_dimensions": 17,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": null
+    },
+    {
+      "url": "https://framez.sg/get-in-touch",
+      "status": 200,
+      "role": "utility",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "ContactPage",
+        "Organization",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": false,
+      "has_service": false,
+      "has_article": false,
+      "has_speakable": false,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "duplicate_jquery": false,
+      "blocking_script_count": 1,
+      "blocking_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "images_total": 4,
+      "images_missing_dimensions": 4,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": null
+    },
+    {
+      "url": "https://framez.sg/book-a-demo",
+      "status": 200,
+      "role": "utility",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "ContactPage",
+        "FAQPage",
+        "Organization",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": true,
+      "has_service": false,
+      "has_article": false,
+      "has_speakable": false,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "duplicate_jquery": false,
+      "blocking_script_count": 1,
+      "blocking_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "images_total": 4,
+      "images_missing_dimensions": 4,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": {
+        "page": "https://framez.sg/book-a-demo",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 8
+      }
+    },
+    {
+      "url": "https://framez.sg/corporate-event-budget-planning-guide",
+      "status": 200,
+      "role": "guide",
+      "jsonld_types": [
+        "Article",
+        "BreadcrumbList",
+        "FAQPage",
+        "Organization",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": true,
+      "has_service": false,
+      "has_article": true,
+      "has_speakable": false,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [],
+      "duplicate_jquery": false,
+      "blocking_script_count": 0,
+      "blocking_scripts": [],
+      "images_total": 4,
+      "images_missing_dimensions": 4,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": {
+        "page": "https://framez.sg/corporate-event-budget-planning-guide",
+        "impressions": 114,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 9.4
+      }
+    },
+    {
+      "url": "https://framez.sg/annual-day-and-awards-night-planning-guide",
+      "status": 200,
+      "role": "guide",
+      "jsonld_types": [
+        "Article",
+        "BreadcrumbList",
+        "FAQPage",
+        "Organization",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": true,
+      "has_service": false,
+      "has_article": true,
+      "has_speakable": false,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [],
+      "duplicate_jquery": false,
+      "blocking_script_count": 0,
+      "blocking_scripts": [],
+      "images_total": 4,
+      "images_missing_dimensions": 4,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": null
+    },
+    {
+      "url": "https://framez.sg/corporate-event-roi-measurement-guide",
+      "status": 200,
+      "role": "guide",
+      "jsonld_types": [
+        "Article",
+        "BreadcrumbList",
+        "FAQPage",
+        "Organization",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": true,
+      "has_service": false,
+      "has_article": true,
+      "has_speakable": false,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [],
+      "duplicate_jquery": false,
+      "blocking_script_count": 0,
+      "blocking_scripts": [],
+      "images_total": 4,
+      "images_missing_dimensions": 4,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": null
+    },
+    {
+      "url": "https://framez.sg/singapore-corporate-event-planning-checklist",
+      "status": 200,
+      "role": "guide",
+      "jsonld_types": [
+        "Article",
+        "BreadcrumbList",
+        "FAQPage",
+        "Organization",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": true,
+      "has_service": false,
+      "has_article": true,
+      "has_speakable": false,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [],
+      "duplicate_jquery": false,
+      "blocking_script_count": 0,
+      "blocking_scripts": [],
+      "images_total": 4,
+      "images_missing_dimensions": 4,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": null
+    },
+    {
+      "url": "https://framez.sg/corporate-event-planning-handbook-2027",
+      "status": 200,
+      "role": "guide",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Organization",
+        "TechArticle",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": true,
+      "has_service": false,
+      "has_article": true,
+      "has_speakable": true,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "duplicate_jquery": false,
+      "blocking_script_count": 1,
+      "blocking_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "images_total": 4,
+      "images_missing_dimensions": 4,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": {
+        "page": "https://framez.sg/corporate-event-planning-handbook-2027",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 8.3
+      }
+    },
+    {
+      "url": "https://framez.sg/experiential-brand-activations-framework",
+      "status": 200,
+      "role": "guide",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Organization",
+        "TechArticle",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": true,
+      "has_service": false,
+      "has_article": true,
+      "has_speakable": true,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "duplicate_jquery": false,
+      "blocking_script_count": 1,
+      "blocking_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "images_total": 4,
+      "images_missing_dimensions": 4,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": null
+    },
+    {
+      "url": "https://framez.sg/executive-offsite-retreat-blueprint",
+      "status": 200,
+      "role": "guide",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Organization",
+        "TechArticle",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": true,
+      "has_service": false,
+      "has_article": true,
+      "has_speakable": true,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "duplicate_jquery": false,
+      "blocking_script_count": 1,
+      "blocking_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "images_total": 4,
+      "images_missing_dimensions": 4,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": {
+        "page": "https://framez.sg/executive-offsite-retreat-blueprint",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5.5
+      }
+    },
+    {
+      "url": "https://framez.sg/b2b-event-agency-rfp-evaluation-guide",
+      "status": 200,
+      "role": "guide",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Organization",
+        "TechArticle",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": true,
+      "has_service": false,
+      "has_article": true,
+      "has_speakable": true,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "duplicate_jquery": false,
+      "blocking_script_count": 1,
+      "blocking_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "images_total": 4,
+      "images_missing_dimensions": 4,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": {
+        "page": "https://framez.sg/b2b-event-agency-rfp-evaluation-guide",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 6.7
+      }
+    },
+    {
+      "url": "https://framez.sg/corporate-product-launch-event-architecture",
+      "status": 200,
+      "role": "guide",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "HowTo",
+        "Organization",
+        "TechArticle",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": true,
+      "has_service": false,
+      "has_article": true,
+      "has_speakable": true,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "duplicate_jquery": false,
+      "blocking_script_count": 1,
+      "blocking_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "images_total": 4,
+      "images_missing_dimensions": 4,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": {
+        "page": "https://framez.sg/corporate-product-launch-event-architecture",
+        "impressions": 175,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 6.8
+      }
+    },
+    {
+      "url": "https://framez.sg/high-security-cxo-board-summit-protocol",
+      "status": 200,
+      "role": "guide",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "HowTo",
+        "Organization",
+        "TechArticle",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": true,
+      "has_service": false,
+      "has_article": true,
+      "has_speakable": true,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "duplicate_jquery": false,
+      "blocking_script_count": 1,
+      "blocking_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "images_total": 4,
+      "images_missing_dimensions": 4,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": null
+    },
+    {
+      "url": "https://framez.sg/festive-corporate-gala-diwali-celebrations",
+      "status": 200,
+      "role": "guide",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "HowTo",
+        "Organization",
+        "TechArticle",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": true,
+      "has_service": false,
+      "has_article": true,
+      "has_speakable": true,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "duplicate_jquery": false,
+      "blocking_script_count": 1,
+      "blocking_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "images_total": 4,
+      "images_missing_dimensions": 4,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": null
+    },
+    {
+      "url": "https://framez.sg/corporate-family-day-carnival-safety-logistics",
+      "status": 200,
+      "role": "guide",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "HowTo",
+        "Organization",
+        "TechArticle",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": true,
+      "has_service": false,
+      "has_article": true,
+      "has_speakable": true,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "duplicate_jquery": false,
+      "blocking_script_count": 1,
+      "blocking_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "images_total": 4,
+      "images_missing_dimensions": 4,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": {
+        "page": "https://framez.sg/corporate-family-day-carnival-safety-logistics",
+        "impressions": 5,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 4.4
+      }
+    },
+    {
+      "url": "https://framez.sg/corporate-event-trends-singapore",
+      "status": 200,
+      "role": "guide",
+      "jsonld_types": [
+        "Article",
+        "BreadcrumbList",
+        "Organization",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": false,
+      "has_service": false,
+      "has_article": true,
+      "has_speakable": false,
+      "missing_expected_schema": [
+        "FAQPage"
+      ],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "duplicate_jquery": false,
+      "blocking_script_count": 1,
+      "blocking_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "images_total": 7,
+      "images_missing_dimensions": 7,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": {
+        "page": "https://framez.sg/corporate-event-trends-singapore",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 7.7
+      }
+    },
+    {
+      "url": "https://framez.sg/Framez-Public-Statement-on-Health-and-Safety-Commitment",
+      "status": 200,
+      "role": "trust",
+      "jsonld_types": [
+        "Article",
+        "BreadcrumbList",
+        "Organization",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": false,
+      "has_service": false,
+      "has_article": true,
+      "has_speakable": false,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "duplicate_jquery": false,
+      "blocking_script_count": 1,
+      "blocking_scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ],
+      "images_total": 4,
+      "images_missing_dimensions": 4,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": {
+        "page": "https://framez.sg/Framez-Public-Statement-on-Health-and-Safety-Commitment",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 7
+      }
+    },
+    {
+      "url": "https://framez.sg/event-management-company-in-singapore",
+      "status": 200,
+      "role": "service",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Organization",
+        "ProfessionalService",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": true,
+      "has_faq_page": true,
+      "has_service": true,
+      "has_article": false,
+      "has_speakable": false,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [],
+      "duplicate_jquery": false,
+      "blocking_script_count": 0,
+      "blocking_scripts": [],
+      "images_total": 5,
+      "images_missing_dimensions": 5,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": null
+    },
+    {
+      "url": "https://framez.sg/conference-and-mice-event-management",
+      "status": 200,
+      "role": "service",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Organization",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": true,
+      "has_service": true,
+      "has_article": false,
+      "has_speakable": false,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [],
+      "duplicate_jquery": false,
+      "blocking_script_count": 0,
+      "blocking_scripts": [],
+      "images_total": 5,
+      "images_missing_dimensions": 5,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": null
+    },
+    {
+      "url": "https://framez.sg/dinner-and-dance-event-management-singapore",
+      "status": 200,
+      "role": "service",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Organization",
+        "ProfessionalService",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": true,
+      "has_faq_page": true,
+      "has_service": true,
+      "has_article": false,
+      "has_speakable": true,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [],
+      "duplicate_jquery": false,
+      "blocking_script_count": 0,
+      "blocking_scripts": [],
+      "images_total": 5,
+      "images_missing_dimensions": 4,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": null
+    }
+  ]
+}

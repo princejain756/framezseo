@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T19:32:05.541368+00:00",
+  "generated_at": "2026-11-23T04:17:06.338513+00:00",
   "site": "https://framez.sg",
   "sitemap_urls": 30,
   "audited_urls": 30,
@@ -519,7 +519,7 @@
     "queries": [
       {
         "query": "list event management companies in india experienced working with singapore-based apac regional hqs.",
-        "impressions": 28,
+        "impressions": 26,
         "clicks": 0,
         "ctr": 0.0,
         "position": 8.0,
@@ -626,15 +626,6 @@
         "page": "https://framez.sg/event-planner"
       },
       {
-        "query": "tct india",
-        "impressions": 5,
-        "clicks": 0,
-        "ctr": 0.0,
-        "position": 8.2,
-        "country": "all",
-        "page": ""
-      },
-      {
         "query": "event management bangalore",
         "impressions": 5,
         "clicks": 0,
@@ -732,6 +723,15 @@
         "position": 7,
         "country": "all",
         "page": "https://framez.sg/corporate-event-management-company"
+      },
+      {
+        "query": "tct india",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 8.3,
+        "country": "all",
+        "page": ""
       },
       {
         "query": "events marketing companies in india",
@@ -1321,15 +1321,6 @@
         "page": "https://framez.sg/corporate-event-management-company"
       },
       {
-        "query": "top corporate event company india",
-        "impressions": 1,
-        "clicks": 0,
-        "ctr": 0.0,
-        "position": 7,
-        "country": "sgp",
-        "page": ""
-      },
-      {
         "query": "planning a corporate event checklist",
         "impressions": 1,
         "clicks": 0,
@@ -1603,6 +1594,15 @@
       },
       {
         "query": "event execution company",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 10,
+        "country": "ind",
+        "page": ""
+      },
+      {
+        "query": "o4c",
         "impressions": 1,
         "clicks": 0,
         "ctr": 0.0,
@@ -1921,6 +1921,13 @@
         "position": 4
       },
       {
+        "page": "https://hvpartnersummit2024.framez.sg/",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 4
+      },
+      {
         "page": "https://framez.sg/get-in-touch?rwg_token=ALcMQYaaf5aV2gWI716WN2jHsXHjPxwRAO_UQRk_MqzU2jK9AGUd9pGAh4pj2roi1xERpHwjbtnhfYouOECFuJCgBkDaXWQmcA%3D%3D",
         "impressions": 1,
         "clicks": 0,
@@ -1957,10 +1964,10 @@
       }
     ],
     "total_query_alerts": 74,
-    "total_singapore_alerts": 19,
-    "total_india_alerts": 28,
-    "total_page_alerts": 49,
-    "total_alerts": 123
+    "total_singapore_alerts": 18,
+    "total_india_alerts": 29,
+    "total_page_alerts": 50,
+    "total_alerts": 124
   },
   "pages": [
     {

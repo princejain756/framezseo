@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at": "2026-11-22T19:31:20.985814+00:00",
+  "generated_at": "2026-11-23T04:16:20.490000+00:00",
   "property": "sc-domain:framez.sg",
   "sitemaps": [
     {
@@ -33,30 +33,30 @@
     }
   ],
   "window_7d": {
-    "start": "2026-11-14",
-    "end": "2026-11-20",
+    "start": "2026-11-15",
+    "end": "2026-11-21",
     "totals": {
       "rows": [
         {
-          "clicks": 23,
-          "impressions": 2266,
-          "ctr": 0.010150044130626656,
-          "position": 39.11738746690203
+          "clicks": 21,
+          "impressions": 1955,
+          "ctr": 0.010741687979539642,
+          "position": 38.83887468030691
         }
       ],
       "responseAggregationType": "byProperty"
     }
   },
   "window_28d": {
-    "start": "2026-10-24",
-    "end": "2026-11-20",
+    "start": "2026-10-25",
+    "end": "2026-11-21",
     "totals": {
       "rows": [
         {
-          "clicks": 88,
-          "impressions": 8378,
-          "ctr": 0.010503700167104321,
-          "position": 40.40713774170447
+          "clicks": 87,
+          "impressions": 8078,
+          "ctr": 0.010769992572418915,
+          "position": 40.09891062144095
         }
       ],
       "responseAggregationType": "byProperty"
@@ -67,10 +67,10 @@
           "keys": [
             "ind"
           ],
-          "clicks": 78,
-          "impressions": 2233,
-          "ctr": 0.03493058665472459,
-          "position": 27.948051948051948
+          "clicks": 77,
+          "impressions": 2177,
+          "ctr": 0.03536977491961415,
+          "position": 27.77859439595774
         },
         {
           "keys": [
@@ -86,9 +86,9 @@
             "sgp"
           ],
           "clicks": 2,
-          "impressions": 4760,
-          "ctr": 0.0004201680672268908,
-          "position": 50.36302521008403
+          "impressions": 4553,
+          "ctr": 0.0004392708104546453,
+          "position": 50.15242697122776
         },
         {
           "keys": [
@@ -104,9 +104,9 @@
             "gbr"
           ],
           "clicks": 1,
-          "impressions": 133,
-          "ctr": 0.007518796992481203,
-          "position": 48.43609022556391
+          "impressions": 126,
+          "ctr": 0.007936507936507936,
+          "position": 48.01587301587302
         },
         {
           "keys": [
@@ -140,9 +140,9 @@
             "usa"
           ],
           "clicks": 1,
-          "impressions": 423,
-          "ctr": 0.002364066193853428,
-          "position": 25.872340425531913
+          "impressions": 413,
+          "ctr": 0.002421307506053269,
+          "position": 26.159806295399516
         },
         {
           "keys": [
@@ -185,9 +185,9 @@
             "aus"
           ],
           "clicks": 0,
-          "impressions": 39,
+          "impressions": 38,
           "ctr": 0,
-          "position": 36.94871794871795
+          "position": 37.68421052631579
         },
         {
           "keys": [
@@ -266,9 +266,9 @@
             "bra"
           ],
           "clicks": 0,
-          "impressions": 55,
+          "impressions": 54,
           "ctr": 0,
-          "position": 23.036363636363635
+          "position": 22.555555555555557
         },
         {
           "keys": [
@@ -460,9 +460,9 @@
             "4d event planning process agency"
           ],
           "clicks": 0,
-          "impressions": 13,
+          "impressions": 12,
           "ctr": 0,
-          "position": 15.23076923076923
+          "position": 15.5
         },
         {
           "keys": [
@@ -514,9 +514,9 @@
             "b2b event companies"
           ],
           "clicks": 0,
-          "impressions": 8,
+          "impressions": 7,
           "ctr": 0,
-          "position": 29.875
+          "position": 28.714285714285715
         },
         {
           "keys": [
@@ -658,9 +658,9 @@
             "best event agencies in bangalore"
           ],
           "clicks": 0,
-          "impressions": 6,
+          "impressions": 5,
           "ctr": 0,
-          "position": 19.333333333333332
+          "position": 18
         },
         {
           "keys": [
@@ -730,9 +730,9 @@
             "best event management company in india"
           ],
           "clicks": 0,
-          "impressions": 7,
+          "impressions": 4,
           "ctr": 0,
-          "position": 30.285714285714285
+          "position": 27
         },
         {
           "keys": [
@@ -856,36 +856,36 @@
             "choose event agency"
           ],
           "clicks": 0,
-          "impressions": 16,
+          "impressions": 14,
           "ctr": 0,
-          "position": 74.6875
+          "position": 76.71428571428571
         },
         {
           "keys": [
             "companies for event management"
           ],
           "clicks": 0,
-          "impressions": 5,
+          "impressions": 4,
           "ctr": 0,
-          "position": 38.6
+          "position": 28.5
         },
         {
           "keys": [
             "company event management"
           ],
           "clicks": 0,
-          "impressions": 24,
+          "impressions": 22,
           "ctr": 0,
-          "position": 27.958333333333332
+          "position": 26.545454545454547
         },
         {
           "keys": [
             "conference and event management services"
           ],
           "clicks": 0,
-          "impressions": 25,
+          "impressions": 24,
           "ctr": 0,
-          "position": 45.88
+          "position": 45.583333333333336
         },
         {
           "keys": [
@@ -901,18 +901,18 @@
             "conference event companies"
           ],
           "clicks": 0,
-          "impressions": 29,
+          "impressions": 27,
           "ctr": 0,
-          "position": 47.89655172413793
+          "position": 47.888888888888886
         },
         {
           "keys": [
             "conference event management companies"
           ],
           "clicks": 0,
-          "impressions": 25,
+          "impressions": 24,
           "ctr": 0,
-          "position": 34.44
+          "position": 33.916666666666664
         },
         {
           "keys": [
@@ -937,18 +937,18 @@
             "conference event planners"
           ],
           "clicks": 0,
-          "impressions": 28,
+          "impressions": 26,
           "ctr": 0,
-          "position": 49.392857142857146
+          "position": 49.96153846153846
         },
         {
           "keys": [
             "conference event planning companies"
           ],
           "clicks": 0,
-          "impressions": 106,
+          "impressions": 101,
           "ctr": 0,
-          "position": 39.886792452830186
+          "position": 39.53465346534654
         },
         {
           "keys": [
@@ -964,9 +964,9 @@
             "conference management companies"
           ],
           "clicks": 0,
-          "impressions": 42,
+          "impressions": 41,
           "ctr": 0,
-          "position": 27.476190476190474
+          "position": 27.341463414634145
         },
         {
           "keys": [
@@ -982,9 +982,9 @@
             "conference management company"
           ],
           "clicks": 0,
-          "impressions": 103,
+          "impressions": 100,
           "ctr": 0,
-          "position": 26.844660194174757
+          "position": 26.54
         },
         {
           "keys": [
@@ -1027,18 +1027,18 @@
             "conference organising companies"
           ],
           "clicks": 0,
-          "impressions": 31,
+          "impressions": 30,
           "ctr": 0,
-          "position": 52.45161290322581
+          "position": 52.36666666666667
         },
         {
           "keys": [
             "conference planning companies"
           ],
           "clicks": 0,
-          "impressions": 29,
+          "impressions": 28,
           "ctr": 0,
-          "position": 30.724137931034484
+          "position": 30.392857142857142
         },
         {
           "keys": [
@@ -1063,9 +1063,9 @@
             "conference registration companies"
           ],
           "clicks": 0,
-          "impressions": 17,
+          "impressions": 16,
           "ctr": 0,
-          "position": 40.35294117647059
+          "position": 39.8125
         },
         {
           "keys": [
@@ -1126,9 +1126,9 @@
             "corporate conference management"
           ],
           "clicks": 0,
-          "impressions": 28,
+          "impressions": 26,
           "ctr": 0,
-          "position": 50.214285714285715
+          "position": 49.53846153846154
         },
         {
           "keys": [
@@ -1153,9 +1153,9 @@
             "corporate conference planner"
           ],
           "clicks": 0,
-          "impressions": 25,
+          "impressions": 24,
           "ctr": 0,
-          "position": 62.48
+          "position": 63.041666666666664
         },
         {
           "keys": [
@@ -1171,9 +1171,9 @@
             "corporate event agency"
           ],
           "clicks": 0,
-          "impressions": 22,
+          "impressions": 21,
           "ctr": 0,
-          "position": 30.363636363636363
+          "position": 30.095238095238095
         },
         {
           "keys": [
@@ -1189,9 +1189,9 @@
             "corporate event companies"
           ],
           "clicks": 0,
-          "impressions": 7,
+          "impressions": 6,
           "ctr": 0,
-          "position": 26.857142857142858
+          "position": 26.333333333333332
         },
         {
           "keys": [
@@ -1216,9 +1216,9 @@
             "corporate event company"
           ],
           "clicks": 0,
-          "impressions": 52,
+          "impressions": 50,
           "ctr": 0,
-          "position": 14.038461538461538
+          "position": 14.04
         },
         {
           "keys": [
@@ -1261,9 +1261,9 @@
             "corporate event management companies"
           ],
           "clicks": 0,
-          "impressions": 26,
+          "impressions": 25,
           "ctr": 0,
-          "position": 21.423076923076923
+          "position": 21.08
         },
         {
           "keys": [
@@ -1297,9 +1297,9 @@
             "corporate event management company"
           ],
           "clicks": 0,
-          "impressions": 30,
+          "impressions": 29,
           "ctr": 0,
-          "position": 23.266666666666666
+          "position": 22.96551724137931
         },
         {
           "keys": [
@@ -1324,9 +1324,9 @@
             "corporate event management company in india"
           ],
           "clicks": 0,
-          "impressions": 22,
+          "impressions": 19,
           "ctr": 0,
-          "position": 37.95454545454545
+          "position": 38.73684210526316
         },
         {
           "keys": [
@@ -1486,9 +1486,9 @@
             "corporate event planners in bangalore"
           ],
           "clicks": 0,
-          "impressions": 17,
+          "impressions": 15,
           "ctr": 0,
-          "position": 27.176470588235293
+          "position": 26.933333333333334
         },
         {
           "keys": [
@@ -1522,18 +1522,18 @@
             "corporate event planning companies"
           ],
           "clicks": 0,
-          "impressions": 7,
+          "impressions": 6,
           "ctr": 0,
-          "position": 31.285714285714285
+          "position": 30.333333333333332
         },
         {
           "keys": [
             "corporate event planning company"
           ],
           "clicks": 0,
-          "impressions": 18,
+          "impressions": 17,
           "ctr": 0,
-          "position": 29
+          "position": 28.764705882352942
         },
         {
           "keys": [
@@ -1621,36 +1621,36 @@
             "corporate event solutions"
           ],
           "clicks": 0,
-          "impressions": 5,
+          "impressions": 4,
           "ctr": 0,
-          "position": 37.4
+          "position": 38.75
         },
         {
           "keys": [
             "corporate events agency"
           ],
           "clicks": 0,
-          "impressions": 72,
+          "impressions": 70,
           "ctr": 0,
-          "position": 37.52777777777778
+          "position": 37.58571428571429
         },
         {
           "keys": [
             "corporate events companies"
           ],
           "clicks": 0,
-          "impressions": 22,
+          "impressions": 21,
           "ctr": 0,
-          "position": 27.454545454545453
+          "position": 27.238095238095237
         },
         {
           "keys": [
             "corporate events company"
           ],
           "clicks": 0,
-          "impressions": 21,
+          "impressions": 20,
           "ctr": 0,
-          "position": 28.19047619047619
+          "position": 28.4
         },
         {
           "keys": [
@@ -1810,9 +1810,9 @@
             "creative online event management"
           ],
           "clicks": 0,
-          "impressions": 85,
+          "impressions": 63,
           "ctr": 0,
-          "position": 58.28235294117647
+          "position": 58.15873015873016
         },
         {
           "keys": [
@@ -1837,18 +1837,18 @@
             "digital event companies"
           ],
           "clicks": 0,
-          "impressions": 12,
+          "impressions": 11,
           "ctr": 0,
-          "position": 30.083333333333332
+          "position": 29.181818181818183
         },
         {
           "keys": [
             "digital event company"
           ],
           "clicks": 0,
-          "impressions": 46,
+          "impressions": 44,
           "ctr": 0,
-          "position": 50.73913043478261
+          "position": 51
         },
         {
           "keys": [
@@ -1909,18 +1909,9 @@
             "engagezy.com"
           ],
           "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 26.5
-        },
-        {
-          "keys": [
-            "enterprise event management"
-          ],
-          "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 49
+          "position": 44
         },
         {
           "keys": [
@@ -1981,18 +1972,18 @@
             "event companies in bangalore"
           ],
           "clicks": 0,
-          "impressions": 9,
+          "impressions": 8,
           "ctr": 0,
-          "position": 17.11111111111111
+          "position": 15.75
         },
         {
           "keys": [
             "event company for hybrid events"
           ],
           "clicks": 0,
-          "impressions": 4,
+          "impressions": 3,
           "ctr": 0,
-          "position": 82.5
+          "position": 81.33333333333333
         },
         {
           "keys": [
@@ -2215,9 +2206,9 @@
             "event management company bangalore"
           ],
           "clicks": 0,
-          "impressions": 10,
+          "impressions": 9,
           "ctr": 0,
-          "position": 26.1
+          "position": 26.11111111111111
         },
         {
           "keys": [
@@ -2242,9 +2233,9 @@
             "event management company in india"
           ],
           "clicks": 0,
-          "impressions": 12,
+          "impressions": 8,
           "ctr": 0,
-          "position": 40.083333333333336
+          "position": 37.625
         },
         {
           "keys": [
@@ -2548,9 +2539,9 @@
             "event organising company"
           ],
           "clicks": 0,
-          "impressions": 10,
+          "impressions": 9,
           "ctr": 0,
-          "position": 36.5
+          "position": 36.44444444444444
         },
         {
           "keys": [
@@ -2818,18 +2809,18 @@
             "event technology companies"
           ],
           "clicks": 0,
-          "impressions": 23,
+          "impressions": 22,
           "ctr": 0,
-          "position": 35.08695652173913
+          "position": 34.63636363636363
         },
         {
           "keys": [
             "event technology company"
           ],
           "clicks": 0,
-          "impressions": 24,
+          "impressions": 22,
           "ctr": 0,
-          "position": 29.041666666666668
+          "position": 28.818181818181817
         },
         {
           "keys": [
@@ -2908,9 +2899,9 @@
             "events management company"
           ],
           "clicks": 0,
-          "impressions": 3,
+          "impressions": 1,
           "ctr": 0,
-          "position": 36
+          "position": 29
         },
         {
           "keys": [
@@ -2986,15 +2977,6 @@
         },
         {
           "keys": [
-            "eventz home"
-          ],
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 63
-        },
-        {
-          "keys": [
             "eventz.co.in"
           ],
           "clicks": 0,
@@ -3016,9 +2998,9 @@
             "exhibition management company"
           ],
           "clicks": 0,
-          "impressions": 44,
+          "impressions": 43,
           "ctr": 0,
-          "position": 29.522727272727273
+          "position": 29.232558139534884
         },
         {
           "keys": [
@@ -3193,15 +3175,6 @@
         },
         {
           "keys": [
-            "frameworkz"
-          ],
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 27
-        },
-        {
-          "keys": [
             "framez"
           ],
           "clicks": 0,
@@ -3232,9 +3205,9 @@
             "full service corporate event planning"
           ],
           "clicks": 0,
-          "impressions": 16,
+          "impressions": 15,
           "ctr": 0,
-          "position": 53.75
+          "position": 53.733333333333334
         },
         {
           "keys": [
@@ -3250,18 +3223,9 @@
             "general session production"
           ],
           "clicks": 0,
-          "impressions": 16,
+          "impressions": 15,
           "ctr": 0,
-          "position": 75.125
-        },
-        {
-          "keys": [
-            "general session production events"
-          ],
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 49
+          "position": 74.86666666666666
         },
         {
           "keys": [
@@ -3313,9 +3277,9 @@
             "global experiential marketing agency singapore"
           ],
           "clicks": 0,
-          "impressions": 3,
+          "impressions": 2,
           "ctr": 0,
-          "position": 35.333333333333336
+          "position": 34.5
         },
         {
           "keys": [
@@ -3394,9 +3358,9 @@
             "hybrid event production company india"
           ],
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 1,
           "ctr": 0,
-          "position": 48.5
+          "position": 48
         },
         {
           "keys": [
@@ -3520,18 +3484,18 @@
             "list event management companies in india experienced working with singapore-based apac regional hqs."
           ],
           "clicks": 0,
-          "impressions": 28,
+          "impressions": 26,
           "ctr": 0,
-          "position": 8.035714285714285
+          "position": 7.961538461538462
         },
         {
           "keys": [
             "live virtual hybrid events agency india"
           ],
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 1,
           "ctr": 0,
-          "position": 67.5
+          "position": 66
         },
         {
           "keys": [
@@ -3628,9 +3592,9 @@
             "on ground activation in singapore"
           ],
           "clicks": 0,
-          "impressions": 3,
+          "impressions": 2,
           "ctr": 0,
-          "position": 36.666666666666664
+          "position": 36.5
         },
         {
           "keys": [
@@ -3646,18 +3610,18 @@
             "online event management companies"
           ],
           "clicks": 0,
-          "impressions": 593,
+          "impressions": 575,
           "ctr": 0,
-          "position": 25.649241146711635
+          "position": 25.28
         },
         {
           "keys": [
             "online event management company"
           ],
           "clicks": 0,
-          "impressions": 37,
+          "impressions": 36,
           "ctr": 0,
-          "position": 50.054054054054056
+          "position": 49.77777777777778
         },
         {
           "keys": [
@@ -3808,18 +3772,18 @@
             "sales kickoff event agency india"
           ],
           "clicks": 0,
-          "impressions": 3,
+          "impressions": 2,
           "ctr": 0,
-          "position": 57.333333333333336
+          "position": 61.5
         },
         {
           "keys": [
             "seminar organizer company"
           ],
           "clicks": 0,
-          "impressions": 8,
+          "impressions": 7,
           "ctr": 0,
-          "position": 41.875
+          "position": 42.142857142857146
         },
         {
           "keys": [
@@ -3853,9 +3817,9 @@
             "startup cup"
           ],
           "clicks": 0,
-          "impressions": 53,
+          "impressions": 51,
           "ctr": 0,
-          "position": 43.679245283018865
+          "position": 44.09803921568628
         },
         {
           "keys": [
@@ -3871,18 +3835,18 @@
             "tct india"
           ],
           "clicks": 0,
-          "impressions": 5,
+          "impressions": 3,
           "ctr": 0,
-          "position": 8.2
+          "position": 8.333333333333332
         },
         {
           "keys": [
             "tech company event agency bangalore"
           ],
           "clicks": 0,
-          "impressions": 11,
+          "impressions": 10,
           "ctr": 0,
-          "position": 21.818181818181817
+          "position": 23.9
         },
         {
           "keys": [
@@ -3925,9 +3889,9 @@
             "top corporate event company india"
           ],
           "clicks": 0,
-          "impressions": 6,
+          "impressions": 3,
           "ctr": 0,
-          "position": 21.333333333333332
+          "position": 24.666666666666668
         },
         {
           "keys": [
@@ -3943,9 +3907,9 @@
             "top corporate event management companies in india"
           ],
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 1,
           "ctr": 0,
-          "position": 54.5
+          "position": 70
         },
         {
           "keys": [
@@ -4033,18 +3997,18 @@
             "top event management company in india"
           ],
           "clicks": 0,
-          "impressions": 4,
+          "impressions": 2,
           "ctr": 0,
-          "position": 29.25
+          "position": 25.5
         },
         {
           "keys": [
             "top event management websites"
           ],
           "clicks": 0,
-          "impressions": 23,
+          "impressions": 22,
           "ctr": 0,
-          "position": 27.73913043478261
+          "position": 27.90909090909091
         },
         {
           "keys": [
@@ -4114,54 +4078,54 @@
             "virtual conference production companies"
           ],
           "clicks": 0,
-          "impressions": 22,
+          "impressions": 21,
           "ctr": 0,
-          "position": 61.86363636363637
+          "position": 61.95238095238095
         },
         {
           "keys": [
             "virtual conference production company"
           ],
           "clicks": 0,
-          "impressions": 20,
+          "impressions": 19,
           "ctr": 0,
-          "position": 66.3
+          "position": 65.78947368421052
         },
         {
           "keys": [
             "virtual conference production services"
           ],
           "clicks": 0,
-          "impressions": 21,
+          "impressions": 20,
           "ctr": 0,
-          "position": 62.19047619047619
+          "position": 61.95
         },
         {
           "keys": [
             "virtual event agency"
           ],
           "clicks": 0,
-          "impressions": 34,
+          "impressions": 33,
           "ctr": 0,
-          "position": 71.6470588235294
+          "position": 71.9090909090909
         },
         {
           "keys": [
             "virtual event agency india"
           ],
           "clicks": 0,
-          "impressions": 23,
+          "impressions": 21,
           "ctr": 0,
-          "position": 45.73913043478261
+          "position": 45.76190476190476
         },
         {
           "keys": [
             "virtual event companies"
           ],
           "clicks": 0,
-          "impressions": 496,
+          "impressions": 473,
           "ctr": 0,
-          "position": 69.5866935483871
+          "position": 69.86680761099366
         },
         {
           "keys": [
@@ -4177,27 +4141,27 @@
             "virtual event company"
           ],
           "clicks": 0,
-          "impressions": 407,
+          "impressions": 387,
           "ctr": 0,
-          "position": 83.53316953316953
+          "position": 83.8656330749354
         },
         {
           "keys": [
             "virtual event company singapore"
           ],
           "clicks": 0,
-          "impressions": 277,
+          "impressions": 258,
           "ctr": 0,
-          "position": 80.10830324909747
+          "position": 80.8953488372093
         },
         {
           "keys": [
             "virtual event management companies"
           ],
           "clicks": 0,
-          "impressions": 584,
+          "impressions": 564,
           "ctr": 0,
-          "position": 43.98972602739726
+          "position": 43.92198581560284
         },
         {
           "keys": [
@@ -4231,45 +4195,45 @@
             "virtual event management services"
           ],
           "clicks": 0,
-          "impressions": 527,
+          "impressions": 510,
           "ctr": 0,
-          "position": 68.86148007590133
+          "position": 68.82549019607843
         },
         {
           "keys": [
             "virtual event planners"
           ],
           "clicks": 0,
-          "impressions": 115,
+          "impressions": 96,
           "ctr": 0,
-          "position": 74.44347826086957
+          "position": 74.625
         },
         {
           "keys": [
             "virtual event production companies"
           ],
           "clicks": 0,
-          "impressions": 4,
+          "impressions": 2,
           "ctr": 0,
-          "position": 60
+          "position": 60.5
         },
         {
           "keys": [
             "virtual event production company"
           ],
           "clicks": 0,
-          "impressions": 28,
+          "impressions": 27,
           "ctr": 0,
-          "position": 49.285714285714285
+          "position": 49.2962962962963
         },
         {
           "keys": [
             "virtual event production services"
           ],
           "clicks": 0,
-          "impressions": 12,
+          "impressions": 11,
           "ctr": 0,
-          "position": 64.5
+          "position": 65.0909090909091
         },
         {
           "keys": [
@@ -4312,9 +4276,9 @@
             "virtual events production company"
           ],
           "clicks": 0,
-          "impressions": 16,
+          "impressions": 15,
           "ctr": 0,
-          "position": 85.375
+          "position": 85.6
         },
         {
           "keys": [
@@ -4330,7 +4294,7 @@
             "warrior club"
           ],
           "clicks": 0,
-          "impressions": 4,
+          "impressions": 1,
           "ctr": 0,
           "position": 11
         },
@@ -4514,55 +4478,55 @@
           "keys": [
             "https://framez.sg/"
           ],
-          "clicks": 63,
-          "impressions": 746,
-          "ctr": 0.08445040214477212,
-          "position": 9.701072386058982
+          "clicks": 62,
+          "impressions": 731,
+          "ctr": 0.08481532147742818,
+          "position": 9.655266757865936
         },
         {
           "keys": [
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 7,
-          "impressions": 4961,
-          "ctr": 0.0014110058455956461,
-          "position": 47.598468050796214
+          "impressions": 4718,
+          "ctr": 0.001483679525222552,
+          "position": 47.26367104705383
         },
         {
           "keys": [
             "https://framez.sg/get-to-know-us"
           ],
           "clicks": 5,
-          "impressions": 295,
-          "ctr": 0.01694915254237288,
-          "position": 4.996610169491525
+          "impressions": 292,
+          "ctr": 0.017123287671232876,
+          "position": 4.993150684931507
         },
         {
           "keys": [
             "https://framez.sg/our-events-and-services"
           ],
           "clicks": 5,
-          "impressions": 2229,
-          "ctr": 0.0022431583669807087,
-          "position": 67.36428891879767
+          "impressions": 2206,
+          "ctr": 0.0022665457842248413,
+          "position": 67.51087941976428
         },
         {
           "keys": [
             "https://framez.sg/our-team"
           ],
           "clicks": 3,
-          "impressions": 48,
-          "ctr": 0.0625,
-          "position": 13.5625
+          "impressions": 46,
+          "ctr": 0.06521739130434782,
+          "position": 12.326086956521738
         },
         {
           "keys": [
             "https://framez.sg/event-planner"
           ],
           "clicks": 1,
-          "impressions": 1527,
-          "ctr": 0.0006548788474132286,
-          "position": 36.86836935166994
+          "impressions": 1513,
+          "ctr": 0.0006609385327164573,
+          "position": 36.869795109054856
         },
         {
           "keys": [
@@ -4587,18 +4551,18 @@
             "https://framez.sg/get-in-touch"
           ],
           "clicks": 1,
-          "impressions": 176,
-          "ctr": 0.005681818181818182,
-          "position": 9.721590909090908
+          "impressions": 175,
+          "ctr": 0.005714285714285714,
+          "position": 9.697142857142858
         },
         {
           "keys": [
             "https://nps2025.framez.sg/"
           ],
           "clicks": 1,
-          "impressions": 53,
-          "ctr": 0.018867924528301886,
-          "position": 8.641509433962264
+          "impressions": 51,
+          "ctr": 0.0196078431372549,
+          "position": 8.764705882352942
         },
         {
           "keys": [
@@ -4677,9 +4641,9 @@
             "https://framez.sg/blog"
           ],
           "clicks": 0,
-          "impressions": 110,
+          "impressions": 107,
           "ctr": 0,
-          "position": 50.75454545454546
+          "position": 50.52336448598131
         },
         {
           "keys": [
@@ -4794,9 +4758,9 @@
             "https://framez.sg/experiential-marketing-brand-activations"
           ],
           "clicks": 0,
-          "impressions": 38,
+          "impressions": 36,
           "ctr": 0,
-          "position": 37.5
+          "position": 37.52777777777778
         },
         {
           "keys": [
@@ -5343,9 +5307,9 @@
             "https://hvpartnersummit2024.framez.sg/"
           ],
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 1,
           "ctr": 0,
-          "position": 26.5
+          "position": 4
         },
         {
           "keys": [
@@ -5379,9 +5343,9 @@
             "https://milestone.engage2021.framez.sg/"
           ],
           "clicks": 0,
-          "impressions": 10,
+          "impressions": 9,
           "ctr": 0,
-          "position": 16.2
+          "position": 17
         },
         {
           "keys": [
@@ -5406,9 +5370,9 @@
             "https://suc.framez.sg/"
           ],
           "clicks": 0,
-          "impressions": 54,
+          "impressions": 51,
           "ctr": 0,
-          "position": 42.94444444444444
+          "position": 44.09803921568628
         }
       ],
       "responseAggregationType": "byPage"
@@ -5456,9 +5420,9 @@
             "b2b event companies"
           ],
           "clicks": 0,
-          "impressions": 8,
+          "impressions": 7,
           "ctr": 0,
-          "position": 29.875
+          "position": 28.714285714285715
         },
         {
           "keys": [
@@ -5543,15 +5507,6 @@
         },
         {
           "keys": [
-            "best event management company in india"
-          ],
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 13
-        },
-        {
-          "keys": [
             "best event production company"
           ],
           "clicks": 0,
@@ -5600,36 +5555,36 @@
             "choose event agency"
           ],
           "clicks": 0,
-          "impressions": 16,
+          "impressions": 14,
           "ctr": 0,
-          "position": 74.6875
+          "position": 76.71428571428571
         },
         {
           "keys": [
             "companies for event management"
           ],
           "clicks": 0,
-          "impressions": 5,
+          "impressions": 4,
           "ctr": 0,
-          "position": 38.6
+          "position": 28.5
         },
         {
           "keys": [
             "company event management"
           ],
           "clicks": 0,
-          "impressions": 24,
+          "impressions": 22,
           "ctr": 0,
-          "position": 27.958333333333332
+          "position": 26.545454545454547
         },
         {
           "keys": [
             "conference and event management services"
           ],
           "clicks": 0,
-          "impressions": 25,
+          "impressions": 24,
           "ctr": 0,
-          "position": 45.88
+          "position": 45.583333333333336
         },
         {
           "keys": [
@@ -5645,18 +5600,18 @@
             "conference event companies"
           ],
           "clicks": 0,
-          "impressions": 29,
+          "impressions": 27,
           "ctr": 0,
-          "position": 47.89655172413793
+          "position": 47.888888888888886
         },
         {
           "keys": [
             "conference event management companies"
           ],
           "clicks": 0,
-          "impressions": 25,
+          "impressions": 24,
           "ctr": 0,
-          "position": 34.44
+          "position": 33.916666666666664
         },
         {
           "keys": [
@@ -5681,18 +5636,18 @@
             "conference event planners"
           ],
           "clicks": 0,
-          "impressions": 28,
+          "impressions": 26,
           "ctr": 0,
-          "position": 49.392857142857146
+          "position": 49.96153846153846
         },
         {
           "keys": [
             "conference event planning companies"
           ],
           "clicks": 0,
-          "impressions": 106,
+          "impressions": 101,
           "ctr": 0,
-          "position": 39.886792452830186
+          "position": 39.53465346534654
         },
         {
           "keys": [
@@ -5708,18 +5663,18 @@
             "conference management companies"
           ],
           "clicks": 0,
-          "impressions": 19,
+          "impressions": 18,
           "ctr": 0,
-          "position": 22.526315789473685
+          "position": 21.944444444444443
         },
         {
           "keys": [
             "conference management company"
           ],
           "clicks": 0,
-          "impressions": 95,
+          "impressions": 92,
           "ctr": 0,
-          "position": 25.53684210526316
+          "position": 25.16304347826087
         },
         {
           "keys": [
@@ -5753,18 +5708,18 @@
             "conference organising companies"
           ],
           "clicks": 0,
-          "impressions": 31,
+          "impressions": 30,
           "ctr": 0,
-          "position": 52.45161290322581
+          "position": 52.36666666666667
         },
         {
           "keys": [
             "conference planning companies"
           ],
           "clicks": 0,
-          "impressions": 29,
+          "impressions": 28,
           "ctr": 0,
-          "position": 30.724137931034484
+          "position": 30.392857142857142
         },
         {
           "keys": [
@@ -5834,9 +5789,9 @@
             "corporate conference management"
           ],
           "clicks": 0,
-          "impressions": 28,
+          "impressions": 26,
           "ctr": 0,
-          "position": 50.214285714285715
+          "position": 49.53846153846154
         },
         {
           "keys": [
@@ -5852,9 +5807,9 @@
             "corporate conference planner"
           ],
           "clicks": 0,
-          "impressions": 25,
+          "impressions": 24,
           "ctr": 0,
-          "position": 62.48
+          "position": 63.041666666666664
         },
         {
           "keys": [
@@ -5870,27 +5825,27 @@
             "corporate event agency"
           ],
           "clicks": 0,
-          "impressions": 20,
+          "impressions": 19,
           "ctr": 0,
-          "position": 30
+          "position": 29.68421052631579
         },
         {
           "keys": [
             "corporate event companies"
           ],
           "clicks": 0,
-          "impressions": 7,
+          "impressions": 6,
           "ctr": 0,
-          "position": 26.857142857142858
+          "position": 26.333333333333332
         },
         {
           "keys": [
             "corporate event company"
           ],
           "clicks": 0,
-          "impressions": 51,
+          "impressions": 49,
           "ctr": 0,
-          "position": 14.03921568627451
+          "position": 14.040816326530612
         },
         {
           "keys": [
@@ -5915,27 +5870,27 @@
             "corporate event management companies"
           ],
           "clicks": 0,
-          "impressions": 25,
+          "impressions": 24,
           "ctr": 0,
-          "position": 20.92
+          "position": 20.541666666666668
         },
         {
           "keys": [
             "corporate event management company"
           ],
           "clicks": 0,
-          "impressions": 30,
+          "impressions": 29,
           "ctr": 0,
-          "position": 23.266666666666666
+          "position": 22.96551724137931
         },
         {
           "keys": [
             "corporate event management company in india"
           ],
           "clicks": 0,
-          "impressions": 3,
+          "impressions": 2,
           "ctr": 0,
-          "position": 17
+          "position": 19
         },
         {
           "keys": [
@@ -6014,18 +5969,18 @@
             "corporate event planning companies"
           ],
           "clicks": 0,
-          "impressions": 7,
+          "impressions": 6,
           "ctr": 0,
-          "position": 31.285714285714285
+          "position": 30.333333333333332
         },
         {
           "keys": [
             "corporate event planning company"
           ],
           "clicks": 0,
-          "impressions": 15,
+          "impressions": 14,
           "ctr": 0,
-          "position": 29.133333333333333
+          "position": 28.857142857142858
         },
         {
           "keys": [
@@ -6077,27 +6032,27 @@
             "corporate events agency"
           ],
           "clicks": 0,
-          "impressions": 70,
+          "impressions": 68,
           "ctr": 0,
-          "position": 37.385714285714286
+          "position": 37.44117647058823
         },
         {
           "keys": [
             "corporate events companies"
           ],
           "clicks": 0,
-          "impressions": 22,
+          "impressions": 21,
           "ctr": 0,
-          "position": 27.454545454545453
+          "position": 27.238095238095237
         },
         {
           "keys": [
             "corporate events company"
           ],
           "clicks": 0,
-          "impressions": 21,
+          "impressions": 20,
           "ctr": 0,
-          "position": 28.19047619047619
+          "position": 28.4
         },
         {
           "keys": [
@@ -6212,9 +6167,9 @@
             "creative online event management"
           ],
           "clicks": 0,
-          "impressions": 85,
+          "impressions": 63,
           "ctr": 0,
-          "position": 58.28235294117647
+          "position": 58.15873015873016
         },
         {
           "keys": [
@@ -6239,9 +6194,9 @@
             "digital event company"
           ],
           "clicks": 0,
-          "impressions": 25,
+          "impressions": 24,
           "ctr": 0,
-          "position": 59.92
+          "position": 60.416666666666664
         },
         {
           "keys": [
@@ -6266,9 +6221,9 @@
             "event company for hybrid events"
           ],
           "clicks": 0,
-          "impressions": 4,
+          "impressions": 3,
           "ctr": 0,
-          "position": 82.5
+          "position": 81.33333333333333
         },
         {
           "keys": [
@@ -6320,9 +6275,9 @@
             "event management company in india"
           ],
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 1,
           "ctr": 0,
-          "position": 25.5
+          "position": 26
         },
         {
           "keys": [
@@ -6410,9 +6365,9 @@
             "event organising company"
           ],
           "clicks": 0,
-          "impressions": 10,
+          "impressions": 9,
           "ctr": 0,
-          "position": 36.5
+          "position": 36.44444444444444
         },
         {
           "keys": [
@@ -6518,18 +6473,18 @@
             "event technology companies"
           ],
           "clicks": 0,
-          "impressions": 23,
+          "impressions": 22,
           "ctr": 0,
-          "position": 35.08695652173913
+          "position": 34.63636363636363
         },
         {
           "keys": [
             "event technology company"
           ],
           "clicks": 0,
-          "impressions": 24,
+          "impressions": 22,
           "ctr": 0,
-          "position": 29.041666666666668
+          "position": 28.818181818181817
         },
         {
           "keys": [
@@ -6581,9 +6536,9 @@
             "events management company"
           ],
           "clicks": 0,
-          "impressions": 3,
+          "impressions": 1,
           "ctr": 0,
-          "position": 36
+          "position": 29
         },
         {
           "keys": [
@@ -6608,9 +6563,9 @@
             "exhibition management company"
           ],
           "clicks": 0,
-          "impressions": 44,
+          "impressions": 43,
           "ctr": 0,
-          "position": 29.522727272727273
+          "position": 29.232558139534884
         },
         {
           "keys": [
@@ -6653,9 +6608,9 @@
             "full service corporate event planning"
           ],
           "clicks": 0,
-          "impressions": 16,
+          "impressions": 15,
           "ctr": 0,
-          "position": 53.75
+          "position": 53.733333333333334
         },
         {
           "keys": [
@@ -6725,9 +6680,9 @@
             "on ground activation in singapore"
           ],
           "clicks": 0,
-          "impressions": 3,
+          "impressions": 2,
           "ctr": 0,
-          "position": 36.666666666666664
+          "position": 36.5
         },
         {
           "keys": [
@@ -6743,9 +6698,9 @@
             "online event management companies"
           ],
           "clicks": 0,
-          "impressions": 591,
+          "impressions": 573,
           "ctr": 0,
-          "position": 25.627749576988155
+          "position": 25.2565445026178
         },
         {
           "keys": [
@@ -6842,9 +6797,9 @@
             "seminar organizer company"
           ],
           "clicks": 0,
-          "impressions": 8,
+          "impressions": 7,
           "ctr": 0,
-          "position": 41.875
+          "position": 42.142857142857146
         },
         {
           "keys": [
@@ -6863,15 +6818,6 @@
           "impressions": 1,
           "ctr": 0,
           "position": 15
-        },
-        {
-          "keys": [
-            "top corporate event company india"
-          ],
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 7
         },
         {
           "keys": [
@@ -6941,36 +6887,36 @@
             "virtual event companies"
           ],
           "clicks": 0,
-          "impressions": 468,
+          "impressions": 449,
           "ctr": 0,
-          "position": 70.37820512820512
+          "position": 70.60579064587974
         },
         {
           "keys": [
             "virtual event company"
           ],
           "clicks": 0,
-          "impressions": 388,
+          "impressions": 369,
           "ctr": 0,
-          "position": 84.05412371134021
+          "position": 84.37669376693766
         },
         {
           "keys": [
             "virtual event company singapore"
           ],
           "clicks": 0,
-          "impressions": 215,
+          "impressions": 201,
           "ctr": 0,
-          "position": 83.25581395348837
+          "position": 84.11442786069652
         },
         {
           "keys": [
             "virtual event management companies"
           ],
           "clicks": 0,
-          "impressions": 562,
+          "impressions": 543,
           "ctr": 0,
-          "position": 43.86476868327402
+          "position": 43.81399631675875
         },
         {
           "keys": [
@@ -6986,18 +6932,18 @@
             "virtual event management services"
           ],
           "clicks": 0,
-          "impressions": 514,
+          "impressions": 497,
           "ctr": 0,
-          "position": 68.40466926070039
+          "position": 68.35211267605634
         },
         {
           "keys": [
             "virtual event planners"
           ],
           "clicks": 0,
-          "impressions": 114,
+          "impressions": 96,
           "ctr": 0,
-          "position": 74.45614035087719
+          "position": 74.625
         },
         {
           "keys": [
@@ -7049,9 +6995,9 @@
             "virtual events production company"
           ],
           "clicks": 0,
-          "impressions": 16,
+          "impressions": 15,
           "ctr": 0,
-          "position": 85.375
+          "position": 85.6
         },
         {
           "keys": [
@@ -7234,9 +7180,9 @@
             "4d event planning process agency"
           ],
           "clicks": 0,
-          "impressions": 13,
+          "impressions": 12,
           "ctr": 0,
-          "position": 15.23076923076923
+          "position": 15.5
         },
         {
           "keys": [
@@ -7315,9 +7261,9 @@
             "best event agencies in bangalore"
           ],
           "clicks": 0,
-          "impressions": 6,
+          "impressions": 5,
           "ctr": 0,
-          "position": 19.333333333333332
+          "position": 18
         },
         {
           "keys": [
@@ -7459,9 +7405,9 @@
             "conference registration companies"
           ],
           "clicks": 0,
-          "impressions": 14,
+          "impressions": 13,
           "ctr": 0,
-          "position": 36.42857142857143
+          "position": 35.46153846153846
         },
         {
           "keys": [
@@ -7720,9 +7666,9 @@
             "corporate event planners in bangalore"
           ],
           "clicks": 0,
-          "impressions": 16,
+          "impressions": 14,
           "ctr": 0,
-          "position": 28.375
+          "position": 28.285714285714285
         },
         {
           "keys": [
@@ -7774,9 +7720,9 @@
             "corporate event solutions"
           ],
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 1,
           "ctr": 0,
-          "position": 36.5
+          "position": 41
         },
         {
           "keys": [
@@ -7828,18 +7774,18 @@
             "digital event companies"
           ],
           "clicks": 0,
-          "impressions": 12,
+          "impressions": 11,
           "ctr": 0,
-          "position": 30.083333333333332
+          "position": 29.181818181818183
         },
         {
           "keys": [
             "digital event company"
           ],
           "clicks": 0,
-          "impressions": 21,
+          "impressions": 20,
           "ctr": 0,
-          "position": 39.80952380952381
+          "position": 39.7
         },
         {
           "keys": [
@@ -7876,15 +7822,6 @@
           "impressions": 9,
           "ctr": 0,
           "position": 27.666666666666668
-        },
-        {
-          "keys": [
-            "enterprise event management"
-          ],
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 49
         },
         {
           "keys": [
@@ -7927,9 +7864,9 @@
             "event companies in bangalore"
           ],
           "clicks": 0,
-          "impressions": 8,
+          "impressions": 7,
           "ctr": 0,
-          "position": 18.125
+          "position": 16.714285714285715
         },
         {
           "keys": [
@@ -8089,9 +8026,9 @@
             "event management company bangalore"
           ],
           "clicks": 0,
-          "impressions": 8,
+          "impressions": 7,
           "ctr": 0,
-          "position": 30
+          "position": 30.571428571428573
         },
         {
           "keys": [
@@ -8554,15 +8491,6 @@
         },
         {
           "keys": [
-            "eventz home"
-          ],
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 63
-        },
-        {
-          "keys": [
             "exhibition management companies in bangalore"
           ],
           "clicks": 0,
@@ -8698,15 +8626,6 @@
         },
         {
           "keys": [
-            "frameworkz"
-          ],
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 27
-        },
-        {
-          "keys": [
             "framez"
           ],
           "clicks": 0,
@@ -8728,18 +8647,9 @@
             "general session production"
           ],
           "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 78
-        },
-        {
-          "keys": [
-            "general session production events"
-          ],
-          "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 49
+          "position": 77
         },
         {
           "keys": [
@@ -8818,9 +8728,9 @@
             "hybrid event production company india"
           ],
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 1,
           "ctr": 0,
-          "position": 48.5
+          "position": 48
         },
         {
           "keys": [
@@ -8908,9 +8818,9 @@
             "live virtual hybrid events agency india"
           ],
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 1,
           "ctr": 0,
-          "position": 67.5
+          "position": 66
         },
         {
           "keys": [
@@ -8920,6 +8830,42 @@
           "impressions": 10,
           "ctr": 0,
           "position": 18.6
+        },
+        {
+          "keys": [
+            "marketing event company"
+          ],
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 31.5
+        },
+        {
+          "keys": [
+            "marketing event organisers"
+          ],
+          "clicks": 0,
+          "impressions": 19,
+          "ctr": 0,
+          "position": 25.473684210526315
+        },
+        {
+          "keys": [
+            "meeting and event planning companies"
+          ],
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 36
+        },
+        {
+          "keys": [
+            "o4c"
+          ],
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10
         }
       ],
       "responseAggregationType": "byProperty"
@@ -9122,9 +9068,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 12,
+          "impressions": 11,
           "ctr": 0,
-          "position": 9.916666666666666
+          "position": 9.727272727272727
         },
         {
           "keys": [
@@ -9132,9 +9078,9 @@
             "https://framez.sg/event-planner"
           ],
           "clicks": 0,
-          "impressions": 3,
+          "impressions": 2,
           "ctr": 0,
-          "position": 81.33333333333333
+          "position": 81
         },
         {
           "keys": [
@@ -9192,9 +9138,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 8,
+          "impressions": 7,
           "ctr": 0,
-          "position": 29.875
+          "position": 28.714285714285715
         },
         {
           "keys": [
@@ -9392,9 +9338,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 4,
+          "impressions": 3,
           "ctr": 0,
-          "position": 22.75
+          "position": 21.666666666666668
         },
         {
           "keys": [
@@ -9512,9 +9458,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 4,
+          "impressions": 1,
           "ctr": 0,
-          "position": 34
+          "position": 32
         },
         {
           "keys": [
@@ -9662,9 +9608,9 @@
             "https://framez.sg/event-planner"
           ],
           "clicks": 0,
-          "impressions": 16,
+          "impressions": 14,
           "ctr": 0,
-          "position": 74.6875
+          "position": 76.71428571428571
         },
         {
           "keys": [
@@ -9672,9 +9618,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 5,
+          "impressions": 4,
           "ctr": 0,
-          "position": 38.6
+          "position": 28.5
         },
         {
           "keys": [
@@ -9682,9 +9628,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 24,
+          "impressions": 22,
           "ctr": 0,
-          "position": 27.958333333333332
+          "position": 26.545454545454547
         },
         {
           "keys": [
@@ -9692,9 +9638,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 25,
+          "impressions": 24,
           "ctr": 0,
-          "position": 45.88
+          "position": 45.583333333333336
         },
         {
           "keys": [
@@ -9722,9 +9668,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 29,
+          "impressions": 27,
           "ctr": 0,
-          "position": 47.89655172413793
+          "position": 47.888888888888886
         },
         {
           "keys": [
@@ -9732,9 +9678,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 24,
+          "impressions": 23,
           "ctr": 0,
-          "position": 33.916666666666664
+          "position": 33.34782608695652
         },
         {
           "keys": [
@@ -9782,9 +9728,9 @@
             "https://framez.sg/event-planner"
           ],
           "clicks": 0,
-          "impressions": 28,
+          "impressions": 26,
           "ctr": 0,
-          "position": 49.392857142857146
+          "position": 49.96153846153846
         },
         {
           "keys": [
@@ -9792,9 +9738,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 95,
+          "impressions": 90,
           "ctr": 0,
-          "position": 39.51578947368421
+          "position": 38.96666666666667
         },
         {
           "keys": [
@@ -9802,9 +9748,9 @@
             "https://framez.sg/event-planner"
           ],
           "clicks": 0,
-          "impressions": 75,
+          "impressions": 73,
           "ctr": 0,
-          "position": 42.12
+          "position": 42.35616438356164
         },
         {
           "keys": [
@@ -9832,9 +9778,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 30,
+          "impressions": 29,
           "ctr": 0,
-          "position": 26.766666666666666
+          "position": 26.551724137931036
         },
         {
           "keys": [
@@ -9872,9 +9818,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 86,
+          "impressions": 83,
           "ctr": 0,
-          "position": 25.91860465116279
+          "position": 25.518072289156628
         },
         {
           "keys": [
@@ -9942,9 +9888,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 31,
+          "impressions": 30,
           "ctr": 0,
-          "position": 56.87096774193548
+          "position": 56.93333333333333
         },
         {
           "keys": [
@@ -9962,9 +9908,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 29,
+          "impressions": 28,
           "ctr": 0,
-          "position": 30.724137931034484
+          "position": 30.392857142857142
         },
         {
           "keys": [
@@ -10012,9 +9958,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 15,
+          "impressions": 14,
           "ctr": 0,
-          "position": 42.2
+          "position": 41.714285714285715
         },
         {
           "keys": [
@@ -10122,9 +10068,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 28,
+          "impressions": 26,
           "ctr": 0,
-          "position": 50.214285714285715
+          "position": 49.53846153846154
         },
         {
           "keys": [
@@ -10162,9 +10108,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 24,
+          "impressions": 23,
           "ctr": 0,
-          "position": 64.41666666666666
+          "position": 65.08695652173913
         },
         {
           "keys": [
@@ -10212,9 +10158,9 @@
             "https://framez.sg/event-planner"
           ],
           "clicks": 0,
-          "impressions": 18,
+          "impressions": 17,
           "ctr": 0,
-          "position": 41.94444444444444
+          "position": 42.294117647058826
         },
         {
           "keys": [
@@ -10232,9 +10178,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 7,
+          "impressions": 6,
           "ctr": 0,
-          "position": 26.857142857142858
+          "position": 26.333333333333332
         },
         {
           "keys": [
@@ -10272,9 +10218,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 52,
+          "impressions": 50,
           "ctr": 0,
-          "position": 14.038461538461538
+          "position": 14.04
         },
         {
           "keys": [
@@ -10342,9 +10288,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 26,
+          "impressions": 25,
           "ctr": 0,
-          "position": 21.423076923076923
+          "position": 21.08
         },
         {
           "keys": [
@@ -10422,9 +10368,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 30,
+          "impressions": 29,
           "ctr": 0,
-          "position": 23.266666666666666
+          "position": 22.96551724137931
         },
         {
           "keys": [
@@ -10472,9 +10418,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 10,
+          "impressions": 7,
           "ctr": 0,
-          "position": 39.5
+          "position": 42.285714285714285
         },
         {
           "keys": [
@@ -10742,9 +10688,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 6,
+          "impressions": 4,
           "ctr": 0,
-          "position": 37.666666666666664
+          "position": 42
         },
         {
           "keys": [
@@ -10792,9 +10738,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 4,
+          "impressions": 3,
           "ctr": 0,
-          "position": 30.5
+          "position": 28.333333333333332
         },
         {
           "keys": [
@@ -10812,9 +10758,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 11,
+          "impressions": 10,
           "ctr": 0,
-          "position": 28.90909090909091
+          "position": 28.5
         },
         {
           "keys": [
@@ -10952,9 +10898,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 3,
+          "impressions": 2,
           "ctr": 0,
-          "position": 35.333333333333336
+          "position": 37
         },
         {
           "keys": [
@@ -10972,9 +10918,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 31,
+          "impressions": 30,
           "ctr": 0,
-          "position": 26.096774193548388
+          "position": 25.933333333333334
         },
         {
           "keys": [
@@ -10992,9 +10938,9 @@
             "https://framez.sg/event-planner"
           ],
           "clicks": 0,
-          "impressions": 59,
+          "impressions": 58,
           "ctr": 0,
-          "position": 50.94915254237288
+          "position": 51.13793103448276
         },
         {
           "keys": [
@@ -11002,9 +10948,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 22,
+          "impressions": 21,
           "ctr": 0,
-          "position": 27.454545454545453
+          "position": 27.238095238095237
         },
         {
           "keys": [
@@ -11012,9 +10958,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 21,
+          "impressions": 20,
           "ctr": 0,
-          "position": 28.19047619047619
+          "position": 28.4
         },
         {
           "keys": [
@@ -11202,9 +11148,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 85,
+          "impressions": 63,
           "ctr": 0,
-          "position": 58.28235294117647
+          "position": 58.15873015873016
         },
         {
           "keys": [
@@ -11232,9 +11178,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 9,
+          "impressions": 8,
           "ctr": 0,
-          "position": 35.44444444444444
+          "position": 34.875
         },
         {
           "keys": [
@@ -11252,9 +11198,9 @@
             "https://framez.sg/corporate-event-management-company"
           ],
           "clicks": 0,
-          "impressions": 42,
+          "impressions": 40,
           "ctr": 0,
-          "position": 52.214285714285715
+          "position": 51.825
         },
         {
           "keys": [
@@ -11262,9 +11208,9 @@
             "https://framez.sg/our-events-and-services"
           ],
           "clicks": 0,
-          "impressions": 39,
+          "impressions": 38,
           "ctr": 0,
-          "position": 58.76923076923077
+          "position": 59.21052631578947
         },
         {
           "keys": [
@@ -11362,19 +11308,9 @@
             "https://milestone.engage2021.framez.sg/"
           ],
           "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 26.5
-        },
-        {
-          "keys": [
-            "enterprise event management",
-            "https://framez.sg/corporate-event-management-company"
-          ],
-          "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 49
+          "position": 44
         },
         {
           "keys": [
@@ -11425,6 +11361,16 @@
           "impressions": 5,
           "ctr": 0,
           "position": 13.2
+        },
+        {
+          "keys": [
+            "event branding agency",
+            "https://framez.sg/event-planner"
+          ],
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 58
         }
       ],
       "responseAggregationType": "byPage"
