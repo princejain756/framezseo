@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T04:16:16.599979+00:00",
+  "generated_at": "2026-11-23T19:31:22.283415+00:00",
   "site": "https://framez.sg",
   "sitemap_urls": 30,
   "audited": 30,
@@ -10,7 +10,9 @@
     "titles": {},
     "descriptions": {}
   },
-  "changed_urls": [],
+  "changed_urls": [
+    "https://framez.sg/conference-and-mice-event-management"
+  ],
   "pages": [
     {
       "url": "https://framez.sg/",
@@ -783,9 +785,9 @@
     {
       "url": "https://framez.sg/conference-and-mice-event-management",
       "status": 200,
-      "sha256": "bf20e45fb220e93031e5076574423e94ec51d542a985155ce610e484e7201538",
-      "content_length": 47456,
-      "sitemap_lastmod": "2026-11-20",
+      "sha256": "06f94fea6ed85fbc660cddd7def436d43480678a7c9195b65e7ffa583af22863",
+      "content_length": 48551,
+      "sitemap_lastmod": "2026-11-23",
       "issues": [],
       "title": "Conference & MICE Event Management Company | Framez",
       "title_len": 51,
@@ -794,11 +796,11 @@
       "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
       "h1_count": 1,
       "has_ga4": true,
-      "word_count": 869,
+      "word_count": 966,
       "images": 5,
       "images_missing_alt": 0,
       "images_duplicate_alt": 0,
-      "internal_links": 46,
+      "internal_links": 49,
       "jsonld_types": [
         "WebPage",
         "BreadcrumbList",

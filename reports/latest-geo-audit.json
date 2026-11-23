@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T04:17:06.338513+00:00",
+  "generated_at": "2026-11-23T19:32:13.064058+00:00",
   "site": "https://framez.sg",
   "sitemap_urls": 30,
   "audited_urls": 30,
@@ -518,20 +518,20 @@
     "gsc_available": true,
     "queries": [
       {
-        "query": "list event management companies in india experienced working with singapore-based apac regional hqs.",
-        "impressions": 26,
+        "query": "framez",
+        "impressions": 27,
         "clicks": 0,
         "ctr": 0.0,
-        "position": 8.0,
+        "position": 4.3,
         "country": "all",
         "page": ""
       },
       {
-        "query": "framez",
-        "impressions": 24,
+        "query": "list event management companies in india experienced working with singapore-based apac regional hqs.",
+        "impressions": 27,
         "clicks": 0,
         "ctr": 0.0,
-        "position": 3.8,
+        "position": 7.9,
         "country": "all",
         "page": ""
       },
@@ -555,7 +555,7 @@
       },
       {
         "query": "what should i check when a venue claims full stp support?",
-        "impressions": 14,
+        "impressions": 15,
         "clicks": 0,
         "ctr": 0.0,
         "position": 5.3,
@@ -618,10 +618,10 @@
       },
       {
         "query": "bangalore event management companies",
-        "impressions": 5,
+        "impressions": 6,
         "clicks": 0,
         "ctr": 0.0,
-        "position": 7.6,
+        "position": 8.2,
         "country": "all",
         "page": "https://framez.sg/event-planner"
       },
@@ -842,15 +842,6 @@
         "page": "https://framez.sg/corporate-event-management-company"
       },
       {
-        "query": "netapp partner connect",
-        "impressions": 2,
-        "clicks": 0,
-        "ctr": 0.0,
-        "position": 8.5,
-        "country": "all",
-        "page": ""
-      },
-      {
         "query": "event budgeting",
         "impressions": 2,
         "clicks": 0,
@@ -867,6 +858,15 @@
         "position": 10,
         "country": "all",
         "page": ""
+      },
+      {
+        "query": "bay area it",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1,
+        "country": "all",
+        "page": "https://iitbayarea.framez.sg/"
       },
       {
         "query": "event frame",
@@ -1076,6 +1076,15 @@
         "page": "https://milestone.engage2021.framez.sg/"
       },
       {
+        "query": "event planner bangalore",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 6,
+        "country": "all",
+        "page": ""
+      },
+      {
         "query": "eventz.co.in",
         "impressions": 1,
         "clicks": 0,
@@ -1187,7 +1196,7 @@
     "singapore_queries": [
       {
         "query": "what should i check when a venue claims full stp support?",
-        "impressions": 14,
+        "impressions": 15,
         "clicks": 0,
         "ctr": 0.0,
         "position": 5.3,
@@ -1351,10 +1360,10 @@
     "india_queries": [
       {
         "query": "framez",
-        "impressions": 17,
+        "impressions": 20,
         "clicks": 0,
         "ctr": 0.0,
-        "position": 4.3,
+        "position": 4.8,
         "country": "ind",
         "page": ""
       },
@@ -1548,6 +1557,15 @@
         "page": "https://framez.sg/corporate-event-management-company"
       },
       {
+        "query": "event planner bangalore",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 6,
+        "country": "ind",
+        "page": ""
+      },
+      {
         "query": "frame schedule",
         "impressions": 1,
         "clicks": 0,
@@ -1600,15 +1618,6 @@
         "position": 10,
         "country": "ind",
         "page": ""
-      },
-      {
-        "query": "o4c",
-        "impressions": 1,
-        "clicks": 0,
-        "ctr": 0.0,
-        "position": 10,
-        "country": "ind",
-        "page": ""
       }
     ],
     "pages": [
@@ -1621,10 +1630,10 @@
       },
       {
         "page": "https://framez.sg/corporate-event-budget-planning-guide",
-        "impressions": 114,
+        "impressions": 119,
         "clicks": 0,
         "ctr": 0.0,
-        "position": 9.4
+        "position": 9.3
       },
       {
         "page": "https://framez.sg/clientele",
@@ -1641,25 +1650,18 @@
         "position": 4.4
       },
       {
+        "page": "https://hvpartnersummit2022.framez.sg/",
+        "impressions": 5,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 9.8
+      },
+      {
         "page": "https://framez.sg/about-us",
         "impressions": 4,
         "clicks": 0,
         "ctr": 0.0,
         "position": 2
-      },
-      {
-        "page": "https://hvpartnersummit2022.framez.sg/",
-        "impressions": 4,
-        "clicks": 0,
-        "ctr": 0.0,
-        "position": 6.8
-      },
-      {
-        "page": "https://itdachieversaward.framez.sg/",
-        "impressions": 3,
-        "clicks": 0,
-        "ctr": 0.0,
-        "position": 5
       },
       {
         "page": "https://framez.sg/b2b-event-agency-rfp-evaluation-guide",
@@ -1688,6 +1690,13 @@
         "clicks": 0,
         "ctr": 0.0,
         "position": 3.5
+      },
+      {
+        "page": "https://iitbayarea.framez.sg/",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 4
       },
       {
         "page": "https://framez.sg/executive-offsite-retreat-blueprint",
@@ -1942,13 +1951,6 @@
         "position": 7
       },
       {
-        "page": "https://iitbayarea.framez.sg/",
-        "impressions": 1,
-        "clicks": 0,
-        "ctr": 0.0,
-        "position": 7
-      },
-      {
         "page": "https://framez.sg/book-a-demo",
         "impressions": 1,
         "clicks": 0,
@@ -1963,10 +1965,10 @@
         "position": 9
       }
     ],
-    "total_query_alerts": 74,
+    "total_query_alerts": 75,
     "total_singapore_alerts": 18,
     "total_india_alerts": 29,
-    "total_page_alerts": 50,
+    "total_page_alerts": 49,
     "total_alerts": 124
   },
   "pages": [
@@ -2453,10 +2455,10 @@
       "images_missing_lazy": 4,
       "page1_zero_ctr": {
         "page": "https://framez.sg/corporate-event-budget-planning-guide",
-        "impressions": 114,
+        "impressions": 119,
         "clicks": 0,
         "ctr": 0.0,
-        "position": 9.4
+        "position": 9.3
       }
     },
     {

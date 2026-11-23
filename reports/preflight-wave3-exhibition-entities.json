@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-11-23T19:30:07.254214+00:00",
+  "date_sgt": "2026-11-24",
+  "upcoming_wave": "wave3_2026_11_25",
+  "target_slug": "exhibition-and-trade-show-management",
+  "singapore_venues": [
+    {
+      "venue": "Marina Bay Sands Expo & Convention Centre",
+      "checks": [
+        "marshalling_yard_slots",
+        "rigging_plot_certification",
+        "early_bird_electrical"
+      ]
+    },
+    {
+      "venue": "Suntec Singapore Convention & Exhibition Centre",
+      "checks": [
+        "goods_lift_dimensions",
+        "ceiling_rigging_points",
+        "pdpa_badge_desk_wifi"
+      ]
+    },
+    {
+      "venue": "Singapore EXPO (Changi)",
+      "checks": [
+        "heavy_freight_forklift_windows",
+        "clear_span_power_distribution",
+        "fire_aisle_clearances"
+      ]
+    }
+  ]
+}
