@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T19:32:13.526313+00:00",
+  "generated_at": "2026-11-24T04:17:10.167123+00:00",
   "waves_deployed_this_run": [],
   "daily_action": {
     "event": "daily_micro_action_executed",
@@ -11,19 +11,16 @@
     "target_url": "https://framez.sg/conference-and-mice-event-management",
     "status": "ok",
     "message": "Injected Singapore EXPO / Sands Expo pre-flight entity block on conference-and-mice-event-management.php.",
-    "timestamp": "2026-11-23T19:30:07.256492+00:00",
+    "timestamp": "2026-11-24T04:15:03.425062+00:00",
     "target_urls": [
       "https://framez.sg/conference-and-mice-event-management"
     ],
     "sha256_receipts": [
       {
         "file": "conference-and-mice-event-management.php",
-        "changed": true,
-        "bytes_before": 14498,
-        "bytes_after": 15593,
-        "sha256_before": "4f5638621196f703a5d7ef7af9d2618feaea9eef717b84c3cc182bdfd3ac83cb",
+        "changed": false,
+        "sha256_before": "26e8bbbffe1e0dc8f28420e32edab822ed8823172c7d351478fcf4d8698589af",
         "sha256_after": "26e8bbbffe1e0dc8f28420e32edab822ed8823172c7d351478fcf4d8698589af",
-        "readback_sha256": "26e8bbbffe1e0dc8f28420e32edab822ed8823172c7d351478fcf4d8698589af",
         "sha256_verified": true
       }
     ],
@@ -33,7 +30,7 @@
     "urls": 30,
     "issues": 0,
     "broken": 0,
-    "changed": 1,
+    "changed": 0,
     "issue_counts": {}
   },
   "geo_audit": {
@@ -57,14 +54,14 @@
     "images_total": 282,
     "images_missing_dimensions": 280,
     "images_missing_lazy": 118,
-    "page1_zero_ctr_query_alerts": 75,
+    "page1_zero_ctr_query_alerts": 73,
     "page1_zero_ctr_page_alerts": 49,
-    "page1_zero_ctr_sgp_alerts": 18,
+    "page1_zero_ctr_sgp_alerts": 17,
     "page1_zero_ctr_ind_alerts": 29
   },
   "llms_sync": {
     "status": "ok",
-    "generated_at": "2026-11-23T19:31:25.120715+00:00",
+    "generated_at": "2026-11-24T04:16:20.679779+00:00",
     "total_urls": 30,
     "core_urls": 16,
     "guide_urls": 14,
@@ -79,7 +76,7 @@
     "urls": 30,
     "added": [],
     "removed": [],
-    "uploaded": true
+    "uploaded": false
   },
   "indexnow": {
     "submitted": 1,
@@ -93,6 +90,6 @@
   "deepseek_summary": null,
   "leads": {
     "verified_total": 3,
-    "spam_blocked_total": 298
+    "spam_blocked_total": 300
   }
 }

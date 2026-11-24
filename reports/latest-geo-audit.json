@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T19:32:13.064058+00:00",
+  "generated_at": "2026-11-24T04:17:09.755392+00:00",
   "site": "https://framez.sg",
   "sitemap_urls": 30,
   "audited_urls": 30,
@@ -626,15 +626,6 @@
         "page": "https://framez.sg/event-planner"
       },
       {
-        "query": "event management bangalore",
-        "impressions": 5,
-        "clicks": 0,
-        "ctr": 0.0,
-        "position": 9.8,
-        "country": "all",
-        "page": ""
-      },
-      {
         "query": "best budget-friendly meeting planning in event production",
         "impressions": 4,
         "clicks": 0,
@@ -1112,15 +1103,6 @@
         "page": "https://framez.sg/corporate-event-management-company"
       },
       {
-        "query": "iit bay area",
-        "impressions": 1,
-        "clicks": 0,
-        "ctr": 0.0,
-        "position": 7,
-        "country": "all",
-        "page": ""
-      },
-      {
         "query": "best meeting planning agencies that specialize in corporate meeting tech",
         "impressions": 1,
         "clicks": 0,
@@ -1254,15 +1236,6 @@
         "clicks": 0,
         "ctr": 0.0,
         "position": 7,
-        "country": "sgp",
-        "page": ""
-      },
-      {
-        "query": "event management bangalore",
-        "impressions": 2,
-        "clicks": 0,
-        "ctr": 0.0,
-        "position": 9,
         "country": "sgp",
         "page": ""
       },
@@ -1584,15 +1557,6 @@
         "page": "https://framez.sg/corporate-event-management-company"
       },
       {
-        "query": "iit bay area",
-        "impressions": 1,
-        "clicks": 0,
-        "ctr": 0.0,
-        "position": 7,
-        "country": "ind",
-        "page": ""
-      },
-      {
         "query": "corporate event management solutions",
         "impressions": 1,
         "clicks": 0,
@@ -1612,6 +1576,15 @@
       },
       {
         "query": "event execution company",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 10,
+        "country": "ind",
+        "page": ""
+      },
+      {
+        "query": "o4c",
         "impressions": 1,
         "clicks": 0,
         "ctr": 0.0,
@@ -1690,20 +1663,6 @@
         "clicks": 0,
         "ctr": 0.0,
         "position": 3.5
-      },
-      {
-        "page": "https://iitbayarea.framez.sg/",
-        "impressions": 2,
-        "clicks": 0,
-        "ctr": 0.0,
-        "position": 4
-      },
-      {
-        "page": "https://framez.sg/executive-offsite-retreat-blueprint",
-        "impressions": 2,
-        "clicks": 0,
-        "ctr": 0.0,
-        "position": 5.5
       },
       {
         "page": "https://framez.sg/get-in-touch?gsas=1&ahbb=1&rwg_token=ALcMQYYQEtYK8PAjBzKW1xZYXbfwR7YU-_MAB6QJRHX7dT3rrmlmaAdnBUiR3zAklx19S1OClvHlU8jMCjSNLMCbqvrPvEWlMg%3D%3D",
@@ -1860,6 +1819,20 @@
         "position": 1
       },
       {
+        "page": "https://iitbayarea.framez.sg/",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "page": "https://framez.sg/executive-offsite-retreat-blueprint",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 2
+      },
+      {
         "page": "https://framez.sg/get-in-touch?gsas=1&ahbb=1&rwg_token=ALcMQYY8TJsIryaF8lNn3y-z43hqGBHXYQ7_oSy-qqh_PGBrYjAE5pff2UYQZ17eSQLJqrqSuBP2PM_vGzmLALJJ0FA7-O0RPQ%3D%3D",
         "impressions": 1,
         "clicks": 0,
@@ -1965,11 +1938,11 @@
         "position": 9
       }
     ],
-    "total_query_alerts": 75,
-    "total_singapore_alerts": 18,
+    "total_query_alerts": 73,
+    "total_singapore_alerts": 17,
     "total_india_alerts": 29,
     "total_page_alerts": 49,
-    "total_alerts": 124
+    "total_alerts": 122
   },
   "pages": [
     {
@@ -2662,10 +2635,10 @@
       "images_missing_lazy": 4,
       "page1_zero_ctr": {
         "page": "https://framez.sg/executive-offsite-retreat-blueprint",
-        "impressions": 2,
+        "impressions": 1,
         "clicks": 0,
         "ctr": 0.0,
-        "position": 5.5
+        "position": 2
       }
     },
     {
