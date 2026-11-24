@@ -1,7 +1,7 @@
 # Framez Events & Productions: Comprehensive Monthly SEO, AEO & GEO Progress Report
 ## Service Cycle: 15 November to 15 December 2026
 
-**Report Generated:** 2026-11-24 12:17:10 SGT (2026-11-24 04:17:10 UTC)  
+**Report Generated:** 2026-11-25 03:32:28 SGT (2026-11-24 19:32:28 UTC)  
 **Client:** Framez Events & Productions (`https://framez.sg`)  
 **Agency Partner:** ADELEV8 Growth OS (`https://portal.adelev8.com`)  
 **Service Cycle Window:** 15 November 2026 to 15 December 2026  
@@ -16,7 +16,7 @@
 During the **15 November to 15 December 2026** service cycle, ADELEV8 focused on turning Framez's technical foundation into commercial search capture across **Singapore** and **Bangalore**, closing analytics blindspots across commercial pages, eliminating legacy 2020 to 2021 virtual-event index bloat, and shipping a multi-wave cadence of high-intent commercial landing pages and operational buyer guides.
 
 ### Key Cycle Achievements
-- **Active Verified Sitemap Inventory:** **30 self-canonical HTTP 200 URLs** (up from 26 at the end of October), with **30/30** pages verified carrying live `G-XDPHV6MX44` GA4 telemetry.
+- **Active Verified Sitemap Inventory:** **31 self-canonical HTTP 200 URLs** (up from 26 at the end of October), with **31/31** pages verified carrying live `G-XDPHV6MX44` GA4 telemetry.
 - **Singapore Commercial Landing Page Launched (`/event-management-company-in-singapore`):** Built specifically to capture Framez's high Singapore `.sg` impression volume with Prudential Tower (`30 Cecil Street, #19-08`) entity alignment, MICE/conference/launch/D&D scope, PDPA/GoBusiness operational guidance, and `ProfessionalService` + `Service` + `FAQPage` JSON-LD.
 - **100% Sitewide GA4 & Multi-Channel Inquiry Tracking Unification:** Replaced dead Universal Analytics (`UA-180350188-1`) and legacy tags across 10 core commercial/contact pages that were previously invisible to GA4, and instrumented `whatsapp_click`, `phone_click`, `email_click`, `cta_inquiry_click`, and `generate_lead` conversion events.
 - **Core Commercial Rebuilds:** Completely rewrote `/event-marketing-services` (resolving Google's Crawled - currently not indexed hold), `/event-management-company-in-india` (removing 2020 filler and white-on-white HTML defects), and `/event-planner` (+105% impression surge page).
@@ -39,7 +39,7 @@ During the **15 November to 15 December 2026** service cycle, ADELEV8 focused on
 | **22 Nov** | **MICE Service Cross-Linking & Entity Anchors** | Injects contextual cross-links and anchor text pointing to /conference-and-mice-event-management from Singapore and service overview pages. | **COMPLETED** (2026-11-22) |
 | **23 Nov** | **Bangalore Corporate Event CTR & FAQ Schema Sprint** | Audits and reinforces title, meta description, Koramangala/Whitefield/ORR proof, and FAQPage/ProfessionalService schema on /event-management-company-in-bangalore. | **COMPLETED** (2026-11-23) |
 | **24 Nov** | **Trade Show & Exhibition Entity Directory Preparation** | Pre-flight entity mapping and Singapore EXPO / Sands Expo venue technical specifications on /conference-and-mice-event-management ahead of Wave 3. | **COMPLETED** (2026-11-24) |
-| **25 Nov** | **Wave 3: Exhibition & Trade Show Management Page Release** | Launches /exhibition-and-trade-show-management targeting exhibition management company (#30.4) and custom booth fabrication. | Scheduled (2026-11-25) via Automated Cron |
+| **25 Nov** | **Wave 3: Exhibition & Trade Show Management Page Release** | Launches /exhibition-and-trade-show-management targeting exhibition management company (#30.4) and custom booth fabrication. | **LIVE** (2026-11-24) |
 | **26 Nov** | **Exhibition Cross-Linking & Image Sitemap Verification** | Links exhibition and product launch services from service overview and Singapore pages and verifies image-sitemap.xml. | Scheduled (2026-11-26) via Automated Cron |
 | **27 Nov** | **Book-a-Demo Interactive Scope Estimator & Thin Content Fix** | Verifies and expands /book-a-demo with enterprise RFP scope estimator, budgeting tiers, and FAQPage schema while preserving Turnstile. | Scheduled (2026-11-27) via Automated Cron |
 | **28 Nov** | **Year-End Corporate Town Hall Seasonal Search Injections** | Injects Q4 all-hands town hall and Q1 sales kickoff internal anchors on corporate-event-management-company.php and event-planner.php. | Scheduled (2026-11-28) via Automated Cron |
@@ -67,45 +67,45 @@ During the **15 November to 15 December 2026** service cycle, ADELEV8 focused on
 
 | Metric (28-Day Rolling Window) | Value |
 | --- | ---: |
-| **Total Organic Clicks** | **87** |
-| **Total Search Impressions** | **8,191** |
-| **Average CTR** | **1.06%** |
-| **Average Position** | **40.3** |
+| **Total Organic Clicks** | **88** |
+| **Total Search Impressions** | **8,601** |
+| **Average CTR** | **1.02%** |
+| **Average Position** | **40.7** |
 
 ### 3.1 Geographic Performance Breakdown (28 Days)
 | Country Code | Clicks | Impressions | CTR | Avg Position |
 | --- | ---: | ---: | ---: | ---: |
-| `IND` | 76 | 2,223 | 3.42% | 27.9 |
-| `ESP` | 2 | 16 | 12.50% | 18.0 |
-| `SGP` | 2 | 4,592 | 0.04% | 50.5 |
+| `IND` | 76 | 2,314 | 3.28% | 27.7 |
+| `ESP` | 2 | 17 | 11.76% | 18.1 |
+| `IDN` | 2 | 47 | 4.26% | 7.4 |
+| `SGP` | 2 | 4,852 | 0.04% | 51.0 |
 | `BLR` | 1 | 4 | 25.00% | 6.8 |
-| `CAN` | 1 | 11 | 9.09% | 12.2 |
-| `GBR` | 1 | 123 | 0.81% | 47.8 |
-| `IDN` | 1 | 46 | 2.17% | 7.6 |
+| `CAN` | 1 | 12 | 8.33% | 14.2 |
+| `GBR` | 1 | 126 | 0.79% | 48.3 |
 | `KOR` | 1 | 5 | 20.00% | 17.0 |
 | `LKA` | 1 | 1 | 100.00% | 1.0 |
-| `USA` | 1 | 422 | 0.24% | 26.7 |
+| `USA` | 1 | 440 | 0.23% | 27.1 |
 
 ### 3.2 Top Landing Pages in Google Search (28 Days)
 | URL | Clicks | Impressions | CTR | Avg Position |
 | --- | ---: | ---: | ---: | ---: |
-| `https://framez.sg/` | 61 | 730 | 8.36% | 9.7 |
-| `https://framez.sg/corporate-event-management-company` | 7 | 4,638 | 0.15% | 47.1 |
-| `https://framez.sg/get-to-know-us` | 5 | 291 | 1.72% | 5.0 |
-| `https://framez.sg/our-events-and-services` | 5 | 2,297 | 0.22% | 67.9 |
-| `https://framez.sg/our-team` | 3 | 45 | 6.67% | 12.4 |
-| `https://framez.sg/event-planner` | 1 | 1,554 | 0.06% | 37.0 |
+| `https://framez.sg/` | 62 | 749 | 8.28% | 9.6 |
+| `https://framez.sg/corporate-event-management-company` | 7 | 4,820 | 0.15% | 47.1 |
+| `https://framez.sg/get-to-know-us` | 5 | 295 | 1.69% | 5.0 |
+| `https://framez.sg/our-events-and-services` | 5 | 2,397 | 0.21% | 68.2 |
+| `https://framez.sg/our-team` | 3 | 46 | 6.52% | 12.2 |
+| `https://framez.sg/event-planner` | 1 | 1,613 | 0.06% | 36.8 |
 | `https://framez.sg/experiential-brand-activations-framework` | 1 | 14 | 7.14% | 7.5 |
 | `https://framez.sg/festive-corporate-gala-diwali-celebrations` | 1 | 35 | 2.86% | 7.0 |
-| `https://framez.sg/get-in-touch` | 1 | 174 | 0.57% | 9.6 |
-| `https://itdachieversaward.framez.sg/` | 1 | 18 | 5.56% | 9.6 |
+| `https://framez.sg/get-in-touch` | 1 | 177 | 0.56% | 9.5 |
+| `https://itdachieversaward.framez.sg/` | 1 | 25 | 4.00% | 9.2 |
 | `https://nps2025.framez.sg/` | 1 | 52 | 1.92% | 9.1 |
 | `https://cloud4c.framez.sg/` | 0 | 5 | 0.00% | 15.6 |
 
 ### 3.3 Top Search Queries (28 Days)
 | Search Query | Clicks | Impressions | CTR | Avg Position |
 | --- | ---: | ---: | ---: | ---: |
-| `frame events and productions` | 30 | 137 | 21.90% | 6.7 |
+| `frame events and productions` | 31 | 140 | 22.14% | 6.6 |
 | `framez events` | 4 | 14 | 28.57% | 1.1 |
 | `virtual event management india` | 4 | 6 | 66.67% | 54.3 |
 | `frames event management` | 3 | 22 | 13.64% | 4.1 |
@@ -114,12 +114,12 @@ During the **15 November to 15 December 2026** service cycle, ADELEV8 focused on
 | `corporate virtual events india` | 1 | 1 | 100.00% | 84.0 |
 | `digital event solutions india` | 1 | 2 | 50.00% | 26.5 |
 | `event companies near me` | 1 | 1 | 100.00% | 51.0 |
-| `event management companies in bangalore` | 1 | 36 | 2.78% | 29.9 |
+| `event management companies in bangalore` | 1 | 44 | 2.27% | 26.4 |
 | `frame events` | 1 | 33 | 3.03% | 3.4 |
 | `online event hosting india` | 1 | 1 | 100.00% | 24.0 |
+| `"convention" "bangalore"` | 0 | 1 | 0.00% | 5.0 |
+| `"convention" "bengaluru"` | 0 | 1 | 0.00% | 7.0 |
 | `3rd party meeting planning companies` | 0 | 4 | 0.00% | 67.8 |
-| `4d event planning process agency` | 0 | 13 | 0.00% | 20.5 |
-| `annual day` | 0 | 3 | 0.00% | 4.7 |
 
 ---
 
@@ -127,23 +127,23 @@ During the **15 November to 15 December 2026** service cycle, ADELEV8 focused on
 
 | Market | Clicks | Click Share | Impressions | Impression Share | CTR | Avg Position | Captured Query Rows | Cycle-Start Snapshot (Nov 18) |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| Singapore (`SGP`) | 2 | 2.3% | 4,592 | 56.1% | 0.04% | 50.5 | 183 | 1 clicks / 4,471 imp (delta +1 clicks, +121 imp, -0.5 pos) |
-| India (`IND`) | 76 | 87.4% | 2,223 | 27.1% | 3.42% | 27.9 | 200 | 73 clicks / 1,921 imp (delta +3 clicks, +302 imp, +1.1 pos) |
+| Singapore (`SGP`) | 2 | 2.3% | 4,852 | 56.4% | 0.04% | 51.0 | 185 | 1 clicks / 4,471 imp (delta +1 clicks, +381 imp, -1.0 pos) |
+| India (`IND`) | 76 | 86.4% | 2,314 | 26.9% | 3.28% | 27.7 | 200 | 73 clicks / 1,921 imp (delta +3 clicks, +393 imp, +1.2 pos) |
 
 ### 4.1 Top Singapore Search Queries (28 Days, `country=sgp`)
 | Search Query | Clicks | Impressions | CTR | Avg Position | Primary URL |
 | --- | ---: | ---: | ---: | ---: | --- |
-| `online event management companies` | 0 | 587 | 0.00% | 26.5 | - |
-| `virtual event management companies` | 0 | 561 | 0.00% | 44.5 | - |
-| `virtual event management services` | 0 | 512 | 0.00% | 68.5 | - |
-| `virtual event companies` | 0 | 467 | 0.00% | 70.4 | - |
-| `virtual event company` | 0 | 385 | 0.00% | 83.9 | - |
-| `virtual event company singapore` | 0 | 195 | 0.00% | 84.8 | - |
-| `conference event planning companies` | 0 | 98 | 0.00% | 39.1 | `https://framez.sg/corporate-event-management-company` |
-| `virtual event planners` | 0 | 98 | 0.00% | 75.3 | - |
-| `conference management company` | 0 | 92 | 0.00% | 25.2 | `https://framez.sg/corporate-event-management-company` |
-| `conference event planner` | 0 | 79 | 0.00% | 58.7 | `https://framez.sg/event-planner` |
-| `corporate events agency` | 0 | 69 | 0.00% | 38.6 | `https://framez.sg/event-planner` |
+| `online event management companies` | 0 | 622 | 0.00% | 27.9 | - |
+| `virtual event management companies` | 0 | 599 | 0.00% | 45.2 | - |
+| `virtual event management services` | 0 | 549 | 0.00% | 68.6 | - |
+| `virtual event companies` | 0 | 503 | 0.00% | 70.1 | - |
+| `virtual event company` | 0 | 423 | 0.00% | 83.1 | - |
+| `virtual event company singapore` | 0 | 200 | 0.00% | 84.5 | - |
+| `virtual event planners` | 0 | 116 | 0.00% | 75.7 | - |
+| `conference event planning companies` | 0 | 100 | 0.00% | 39.1 | `https://framez.sg/corporate-event-management-company` |
+| `conference management company` | 0 | 94 | 0.00% | 25.3 | `https://framez.sg/corporate-event-management-company` |
+| `conference event planner` | 0 | 83 | 0.00% | 58.1 | `https://framez.sg/event-planner` |
+| `corporate events agency` | 0 | 73 | 0.00% | 39.3 | `https://framez.sg/event-planner` |
 | `corporate event company` | 0 | 48 | 0.00% | 14.0 | `https://framez.sg/corporate-event-management-company` |
 | `exhibition management company` | 0 | 43 | 0.00% | 29.1 | - |
 | `creative event company` | 0 | 32 | 0.00% | 36.3 | `https://framez.sg/event-planner` |
@@ -152,20 +152,20 @@ During the **15 November to 15 December 2026** service cycle, ADELEV8 focused on
 ### 4.2 Top India Search Queries (28 Days, `country=ind`)
 | Search Query | Clicks | Impressions | CTR | Avg Position | Primary URL |
 | --- | ---: | ---: | ---: | ---: | --- |
-| `frame events and productions` | 29 | 110 | 26.36% | 3.5 | `https://framez.sg/` |
+| `frame events and productions` | 29 | 112 | 25.89% | 3.5 | `https://framez.sg/` |
 | `virtual event management india` | 4 | 6 | 66.67% | 54.3 | `https://framez.sg/corporate-event-management-company` |
 | `frames event management` | 3 | 19 | 15.79% | 1.3 | `https://framez.sg/` |
 | `framez events` | 3 | 10 | 30.00% | 1.2 | `https://framez.sg/` |
 | `virtual event services india` | 2 | 4 | 50.00% | 61.0 | `https://framez.sg/corporate-event-management-company` |
 | `corporate event management companies in bangalore` | 1 | 65 | 1.54% | 21.2 | `https://framez.sg/corporate-event-management-company` |
-| `event management companies in bangalore` | 1 | 28 | 3.57% | 35.5 | `https://framez.sg/corporate-event-management-company` |
+| `event management companies in bangalore` | 1 | 36 | 2.78% | 30.1 | `https://framez.sg/corporate-event-management-company` |
 | `frame events` | 1 | 13 | 7.69% | 1.1 | `https://framez.sg/` |
 | `digital event solutions india` | 1 | 2 | 50.00% | 26.5 | `https://framez.sg/our-events-and-services` |
 | `corporate virtual events india` | 1 | 1 | 100.00% | 84.0 | `https://framez.sg/corporate-event-management-company` |
 | `event companies near me` | 1 | 1 | 100.00% | 51.0 | `https://framez.sg/` |
 | `online event hosting india` | 1 | 1 | 100.00% | 24.0 | `https://framez.sg/our-events-and-services` |
-| `events marketing company` | 0 | 34 | 0.00% | 38.6 | - |
-| `event marketing companies india` | 0 | 29 | 0.00% | 36.3 | - |
+| `events marketing company` | 0 | 35 | 0.00% | 38.3 | - |
+| `event marketing companies india` | 0 | 30 | 0.00% | 36.1 | - |
 | `corporate meeting planner` | 0 | 23 | 0.00% | 23.5 | `https://framez.sg/event-planner` |
 
 ### 4.3 Page-1 Zero-CTR Alert Targets (Position <= 10.0, Clicks = 0)
@@ -173,12 +173,12 @@ During the **15 November to 15 December 2026** service cycle, ADELEV8 focused on
 | --- | :---: | ---: | ---: | --- |
 | `framez` | `ALL` | 27 | 4.3 | - |
 | `list event management companies in india experienced working with singapore-based apac regional hqs.` | `ALL` | 27 | 7.9 | - |
-| `product launch events company in bangalore` | `ALL` | 21 | 9.8 | - |
+| `product launch events company in bangalore` | `ALL` | 24 | 9.4 | - |
 | `top event management companies inbangalore` | `ALL` | 16 | 8.6 | - |
 | `what should i check when a venue claims full stp support?` | `ALL` | 15 | 5.3 | - |
 | `frame event` | `ALL` | 12 | 3.2 | - |
+| `how do i choose a professional agency that can handle end-to-end event planning and execution?` | `ALL` | 10 | 2.0 | - |
 | `we run south and southeast asia out of singapore, including india, which indian event company should manage our india office events?` | `ALL` | 10 | 6.8 | - |
-| `how do i choose a professional agency that can handle end-to-end event planning and execution?` | `ALL` | 9 | 2.0 | - |
 | `we need an event company in mumbai or bengaluru for a hong kong-headquartered business event.` | `ALL` | 8 | 3.1 | - |
 | `which event agency in india should a hong kong company use for a factory or office launch event?` | `ALL` | 7 | 5.7 | - |
 | `what's the typical budget for an office launch event in india for a singapore-headquartered regional business?` | `ALL` | 6 | 6.5 | - |
@@ -190,15 +190,15 @@ During the **15 November to 15 December 2026** service cycle, ADELEV8 focused on
 | Landing Page | Impressions | Clicks | Avg Position |
 | --- | ---: | ---: | ---: |
 | `https://framez.sg/corporate-product-launch-event-architecture` | 175 | 0 | 6.8 |
-| `https://framez.sg/corporate-event-budget-planning-guide` | 119 | 0 | 9.3 |
+| `https://framez.sg/corporate-event-budget-planning-guide` | 123 | 0 | 9.8 |
 | `https://framez.sg/clientele` | 18 | 0 | 5.7 |
 | `https://framez.sg/corporate-family-day-carnival-safety-logistics` | 5 | 0 | 4.4 |
-| `https://hvpartnersummit2022.framez.sg/` | 5 | 0 | 9.8 |
 | `https://framez.sg/about-us` | 4 | 0 | 2.0 |
 | `https://framez.sg/b2b-event-agency-rfp-evaluation-guide` | 3 | 0 | 6.7 |
 | `https://framez.sg/corporate-event-trends-singapore` | 3 | 0 | 7.7 |
 | `https://framez.sg/corporate-event-planning-handbook-2027` | 3 | 0 | 8.3 |
 | `https://framez.sg/event-management-company-in-india` | 2 | 0 | 3.5 |
+| `https://framez.sg/conference-and-mice-event-management` | 2 | 0 | 6.0 |
 
 ---
 
@@ -206,33 +206,33 @@ During the **15 November to 15 December 2026** service cycle, ADELEV8 focused on
 
 | GA4 Metric (Last 28 Days) | Value |
 | --- | ---: |
-| **Active Users** | **403** |
-| **New Users** | **392** |
-| **Total Sessions** | **468** |
-| **Screen / Page Views** | **573** |
+| **Active Users** | **406** |
+| **New Users** | **395** |
+| **Total Sessions** | **470** |
+| **Screen / Page Views** | **576** |
 | **Recorded Key Events** | **0** |
 
 ### 5.1 Traffic Acquisition Channels (28 Days)
 | Channel Group | Active Users | Sessions | Views |
 | --- | ---: | ---: | ---: |
-| Direct | 308 | 333 | 352 |
-| Organic Search | 73 | 108 | 190 |
-| Organic Social | 16 | 18 | 20 |
+| Direct | 314 | 338 | 356 |
+| Organic Search | 71 | 107 | 190 |
+| Organic Social | 15 | 16 | 18 |
 | Referral | 5 | 6 | 9 |
-| Unassigned | 3 | 3 | 0 |
+| AI Assistant | 2 | 2 | 3 |
 
 ### 5.2 Lead Pipeline & 7-Layer Bot Defense Status
 - **Cumulative Verified Form Leads (`leads_log.json`):** `3` (since Nov 15: `0`)
-- **Cumulative Automated Bot Submissions Blocked (`leads_spam_log.json`):** `300` (since Nov 15: `53`)
+- **Cumulative Automated Bot Submissions Blocked (`leads_spam_log.json`):** `301` (since Nov 15: `54`)
 
 ---
 
 ## 6. Technical Audit Health & Reporting Integrity
 
-- **Audited Sitemap URLs:** `30` (Broken URLs: `0`)
-- **GA4 (`G-XDPHV6MX44`) Coverage Across Sitemap:** `30/30` pages
+- **Audited Sitemap URLs:** `31` (Broken URLs: `0`)
+- **GA4 (`G-XDPHV6MX44`) Coverage Across Sitemap:** `31/31` pages
 - **Remaining Audit Flags:** `{}`
-- **Immutable Ledger Entries Recorded This Cycle:** `47` (`reports/cycle-2026-11-15-to-2026-12-15-ledger.jsonl`)
+- **Immutable Ledger Entries Recorded This Cycle:** `50` (`reports/cycle-2026-11-15-to-2026-12-15-ledger.jsonl`)
 
 *Reporting Integrity Note:* All figures above are pulled directly from verified production crawls, Google Search Console (`sc-domain:framez.sg`), Google Analytics 4 (`547082278`), and cPanel server logs. No traffic, rankings, reviews, or leads are estimated or backdated.
 
@@ -240,30 +240,30 @@ During the **15 November to 15 December 2026** service cycle, ADELEV8 focused on
 
 ## 7. GEO / AEO Readiness Scorecard
 
-- **Audit Timestamp:** `2026-11-24T04:17:09.755392+00:00`
-- **Audited Live Sitemap Inventory:** `30` URLs
+- **Audit Timestamp:** `2026-11-24T19:32:27.250854+00:00`
+- **Audited Live Sitemap Inventory:** `31` URLs
 - **Overall GEO / AEO Readiness Score:** **76.3 / 100**
 
 ### 7.1 Readiness Pillar Scorecard
 | Readiness Pillar | Score | Max | Verified Live Telemetry |
 | --- | ---: | ---: | --- |
-| **JSON-LD Schema Completeness** | 24.1 | 25 | `78/81` expected role schema checks passed |
-| **AI Crawler `llms.txt` Parity & Proof** | 20.0 | 20 | `llms.txt` parity=`True` (30/30), `llms-full.txt` parity=`True` (30/30) |
+| **JSON-LD Schema Completeness** | 24.1 | 25 | `81/84` expected role schema checks passed |
+| **AI Crawler `llms.txt` Parity & Proof** | 20.0 | 20 | `llms.txt` parity=`True` (31/31), `llms-full.txt` parity=`True` (31/31) |
 | **Mixed-Content HTTPS Security** | 15.0 | 15 | `0` pages with `http://maps.google.com`, `0` pages with insecure `http://` assets |
 | **Script & jQuery Hygiene** | 12.8 | 15 | `0` duplicate jQuery pages, `18` blocking scripts across `18` pages |
-| **Image Dimensions & Lazy Loading** | 4.4 | 15 | `282` images audited (`280` missing width/height, `118` missing lazy) |
-| **Page-1 Zero-CTR Capture** | 0.0 | 10 | `73` Page-1 zero-CTR queries, `49` Page-1 zero-CTR pages |
+| **Image Dimensions & Lazy Loading** | 4.4 | 15 | `288` images audited (`285` missing width/height, `122` missing lazy) |
+| **Page-1 Zero-CTR Capture** | 0.0 | 10 | `81` Page-1 zero-CTR queries, `49` Page-1 zero-CTR pages |
 
 ### 7.2 JSON-LD Schema Completeness Across Sitemap
 | Schema Type | Pages Present | Coverage |
 | --- | ---: | ---: |
-| `Organization` | 30 / 30 | 100.0% |
-| `ProfessionalService` | 3 / 30 | 10.0% |
-| `FAQPage` | 23 / 30 | 76.7% |
-| `Service` | 10 / 30 | 33.3% |
-| `Article` | 14 / 30 | 46.7% |
-| `SpeakableSpecification` | 9 / 30 | 30.0% |
-| `BreadcrumbList` | 29 / 30 | 96.7% |
+| `Organization` | 31 / 31 | 100.0% |
+| `ProfessionalService` | 3 / 31 | 9.7% |
+| `FAQPage` | 24 / 31 | 77.4% |
+| `Service` | 11 / 31 | 35.5% |
+| `Article` | 14 / 31 | 45.2% |
+| `SpeakableSpecification` | 10 / 31 | 32.3% |
+| `BreadcrumbList` | 30 / 31 | 96.8% |
 
 **Pages Missing Expected Role Schema:**
 - `https://framez.sg/corporate-event-management-company` (service): missing `ProfessionalService`

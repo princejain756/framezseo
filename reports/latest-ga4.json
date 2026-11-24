@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at": "2026-11-24T04:16:26.384008+00:00",
+  "generated_at": "2026-11-24T19:31:43.173976+00:00",
   "property_id": "547082278",
   "totals_28d": {
     "metricHeaders": [
@@ -29,16 +29,16 @@
       {
         "metricValues": [
           {
-            "value": "403"
+            "value": "406"
           },
           {
-            "value": "392"
+            "value": "395"
           },
           {
-            "value": "468"
+            "value": "470"
           },
           {
-            "value": "573"
+            "value": "576"
           },
           {
             "value": "0"
@@ -82,13 +82,13 @@
         ],
         "metricValues": [
           {
-            "value": "308"
+            "value": "314"
           },
           {
-            "value": "333"
+            "value": "338"
           },
           {
-            "value": "352"
+            "value": "356"
           }
         ]
       },
@@ -100,10 +100,10 @@
         ],
         "metricValues": [
           {
-            "value": "73"
+            "value": "71"
           },
           {
-            "value": "108"
+            "value": "107"
           },
           {
             "value": "190"
@@ -118,13 +118,13 @@
         ],
         "metricValues": [
           {
+            "value": "15"
+          },
+          {
             "value": "16"
           },
           {
             "value": "18"
-          },
-          {
-            "value": "20"
           }
         ]
       },
@@ -149,41 +149,23 @@
       {
         "dimensionValues": [
           {
-            "value": "Unassigned"
-          }
-        ],
-        "metricValues": [
-          {
-            "value": "3"
-          },
-          {
-            "value": "3"
-          },
-          {
-            "value": "0"
-          }
-        ]
-      },
-      {
-        "dimensionValues": [
-          {
             "value": "AI Assistant"
           }
         ],
         "metricValues": [
           {
-            "value": "1"
-          },
-          {
-            "value": "1"
+            "value": "2"
           },
           {
             "value": "2"
+          },
+          {
+            "value": "3"
           }
         ]
       }
     ],
-    "rowCount": 6,
+    "rowCount": 5,
     "metadata": {
       "currencyCode": "INR",
       "timeZone": "Asia/Calcutta"
@@ -211,7 +193,7 @@
         ],
         "metricValues": [
           {
-            "value": "573"
+            "value": "576"
           }
         ]
       },
@@ -223,7 +205,7 @@
         ],
         "metricValues": [
           {
-            "value": "468"
+            "value": "471"
           }
         ]
       },
@@ -235,7 +217,7 @@
         ],
         "metricValues": [
           {
-            "value": "392"
+            "value": "395"
           }
         ]
       },
@@ -247,7 +229,7 @@
         ],
         "metricValues": [
           {
-            "value": "256"
+            "value": "254"
           }
         ]
       },
@@ -271,7 +253,7 @@
         ],
         "metricValues": [
           {
-            "value": "9"
+            "value": "10"
           }
         ]
       },

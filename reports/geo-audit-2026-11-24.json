@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-24T04:17:09.755392+00:00",
+  "generated_at": "2026-11-24T19:32:27.250854+00:00",
   "site": "https://framez.sg",
-  "sitemap_urls": 30,
-  "audited_urls": 30,
+  "sitemap_urls": 31,
+  "audited_urls": 31,
   "readiness_score": 76.3,
   "readiness_breakdown": {
     "schema_completeness_max25": 24.1,
@@ -14,16 +14,16 @@
   },
   "schema_summary": {
     "counts": {
-      "Organization": 30,
+      "Organization": 31,
       "ProfessionalService": 3,
-      "FAQPage": 23,
-      "Service": 10,
+      "FAQPage": 24,
+      "Service": 11,
       "Article": 14,
-      "SpeakableSpecification": 9,
-      "BreadcrumbList": 29
+      "SpeakableSpecification": 10,
+      "BreadcrumbList": 30
     },
-    "checks_passed": 78,
-    "checks_total": 81,
+    "checks_passed": 81,
+    "checks_total": 84,
     "missing_schema_pages": [
       {
         "url": "https://framez.sg/corporate-event-management-company",
@@ -49,9 +49,9 @@
     ]
   },
   "llms_parity": {
-    "sitemap_url_count": 30,
-    "llms_txt_urls": 30,
-    "llms_full_txt_urls": 30,
+    "sitemap_url_count": 31,
+    "llms_txt_urls": 31,
+    "llms_full_txt_urls": 31,
     "missing_in_llms_txt": [],
     "missing_in_llms_full_txt": [],
     "extra_in_llms_txt": [],
@@ -206,9 +206,9 @@
         ]
       }
     ],
-    "images_total": 282,
-    "images_missing_dimensions": 280,
-    "images_missing_lazy": 118,
+    "images_total": 288,
+    "images_missing_dimensions": 285,
+    "images_missing_lazy": 122,
     "pages_missing_image_dimensions": [
       {
         "url": "https://framez.sg/",
@@ -262,8 +262,8 @@
       },
       {
         "url": "https://framez.sg/blog",
-        "missing": 17,
-        "total": 17
+        "missing": 18,
+        "total": 18
       },
       {
         "url": "https://framez.sg/get-in-touch",
@@ -357,6 +357,11 @@
       },
       {
         "url": "https://framez.sg/dinner-and-dance-event-management-singapore",
+        "missing": 4,
+        "total": 5
+      },
+      {
+        "url": "https://framez.sg/exhibition-and-trade-show-management",
         "missing": 4,
         "total": 5
       }
@@ -415,7 +420,7 @@
       {
         "url": "https://framez.sg/blog",
         "missing": 4,
-        "total": 17
+        "total": 18
       },
       {
         "url": "https://framez.sg/get-in-touch",
@@ -511,6 +516,11 @@
         "url": "https://framez.sg/dinner-and-dance-event-management-singapore",
         "missing": 4,
         "total": 5
+      },
+      {
+        "url": "https://framez.sg/exhibition-and-trade-show-management",
+        "missing": 4,
+        "total": 5
       }
     ]
   },
@@ -537,10 +547,10 @@
       },
       {
         "query": "product launch events company in bangalore",
-        "impressions": 21,
+        "impressions": 24,
         "clicks": 0,
         "ctr": 0.0,
-        "position": 9.8,
+        "position": 9.4,
         "country": "all",
         "page": ""
       },
@@ -572,20 +582,20 @@
         "page": ""
       },
       {
+        "query": "how do i choose a professional agency that can handle end-to-end event planning and execution?",
+        "impressions": 10,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 2,
+        "country": "all",
+        "page": ""
+      },
+      {
         "query": "we run south and southeast asia out of singapore, including india, which indian event company should manage our india office events?",
         "impressions": 10,
         "clicks": 0,
         "ctr": 0.0,
         "position": 6.8,
-        "country": "all",
-        "page": ""
-      },
-      {
-        "query": "how do i choose a professional agency that can handle end-to-end event planning and execution?",
-        "impressions": 9,
-        "clicks": 0,
-        "ctr": 0.0,
-        "position": 2,
         "country": "all",
         "page": ""
       },
@@ -653,6 +663,15 @@
         "page": ""
       },
       {
+        "query": "which event management company should i hire for international or multi-city corporate events in india?",
+        "impressions": 4,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5.2,
+        "country": "all",
+        "page": ""
+      },
+      {
         "query": "event management agencies in india",
         "impressions": 4,
         "clicks": 0,
@@ -669,6 +688,24 @@
         "position": 7,
         "country": "all",
         "page": "https://framez.sg/singapore-corporate-event-planning-checklist"
+      },
+      {
+        "query": "tss 2021",
+        "impressions": 4,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 7,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "event management companies in koramangala",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1,
+        "country": "all",
+        "page": ""
       },
       {
         "query": "event design company",
@@ -689,24 +726,6 @@
         "page": "https://framez.sg/annual-day-and-awards-night-planning-guide"
       },
       {
-        "query": "which event management company should i hire for international or multi-city corporate events in india?",
-        "impressions": 3,
-        "clicks": 0,
-        "ctr": 0.0,
-        "position": 5.3,
-        "country": "all",
-        "page": ""
-      },
-      {
-        "query": "tss 2021",
-        "impressions": 3,
-        "clicks": 0,
-        "ctr": 0.0,
-        "position": 6.3,
-        "country": "all",
-        "page": ""
-      },
-      {
         "query": "corporate event management company for large-scale brand launches.",
         "impressions": 3,
         "clicks": 0,
@@ -725,20 +744,20 @@
         "page": ""
       },
       {
+        "query": "itd awards",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 8.7,
+        "country": "all",
+        "page": ""
+      },
+      {
         "query": "events marketing companies in india",
         "impressions": 3,
         "clicks": 0,
         "ctr": 0.0,
         "position": 10,
-        "country": "all",
-        "page": ""
-      },
-      {
-        "query": "event management companies in koramangala",
-        "impressions": 2,
-        "clicks": 0,
-        "ctr": 0.0,
-        "position": 1,
         "country": "all",
         "page": ""
       },
@@ -777,6 +796,15 @@
         "position": 3.5,
         "country": "all",
         "page": "https://framez.sg/corporate-event-budget-planning-guide"
+      },
+      {
+        "query": "conference marketing agency",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 4.5,
+        "country": "all",
+        "page": "https://framez.sg/event-planner"
       },
       {
         "query": "virtual event companies in india",
@@ -860,6 +888,15 @@
         "page": "https://iitbayarea.framez.sg/"
       },
       {
+        "query": "contact details",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1,
+        "country": "all",
+        "page": "https://framez.sg/"
+      },
+      {
         "query": "event frame",
         "impressions": 1,
         "clicks": 0,
@@ -921,6 +958,15 @@
         "position": 1,
         "country": "all",
         "page": ""
+      },
+      {
+        "query": "corporate event platform",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 2,
+        "country": "all",
+        "page": "https://framez.sg/corporate-event-management-company"
       },
       {
         "query": "corporate event production company",
@@ -995,7 +1041,25 @@
         "page": ""
       },
       {
+        "query": "\"convention\" \"bangalore\"",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5,
+        "country": "all",
+        "page": "https://framez.sg/conference-and-mice-event-management"
+      },
+      {
         "query": "event design production",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "event marketing websites",
         "impressions": 1,
         "clicks": 0,
         "ctr": 0.0,
@@ -1014,6 +1078,15 @@
       },
       {
         "query": "global event management companies",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5,
+        "country": "all",
+        "page": ""
+      },
+      {
+        "query": "recommend me an event company that provides launch mechanism services",
         "impressions": 1,
         "clicks": 0,
         "ctr": 0.0,
@@ -1064,7 +1137,7 @@
         "ctr": 0.0,
         "position": 6,
         "country": "all",
-        "page": "https://milestone.engage2021.framez.sg/"
+        "page": ""
       },
       {
         "query": "event planner bangalore",
@@ -1092,6 +1165,15 @@
         "position": 6,
         "country": "all",
         "page": ""
+      },
+      {
+        "query": "\"convention\" \"bengaluru\"",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 7,
+        "country": "all",
+        "page": "https://framez.sg/conference-and-mice-event-management"
       },
       {
         "query": "bangalore event management company",
@@ -1186,6 +1268,15 @@
         "page": ""
       },
       {
+        "query": "product launch events company in bangalore",
+        "impressions": 4,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5,
+        "country": "sgp",
+        "page": ""
+      },
+      {
         "query": "corporate meeting planning checklist",
         "impressions": 4,
         "clicks": 0,
@@ -1200,15 +1291,6 @@
         "clicks": 0,
         "ctr": 0.0,
         "position": 2,
-        "country": "sgp",
-        "page": ""
-      },
-      {
-        "query": "product launch events company in bangalore",
-        "impressions": 3,
-        "clicks": 0,
-        "ctr": 0.0,
-        "position": 4,
         "country": "sgp",
         "page": ""
       },
@@ -1285,6 +1367,15 @@
         "page": "https://framez.sg/event-planner"
       },
       {
+        "query": "recommend me an event company that provides launch mechanism services",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5,
+        "country": "sgp",
+        "page": ""
+      },
+      {
         "query": "bangalore event company",
         "impressions": 1,
         "clicks": 0,
@@ -1342,7 +1433,7 @@
       },
       {
         "query": "how do i choose a professional agency that can handle end-to-end event planning and execution?",
-        "impressions": 7,
+        "impressions": 8,
         "clicks": 0,
         "ctr": 0.0,
         "position": 2,
@@ -1359,20 +1450,20 @@
         "page": ""
       },
       {
+        "query": "event management companies in koramangala",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1,
+        "country": "ind",
+        "page": ""
+      },
+      {
         "query": "events marketing companies in india",
         "impressions": 3,
         "clicks": 0,
         "ctr": 0.0,
         "position": 10,
-        "country": "ind",
-        "page": ""
-      },
-      {
-        "query": "event management companies in koramangala",
-        "impressions": 2,
-        "clicks": 0,
-        "ctr": 0.0,
-        "position": 1,
         "country": "ind",
         "page": ""
       },
@@ -1413,6 +1504,15 @@
         "page": "https://framez.sg/corporate-event-budget-planning-guide"
       },
       {
+        "query": "conference marketing agency",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 4.5,
+        "country": "ind",
+        "page": "https://framez.sg/event-planner"
+      },
+      {
         "query": "corporate event management company for large-scale brand launches.",
         "impressions": 2,
         "clicks": 0,
@@ -1420,6 +1520,15 @@
         "position": 8,
         "country": "ind",
         "page": "https://framez.sg/corporate-event-management-company"
+      },
+      {
+        "query": "contact details",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 1,
+        "country": "ind",
+        "page": "https://framez.sg/"
       },
       {
         "query": "event frame",
@@ -1456,6 +1565,15 @@
         "position": 1,
         "country": "ind",
         "page": ""
+      },
+      {
+        "query": "corporate event platform",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 2,
+        "country": "ind",
+        "page": "https://framez.sg/corporate-event-management-company"
       },
       {
         "query": "corporate event production company",
@@ -1495,6 +1613,15 @@
       },
       {
         "query": "event design production",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 5,
+        "country": "ind",
+        "page": ""
+      },
+      {
+        "query": "event marketing websites",
         "impressions": 1,
         "clicks": 0,
         "ctr": 0.0,
@@ -1582,15 +1709,6 @@
         "position": 10,
         "country": "ind",
         "page": ""
-      },
-      {
-        "query": "o4c",
-        "impressions": 1,
-        "clicks": 0,
-        "ctr": 0.0,
-        "position": 10,
-        "country": "ind",
-        "page": ""
       }
     ],
     "pages": [
@@ -1603,10 +1721,10 @@
       },
       {
         "page": "https://framez.sg/corporate-event-budget-planning-guide",
-        "impressions": 119,
+        "impressions": 123,
         "clicks": 0,
         "ctr": 0.0,
-        "position": 9.3
+        "position": 9.8
       },
       {
         "page": "https://framez.sg/clientele",
@@ -1621,13 +1739,6 @@
         "clicks": 0,
         "ctr": 0.0,
         "position": 4.4
-      },
-      {
-        "page": "https://hvpartnersummit2022.framez.sg/",
-        "impressions": 5,
-        "clicks": 0,
-        "ctr": 0.0,
-        "position": 9.8
       },
       {
         "page": "https://framez.sg/about-us",
@@ -1663,6 +1774,13 @@
         "clicks": 0,
         "ctr": 0.0,
         "position": 3.5
+      },
+      {
+        "page": "https://framez.sg/conference-and-mice-event-management",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 6
       },
       {
         "page": "https://framez.sg/get-in-touch?gsas=1&ahbb=1&rwg_token=ALcMQYYQEtYK8PAjBzKW1xZYXbfwR7YU-_MAB6QJRHX7dT3rrmlmaAdnBUiR3zAklx19S1OClvHlU8jMCjSNLMCbqvrPvEWlMg%3D%3D",
@@ -1938,11 +2056,11 @@
         "position": 9
       }
     ],
-    "total_query_alerts": 73,
-    "total_singapore_alerts": 17,
-    "total_india_alerts": 29,
+    "total_query_alerts": 81,
+    "total_singapore_alerts": 18,
+    "total_india_alerts": 32,
     "total_page_alerts": 49,
-    "total_alerts": 122
+    "total_alerts": 130
   },
   "pages": [
     {
@@ -2319,8 +2437,8 @@
       "blocking_scripts": [
         "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       ],
-      "images_total": 17,
-      "images_missing_dimensions": 17,
+      "images_total": 18,
+      "images_missing_dimensions": 18,
       "images_missing_lazy": 4,
       "page1_zero_ctr": null
     },
@@ -2428,10 +2546,10 @@
       "images_missing_lazy": 4,
       "page1_zero_ctr": {
         "page": "https://framez.sg/corporate-event-budget-planning-guide",
-        "impressions": 119,
+        "impressions": 123,
         "clicks": 0,
         "ctr": 0.0,
-        "position": 9.3
+        "position": 9.8
       }
     },
     {
@@ -2976,7 +3094,13 @@
       "images_total": 5,
       "images_missing_dimensions": 5,
       "images_missing_lazy": 4,
-      "page1_zero_ctr": null
+      "page1_zero_ctr": {
+        "page": "https://framez.sg/conference-and-mice-event-management",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0.0,
+        "position": 6
+      }
     },
     {
       "url": "https://framez.sg/dinner-and-dance-event-management-singapore",
@@ -2994,6 +3118,37 @@
       "jsonld_invalid": 0,
       "has_organization": true,
       "has_professional_service": true,
+      "has_faq_page": true,
+      "has_service": true,
+      "has_article": false,
+      "has_speakable": true,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [],
+      "duplicate_jquery": false,
+      "blocking_script_count": 0,
+      "blocking_scripts": [],
+      "images_total": 5,
+      "images_missing_dimensions": 4,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": null
+    },
+    {
+      "url": "https://framez.sg/exhibition-and-trade-show-management",
+      "status": 200,
+      "role": "service",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Organization",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
       "has_faq_page": true,
       "has_service": true,
       "has_article": false,
