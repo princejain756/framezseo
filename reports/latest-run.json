@@ -1,36 +1,75 @@
 {
-  "generated_at": "2026-11-25T04:17:08.476032+00:00",
-  "waves_deployed_this_run": [],
+  "generated_at": "2026-11-25T19:32:37.148965+00:00",
+  "waves_deployed_this_run": [
+    "https://framez.sg/product-launch-event-management"
+  ],
   "daily_action": {
-    "status": "wave_release_day",
-    "action": {
-      "action_id": "wave3_exhibition_trade_show_release",
-      "title": "Wave 3: Exhibition & Trade Show Management Page Release",
-      "kind": "major_wave_release",
-      "summary": "Launches /exhibition-and-trade-show-management targeting exhibition management company (#30.4) and custom booth fabrication.",
-      "is_wave": true,
-      "wave_id": "wave3_2026_11_25"
-    },
-    "date": "2026-11-25"
+    "event": "daily_micro_action_executed",
+    "date_sgt": "2026-11-26",
+    "action_id": "exhibition_cross_linking_images",
+    "title": "Exhibition Cross-Linking & Image Sitemap Verification",
+    "kind": "media_and_sitemap",
+    "target_file": "our-events-and-services.php",
+    "target_url": "https://framez.sg/our-events-and-services",
+    "status": "ok",
+    "message": "Added exhibition cross-links and verified image-sitemap.xml.",
+    "timestamp": "2026-11-25T19:30:31.828200+00:00",
+    "target_urls": [
+      "https://framez.sg/our-events-and-services",
+      "https://framez.sg/event-management-company-in-singapore"
+    ],
+    "sha256_receipts": [
+      {
+        "file": "our-events-and-services.php",
+        "changed": true,
+        "bytes_before": 35462,
+        "bytes_after": 36423,
+        "sha256_before": "e1d477fb6a745c9d54b73e09cf1987063e79d2b33631088dd513376e91d803bd",
+        "sha256_after": "7ce0040623a14b99fedc898e4bad9ef24e1e9fe367b4d5230786cad5c93e7720",
+        "readback_sha256": "7ce0040623a14b99fedc898e4bad9ef24e1e9fe367b4d5230786cad5c93e7720",
+        "sha256_verified": true
+      },
+      {
+        "file": "event-management-company-in-singapore.php",
+        "changed": true,
+        "bytes_before": 25346,
+        "bytes_after": 26049,
+        "sha256_before": "2947c11c97a150509b7b5af837051c65e960ad8db2911d6013d14a6c8fd9d0b7",
+        "sha256_after": "11f97b90c9dad5b9485b3e43d20909229b27f8a3fb6286f467e96b4580c7d602",
+        "readback_sha256": "11f97b90c9dad5b9485b3e43d20909229b27f8a3fb6286f467e96b4580c7d602",
+        "sha256_verified": true
+      },
+      {
+        "file": "image-sitemap.xml",
+        "changed": true,
+        "bytes_before": 2757,
+        "bytes_after": 3812,
+        "sha256_before": "1d6199d3eea57fa8a688fdd2977d732eb61cd29360b8d6008e7edf8bdc258522",
+        "sha256_after": "775ee2008cf4832e4bd6acaa421fba6bca568ccbe4bf64edea5624c7d15ebe1c",
+        "readback_sha256": "775ee2008cf4832e4bd6acaa421fba6bca568ccbe4bf64edea5624c7d15ebe1c",
+        "sha256_verified": true
+      }
+    ],
+    "report_path": "/root/websites/seogeoopt/seo-jobs/framez/reports/image-sitemap-verify-2026-11-26.json"
   },
   "audit": {
-    "urls": 31,
+    "urls": 32,
     "issues": 0,
     "broken": 0,
-    "changed": 0,
+    "changed": 4,
     "issue_counts": {}
   },
   "geo_audit": {
-    "readiness_score": 76.3,
-    "audited_urls": 31,
+    "readiness_score": 76.4,
+    "audited_urls": 32,
     "schema_counts": {
-      "Organization": 31,
+      "Organization": 32,
       "ProfessionalService": 3,
-      "FAQPage": 24,
-      "Service": 11,
+      "FAQPage": 25,
+      "Service": 12,
       "Article": 14,
-      "SpeakableSpecification": 10,
-      "BreadcrumbList": 30
+      "SpeakableSpecification": 11,
+      "BreadcrumbList": 31
     },
     "llms_txt_parity_ok": true,
     "llms_full_txt_parity_ok": true,
@@ -38,9 +77,9 @@
     "duplicate_jquery_count": 0,
     "pages_with_blocking_scripts": 18,
     "total_blocking_scripts": 18,
-    "images_total": 288,
-    "images_missing_dimensions": 285,
-    "images_missing_lazy": 122,
+    "images_total": 294,
+    "images_missing_dimensions": 290,
+    "images_missing_lazy": 126,
     "page1_zero_ctr_query_alerts": 80,
     "page1_zero_ctr_page_alerts": 50,
     "page1_zero_ctr_sgp_alerts": 18,
@@ -48,34 +87,37 @@
   },
   "llms_sync": {
     "status": "ok",
-    "generated_at": "2026-11-25T04:16:20.397406+00:00",
-    "total_urls": 31,
-    "core_urls": 17,
+    "generated_at": "2026-11-25T19:31:53.333860+00:00",
+    "total_urls": 32,
+    "core_urls": 18,
     "guide_urls": 14,
     "updated_files": [],
     "uploaded": false,
     "sha256": {
-      "llms.txt": "dc33b876375f58624e850dd0d51556ba5275c11bcc3d9791b1c4a3dc8927d280",
-      "llms-full.txt": "cca0adbe176224ddc916c9b6f056262cc5fcafddaaacfe0c211970793a9330be"
+      "llms.txt": "4d08341283f36661a02b063950e6ede5fc33b0e630aa3ab3f4a629ecd97df28c",
+      "llms-full.txt": "24f47cd7f4629149874f9eed1a2554e6b23c8edd92863c3c3c5375e679c4d8af"
     }
   },
   "sitemap": {
-    "urls": 31,
-    "added": [],
+    "urls": 32,
+    "added": [
+      "https://framez.sg/product-launch-event-management"
+    ],
     "removed": [],
-    "uploaded": false
+    "uploaded": true
   },
   "indexnow": {
-    "submitted": 0,
-    "status": null
+    "submitted": 4,
+    "status": 200,
+    "ok": true
   },
-  "gsc": "ok",
-  "ga4": "ok",
+  "gsc": "reauth_required",
+  "ga4": "reauth_required",
   "deepseek": "error",
   "deepseek_latency": null,
   "deepseek_summary": null,
   "leads": {
     "verified_total": 3,
-    "spam_blocked_total": 306
+    "spam_blocked_total": 308
   }
 }

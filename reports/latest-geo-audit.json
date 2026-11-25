@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-11-25T04:17:07.923584+00:00",
+  "generated_at": "2026-11-25T19:32:36.669838+00:00",
   "site": "https://framez.sg",
-  "sitemap_urls": 31,
-  "audited_urls": 31,
-  "readiness_score": 76.3,
+  "sitemap_urls": 32,
+  "audited_urls": 32,
+  "readiness_score": 76.4,
   "readiness_breakdown": {
     "schema_completeness_max25": 24.1,
     "llms_parity_proof_max20": 20.0,
     "mixed_content_hygiene_max15": 15.0,
-    "script_jquery_hygiene_max15": 12.8,
+    "script_jquery_hygiene_max15": 12.9,
     "image_dims_lazy_max15": 4.4,
     "page1_ctr_hygiene_max10": 0.0
   },
   "schema_summary": {
     "counts": {
-      "Organization": 31,
+      "Organization": 32,
       "ProfessionalService": 3,
-      "FAQPage": 24,
-      "Service": 11,
+      "FAQPage": 25,
+      "Service": 12,
       "Article": 14,
-      "SpeakableSpecification": 10,
-      "BreadcrumbList": 30
+      "SpeakableSpecification": 11,
+      "BreadcrumbList": 31
     },
-    "checks_passed": 81,
-    "checks_total": 84,
+    "checks_passed": 84,
+    "checks_total": 87,
     "missing_schema_pages": [
       {
         "url": "https://framez.sg/corporate-event-management-company",
@@ -49,9 +49,9 @@
     ]
   },
   "llms_parity": {
-    "sitemap_url_count": 31,
-    "llms_txt_urls": 31,
-    "llms_full_txt_urls": 31,
+    "sitemap_url_count": 32,
+    "llms_txt_urls": 32,
+    "llms_full_txt_urls": 32,
     "missing_in_llms_txt": [],
     "missing_in_llms_full_txt": [],
     "extra_in_llms_txt": [],
@@ -206,9 +206,9 @@
         ]
       }
     ],
-    "images_total": 288,
-    "images_missing_dimensions": 285,
-    "images_missing_lazy": 122,
+    "images_total": 294,
+    "images_missing_dimensions": 290,
+    "images_missing_lazy": 126,
     "pages_missing_image_dimensions": [
       {
         "url": "https://framez.sg/",
@@ -262,8 +262,8 @@
       },
       {
         "url": "https://framez.sg/blog",
-        "missing": 18,
-        "total": 18
+        "missing": 19,
+        "total": 19
       },
       {
         "url": "https://framez.sg/get-in-touch",
@@ -362,6 +362,11 @@
       },
       {
         "url": "https://framez.sg/exhibition-and-trade-show-management",
+        "missing": 4,
+        "total": 5
+      },
+      {
+        "url": "https://framez.sg/product-launch-event-management",
         "missing": 4,
         "total": 5
       }
@@ -420,7 +425,7 @@
       {
         "url": "https://framez.sg/blog",
         "missing": 4,
-        "total": 18
+        "total": 19
       },
       {
         "url": "https://framez.sg/get-in-touch",
@@ -519,6 +524,11 @@
       },
       {
         "url": "https://framez.sg/exhibition-and-trade-show-management",
+        "missing": 4,
+        "total": 5
+      },
+      {
+        "url": "https://framez.sg/product-launch-event-management",
         "missing": 4,
         "total": 5
       }
@@ -2444,8 +2454,8 @@
       "blocking_scripts": [
         "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       ],
-      "images_total": 18,
-      "images_missing_dimensions": 18,
+      "images_total": 19,
+      "images_missing_dimensions": 19,
       "images_missing_lazy": 4,
       "page1_zero_ctr": null
     },
@@ -3149,6 +3159,37 @@
     },
     {
       "url": "https://framez.sg/exhibition-and-trade-show-management",
+      "status": 200,
+      "role": "service",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Organization",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_invalid": 0,
+      "has_organization": true,
+      "has_professional_service": false,
+      "has_faq_page": true,
+      "has_service": true,
+      "has_article": false,
+      "has_speakable": true,
+      "missing_expected_schema": [],
+      "mixed_content_maps_google": [],
+      "mixed_content_assets": [],
+      "jquery_scripts": [],
+      "duplicate_jquery": false,
+      "blocking_script_count": 0,
+      "blocking_scripts": [],
+      "images_total": 5,
+      "images_missing_dimensions": 4,
+      "images_missing_lazy": 4,
+      "page1_zero_ctr": null
+    },
+    {
+      "url": "https://framez.sg/product-launch-event-management",
       "status": 200,
       "role": "service",
       "jsonld_types": [

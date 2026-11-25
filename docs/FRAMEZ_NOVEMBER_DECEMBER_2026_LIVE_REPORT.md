@@ -1,7 +1,7 @@
 # Framez Events & Productions: Comprehensive Monthly SEO, AEO & GEO Progress Report
 ## Service Cycle: 15 November to 15 December 2026
 
-**Report Generated:** 2026-11-25 12:17:08 SGT (2026-11-25 04:17:08 UTC)  
+**Report Generated:** 2026-11-26 03:32:37 SGT (2026-11-25 19:32:37 UTC)  
 **Client:** Framez Events & Productions (`https://framez.sg`)  
 **Agency Partner:** ADELEV8 Growth OS (`https://portal.adelev8.com`)  
 **Service Cycle Window:** 15 November 2026 to 15 December 2026  
@@ -16,7 +16,7 @@
 During the **15 November to 15 December 2026** service cycle, ADELEV8 focused on turning Framez's technical foundation into commercial search capture across **Singapore** and **Bangalore**, closing analytics blindspots across commercial pages, eliminating legacy 2020 to 2021 virtual-event index bloat, and shipping a multi-wave cadence of high-intent commercial landing pages and operational buyer guides.
 
 ### Key Cycle Achievements
-- **Active Verified Sitemap Inventory:** **31 self-canonical HTTP 200 URLs** (up from 26 at the end of October), with **31/31** pages verified carrying live `G-XDPHV6MX44` GA4 telemetry.
+- **Active Verified Sitemap Inventory:** **32 self-canonical HTTP 200 URLs** (up from 26 at the end of October), with **32/32** pages verified carrying live `G-XDPHV6MX44` GA4 telemetry.
 - **Singapore Commercial Landing Page Launched (`/event-management-company-in-singapore`):** Built specifically to capture Framez's high Singapore `.sg` impression volume with Prudential Tower (`30 Cecil Street, #19-08`) entity alignment, MICE/conference/launch/D&D scope, PDPA/GoBusiness operational guidance, and `ProfessionalService` + `Service` + `FAQPage` JSON-LD.
 - **100% Sitewide GA4 & Multi-Channel Inquiry Tracking Unification:** Replaced dead Universal Analytics (`UA-180350188-1`) and legacy tags across 10 core commercial/contact pages that were previously invisible to GA4, and instrumented `whatsapp_click`, `phone_click`, `email_click`, `cta_inquiry_click`, and `generate_lead` conversion events.
 - **Core Commercial Rebuilds:** Completely rewrote `/event-marketing-services` (resolving Google's Crawled - currently not indexed hold), `/event-management-company-in-india` (removing 2020 filler and white-on-white HTML defects), and `/event-planner` (+105% impression surge page).
@@ -40,7 +40,7 @@ During the **15 November to 15 December 2026** service cycle, ADELEV8 focused on
 | **23 Nov** | **Bangalore Corporate Event CTR & FAQ Schema Sprint** | Audits and reinforces title, meta description, Koramangala/Whitefield/ORR proof, and FAQPage/ProfessionalService schema on /event-management-company-in-bangalore. | **COMPLETED** (2026-11-23) |
 | **24 Nov** | **Trade Show & Exhibition Entity Directory Preparation** | Pre-flight entity mapping and Singapore EXPO / Sands Expo venue technical specifications on /conference-and-mice-event-management ahead of Wave 3. | **COMPLETED** (2026-11-24) |
 | **25 Nov** | **Wave 3: Exhibition & Trade Show Management Page Release** | Launches /exhibition-and-trade-show-management targeting exhibition management company (#30.4) and custom booth fabrication. | **LIVE** (2026-11-24) |
-| **26 Nov** | **Exhibition Cross-Linking & Image Sitemap Verification** | Links exhibition and product launch services from service overview and Singapore pages and verifies image-sitemap.xml. | Scheduled (2026-11-26) via Automated Cron |
+| **26 Nov** | **Exhibition Cross-Linking & Image Sitemap Verification** | Links exhibition and product launch services from service overview and Singapore pages and verifies image-sitemap.xml. | **COMPLETED** (2026-11-25) |
 | **27 Nov** | **Book-a-Demo Interactive Scope Estimator & Thin Content Fix** | Verifies and expands /book-a-demo with enterprise RFP scope estimator, budgeting tiers, and FAQPage schema while preserving Turnstile. | Scheduled (2026-11-27) via Automated Cron |
 | **28 Nov** | **Year-End Corporate Town Hall Seasonal Search Injections** | Injects Q4 all-hands town hall and Q1 sales kickoff internal anchors on corporate-event-management-company.php and event-planner.php. | Scheduled (2026-11-28) via Automated Cron |
 | **29 Nov** | **Wave 4: Corporate Town Hall & Sales Kickoff Guide Release** | Launches /year-end-corporate-town-hall-and-kickoff-guide targeting enterprise all-hands and SKO multi-hub production. | Scheduled (2026-11-29) via Automated Cron |
@@ -223,16 +223,16 @@ During the **15 November to 15 December 2026** service cycle, ADELEV8 focused on
 
 ### 5.2 Lead Pipeline & 7-Layer Bot Defense Status
 - **Cumulative Verified Form Leads (`leads_log.json`):** `3` (since Nov 15: `0`)
-- **Cumulative Automated Bot Submissions Blocked (`leads_spam_log.json`):** `306` (since Nov 15: `59`)
+- **Cumulative Automated Bot Submissions Blocked (`leads_spam_log.json`):** `308` (since Nov 15: `61`)
 
 ---
 
 ## 6. Technical Audit Health & Reporting Integrity
 
-- **Audited Sitemap URLs:** `31` (Broken URLs: `0`)
-- **GA4 (`G-XDPHV6MX44`) Coverage Across Sitemap:** `31/31` pages
+- **Audited Sitemap URLs:** `32` (Broken URLs: `0`)
+- **GA4 (`G-XDPHV6MX44`) Coverage Across Sitemap:** `32/32` pages
 - **Remaining Audit Flags:** `{}`
-- **Immutable Ledger Entries Recorded This Cycle:** `51` (`reports/cycle-2026-11-15-to-2026-12-15-ledger.jsonl`)
+- **Immutable Ledger Entries Recorded This Cycle:** `55` (`reports/cycle-2026-11-15-to-2026-12-15-ledger.jsonl`)
 
 *Reporting Integrity Note:* All figures above are pulled directly from verified production crawls, Google Search Console (`sc-domain:framez.sg`), Google Analytics 4 (`547082278`), and cPanel server logs. No traffic, rankings, reviews, or leads are estimated or backdated.
 
@@ -240,30 +240,30 @@ During the **15 November to 15 December 2026** service cycle, ADELEV8 focused on
 
 ## 7. GEO / AEO Readiness Scorecard
 
-- **Audit Timestamp:** `2026-11-25T04:17:07.923584+00:00`
-- **Audited Live Sitemap Inventory:** `31` URLs
-- **Overall GEO / AEO Readiness Score:** **76.3 / 100**
+- **Audit Timestamp:** `2026-11-25T19:32:36.669838+00:00`
+- **Audited Live Sitemap Inventory:** `32` URLs
+- **Overall GEO / AEO Readiness Score:** **76.4 / 100**
 
 ### 7.1 Readiness Pillar Scorecard
 | Readiness Pillar | Score | Max | Verified Live Telemetry |
 | --- | ---: | ---: | --- |
-| **JSON-LD Schema Completeness** | 24.1 | 25 | `81/84` expected role schema checks passed |
-| **AI Crawler `llms.txt` Parity & Proof** | 20.0 | 20 | `llms.txt` parity=`True` (31/31), `llms-full.txt` parity=`True` (31/31) |
+| **JSON-LD Schema Completeness** | 24.1 | 25 | `84/87` expected role schema checks passed |
+| **AI Crawler `llms.txt` Parity & Proof** | 20.0 | 20 | `llms.txt` parity=`True` (32/32), `llms-full.txt` parity=`True` (32/32) |
 | **Mixed-Content HTTPS Security** | 15.0 | 15 | `0` pages with `http://maps.google.com`, `0` pages with insecure `http://` assets |
-| **Script & jQuery Hygiene** | 12.8 | 15 | `0` duplicate jQuery pages, `18` blocking scripts across `18` pages |
-| **Image Dimensions & Lazy Loading** | 4.4 | 15 | `288` images audited (`285` missing width/height, `122` missing lazy) |
+| **Script & jQuery Hygiene** | 12.9 | 15 | `0` duplicate jQuery pages, `18` blocking scripts across `18` pages |
+| **Image Dimensions & Lazy Loading** | 4.4 | 15 | `294` images audited (`290` missing width/height, `126` missing lazy) |
 | **Page-1 Zero-CTR Capture** | 0.0 | 10 | `80` Page-1 zero-CTR queries, `50` Page-1 zero-CTR pages |
 
 ### 7.2 JSON-LD Schema Completeness Across Sitemap
 | Schema Type | Pages Present | Coverage |
 | --- | ---: | ---: |
-| `Organization` | 31 / 31 | 100.0% |
-| `ProfessionalService` | 3 / 31 | 9.7% |
-| `FAQPage` | 24 / 31 | 77.4% |
-| `Service` | 11 / 31 | 35.5% |
-| `Article` | 14 / 31 | 45.2% |
-| `SpeakableSpecification` | 10 / 31 | 32.3% |
-| `BreadcrumbList` | 30 / 31 | 96.8% |
+| `Organization` | 32 / 32 | 100.0% |
+| `ProfessionalService` | 3 / 32 | 9.4% |
+| `FAQPage` | 25 / 32 | 78.1% |
+| `Service` | 12 / 32 | 37.5% |
+| `Article` | 14 / 32 | 43.8% |
+| `SpeakableSpecification` | 11 / 32 | 34.4% |
+| `BreadcrumbList` | 31 / 32 | 96.9% |
 
 **Pages Missing Expected Role Schema:**
 - `https://framez.sg/corporate-event-management-company` (service): missing `ProfessionalService`
