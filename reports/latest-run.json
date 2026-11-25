@@ -1,8 +1,6 @@
 {
-  "generated_at": "2026-11-24T19:32:28.504567+00:00",
-  "waves_deployed_this_run": [
-    "https://framez.sg/exhibition-and-trade-show-management"
-  ],
+  "generated_at": "2026-11-25T04:17:08.476032+00:00",
+  "waves_deployed_this_run": [],
   "daily_action": {
     "status": "wave_release_day",
     "action": {
@@ -19,7 +17,7 @@
     "urls": 31,
     "issues": 0,
     "broken": 0,
-    "changed": 2,
+    "changed": 0,
     "issue_counts": {}
   },
   "geo_audit": {
@@ -43,14 +41,14 @@
     "images_total": 288,
     "images_missing_dimensions": 285,
     "images_missing_lazy": 122,
-    "page1_zero_ctr_query_alerts": 81,
-    "page1_zero_ctr_page_alerts": 49,
+    "page1_zero_ctr_query_alerts": 80,
+    "page1_zero_ctr_page_alerts": 50,
     "page1_zero_ctr_sgp_alerts": 18,
-    "page1_zero_ctr_ind_alerts": 32
+    "page1_zero_ctr_ind_alerts": 33
   },
   "llms_sync": {
     "status": "ok",
-    "generated_at": "2026-11-24T19:31:37.246844+00:00",
+    "generated_at": "2026-11-25T04:16:20.397406+00:00",
     "total_urls": 31,
     "core_urls": 17,
     "guide_urls": 14,
@@ -63,16 +61,13 @@
   },
   "sitemap": {
     "urls": 31,
-    "added": [
-      "https://framez.sg/exhibition-and-trade-show-management"
-    ],
+    "added": [],
     "removed": [],
-    "uploaded": true
+    "uploaded": false
   },
   "indexnow": {
-    "submitted": 2,
-    "status": 200,
-    "ok": true
+    "submitted": 0,
+    "status": null
   },
   "gsc": "ok",
   "ga4": "ok",
@@ -81,6 +76,6 @@
   "deepseek_summary": null,
   "leads": {
     "verified_total": 3,
-    "spam_blocked_total": 301
+    "spam_blocked_total": 306
   }
 }
