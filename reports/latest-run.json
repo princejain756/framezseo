@@ -1,8 +1,6 @@
 {
-  "generated_at": "2026-11-25T19:32:37.148965+00:00",
-  "waves_deployed_this_run": [
-    "https://framez.sg/product-launch-event-management"
-  ],
+  "generated_at": "2026-11-26T04:17:08.246542+00:00",
+  "waves_deployed_this_run": [],
   "daily_action": {
     "event": "daily_micro_action_executed",
     "date_sgt": "2026-11-26",
@@ -13,7 +11,7 @@
     "target_url": "https://framez.sg/our-events-and-services",
     "status": "ok",
     "message": "Added exhibition cross-links and verified image-sitemap.xml.",
-    "timestamp": "2026-11-25T19:30:31.828200+00:00",
+    "timestamp": "2026-11-26T04:15:06.237555+00:00",
     "target_urls": [
       "https://framez.sg/our-events-and-services",
       "https://framez.sg/event-management-company-in-singapore"
@@ -21,32 +19,23 @@
     "sha256_receipts": [
       {
         "file": "our-events-and-services.php",
-        "changed": true,
-        "bytes_before": 35462,
-        "bytes_after": 36423,
-        "sha256_before": "e1d477fb6a745c9d54b73e09cf1987063e79d2b33631088dd513376e91d803bd",
+        "changed": false,
+        "sha256_before": "7ce0040623a14b99fedc898e4bad9ef24e1e9fe367b4d5230786cad5c93e7720",
         "sha256_after": "7ce0040623a14b99fedc898e4bad9ef24e1e9fe367b4d5230786cad5c93e7720",
-        "readback_sha256": "7ce0040623a14b99fedc898e4bad9ef24e1e9fe367b4d5230786cad5c93e7720",
         "sha256_verified": true
       },
       {
         "file": "event-management-company-in-singapore.php",
-        "changed": true,
-        "bytes_before": 25346,
-        "bytes_after": 26049,
-        "sha256_before": "2947c11c97a150509b7b5af837051c65e960ad8db2911d6013d14a6c8fd9d0b7",
+        "changed": false,
+        "sha256_before": "11f97b90c9dad5b9485b3e43d20909229b27f8a3fb6286f467e96b4580c7d602",
         "sha256_after": "11f97b90c9dad5b9485b3e43d20909229b27f8a3fb6286f467e96b4580c7d602",
-        "readback_sha256": "11f97b90c9dad5b9485b3e43d20909229b27f8a3fb6286f467e96b4580c7d602",
         "sha256_verified": true
       },
       {
         "file": "image-sitemap.xml",
-        "changed": true,
-        "bytes_before": 2757,
-        "bytes_after": 3812,
-        "sha256_before": "1d6199d3eea57fa8a688fdd2977d732eb61cd29360b8d6008e7edf8bdc258522",
+        "changed": false,
+        "sha256_before": "775ee2008cf4832e4bd6acaa421fba6bca568ccbe4bf64edea5624c7d15ebe1c",
         "sha256_after": "775ee2008cf4832e4bd6acaa421fba6bca568ccbe4bf64edea5624c7d15ebe1c",
-        "readback_sha256": "775ee2008cf4832e4bd6acaa421fba6bca568ccbe4bf64edea5624c7d15ebe1c",
         "sha256_verified": true
       }
     ],
@@ -56,7 +45,7 @@
     "urls": 32,
     "issues": 0,
     "broken": 0,
-    "changed": 4,
+    "changed": 0,
     "issue_counts": {}
   },
   "geo_audit": {
@@ -87,7 +76,7 @@
   },
   "llms_sync": {
     "status": "ok",
-    "generated_at": "2026-11-25T19:31:53.333860+00:00",
+    "generated_at": "2026-11-26T04:16:25.647942+00:00",
     "total_urls": 32,
     "core_urls": 18,
     "guide_urls": 14,
@@ -100,14 +89,12 @@
   },
   "sitemap": {
     "urls": 32,
-    "added": [
-      "https://framez.sg/product-launch-event-management"
-    ],
+    "added": [],
     "removed": [],
-    "uploaded": true
+    "uploaded": false
   },
   "indexnow": {
-    "submitted": 4,
+    "submitted": 1,
     "status": 200,
     "ok": true
   },
