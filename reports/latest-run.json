@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T19:32:07.449523+00:00",
+  "generated_at": "2026-11-27T04:17:06.446808+00:00",
   "waves_deployed_this_run": [],
   "daily_action": {
     "event": "daily_micro_action_executed",
@@ -11,7 +11,7 @@
     "target_url": "https://framez.sg/book-a-demo",
     "status": "ok",
     "message": "Verified/expanded book-a-demo.php (888 -> 888 words, FAQPage & Turnstile intact).",
-    "timestamp": "2026-11-26T19:30:03.749932+00:00",
+    "timestamp": "2026-11-27T04:15:04.094592+00:00",
     "target_urls": [
       "https://framez.sg/book-a-demo"
     ],
@@ -62,7 +62,7 @@
   },
   "llms_sync": {
     "status": "ok",
-    "generated_at": "2026-11-26T19:31:23.781854+00:00",
+    "generated_at": "2026-11-27T04:16:23.680457+00:00",
     "total_urls": 32,
     "core_urls": 18,
     "guide_urls": 14,
@@ -91,6 +91,6 @@
   "deepseek_summary": null,
   "leads": {
     "verified_total": 4,
-    "spam_blocked_total": 312
+    "spam_blocked_total": 314
   }
 }
