@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T04:16:20.847921+00:00",
+  "generated_at": "2026-11-27T19:31:28.230156+00:00",
   "site": "https://framez.sg",
   "sitemap_urls": 32,
   "audited": 32,
@@ -10,7 +10,10 @@
     "titles": {},
     "descriptions": {}
   },
-  "changed_urls": [],
+  "changed_urls": [
+    "https://framez.sg/corporate-event-management-company",
+    "https://framez.sg/event-planner"
+  ],
   "pages": [
     {
       "url": "https://framez.sg/",
@@ -94,9 +97,9 @@
     {
       "url": "https://framez.sg/corporate-event-management-company",
       "status": 200,
-      "sha256": "c36e496dd3c8fbda1a2de613f99c849be7de42204bebda0a338b895afb4df2b0",
-      "content_length": 62614,
-      "sitemap_lastmod": "2026-11-21",
+      "sha256": "fab7e037c6ad83fed5763f48dcd65dd58beefb386a1931aba18b83fb628b892f",
+      "content_length": 63768,
+      "sitemap_lastmod": "2026-11-27",
       "issues": [],
       "title": "Corporate Event Management Company | Frame Events (Framez)",
       "title_len": 58,
@@ -105,11 +108,11 @@
       "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
       "h1_count": 1,
       "has_ga4": true,
-      "word_count": 1131,
+      "word_count": 1194,
       "images": 10,
       "images_missing_alt": 0,
       "images_duplicate_alt": 0,
-      "internal_links": 45,
+      "internal_links": 48,
       "jsonld_types": [
         "WebPage",
         "Service",
@@ -179,9 +182,9 @@
     {
       "url": "https://framez.sg/event-planner",
       "status": 200,
-      "sha256": "165774012f6ce7e7873e03db17e90eed3a86565a3ff3e19fbd5646dd3d2887b9",
-      "content_length": 47627,
-      "sitemap_lastmod": "2026-11-21",
+      "sha256": "d68ccac5a0a68b50a4b2c8e95cb02ff5134d2ce3c15894c311266cbf73326d66",
+      "content_length": 48428,
+      "sitemap_lastmod": "2026-11-27",
       "issues": [],
       "title": "Corporate Event Planner in Singapore & Bangalore | Framez",
       "title_len": 57,
@@ -190,11 +193,11 @@
       "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
       "h1_count": 1,
       "has_ga4": true,
-      "word_count": 933,
+      "word_count": 997,
       "images": 5,
       "images_missing_alt": 0,
       "images_duplicate_alt": 0,
-      "internal_links": 48,
+      "internal_links": 51,
       "jsonld_types": [
         "WebPage",
         "BreadcrumbList",
