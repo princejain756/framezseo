@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T19:32:36.342863+00:00",
+  "generated_at": "2026-11-28T04:17:18.537188+00:00",
   "waves_deployed_this_run": [],
   "daily_action": {
     "event": "daily_micro_action_executed",
@@ -11,7 +11,7 @@
     "target_url": "https://framez.sg/corporate-event-management-company",
     "status": "ok",
     "message": "Injected Q4/Q1 town hall & SKO seasonal internal anchors.",
-    "timestamp": "2026-11-27T19:30:11.051268+00:00",
+    "timestamp": "2026-11-28T04:15:04.539386+00:00",
     "target_urls": [
       "https://framez.sg/corporate-event-management-company",
       "https://framez.sg/event-planner"
@@ -19,22 +19,16 @@
     "sha256_receipts": [
       {
         "file": "corporate-event-management-company.php",
-        "changed": true,
-        "bytes_before": 29656,
-        "bytes_after": 30810,
-        "sha256_before": "7c6b6f485b1bcff90d5328ab0a7600853e17226efd3dc698450e4afb0dc9554e",
+        "changed": false,
+        "sha256_before": "9fa4fe2bc633a9c04c56b42b29551b2603904dfe296c31082755bf7fbcb312b8",
         "sha256_after": "9fa4fe2bc633a9c04c56b42b29551b2603904dfe296c31082755bf7fbcb312b8",
-        "readback_sha256": "9fa4fe2bc633a9c04c56b42b29551b2603904dfe296c31082755bf7fbcb312b8",
         "sha256_verified": true
       },
       {
         "file": "event-planner.php",
-        "changed": true,
-        "bytes_before": 14669,
-        "bytes_after": 15470,
-        "sha256_before": "4ddc941a97d41ab5eaf012ebf8c6cc35cff373fb0be5e6866a91b4455b6c7025",
+        "changed": false,
+        "sha256_before": "a373c901fa1a4c541aa32c1cfdbd3b4323089c6df225633462da06d25711b2e4",
         "sha256_after": "a373c901fa1a4c541aa32c1cfdbd3b4323089c6df225633462da06d25711b2e4",
-        "readback_sha256": "a373c901fa1a4c541aa32c1cfdbd3b4323089c6df225633462da06d25711b2e4",
         "sha256_verified": true
       }
     ]
@@ -43,7 +37,7 @@
     "urls": 32,
     "issues": 0,
     "broken": 0,
-    "changed": 2,
+    "changed": 0,
     "issue_counts": {}
   },
   "geo_audit": {
@@ -74,7 +68,7 @@
   },
   "llms_sync": {
     "status": "ok",
-    "generated_at": "2026-11-27T19:31:31.003722+00:00",
+    "generated_at": "2026-11-28T04:16:23.803320+00:00",
     "total_urls": 32,
     "core_urls": 18,
     "guide_urls": 14,
@@ -89,20 +83,20 @@
     "urls": 32,
     "added": [],
     "removed": [],
-    "uploaded": true
+    "uploaded": false
   },
   "indexnow": {
-    "submitted": 2,
+    "submitted": 1,
     "status": 200,
     "ok": true
   },
   "gsc": "reauth_required",
   "ga4": "reauth_required",
   "deepseek": "ok",
-  "deepseek_latency": 23.16,
-  "deepseek_summary": "Singapore has 4,656 impressions but only 2 clicks at position 50.9, while India has 2,220 impressions from 72 clicks at position 28.0. GEO readiness is 76.4, with the immediate priority being page-1 zero-CTR recovery on high-impression Singapore virtual event queries and schema remediation on the corporate event management page.",
+  "deepseek_latency": 12.19,
+  "deepseek_summary": "Singapore shows 4656 impressions against 2 clicks at position 50.9 while India converts 72 clicks at position 28.0, so the Singapore visibility gap is the primary revenue blocker. GEO readiness sits at 76.4 with page1 CTR hygiene scored 0.0 and 290 of 294 images missing dimensions, so today focus on Singapore page-1 title rewrites and image dimension remediation.",
   "leads": {
     "verified_total": 4,
-    "spam_blocked_total": 316
+    "spam_blocked_total": 317
   }
 }
